@@ -22,7 +22,7 @@ const Home_main = () => {
                 animate={{ x: 0, opacity: 1 }}
                 transition={{ delay: 0.3 }}
               >
-                <span className="gradient-text">Digitallyyyyyy</span>
+                <span className="gradient-text">Digitally</span>
               </motion.div>
             </h1>
 
