@@ -239,7 +239,7 @@ const Header_main = () => {
         </div>
       )} */}
       {navbar.mobNav && (
-  <div className="mob-nav">
+  <div className="mob-nav" >
     <div className="top">
       <div className="logo">
         <Image src={logoImage} />
@@ -285,7 +285,7 @@ const Header_main = () => {
           ))}
         </div>
       </div>
-      <a href="/Casestudy" className="link link4">
+      <a href="/#home_casestudy" className="link link4">
         Case Studies
       </a>
       <a href="/blogs" className="link link5">
