@@ -10,6 +10,11 @@ import Faq from "@/component/faq/Faq";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import Service3 from "@/component/servicesection3/Service3";
+import img1 from "../../public/assets/business-setup.jpg";
+import topimg from "../../public/assets/business-setup.jpg";
+
+
+
 const page = () => {
   
 
@@ -46,16 +51,19 @@ const page = () => {
       title: "Company Formation and Registration",
       content:
         "Establish Your Business. Let us guide you through the legal and administrative processes of setting up your new business, including selecting the optimal business structure, registering your company, and obtaining necessary licences and permits.",
+        image: img1
     },
     {
       title: "Comprehensive Business Planning",
       content:
         "Chart Your Course. Our expert consultants will help you develop detailed business plans, conduct thorough market research, and create strategic roadmaps that align with your long-term goals.",
+        image: img1
     },
     {
       title: "Regulatory Compliance and Legal Advisory",
       content:
         "Navigate the Legal Landscape. Stay compliant with local regulations, tax laws, and industry-specific requirements, ensuring smooth operations and mitigating risks with our expert legal advice.",
+        image: img1
     },
   ];
 
@@ -156,7 +164,11 @@ const page = () => {
         </div>
       </div>
 
-      <Service3 />
+      <Service3
+        contbgimg={topimg}
+        list={list}
+       
+      />
      
 
       <div className="service-faq-parent parent">

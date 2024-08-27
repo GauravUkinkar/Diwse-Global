@@ -9,6 +9,8 @@ import Faq from "@/component/faq/Faq";
 
 import AOS from "aos";
 import "aos/dist/aos.css";
+import img1 from '../../public/assets/sevice3/social.png';
+import topimg from '../../public/assets/public-relation.jpg'
 import Service3 from "@/component/servicesection3/Service3";
 const page = () => {
   
@@ -26,6 +28,7 @@ const page = () => {
       title: "Custom Web Development",
       content:
         "Your Digital Showcase. Create a website that perfectly reflects your brand identity and drives business objectives. Our expert developers craft responsive, user-friendly designs that captivate your audience.",
+        
     },
     {
       srNo: 2,
@@ -46,16 +49,19 @@ const page = () => {
       title: "Custom Website Development",
       content:
         "Designing and building responsive, user-friendly websites tailored to meet the specific needs and goals of a business or organisation.",
+        image: img1
     },
     {
       title: "UI/UX Design",
       content:
         "Crafting intuitive and visually appealing user interfaces and experiences that enhance usability, engagement, and customer satisfaction across websites and mobile apps.",
+        image: img1
     },
     {
       title: "E-commerce Solutions",
       content:
         "Developing and integrating secure, scalable ecommerce platforms with features like shopping carts, payment gateways, and inventory management systems.",
+        image: img1
     },
   ];
 
@@ -156,7 +162,11 @@ const page = () => {
         </div>
       </div>
 
-      <Service3 />
+      <Service3
+        contbgimg={topimg}
+        list={list}
+       
+      />
      
 
       <div className="service-faq-parent parent">

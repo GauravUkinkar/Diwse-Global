@@ -10,6 +10,13 @@ import Faq from "@/component/faq/Faq";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import Service3 from "@/component/servicesection3/Service3";
+
+import topimg from "../../public/assets/branding.jpg";
+import img1 from '../../public/assets/sevice3/social.png';
+import img2 from '../../public/assets/sevice3/social.png';
+import img3 from '../../public/assets/sevice3/social.png';
+
+
 const page = () => {
   
 
@@ -41,23 +48,31 @@ const page = () => {
     },
   ];
 
+
+
+  
   const list = [
     {
       title: "Brand Strategy",
       content:
         "Develop a strategic approach to brand growth. We help you define your brand’s vision and position in the market.",
+      image: img1
     },
     {
       title: "Visual Consistency",
       content:
         "Ensure your brand’s visuals are consistent across all platforms. We design elements that unify your brand’s look and feel.",
+      image: img2
     },
     {
       title: "Creative Storytelling",
       content:
         "Tell your brand’s story with powerful impact. We craft compelling narratives that deeply connect with your audience.",
+      image: img3
     },
+   
   ];
+
 
   const faqContent = [
     {
@@ -155,7 +170,11 @@ const page = () => {
         </div>
       </div>
 
-      <Service3 />
+      <Service3
+        contbgimg={topimg}
+        list={list}
+       
+      />
      
 
       <div className="service-faq-parent parent">

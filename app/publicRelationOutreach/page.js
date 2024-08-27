@@ -10,6 +10,9 @@ import Faq from "@/component/faq/Faq";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import Service3 from "@/component/servicesection3/Service3";
+
+import img1 from "../../public/assets/business-setup.jpg";
+import topimg from "../../public/assets/public-relation.jpg";
 const page = () => {
   
 
@@ -26,6 +29,7 @@ const page = () => {
       title: "Media Relations",
       content:
         "Cultivate Media Relationships: Build strong connections with influential media outlets to secure positive coverage and enhance your brand's visibility.",
+        
     },
     {
       srNo: 2,
@@ -46,16 +50,19 @@ const page = () => {
       title: "Press Release Management",
       content:
         "Amplify Your Message. Our team will craft compelling press releases, distribute them to relevant media outlets, and ensure your key messages reach your target audience.",
+        image: img1
     },
     {
       title: "Influencer and Media Outreach",
       content:
         "Partner with Influencers. We'll identify and collaborate with influential figures, bloggers, and media professionals to amplify your brand's message and reach a wider audience.",
+        image: img1
     },
     {
       title: "Event Coordination and Promotion",
       content:
         "Create Memorable Experiences. Our event planning experts will organise and promote impactful events, such as product launches, press conferences, and community activities, to generate media coverage and public interest.",
+        image: img1
     },
   ];
 
@@ -155,7 +162,11 @@ const page = () => {
         </div>
       </div>
 
-      <Service3 />
+      <Service3
+        contbgimg={topimg}
+        list={list}
+       
+      />
      
 
       <div className="service-faq-parent parent">

@@ -1,37 +1,39 @@
-import React from 'react'
+import React, { useRef, useState } from 'react';
+// Import Swiper React components
+import { Swiper, SwiperSlide } from 'swiper/react';
+
+// Import Swiper styles
+import 'swiper/css';
+import 'swiper/css/pagination';
+import 'swiper/css/navigation';
+
+// import required modules
+import { Autoplay, Pagination, Navigation } from 'swiper/modules';
 import './service3.scss';
 
-function Service3() {
+// import topimg from " ../../../public/assets/dgmarketing.jpg"
 
-    const list = [
-        {
-            title: "Search Engine Optimization",
-            content:
-                "Boost your search rankings with our SEO expertise in keyword research, on-page optimization, and quality backlinks.",
-        },
-        {
-            title: "Content Marketing",
-            content:
-                "Engage your audience with impactful content, including blogs, infographics, and videos that build brand authority.",
-        },
-        {
-            title: "Social Media Management",
-            content:
-                "Elevate your social media presence with tailored posts and targeted ads on platforms like Facebook, Instagram, and LinkedIn.",
-        },
-    ];
+
+
+function Service3(props) {
+
+ 
 
     return (
         <>
-        {/* -------service-top-section------ */}
+            {/* -------service-top-section------ */}
             <div className="service-top-section parent">
-                <div className="service-top-cont bg-img-cover cont">
+                <div
+                    className="service-top-cont bg-img-cover cont"
+                    style={{ backgroundImage: `url(${props.contbgimg.src})` }}
+                >
                 </div>
             </div>
-              {/* -------service-bottom-section------ */}
+
+            {/* -------service-bottom-section------ */}
             <div className="service-bottom-section parent bg-img-cover">
                 <div className="service-bottom-cont  cont">
-                    {list.map((item) => (
+                    {/* {list.map((item) => (
                         <div className="service-bottom-card">
                             <div className="card-img-box bg-img-cover"></div>
                             <div className="service-card-content">
@@ -39,7 +41,41 @@ function Service3() {
                                 <p>{item.content} </p>
                             </div>
                         </div>
-                    ))}
+                    ))} */}
+
+
+
+                    <Swiper
+                        spaceBetween={30}
+                        centeredSlides={false}
+                        slidesPerView={3}
+                        autoplay={{
+                            delay: 2500,
+                            disableOnInteraction: false,
+                        }}
+                        pagination={{
+                            clickable: false,
+                        }}
+                        navigation={true}
+                        modules={[Autoplay, Pagination, Navigation]}
+                        className="mySwiper"
+                    >
+
+                        {props.list.map((item) => (
+                            <SwiperSlide >
+                                <div className="slide-card">
+                                    <div className="slide-card-img1 bg-img-cover" style={{ backgroundImage: `url(${item.image.src})` }} >
+                                    </div>
+                                    <h4 className="slide-heading">{item.heading} </h4>
+                                    <p>{item.content}
+                                    </p>
+                                </div>
+
+                            </SwiperSlide>
+                        ))
+                        }
+                    </Swiper>
+
                 </div>
             </div>
         </>

@@ -9,6 +9,11 @@ import Faq from "@/component/faq/Faq";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import Service3 from "@/component/servicesection3/Service3";
+import topimg from "../../public/assets/dgmarketing.jpg";
+import img1 from '../../public/assets/sevice3/seo.png'
+import img2 from '../../public/assets/sevice3/content.png'
+import img3 from '../../public/assets/sevice3/social.png'
+
 const page = () => {
   const [activeIndex, setActiveIndex] = useState(0);
 
@@ -36,23 +41,40 @@ const page = () => {
         "Captivate Your Audience. Develop high-quality, relevant content that resonates with your target audience, establishes your brand as an industry leader, and drives engagement.",
     },
   ];
+  // Swiper content\
+
 
   const list = [
     {
       title: "Search Engine Optimization",
       content:
         "Boost your search rankings with our SEO expertise in keyword research, on-page optimization, and quality backlinks.",
+      image: img1
     },
     {
       title: "Content Marketing",
       content:
         "Engage your audience with impactful content, including blogs, infographics, and videos that build brand authority.",
+      image: img2
     },
     {
       title: "Social Media Management",
       content:
         "Elevate your social media presence with tailored posts and targeted ads on platforms like Facebook, Instagram, and LinkedIn.",
+      image: img3
     },
+    {
+      title: "Social Media Management",
+      content:
+        "Elevate your social media presence with tailored posts and targeted ads on platforms like Facebook, Instagram, and LinkedIn.",
+      image: img1
+    },
+    {
+      title: "Social Media Management",
+      content:
+        "Elevate your social media presence with tailored posts and targeted ads on platforms like Facebook, Instagram, and LinkedIn.",
+      image: img1
+    }
   ];
 
   const faqContent = [
@@ -93,7 +115,7 @@ const page = () => {
           >
             <h3 className="section-headding">Digital Marketing & SEO</h3>
             <p className="service-p">
-            Elevate Your Online Presence: Our comprehensive digital marketing strategies, including SEO, content marketing, social media management, and paid advertising, are designed to enhance your visibility, drive global engagement, and boost your bottom line.
+              Elevate Your Online Presence: Our comprehensive digital marketing strategies, including SEO, content marketing, social media management, and paid advertising, are designed to enhance your visibility, drive global engagement, and boost your bottom line.
             </p>
             <form action="">
               <input type="email" placeholder="Your email address" />
@@ -117,12 +139,12 @@ const page = () => {
         <div className="service-detail-cont cont">
           <div className="top">
             <h3 className="heading">
-            Expert Digital Marketing for
+              Expert Digital Marketing for
               <br />{" "}
               <span className="gradient-text">Global Impact</span>
             </h3>
             <p className="para">
-            DIwise Global offers expert digital marketing services tailored to help your business stand out on a global scale. Our deep understanding of SEO and cutting-edge techniques ensure that your brand is visible, relevant, and engaging to international audiences. We leverage global trends and insights to deliver results that drive growth and impact. 
+              DIwise Global offers expert digital marketing services tailored to help your business stand out on a global scale. Our deep understanding of SEO and cutting-edge techniques ensure that your brand is visible, relevant, and engaging to international audiences. We leverage global trends and insights to deliver results that drive growth and impact.
             </p>
           </div>
 
@@ -155,23 +177,27 @@ const page = () => {
                 <span className="gradient-text">Effective Ad</span> Campaigns
               </h5>
               <p>
-              Maximise Reach: Implement targeted advertising campaigns across various platforms to reach your ideal audience, drive conversions, and increase brand awareness.
+                Maximise Reach: Implement targeted advertising campaigns across various platforms to reach your ideal audience, drive conversions, and increase brand awareness.
               </p>
             </div>
 
             <div className="right">
               <h5 className="left-heding">
-                <span className="gradient-text">Comprehensive</span> Analysis 
+                <span className="gradient-text">Comprehensive</span> Analysis
               </h5>
               <p>
-              Measure and Improve: Conduct regular analysis of your marketing campaigns to track performance, identify areas for improvement, and make data-driven adjustments to optimise your overall digital strategy.
+                Measure and Improve: Conduct regular analysis of your marketing campaigns to track performance, identify areas for improvement, and make data-driven adjustments to optimise your overall digital strategy.
               </p>
             </div>
           </div>
         </div>
       </div>
 
-      <Service3 />
+      <Service3
+        contbgimg={topimg}
+        list={list}
+       
+      />
 
       <div className="service-faq-parent parent">
         <div className="service-faq-cont cont">
