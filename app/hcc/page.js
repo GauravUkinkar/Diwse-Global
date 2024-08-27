@@ -1,7 +1,7 @@
 "use client";
 
 import React, { useEffect, useReducer, useRef } from "react";
-import "../Casestudy/casestudy.scss";
+import "../Casestudy/Axonic_casestudy/casestudy.scss";
 import Button_comp from "@/component/button/Button_comp";
 import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
 import { LuDot } from "react-icons/lu";
