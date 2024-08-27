@@ -14,9 +14,9 @@ import Logo_Corousel from "@/component/home/logo_corousel";
 import "swiper/css";
 import { Swiper, SwiperSlide } from "swiper/react";
 import img1 from "../public/assets/home/axonic.jpg";
-import img2 from "../public/assets/home/travel.jpg";
+import img2 from "../public/assets/home/Travel-and-Taste.jpg";
 import img3 from "../public/assets/home/hcc.jpg";
-import img4 from "../public/assets/home/onkar.webp";
+import img4 from "../public/assets/home/onkar-wrold.jpg";
 
 
 
