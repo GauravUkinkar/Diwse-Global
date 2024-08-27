@@ -201,42 +201,7 @@ const page = () => {
               <span className="gradient-text">Starts Here…</span>
             </h3>
 
-            {/* <p className="bottom-text" data-aos="fade-up" data-aos-delay="200">
-              Diwise Global transforms your vision into global success with
-              expert digital marketing, from setup to brand building. Let us
-              amplify your impact and drive growth worldwide.
-            </p> */}
-            {/* <div className="service-list">
-              <div className="list" data-aos="fade-up" data-aos-delay="300">
-                <div className="icon bg-img-contain icon1">
-     
-                </div>
-
-                <h6>Strategic Planning</h6>
-                <p>
-                  We meticulously craft strategies that align with your business
-                  goals, ensuring your success in diverse markets.
-                </p>
-              </div>
-              <div className="list" data-aos="fade-up" data-aos-delay="500">
-                <div className="icon bg-img-contain icon2"></div>
-
-                <h6>Innovative Marketing</h6>
-                <p>
-                  Our creative marketing approaches are designed to captivate
-                  your audience, driving engagement and growth.
-                </p>
-              </div>
-              <div className="list" data-aos="fade-up" data-aos-delay="700">
-                <div className="icon bg-img-contain icon3"></div>
-
-                <h6>In-Depth Research</h6>
-                <p>
-                  Gain insights that matter. Our in-depth research empowers your
-                  decisions, guiding your business to thrive globally.
-                </p>
-              </div>
-            </div> */}
+           
             <Home_Card_Swiper
               cards={cardData}
               showButton={false}
@@ -253,43 +218,7 @@ const page = () => {
         </div>
       </div>
 
-      {/* <div className="aboutfourth-section-parent parent">
-        <div className="about-fourthsection-cont cont">
-          <div className="left" data-aos="fade-down">
-            <h3 className="heading" data-aos="fade-up" data-aos-delay="200">
-              Our <span className="gradient-text">Mission</span>
-            </h3>
-            <p data-aos="fade-up" data-aos-delay="300">
-              At Diwise Global, our mission is to empower businesses for global
-              success with innovative digital solutions. We deliver results that
-              exceed expectations, using our expertise to navigate international
-              markets and tailor strategies to your unique needs. Committed to
-              excellence and creativity, we drive impactful results and help
-              establish a thriving global presence.
-            </p>
-          </div>
-          <div
-            className="middle bg-img-cover"
-            data-aos="fade-up"
-            data-aos-delay="500"
-          ></div>
-          <div
-            className="right"
-            data-aos="fade-right"
-            data-aos-delay="700"
-            ref={counterRef}
-          >
-            {countingList.map((item) => (
-              <div className="counting" key={item.title}>
-                <h5 className="countNum" data-target={item.count}>
-                  0
-                </h5>
-                <p>{item.title}</p>
-              </div>
-            ))}
-          </div>
-        </div>
-      </div> */}
+      
 
       <div className="founder-parent parent">
         <div
