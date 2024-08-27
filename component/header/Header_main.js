@@ -170,7 +170,7 @@ const Header_main = () => {
         )}
       </div>
 
-      {navbar.mobNav && (
+      {/* {navbar.mobNav && (
         <div className="mob-nav">
           <div className="top">
             <div className="logo">
@@ -237,7 +237,67 @@ const Header_main = () => {
             </a>
           </div>
         </div>
-      )}
+      )} */}
+      {navbar.mobNav && (
+  <div className="mob-nav">
+    <div className="top">
+      <div className="logo">
+        <Image src={logoImage} />
+      </div>
+      <div
+        className="cross"
+        onClick={() => {
+          closeAll();
+          setNavbar((element) => ({
+            ...element,
+            mobNav: false,
+          }));
+        }}
+      >
+        <RxCross1 />
+      </div>
+    </div>
+    <div className="menus">
+      <a href="/" className="link link1">
+        Home
+      </a>
+      <a href="/about" className="link link2">
+        About
+      </a>
+      <div
+        className="link link3"
+        onClick={() => setMobService(!mobService)}
+        style={{ cursor: 'pointer' }}
+      >
+        Service
+        <span className="downArrow arrow">
+          <MdKeyboardArrowDown />
+        </span>
+      </div>
+      <div
+        className={`service-list ${mobService ? "active" : ""}`}
+      >
+        <div className="list">
+          {servicelists.map((item) => (
+            <a href={item.path} key={item.name}>
+              {item.name}
+            </a>
+          ))}
+        </div>
+      </div>
+      <a href="/Casestudy" className="link link4">
+        Case Studies
+      </a>
+      <a href="/blogs" className="link link5">
+        Blogs
+      </a>
+      <a className="btn1" href="/contact" style={{ marginTop: "20px" }}>
+        Get Started
+      </a>
+    </div>
+  </div>
+)}
+
     </>
   );
 };
