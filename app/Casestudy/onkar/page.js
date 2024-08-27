@@ -30,12 +30,21 @@ const page = () => {
       <div className="case-study-page parent">
         <div className="case-study-page-cont cont">
           <h3 className="case-heading" data-aos="fade-up">
-          Trading the best of the world,
-            <span className="gradient-text"><a href="https://onkarsugars.com/" target="_blank"> Onkar World’s </a></span> Digital Partner
-
+            Trading the best of the world,
+            <span className="gradient-text">
+              <a href="https://onkarsugars.com/" target="_blank">
+                {" "}
+                Onkar World’s{" "}
+              </a>
+            </span>{" "}
+            Digital Partner
           </h3>
           <p className="case-para" data-aos="fade-up" data-aos-delay="200">
-          As Onkar World's digital partner, DIwise played a crucial role in establishing their online presence and driving global trade. Through effective digital marketing strategies, we helped them solidify their position as the first and only trading company worldwide and generated valuable leads through targeted social media campaigns.
+            As Onkar World's digital partner, DIwise played a crucial role in
+            establishing their online presence and driving global trade. Through
+            effective digital marketing strategies, we helped them solidify
+            their position as the first and only trading company worldwide and
+            generated valuable leads through targeted social media campaigns.
           </p>
           <div data-aos="fade-up" data-aos-delay="400">
             <Button_comp btn_text="Get Started" />
@@ -56,14 +65,19 @@ const page = () => {
         <div className="case-study-third-cont cont">
           <div className="top">
             <h4 className="heading" data-aos="fade-up" data-aos-delay="200">
-            Proven Results with <span className="gradient-text">DIwise</span>
+              Proven Results with <span className="gradient-text">DIwise</span>
             </h4>
           </div>
 
           <div className="middle">
             <div className="left" data-aos="fade-up" data-aos-delay="300">
               <p className="middlepara">
-              Our commitment to excellence has enabled us to deliver exceptional results for Onkar World, solidifying our reputation as a trusted partner in the global trade industry. Through our innovative digital marketing strategies, we've helped them enhance their online presence, attract new customers, and drive sustainable growth.
+                Our commitment to excellence has enabled us to deliver
+                exceptional results for Onkar World, solidifying our reputation
+                as a trusted partner in the global trade industry. Through our
+                innovative digital marketing strategies, we've helped them
+                enhance their online presence, attract new customers, and drive
+                sustainable growth.
               </p>
             </div>
             <div className="btnlist" data-aos="fade-up" data-aos-delay="400">
@@ -72,7 +86,6 @@ const page = () => {
               <div className="case-btn">Lead Generation Campaigns</div>
               <div className="case-btn">Branding and Creative Services</div>
               <div className="case-btn">Public Relations Outreach</div>
-              
             </div>
           </div>
 
@@ -84,19 +97,34 @@ const page = () => {
 
       <div className="fifth-parent parent">
         <div className="fifth-section-cont cont ">
-          <div className="left section-img bg-img-cover" data-aos="fade-up" data-aos-delay="200"></div>
+          <div
+            className="left section-img bg-img-cover"
+            data-aos="fade-up"
+            data-aos-delay="200"
+          ></div>
           <div className="right" data-aos="fade-up" data-aos-delay="400">
             <h3 className="fifth-section-heading">
-            Why <span className="gradient-text">Clients Trust DIwise</span>
+              Why <span className="gradient-text">Clients Trust DIwise</span>
             </h3>
             <p className="fifth-section-para">
-            At DIwise, we believe in building strong partnerships based on mutual understanding and trust. By deeply understanding our clients' unique goals, stories, and perspectives, we develop customised strategies that deliver exceptional results.
+              At DIwise, we believe in building strong partnerships based on
+              mutual understanding and trust. By deeply understanding our
+              clients' unique goals, stories, and perspectives, we develop
+              customised strategies that deliver exceptional results.
             </p>
 
             <div className="list-item">
-              <p>Here are a few other things that might make us popular among our clients:</p>
+              <p>
+                Here are a few other things that might make us popular among our
+                clients:
+              </p>
               {listItem.map((item, index) => (
-                <p className="listItem" data-aos="fade-up" data-aos-delay={600 + index * 100} key={index}>
+                <p
+                  className="listItem"
+                  data-aos="fade-up"
+                  data-aos-delay={600 + index * 100}
+                  key={index}
+                >
                   <span>
                     <LuDot />
                   </span>
@@ -113,4 +141,3 @@ const page = () => {
 };
 
 export default page;
- 
