@@ -192,7 +192,19 @@
 
         h3{
           line-height: 100% !important;
+          text-align: center;
 
+        }
+        p{
+          text-align: center;
+        }
+      }
+      .right{
+        h3{
+          text-align: center;
+        }
+        p{
+          text-align: center;
         }
       }
     }
@@ -445,6 +457,7 @@
       .left {
         width: 100% !important;
         height: 400px !important;
+       
       }
 
       .right {
