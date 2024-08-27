@@ -1,0 +1,322 @@
+.nfooter-parent {
+  background: url("../../public/assets/img/background-footer.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 100px 0;
+  display: flex;
+  // position: fixed;
+  // left: 0;
+  // bottom: 0;
+  // z-index: -5;
+
+  .nfooter-cont {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+
+    .left {
+      width: 60%;
+      display: flex;
+      flex-direction: column;
+
+      .desc {
+        padding: 40px 0;
+        font-size: 18px;
+      }
+
+      .title {
+        font-size: 30px;
+        font-weight: 400;
+      }
+
+      .mail {
+        font-weight: 400;
+        font-size: 50px;
+        color: #fff;
+        white-space: nowrap;
+        overflow: hidden;
+        border-right: 3px solid rgba(255, 255, 255, 0.75);
+        animation: typingMail 10s steps(80, end) 1s infinite normal both,
+          blink-caret-mail 0.75s step-end infinite;
+      }
+
+      .line {
+        width: 80%;
+        height: 2px;
+        background: white;
+        margin-top: -15px;
+      }
+
+      .icon-link {
+        display: flex;
+        gap: 20px;
+        padding: 40px 0;
+
+        a {
+          position: relative;
+          color: white;
+          text-decoration: none;
+          display: flex;
+          align-items: center;
+          gap: 10px;
+
+          .icon {
+            font-size: 16px;
+            transition: transform 0.3s ease, color 0.3s ease;
+            transform: rotate(45deg);
+          }
+
+          &:hover .icon {
+            transform: rotate(0deg);
+            color: red;
+          }
+
+          &:hover::before {
+            width: 100%;
+          }
+
+          &::before {
+            content: "";
+            position: absolute;
+            bottom: -2px;
+            left: 0;
+            width: 0%;
+            height: 2px;
+            background: white;
+            transition: width 0.3s ease;
+          }
+        }
+      }
+    }
+
+    .right {
+      width: 40%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+
+      .iconlink {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+
+        .link1,
+        .link2,
+        .link3,
+        .link4,
+        .link5 {
+          padding: calc(var(--unit)) 0px;
+          position: relative;
+          animation: fadeInLinks 1.5s ease-in-out forwards;
+
+          a {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+
+            .icon1 {
+              font-size: 18px;
+              transform: rotate(30deg);
+              transition: transform 0.3s ease, color 0.3s ease;
+            }
+
+            &:hover .icon1 {
+              transform: rotate(0deg);
+              color: #ffcc00;
+            }
+
+            &:hover::before {
+              width: 100%;
+            }
+
+            &::before {
+              content: "";
+              position: absolute;
+              bottom: -2px;
+              left: 0;
+              width: 0%;
+              height: 2px;
+              background: var(--white);
+              transition: width 0.3s ease;
+            }
+          }
+        }
+
+        // .link1 {
+        //   // border-top: 1px solid rgba(255, 255, 255, 0.404);
+        // }
+
+        .link2 {
+          border-top: 1px solid rgba(255, 255, 255, 0.404);
+        }
+
+        .link3 {
+          border-top: 1px solid rgba(255, 255, 255, 0.404);
+        }
+
+        .link4 {
+          border-top: 1px solid rgba(255, 255, 255, 0.404);
+        }
+
+        .link5 {
+          border-top: 1px solid rgba(255, 255, 255, 0.404);
+          border-bottom: 1px solid rgba(255, 255, 255, 0.404);
+        }
+      }
+    }
+  }
+}
+
+// copyright
+
+.copyright-parent {
+  height: fit-content;
+  padding: var(--unit) 0px;
+  background-color: black;
+
+  .copyright-cont {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    .left {
+      p {
+        font-size: 16px;
+      }
+    }
+
+    .right {
+      display: flex;
+      gap: var(--unit);
+
+      a {
+        display: flex;
+        gap: calc(var(--unit)/2);
+        align-items: center;
+        justify-content: center;
+
+        .circle1 {
+          font-size: 16px;
+        }
+      }
+    }
+
+  }
+}
+
+// Keyframes for animations
+@keyframes typingMail {
+  from {
+    width: 0;
+  }
+
+  to {
+    width: 80%;
+  }
+}
+
+@keyframes blink-caret-mail {
+
+  from,
+  to {
+    border-color: transparent;
+  }
+
+  50% {
+    border-color: rgba(255, 255, 255, 0.75);
+  }
+}
+
+// Apply gradient to the last word
+.gradient-text {
+  background: linear-gradient(to right, var(--accent1), var(--accent2));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+// Your existing CSS styles...
+
+// Media queries and other styles remain the same
+
+
+
+
+
+
+@media only screen and (max-width:1050px) {
+  .nfooter-parent {
+    padding: 70px 10px !important;
+
+    .nfooter-cont {
+      align-items: center;
+      flex-direction: column !important;
+
+      .left {
+        width: 100% !important;
+
+        // padding: 20px !important;
+        .icon-link {
+          flex-wrap: wrap !important;
+        }
+
+        .title {
+          line-height: 30px;
+        }
+
+        .line {
+          margin-top: 1px !important;
+        }
+
+        .mail {
+          font-size: 25px !important;
+        }
+      }
+
+      .right {
+        width: 100% !important;
+        // padding: 20px !important;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width:900px) {
+  .nfooter-parent {
+    padding: 50px 10px !important;
+  }
+}
+
+@media only screen and (max-width:550px) {
+  .nfooter-parent {
+    padding: 30px 10px 40px 10px !important;
+
+    .nfooter-cont {
+      .left {
+        .title {
+          font-size: 26px !important;
+        }
+        .mail {
+
+        }
+
+        .line {
+       
+        }
+      }
+    }
+  }
+}
+
+
+
+@media only screen and (max-width:700px) {
+  .copyright-parent {
+    .copyright-cont {
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: center;
+    }
+  }
+}

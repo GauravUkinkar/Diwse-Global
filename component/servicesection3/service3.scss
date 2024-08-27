@@ -1,0 +1,71 @@
+.service-top-section {
+    height: 500px;
+  margin-top: 30px;
+  position: relative;
+  padding: 0px 10px;
+  .service-top-cont {
+      height: 100%;
+      border-radius: var(--unit);
+      background-image: url("../../public/assets/dgmarketing.jpg");
+      z-index: 2;
+  }
+}
+@media only screen and (max-width:1200px) {
+  .service-top-section {
+      height: 500px;
+      padding: 0px 20px;
+      .service-top-cont {
+     width: 90%;
+      }
+  }
+  .service-bottom-section {
+      margin-top: -150px;
+  }
+}
+@media only screen and (max-width:500px) {
+  .service-top-section {
+            .service-top-cont {
+     width: 100%;
+      }
+  }
+  .service-bottom-section {
+      margin-top: -150px;
+  }
+}
+// service-bottom-section-----------
+.service-bottom-section {
+  margin-top: -200px;
+  padding: 280px 10px 50px 10px;
+  background-image: url("../../public/assets/img/background-footer.jpg");
+
+  .service-bottom-cont {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: center;
+      gap: var(--unit);
+      .service-bottom-card {
+          width: 340px;
+          display: flex;
+          flex-direction: column;
+          gap: var(--unit);
+          align-items: center;
+          text-align: center;
+          .card-img-box {
+              background: url('../../public/assets/sevice3/card-img.jpg');
+              height: 110px;
+              width: 100px;
+          }
+          .service-card-content {
+              display: flex;
+              flex-direction: column;
+              gap: var(--unit);
+              .service-card-title {
+                  font-size: 24px;
+                  line-height: 120%;
+              }
+          }
+      }
+  }
+
+}

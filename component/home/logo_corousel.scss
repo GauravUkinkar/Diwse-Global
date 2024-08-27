@@ -1,0 +1,40 @@
+/* Third Section Css */
+.third-section {
+  overflow: hidden;
+  white-space: nowrap;
+  position: relative;
+  width: 100%;
+  height: 200px;
+
+  .marquee {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    position: relative;
+    // background: red;
+    overflow: hidden;
+
+    .marqueeContent {
+      display: flex;
+      align-items: center;
+      gap: 40px;
+      animation: marquee 30s linear infinite;
+
+      img {
+        padding: 10px;
+        width: 150px;
+        aspect-ratio: 1/3;
+        object-fit: contain;
+      }
+    }
+
+    @keyframes marquee {
+      0% {
+        transform: translateX(0);
+      }
+      100% {
+        transform: translateX(-50%);
+      }
+    }
+  }
+}

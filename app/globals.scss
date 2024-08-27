@@ -1,0 +1,296 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --black: #000000;
+  --grey: #292929;
+  --white: #ffffff;
+  --accent1: #fe6401;
+  --accent2: #eb0106;
+  --accent-grad: linear-gradient(#fe6401, #eb0106);
+  --accent-grad2: linear-gradient(90deg, #fe6401, #eb0106);
+  --text: hsla(0, 0%, 100%, 0.712);
+  --unit: 20px;
+  --max-width: 1200px;
+  --trans: all 0.4s ease-in-out;
+  --trans-spring: all 0.8s cubic-bezier(0.2, 1, 0.3, 1);
+  --shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
+}
+
+*::before,
+*::after,
+* {
+  // border: 1px solid red;
+  box-sizing: border-box;
+  margin: 0px;
+  font-family: "Inter", sans-serif;
+  color: var(--white);
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap");
+
+body {
+  background: var(--black);
+  width: 100%;
+  position: relative;
+  margin: 0;
+  padding: 0;
+  cursor: none !important;
+overflow-x: hidden;
+}
+
+.side-image {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 300px;
+  aspect-ratio: 1;
+  filter: opacity(0.5);
+}
+
+.left-side-image {
+  left: 0;
+  top: 10%;
+  // background: url("../public/assets/bg-orange.png") !important;
+  background-size: contain !important;
+  background-position: center left !important;
+  background-repeat: no-repeat !important;
+}
+
+.right-side-image {
+  right: 0;
+  // background-image: url("../public/assets/bg-red.png") !important;
+  background-size: contain !important;
+  background-position: center left !important;
+  background-repeat: no-repeat !important;
+}
+
+.content {
+  position: relative;
+  z-index: 1;
+}
+
+a {
+  text-decoration: none;
+}
+
+.parent {
+  width: 100%;
+
+  .cont {
+    max-width: var(--max-width);
+    margin: auto;
+    padding: 0px 10px;
+    height: 100%;
+  }
+}
+
+.glass {
+  backdrop-filter: blur(5px);
+  background: rgba(148, 148, 148, 0.137);
+  border: 1px solid rgba(255, 255, 255, 0.356);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.heading {
+  font-family: "Inter", sans-serif;
+  line-height: 60%;
+  font-weight: 900;
+  font-size: 2rem;
+  max-width: 60ch;
+  text-transform: capitalize;
+
+  span {
+    font-size: inherit;
+    font-weight: inherit;
+    color: var(--accent1);
+    line-height: inherit;
+  }
+}
+
+h1 {
+  font-size: 3rem;
+}
+
+h6 {
+  font-size: 23px !important;
+}
+
+p,
+span,
+.para {
+  letter-spacing: 1px;
+  font-size: 1.2rem;
+  line-height: 140%;
+  word-spacing: 2px;
+  line-break: loose;
+  font-weight: 200;
+  // max-width: 60ch;
+  opacity: 0.9;
+}
+
+/* From Uiverse.io by cssbuttons-io */
+button {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+  outline: none;
+  border: 0;
+  vertical-align: middle;
+  text-decoration: none;
+  background: transparent;
+  padding: 0;
+  font-size: inherit;
+  font-family: inherit;
+}
+
+button.learn-more {
+  width: 18rem;
+  height: auto;
+}
+
+button.learn-more .circle {
+  transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+  position: relative;
+  display: block;
+  margin: 0;
+  width: 3rem;
+  height: 3rem;
+  background: var(--accent-grad);
+  border-radius: 1.625rem;
+}
+
+button.learn-more .circle .icon {
+  transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+  position: absolute;
+  top: 0;
+  width: 100%;
+  bottom: 0;
+  margin: auto;
+  background: var(--accent-grad);
+}
+
+button.learn-more .circle .icon.arrow {
+  transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+  left: 0.625rem;
+  width: 1.125rem;
+  height: 0.125rem;
+  background: none;
+}
+
+button.learn-more .circle .icon.arrow::before {
+  position: absolute;
+  content: "";
+  top: -0.29rem;
+  right: 0.0625rem;
+  width: 0.625rem;
+  height: 0.625rem;
+  border-top: 0.125rem solid #fff;
+  border-right: 0.125rem solid #fff;
+  transform: rotate(45deg);
+}
+
+button.learn-more .button-text {
+  transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  padding: 0.75rem 0;
+  margin: 0 0 0 1.85rem;
+  // color: #282936;
+  font-weight: 500;
+  line-height: 1.6;
+  text-align: center;
+  font-size: 16px;
+  text-transform: uppercase;
+}
+
+button:hover .circle {
+  width: 100%;
+}
+
+button:hover .circle .icon.arrow {
+  background: var(--white);
+  transform: translate(1rem, 0);
+}
+
+button:hover .button-text {
+  color: #fff;
+}
+
+.bg-img-contain {
+  background-size: contain !important;
+  background-position: center center !important;
+  background-repeat: no-repeat !important;
+}
+
+.bg-img-cover {
+  background-size: cover !important;
+  background-position: center center !important;
+  background-repeat: no-repeat !important;
+}
+
+.btn1 {
+  padding: 10px 20px;
+  background-image: linear-gradient(to right, var(--accent2), var(--accent1));
+  border-radius: calc(var(--unit) * 2);
+  width: fit-content;
+}
+
+
+@media only screen and (max-width: 390px) {
+
+
+  .btn1{
+    font-size: 10px !important;
+  }
+}
+
+.transition {
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  height: 100%;
+  width: 100%;
+  background: var(--accent1);
+  z-index: 100000;
+  animation: swipe 0.5s linear forwards;
+
+  @keyframes swipe {
+    to {
+      width: 0px;
+      opacity: 0;
+    }
+  }
+}
+
+.t2 {
+  animation-delay: 0.05s !important;
+  background: var(--accent2) !important;
+  z-index: 10000 !important;
+}
+.t3 {
+  animation-delay: 0.1s !important;
+  background: var(--black) !important;
+  z-index: 1000 !important;
+}
+.t4 {
+  animation-delay: 0.15s !important;
+  background: var(--accent1) !important;
+  z-index: 100 !important;
+}
+
+.gradient-text {
+  background: linear-gradient(to right, var(--accent1), var(--accent2));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+

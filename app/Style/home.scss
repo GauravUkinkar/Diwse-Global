@@ -1,0 +1,168 @@
+/*2 Section-  video section css */
+.second-section {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1;
+}
+
+/* Styling for the video box */
+.video-box {
+  width: 100%;
+  height: 100%;
+  transition: transform 0.3s ease;
+}
+
+.video-box video {
+  width: 100%;
+  height: 100%;
+  border-radius: calc(var(--unit));
+  object-fit: cover;
+}
+
+/*4 Section-  card swiper section css */
+.fourth-section {
+  // height: auto;
+  padding: 100px 0px;
+
+  .fourth-section-cont {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: var(--unit);
+
+    .title {
+      max-width: 30ch;
+      line-height: 120%;
+      // line-height: 36px;
+      font-size: 40px;
+      // font-weight: 600;
+    }
+
+    .desc {}
+  }
+}
+
+@media only screen and (max-width:700px) {
+  .fourth-section {
+    .fourth-section-cont {
+      .title {
+        text-align: center;
+        line-height: 120% !important;
+        font-size: var(--unit);
+      }
+
+      .desc {
+        text-align: center;
+      }
+    }
+  }
+}
+
+
+// fifthsection
+
+.fifth-section {
+  height: 80svh;
+  z-index: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: calc(var(--unit)*2) 0px calc(var(--unit)*5) 0px;
+
+  .mySwiper {
+    width: 100%;
+    height: 100%;
+
+    .swiper-slide {
+      width: 100%;
+      height: 100%;
+      padding: var(--unit);
+      border-radius: var(--unit);
+      overflow: hidden;
+    }
+    
+    .image-container {
+      position: relative;
+      height: 100%;
+      width: 100%;
+    }
+    
+    .image {
+      height: 100%;
+      width: 100%;
+      background-position: center center !important;
+      background-size: cover !important;
+      background-repeat: no-repeat !important;
+      border-radius: var(--unit);
+      display: flex;
+      justify-content: flex-end;
+      align-items: flex-start;
+      flex-direction: column;
+      padding: calc(var(--unit) * 3);
+      position: relative;
+    }
+    
+    .overlay {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      height: 100%; 
+      background: linear-gradient(to top, rgba(0, 0, 0, 0.918), rgba(0, 0, 0, 0)); 
+      border-radius: 0 0 var(--unit) var(--unit);
+  }
+  
+    
+    .content {
+      position: relative;
+      z-index: 1;
+    }
+    
+    .case-btn {
+      padding: calc(var(--unit) / 2) calc(var(--unit));
+      border: 1px solid var(--white);
+      border-radius: var(--unit);
+      z-index: 1;
+    }
+    
+    h4, p {
+      z-index: 1;
+      color: var(--white);
+    }
+
+        h4 {
+          line-height: 110%;
+          padding: 20px 0px;
+        }
+      }
+    }
+  
+
+
+
+@media screen and (max-width:900px) {
+  .fifth-section {
+    .swiper-slide {
+      .image {
+        padding: var(--unit) !important;
+        align-items: center !important;
+        gap: 10px !important;
+
+        h4 {
+          text-align: center;
+          line-height: 120%;
+        }
+
+        p {
+          text-align: center;
+          width: 100%;
+        }
+      }
+    }
+  }
+}

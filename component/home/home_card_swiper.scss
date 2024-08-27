@@ -1,0 +1,115 @@
+.card-parent {
+  // height:300px;
+  .card-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: auto;
+    .swiper {
+      width: 100%;
+      height: 100%;
+    }
+
+    .swiper-slide {
+      // text-align: center;
+      font-size: 18px;
+
+      /* Center slide text vertically */
+      display: flex;
+      justify-content: center;
+      // align-items: center;
+      .card {
+        padding: calc(var(--unit));
+        // gap: calc(var(--unit) / 2);
+        display: flex;
+        border-radius: calc(var(--unit) / 2);
+        box-shadow: var(--shadow);
+        justify-content: space-between;
+        flex-direction: column;
+        border: 1px solid rgba(255, 255, 255, 0.2);
+        background: rgba(255, 255, 255, 0.1);
+        backdrop-filter: blur(10px);
+        // height:300px;
+          height: var(--card-height, auto); // Default height based on prop
+  
+          @media only screen and (max-width: 1100px) {
+            height: calc(var(--card-height, auto) * 0.9); // Decrease height by 10% on smaller screens
+          }
+  
+          @media only screen and (max-width: 900px) {
+            height: calc(var(--card-height, auto) * 0.8); // Decrease height by 20% on smaller screens
+          }
+  
+          @media only screen and (max-width: 700px) {
+            height: calc(var(--card-height, auto) * 0.7); // Decrease height by 30% on smaller screens
+          }
+        .top-card{
+          display:flex;
+          flex-direction: column;
+          gap:10px;
+          .icon{
+            font-size: 30px;
+            
+          }
+          .top-img{
+            width:100%;
+            height: 250px;
+            background:red;
+            border-radius:5px;
+          }
+          .card-title {
+            font-weight: 400;
+            font-size: 20px;
+            line-height:110%;
+          }
+          .card-desc{
+            font-size: 16px;
+          }
+        }
+        .bottom-card{
+          display:flex;
+        }
+      }
+      // @media only screen and (max-width:1100px){
+      //   .card{
+      //     height:400px;
+      //   }
+      // }
+      // @media only screen and (max-width:900px){
+      //   .card{
+      //     height:340px;
+      //   }
+      // }
+      // @media only screen and (max-width:700px){
+      //   .card{
+      //     .top-card, .bottom-card{
+      //       align-items: center;
+      //       justify-content: center;
+      //       .card-desc{
+      //         text-align: justify;
+      //         text-align-last: center;
+      //       }
+      //     }
+         
+
+          
+      //   }
+      // }
+    }
+    .swiper-pagination {
+      .swiper-pagination-bullet {
+        background: white;
+        width: 20px;
+        height: 20px;
+        margin-top: 100px;
+      }
+    }
+
+    .swiper-slide img {
+      display: block;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+}

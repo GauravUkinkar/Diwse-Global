@@ -1,0 +1,122 @@
+.contact-parent {
+  height: auto;
+
+  .contact-cont {
+    display: flex;
+    padding: 150px 10px;
+    align-items: center;
+    justify-content: center;
+    gap: calc(var(--unit)*2);
+
+    .left {
+      width: 50%;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      gap: calc(var(--unit));
+
+      .c-title {}
+
+      .line {
+        width: 100%;
+        height: 2px;
+        background: rgba(117, 115, 115, 0.671);
+        margin: 20px 0px;
+      }
+
+      .contact-form {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        gap: calc(var(--unit) / 2);
+
+        input,
+        textarea {
+          width: 100%;
+          color: rgba(117, 115, 115, 0.671);
+          padding: 12px;
+          margin-bottom: 10px;
+          border-bottom: 1px solid #6464646b;
+          background: transparent;
+          // border-radius: calc(var(--unit) / 2);
+          font-size: 18px;
+
+          &:focus {
+            border-color: var(--white);
+            outline: none;
+            color: var(--white);
+          }
+        }
+
+        .btn1 {
+          width: fit-content;
+          padding: 10px 20px;
+          font-size: 20px;
+        }
+      }
+    }
+
+    .right {
+      width: 50%;
+      background: url("../../public//assets//contact/contact.jpg");
+      height: 500px;
+      border-radius: calc(var(--unit) / 2);
+
+      // .right img {
+      //   border-radius: calc(var(--unit) / 2);
+      // }
+    }
+  }
+}
+
+
+
+@media(max-width:1110px)
+{
+  .c-title{
+    line-height: 100% !important;
+  }
+}
+
+
+
+@media only screen and (max-width: 800px) {
+  .contact-cont {
+    flex-wrap: wrap;
+    flex-direction: column-reverse;
+    padding: 100px 10px !important;
+
+    .left {
+      width: 100% !important;
+
+      .c-title{
+        font-size: 26px !important;
+      }
+
+      .line {
+        margin:0px !important;
+      }
+    }
+
+    .right {
+      width: 100% !important;
+      height: 400px !important;
+    }
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .contact-cont {
+    flex-wrap: wrap;
+    flex-direction: column-reverse;
+
+    .left {
+      width: 100% !important;
+    }
+
+    .right {
+      width: 100% !important;
+      height: 300px !important;
+    }
+  }
+}
