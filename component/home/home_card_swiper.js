@@ -5,7 +5,15 @@ import "swiper/css";
 import "swiper/css/pagination";
 import { Autoplay, Pagination } from "swiper/modules";
 
-const Home_Card_Swiper = ({ cards, showButton = true, showImage= true, cardHeight = 'auto' }) => {
+const Home_Card_Swiper = ({
+  cards,
+  showButton = true,
+  showImage = true,
+  pauseOnMouseEnter = true,
+  cardHeight = "auto",
+  alignTitle = "left",  // Default alignment for the title
+  alignDescription = "left" // Default alignment for the description
+}) => {
   return (
     <div className="card-parent">
       <div className="card-box">
@@ -13,7 +21,11 @@ const Home_Card_Swiper = ({ cards, showButton = true, showImage= true, cardHeigh
           slidesPerView={3}
           spaceBetween={20}
           pagination={false}
-          autoplay={{ delay: 2000 }}
+          autoplay={{
+            delay: 2000,
+            disableOnInteraction: false,  // Allows Swiper to pause on interaction
+            pauseOnMouseEnter: pauseOnMouseEnter,  // Stops autoplay on mouse enter
+          }}
           modules={[Pagination, Autoplay]}
           className="mySwiper"
           breakpoints={{
@@ -28,12 +40,11 @@ const Home_Card_Swiper = ({ cards, showButton = true, showImage= true, cardHeigh
                 <div className="card" style={{ height: cardHeight }}>
                   <div className="top-card">
                     <div className="icon">{card.icon}</div>
-                    
-                      {showImage && card.image && (
-                        <div className="top-img bg-img-cover" style={{ background: `url(${card.image.src})` }}></div>
-                      )}
-                    <h4 className="card-title ">{card.title}</h4>
-                    <p className="card-desc">{card.description}</p>
+                    {showImage && card.image && (
+                      <div className="top-img bg-img-cover" style={{ background: `url(${card.image.src})` }}></div>
+                    )}
+                    <h4 className="card-title" style={{ textAlign: alignTitle }}>{card.title}</h4> 
+                    <p className="card-desc" style={{ textAlign: alignDescription }}>{card.description}</p> 
                   </div>
                   {showButton && (
                     <div className="bottom-card">
