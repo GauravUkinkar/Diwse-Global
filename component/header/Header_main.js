@@ -6,6 +6,7 @@ import { MdKeyboardArrowDown, MdKeyboardArrowUp } from "react-icons/md";
 import { RxCross1 } from "react-icons/rx";
 import logoImage from "../../public/assets/logo/newlogo/svwhite.svg";
 import "./header.scss";
+import Link from "next/link";
 
 const Header_main = () => {
 
@@ -90,17 +91,17 @@ const Header_main = () => {
               : "header-cont cont"
           }
         >
-          <a href="/" className="logo scroll">
+          <Link href="/" className="logo scroll">
             <Image src={logoImage} className="logo-img" width={100} />
-          </a>
+          </Link>
           <div className="links">
-            <a href="/" className="link image link1 ">
+            <Link href="/" className="link image link1 ">
               Home
-            </a>
-            <a href="/about" className="link link2">
+            </Link>
+            <Link href="/about" className="link link2">
               About
-            </a>
-            <a
+            </Link>
+            <Link
               href=""
               className="link link3"
               onMouseEnter={() => {
@@ -115,21 +116,21 @@ const Header_main = () => {
               <span className="downArrow arrow">
                 <MdKeyboardArrowDown />
               </span>
-            </a>
-            <a href="/#home_casestudy" className="link link4">
+            </Link>
+            <Link href="/#home_casestudy" className="link link4">
               {" "}
               Case Studies
-            </a>
-            <a href="/blogs" className="link link5">
+            </Link>
+            <Link href="/blogs" className="link link5">
               {" "}
               Blogs
-            </a>
+            </Link>
           </div>
 
           <div className="flex-end">
-            <a href="/contact" className="btn1">
+            <Link href="/contact" className="btn1">
               Get Started
-            </a>
+            </Link>
 
             <div
               className="hamburgur-btn"
@@ -149,14 +150,14 @@ const Header_main = () => {
           <div className="option cont" onMouseLeave={closeAll}>
             <div className="bottom">
               {servicelists.map((item) => (
-                <a href={item.path} className="link  link1">
+                <Link href={item.path} className="link  link1">
                   <div
                     className="top bg-img-contain"
                     style={{ backgroundImage: `url(${item.images})` }}
                   ></div>
 
                   <h5>{item.name}</h5>
-                </a>
+                </Link>
               ))}
             </div>
           </div>
@@ -182,12 +183,12 @@ const Header_main = () => {
             </div>
           </div>
           <div className="menus">
-            <a href="/" className="link link1">
+            <Link href="/" className="link link1">
               Home
-            </a>
-            <a href="/about" className="link link2">
+            </Link>
+            <Link href="/about" className="link link2">
               About
-            </a>
+            </Link>
             <div
               className="link link3"
               onClick={() => setMobService(!mobService)}
@@ -204,13 +205,13 @@ const Header_main = () => {
             <div className={`service-list ${mobService ? "active" : ""}`}>
               <div className="list">
                 {servicelists.map((item) => (
-                  <a href={item.path} key={item.name}>
+                  <Link href={item.path} key={item.name}>
                     {item.name}
-                  </a>
+                  </Link>
                 ))}
               </div>
             </div>
-            <a href="/#home_casestudy"  onClick={() => {
+            <Link href="/#home_casestudy"  onClick={() => {
                 closeAll();
                 setNavbar((element) => ({
                   ...element,
@@ -218,14 +219,14 @@ const Header_main = () => {
                 }));
               }} className="link link4">
               Case Studies
-            </a>
+            </Link>
             
-            <a href="/blogs" className="link link5">
+            <Link href="/blogs" className="link link5">
               Blogs
-            </a>
-            <a className="btn1" href="/contact" style={{ marginTop: "20px" }}>
+            </Link>
+            <Link className="btn1" href="/contact" style={{ marginTop: "20px" }}>
               Get Started
-            </a>
+            </Link>
           </div>
         </div>
       )}
