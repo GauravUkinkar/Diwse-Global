@@ -88,7 +88,7 @@ function Service3(props) {
                                 <div className="slide-card">
                                     <div className="slide-card-img1 bg-img-cover" style={{ backgroundImage: `url(${item.image.src})` }} >
                                     </div>
-                                    <h4 className="slide-heading">{item.heading} </h4>
+                                    <h4 className="slide-heading">{item.title} </h4>
                                     <p>{item.content}
                                     </p>
                                 </div>
