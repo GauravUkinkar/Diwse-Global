@@ -152,7 +152,7 @@ export default function Home() {
       {/* 2 Section - Video section */}
       <div className="second-section" ref={videoBoxRef}>
         <div className="video-box" data-aos="fade-up">
-          <video autoPlay muted loop width="100%">
+          <video autoPlay muted loop playsInline width="100%">
             <source src="/assets/dvideo.webm" type="video/webm" />
             Your browser does not support the video tag.
           </video>
