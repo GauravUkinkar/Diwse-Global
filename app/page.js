@@ -181,7 +181,6 @@ export default function Home() {
             showButton={true}
             showImage={false}
             cardHeight="350px"
-         
           /> */}
           <Home_Card_Swiper
             cards={cardData}
