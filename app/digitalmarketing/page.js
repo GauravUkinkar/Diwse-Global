@@ -9,10 +9,12 @@ import Faq from "@/component/faq/Faq";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import Service3 from "@/component/servicesection3/Service3";
-import topimg from "../../public/assets/dgmarketing.jpg";
+import topimg from "../../public/assets/digital_marketing/d_m_third_section.webp";
 import img1 from '../../public/assets/sevice3/seo.png'
 import img2 from '../../public/assets/sevice3/content.png'
 import img3 from '../../public/assets/sevice3/social.png'
+import img4 from '../../public/assets/sevice3/EmailMarketing.svg';
+import img5 from '../../public/assets/sevice3/pay-per.svg';
 
 const page = () => {
   const [activeIndex, setActiveIndex] = useState(0);
@@ -41,39 +43,39 @@ const page = () => {
         "Captivate Your Audience. Develop high-quality, relevant content that resonates with your target audience, establishes your brand as an industry leader, and drives engagement.",
     },
   ];
-  // Swiper content\
+  // ----------Swiper content List -------\
 
 
   const list = [
     {
-      title: "Search Engine Optimization",
+      title: "Search Engine Optimisation",
       content:
-        "Boost your search rankings with our SEO expertise in keyword research, on-page optimization, and quality backlinks.",
-      image: img1
+        "Boost Your Visibility: Our expert SEO strategies help your website rank higher in search engine results, attracting organic traffic and increasing brand awareness.",
+        image: img1
+    },
+    {
+      title: "Social Media Marketing",
+      content:
+        "Engage Your Audience: Connect with your target audience on popular social media platforms, build brand loyalty, and drive traffic to your website.",
+      image: img3
     },
     {
       title: "Content Marketing",
       content:
-        "Engage your audience with impactful content, including blogs, infographics, and videos that build brand authority.",
+        "Create Value: Develop high-quality, engaging content that attracts, informs, and converts your audience into customers.",
       image: img2
     },
     {
-      title: "Social Media Management",
+      title: "Email Marketing",
       content:
-        "Elevate your social media presence with tailored posts and targeted ads on platforms like Facebook, Instagram, and LinkedIn.",
-      image: img3
+        "Nurture Relationships: Build lasting relationships with your customers through targeted email campaigns that deliver valuable content and drive conversions.",
+      image: img4
     },
     {
-      title: "Social Media Management",
+      title: "Pay-Per-Click Advertising",
       content:
-        "Elevate your social media presence with tailored posts and targeted ads on platforms like Facebook, Instagram, and LinkedIn.",
-      image: img1
-    },
-    {
-      title: "Social Media Management",
-      content:
-        "Elevate your social media presence with tailored posts and targeted ads on platforms like Facebook, Instagram, and LinkedIn.",
-      image: img1
+        "Achieve Immediate Results: Leverage paid advertising to reach your target audience quickly, drive traffic to your website, and generate leads or sales.",
+      image: img5
     }
   ];
 
@@ -137,6 +139,8 @@ const page = () => {
 
       <div className="service-detail-parent parent">
         <div className="service-detail-cont cont">
+          {/* ------------------TOP---------------- */}
+
           <div className="top">
             <h3 className="heading">
               Expert Digital Marketing for
@@ -147,7 +151,7 @@ const page = () => {
               DIwise Global offers expert digital marketing services tailored to help your business stand out on a global scale. Our deep understanding of SEO and cutting-edge techniques ensure that your brand is visible, relevant, and engaging to international audiences. We leverage global trends and insights to deliver results that drive growth and impact.
             </p>
           </div>
-
+          {/* ------------------Middle---------------- */}
           <div className="middle">
             <div className="left">
               <div className="back-image bg-img-cover"></div>
@@ -170,13 +174,13 @@ const page = () => {
               ))}
             </div>
           </div>
-
+          {/* ------------------BOTTOM---------------- */}
           <div className="bottom">
             <div className="left">
               <h5 className="left-heding">
                 <span className="gradient-text">Effective Ad</span> Campaigns
               </h5>
-              <p>
+              <p className="bootom-section-para">
                 Maximise Reach: Implement targeted advertising campaigns across various platforms to reach your ideal audience, drive conversions, and increase brand awareness.
               </p>
             </div>
@@ -185,7 +189,7 @@ const page = () => {
               <h5 className="left-heding">
                 <span className="gradient-text">Comprehensive</span> Analysis
               </h5>
-              <p>
+              <p className="bootom-section-para">
                 Measure and Improve: Conduct regular analysis of your marketing campaigns to track performance, identify areas for improvement, and make data-driven adjustments to optimise your overall digital strategy.
               </p>
             </div>
@@ -196,7 +200,7 @@ const page = () => {
       <Service3
         contbgimg={topimg}
         list={list}
-       
+
       />
 
       <div className="service-faq-parent parent">

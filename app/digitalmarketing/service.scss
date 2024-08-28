@@ -74,7 +74,7 @@
 
       
       &.digitalmarketing{
-        background-image: url("../../public/assets/dm/dm-hero.webp");
+        background-image: url("../../public/assets/digital_marketing/d_m_hero.webp");
         // background-color: red;
       }
 
@@ -86,10 +86,12 @@
         background-image: url("../../public/assets/businessSetupAndConsulting/herosection.webp");
       }
       &.relationoutreach{
-        background-image: url("../../public/assets/publicRelationOutreach/secondsection.webp");
+        background-image: url("../../public/assets/public_relation_outreach/public_relation_hero.webp");
       }
+
+      // web developement
       &.web-image{
-        background-image: url("../../public/assets/businessSetupAndConsulting/herosection.webp");
+        background-image: url("../../public/assets/web-development/web_hero.jpg");
       }
 
       // .right-img-box {
@@ -240,20 +242,42 @@
           width: 90%;
           height: 90%;
           // background-color: yellow;
-          background-image: url("../../public/assets/image2.jpg");
+          background-image: url("../../public/assets/digital_marketing/d_m_front.webp");
           border-radius: var(--unit);
+
+          // webdevelopment
+
+          &.web-back-image{
+            background-image: url("../../public/assets/web-development/coderteam.webp");
+          }
+
+          // publicrelationoutreach
+          &.public_back{
+            background-image: url("../../public/assets/public_relation_outreach/public_relation_back.webp");
+          }
         }
 
         .front-image {
           width: 50%;
           height: 60%;
           // background-color: white;
-          background-image: url("../../public/assets/image3.jpg");
+          background-image: url("../../public/assets/digital_marketing/d_m_back.webp");
           border-radius: var(--unit);
           position: absolute;
           right: 0;
           bottom: 0;
           box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.425);
+
+          // webdevelopment
+
+          &.web-front-image{
+            background-image: url("../../public/assets/web-development/mobileappdevelop.webp");
+          }
+
+             // publicrelationoutreach
+             &.public_front{
+              background-image: url("../../public/assets/public_relation_outreach/public_relation_front.webp");
+            }
         }
       }
 
@@ -317,6 +341,9 @@
         justify-content: flex-start;
         align-items: flex-start;
         gap: var(--unit);
+        .left-heding{
+          line-height: 120% !important;
+        }
 
         h5 {
           padding: calc(var(--unit) / 2);
@@ -430,7 +457,7 @@
       width: 50%;
       height: auto;
       // background-color: var(--white);
-      background-image: url("../../public//assets/businessSetupAndConsulting/thirdsection.webp");
+      background-image: url("../../public//assets/digital_marketing/d_m_faq.webp");
       border-radius: calc(var(--unit)/2);
 
       // .image {
@@ -440,6 +467,19 @@
       //   border-radius: calc(var(--unit)/3);
       //   transform: scale(0.95);
       // }
+
+
+      // web_faq
+
+      &.web_faq{
+        background-image: url("../../public/assets/web-development/web_faq.webp");
+      }
+
+      // public relation outreach
+
+      &.public_search_faq{
+        background-image: url("../../public/assets/public_relation_outreach/public_research_faq.webp");
+      }
 
     }
   }
@@ -553,7 +593,7 @@
 
       .para {
         width: 100% !important;
-        text-align: center !important;
+        text-align: justify !important;
       }
     }
 
@@ -566,7 +606,7 @@
 
         .left-heding {
           font-size: 22px;
-          line-height: 30px;
+          line-height: 120%;
         }
       }
 
@@ -575,7 +615,7 @@
 
         .left-heding {
           font-size: 22px;
-          line-height: 30px;
+          line-height: 120%;
         }
       }
     }
@@ -665,6 +705,32 @@
       .middle .left{
         height: 400px !important;
     }
+  
+
+.bottom{
+  .left{
+    .bootom-section-para{
+      text-align: left;
     }
   }
+  .right{
+    .bootom-section-para{
+      text-align: left;
+    }
+  }
+}
+}
+}
+
+.service-faq-parent {
+   .service-faq-cont {
+        .left {
+           .hedding {
+        font-size: 24px;
+        text-align: left;
+      }
+    }
+  }
+}
+
 }

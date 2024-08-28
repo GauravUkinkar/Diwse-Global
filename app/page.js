@@ -7,6 +7,8 @@ import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
 import { useEffect, useRef } from "react";
 import "../app/Style/home.scss";
 
+import { Autoplay } from 'swiper/modules';
+
 import Accordian from "@/component/accordian/Accordian";
 import Contact from "@/component/contact/Contact";
 import Home_Card_Swiper from "@/component/home/home_card_swiper";
@@ -16,16 +18,15 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import img1 from "../public/assets/home/axonic.jpg";
 import img2 from "../public/assets/home/Travel-and-Taste.jpg";
 import img3 from "../public/assets/home/hcc.jpg";
-import img4 from "../public/assets/home/onkar-wrold.jpg";
-
-
-
+import img4 from "../public/assets/home/onkar.webp";
+import "swiper/swiper-bundle.css";
 
 import Head from "next/head";
 import { FaSearchengin } from "react-icons/fa";
 import { MdBrandingWatermark, MdDeveloperMode } from "react-icons/md";
 import { SiWikimediafoundation } from "react-icons/si";
 import { TbBusinessplan } from "react-icons/tb";
+import New_home from "@/component/home/new_home";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -34,31 +35,36 @@ export default function Home() {
     {
       icon: <FaSearchengin />,
       title: "Digital Marketing & SEO",
-      description: "Elevate your online presence. From crafting engaging content and managing your social media, we'll drive global visibility and engagement.",
+      description:
+        "Elevate your online presence. From crafting engaging content and managing your social media, we'll drive global visibility and engagement.",
       buttonText: "Get Started",
     },
     {
       icon: <MdDeveloperMode />,
       title: "Web & App Development",
-      description: "Bring your digital vision to life. We specialise in creating user-friendly, responsive designs that leverage the latest technology to meet your business needs.",
+      description:
+        "Bring your digital vision to life. We specialise in creating user-friendly, responsive designs that leverage the latest technology to meet your business needs.",
       buttonText: "Get Started",
     },
     {
       icon: <MdBrandingWatermark />,
       title: "Branding & Creative Services",
-      description: "Make Your Brand Unforgettable. Our team of creative experts will design your logo, develop your brand story, and produce engaging multimedia content.",
+      description:
+        "Make Your Brand Unforgettable. Our team of creative experts will design your logo, develop your brand story, and produce engaging multimedia content.",
       buttonText: "Get Started",
     },
     {
       icon: <TbBusinessplan />,
       title: "Business Setup & Consulting",
-      description: "Expand your business globally. We offer comprehensive support, from developing effective market entry strategies to providing ongoing operational consulting.",
+      description:
+        "Expand your business globally. We offer comprehensive support, from developing effective market entry strategies to providing ongoing operational consulting.",
       buttonText: "Get Started",
     },
     {
       icon: <SiWikimediafoundation />,
       title: "Public Relations & Media Outreach",
-      description: "Manage Your Reputation Globally. We help you build and maintain a positive brand reputation across multiple markets, ensuring effective communication.",
+      description:
+        "Manage Your Reputation Globally. We help you build and maintain a positive brand reputation across multiple markets, ensuring effective communication.",
       buttonText: "Get Started",
     },
   ];
@@ -68,8 +74,8 @@ export default function Home() {
   useEffect(() => {
     // Initialize AOS
     AOS.init({
-      duration: 1000, // Adjust the duration as needed
-      once: false, // Whether animation should happen only once - while scrolling down
+      duration: 1000,
+      once: false,
     });
 
     // GSAP animation for video section
@@ -103,21 +109,21 @@ export default function Home() {
       content:
         "DIwise powered Travel and Taste's digital transformation, enabling them to offer unforgettable culinary experiences and personalised travel itineraries.",
       imgage: img2,
-      url: "/Casestudy/travel", 
+      url: "/Casestudy/travel",
     },
     {
       title: "Healthcare Concierge Shakes hand to medical tourism digitally",
       content:
         "DIwise played a crucial role in digitising healthcare concierge services, facilitating seamless medical tourism experiences for patients worldwide.",
       imgage: img3,
-      url: "/Casestudy/hcc", 
+      url: "/Casestudy/hcc",
     },
     {
       title: "Trading the best of the world, Onkar World’s Digital Partner",
       content:
         "DIwise partnered with Onkar World to enhance their online presence and drive global trade through effective digital marketing strategies.",
       imgage: img4,
-      url: "/Casestudy/onkar", 
+      url: "/Casestudy/onkar",
     },
   ];
   return (
@@ -133,7 +139,8 @@ export default function Home() {
         />
       </Head>
       {/* 1 Section - One side text and one side 3D model */}
-      <Home_main />
+      {/* <Home_main /> */}
+      <New_home />
 
       {/* 2 Section - Video section */}
       <div className="second-section" ref={videoBoxRef}>
@@ -154,22 +161,43 @@ export default function Home() {
       <div className="fourth-section parent" data-aos="fade-down">
         <div className="fourth-section-cont cont">
           <h3 className="title">
-            Comprehensive Solutions for <br /> <span className="gradient-text">Global Success</span>
+            Comprehensive Solutions for <br />{" "}
+            <span className="gradient-text">Global Success</span>
           </h3>
-          <p className="desc" >
-            At Diwise Global, we provide a full suite of services to elevate your business on the world stage. From crafting compelling brand identities to guiding you through international business setup and managing global PR, our expertise ensures your success across all markets.
+          <p className="desc">
+            At Diwise Global, we provide a full suite of services to elevate
+            your business on the world stage. From crafting compelling brand
+            identities to guiding you through international business setup and
+            managing global PR, our expertise ensures your success across all
+            markets.
           </p>
-          <Home_Card_Swiper cards={cardData} showButton={true} showImage={false} cardHeight="300px" />
+          <Home_Card_Swiper
+            cards={cardData}
+            showButton={true}
+            showImage={false}
+            cardHeight="300px"
+          />
         </div>
       </div>
 
       {/* 5th Section - Swiper section */}
-      <div id="home_casestudy" className="fifth-section parent" data-aos="fade-up">
+      <div
+        id="home_casestudy"
+        className="fifth-section parent"
+        data-aos="fade-up"
+      >
         <Swiper
           className="mySwiper"
           spaceBetween={10}
           centeredSlides={true}
           slidesPerView={1.8}
+          autoplay={{
+            delay: 5000,
+            disableOnInteraction: false,
+          }}
+       
+          navigation={false}
+          modules={[Autoplay]}
           breakpoints={{
             1100: {
               centeredSlides: true,
@@ -185,12 +213,18 @@ export default function Home() {
           }}
         >
           {caseStudies.map((item, index) => (
-            <SwiperSlide className="bg-img-cover"  key={index}>
-              
-              <div className="image scroll"  style={{ background:`url(${item.imgage.src})` }} >
+            <SwiperSlide className="bg-img-cover" key={index}>
+              <div
+                className="image scroll"
+                style={{ background: `url(${item.imgage.src})` }}
+              >
                 <div className="overlay"></div>
-                <a href={item.url} className="case-btn">View</a>
-                <h4><span className="gradient-text"></span> {item.title}</h4>
+                <a href={item.url} className="case-btn">
+                  View
+                </a>
+                <h4>
+                  <span className="gradient-text"></span> {item.title}
+                </h4>
                 <p>{item.content}</p>
               </div>
             </SwiperSlide>

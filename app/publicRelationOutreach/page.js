@@ -128,8 +128,8 @@ const page = () => {
 
           <div className="middle">
             <div className="left">
-              <div className="back-image bg-img-cover"></div>
-              <div className="front-image bg-img-cover"></div>
+              <div className="back-image public_back bg-img-cover"></div>
+              <div className="front-image public_front bg-img-cover"></div>
             </div>
             <div className="right">
               {serviceDetails.map((item) => (
@@ -147,14 +147,14 @@ const page = () => {
           <div className="bottom">
             <div className="left">
               <h5 className="left-heding"><span className="gradient-text">Global PR</span> Strategy</h5>
-              <p>
+              <p  className="bootom-section-para" >
               Elevate Your Global Brand. Our experts develop tailored PR strategies that resonate across cultures, ensuring your brand maintains a positive image and effectively reaches international audiences.
               </p>
             </div>
 
             <div className="right">
               <h5 className="left-heding"><span className="gradient-text">Media </span> Training</h5>
-              <p>
+              <p  className="bootom-section-para" >
               Empower Your Spokespeople. Prepare your team for media interactions with our expert training programs. We equip your spokespeople with the skills to represent your brand confidently and effectively in any market.
               </p>
             </div>
@@ -186,7 +186,7 @@ const page = () => {
               />
             ))}
           </div>
-          <div className="right bg-img-cover">
+          <div className="right public_search_faq bg-img-cover">
             {/* <div className="image">
 
             </div> */}
