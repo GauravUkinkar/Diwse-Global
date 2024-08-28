@@ -42,7 +42,7 @@ function Service3(props) {
 
 
                     <Swiper
-                        spaceBetween={30}
+                        spaceBetween={50}
                         centeredSlides={false}
                         slidesPerView={3}
                         autoplay={{
@@ -74,16 +74,21 @@ function Service3(props) {
                               slidesPerView: 3,
                               spaceBetween: 50,
                             },
+                            1200: {
+                                slidesPerView: 3,
+                                spaceBetween: 50,
+                              },
                           }}
                         pagination={{
-                            clickable: false,
+                            clickable: true,
                         }}
-                        navigation={true}
-                        modules={[Autoplay,  Navigation]}
+                        navigation={false}
+                        modules={[Autoplay, Pagination, Navigation]}
                         className="mySwiper"
                     >
 
-                        {props.list.map((item) => (
+                   
+                      {props.list.map((item) => (
                             <SwiperSlide >
                                 <div className="slide-card">
                                     <div className="slide-card-img1 bg-img-cover" style={{ backgroundImage: `url(${item.image.src})` }} >
@@ -96,6 +101,7 @@ function Service3(props) {
                             </SwiperSlide>
                         ))
                         }
+                    
                     </Swiper>
 
                 </div>

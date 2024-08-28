@@ -49,7 +49,7 @@ const page = () => {
       title: "Search Engine Optimization",
       content:
         "Boost your search rankings with our SEO expertise in keyword research, on-page optimization, and quality backlinks.",
-      image: img1
+        image: img1
     },
     {
       title: "Content Marketing",
