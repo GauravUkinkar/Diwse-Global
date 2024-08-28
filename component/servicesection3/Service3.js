@@ -80,14 +80,15 @@ function Service3(props) {
                               },
                           }}
                         pagination={{
-                            clickable: false,
+                            clickable: true,
                         }}
-                        navigation={true}
-                        modules={[Autoplay,  Navigation]}
+                        navigation={false}
+                        modules={[Autoplay, Pagination, Navigation]}
                         className="mySwiper"
                     >
 
-                        {props.list.map((item) => (
+                   
+                      {props.list.map((item) => (
                             <SwiperSlide >
                                 <div className="slide-card">
                                     <div className="slide-card-img1 bg-img-cover" style={{ backgroundImage: `url(${item.image.src})` }} >
@@ -100,6 +101,7 @@ function Service3(props) {
                             </SwiperSlide>
                         ))
                         }
+                    
                     </Swiper>
 
                 </div>
