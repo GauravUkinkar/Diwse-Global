@@ -10,7 +10,7 @@ import Faq from "@/component/faq/Faq";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import img1 from '../../public/assets/sevice3/social.png';
-import topimg from '../../public/assets/public-relation.jpg'
+import topimg from '../../public/assets/web-development/web_third_section.webp'
 import Service3 from "@/component/servicesection3/Service3";
 const page = () => {
   
@@ -54,37 +54,37 @@ const page = () => {
     {
       title: "UI/UX Design",
       content:
-        "Crafting intuitive and visually appealing user interfaces and experiences that enhance usability, engagement, and customer satisfaction across websites and mobile apps.",
+        "Crafting intuitive and appealing user interfaces and experiences that enhance usability and customer satisfaction across websites and mobile apps.",
         image: img1
     },
     {
       title: "E-commerce Solutions",
       content:
-        "Developing and integrating secure, scalable ecommerce platforms with features like shopping carts, payment gateways, and inventory management systems.",
+        "Developing secure, scalable ecommerce platforms with features like shopping carts, payment gateways, and inventory management systems.",
         image: img1
     },
   ];
 
   const faqContent = [
     {
-      title: "Expert Development Team",
+      title: "What is the web development process ?",
       content:
-        "Work with experienced developers who specialize in creating high-quality web and mobile solutions.",
+        "The process involves discovery, design, development, testing, launch, and maintenance.",
     },
     {
-      title: "Focus on UX",
+      title: "How long does it take to develop a website ?",
       content:
-        "Benefit from our commitment to delivering exceptional user experiences that enhance engagement and satisfaction.",
+        "The timeline depends on complexity and specific requirements. Smaller sites may take a few weeks, while larger ones can take several months.",
     },
     {
-      title: "Innovative Technology",
+      title: "What are the different types of websites ?",
       content:
-        "Utilize the latest technology to ensure your web and app solutions are cutting-edge and future-proof.",
+        "Static, dynamic, e-commerce, and CMS websites.",
     },
     {
-      title: "Comprehensive Services",
+      title: "How much does web development cost ?",
       content:
-        "Enjoy end-to-end development services, from initial concept and design to final deployment and support.",
+        "The cost depends on factors like complexity, features, design, and developer experience. Request a quote for an accurate estimate.",
     },
   ];
 
@@ -127,8 +127,8 @@ const page = () => {
 
           <div className="middle">
             <div className="left">
-              <div className="back-image web-image bg-img-cover" data-aos="fade-up" data-aos-delay="600" data-aos-duration="1000"></div>
-              <div className="front-image bg-img-cover" data-aos="fade-up" data-aos-delay="800" data-aos-duration="1000"></div>
+              <div className="back-image web-back-image bg-img-cover" data-aos="fade-up" data-aos-delay="600" data-aos-duration="1000"></div>
+              <div className="front-image web-front-image bg-img-cover" data-aos="fade-up" data-aos-delay="800" data-aos-duration="1000"></div>
             </div>
             <div className="right">
               {serviceDetails.map((item) => (
@@ -174,7 +174,8 @@ const page = () => {
           <div className="left">
 
             <h4 className="hedding">
-            Why Choose Diwise Global for <span className="gradient-text">Web & App Development?</span>
+           
+             FAQs for Web & App <span className="gradient-text">Development Services</span>
             </h4>
             {faqContent.map((item, index) => (
               <Faq
