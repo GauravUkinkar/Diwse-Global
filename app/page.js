@@ -192,6 +192,10 @@ export default function Home() {
             display="grid"
             Icongridarea="1/1/2/2"
             titlegridarea="1/2/2/4"
+            titleLineHeight="120%"
+            titleCenter="center"
+            titleHeight="100%"
+            titledisplay="flex"
           />
         </div>
       </div>
@@ -210,6 +214,7 @@ export default function Home() {
           autoplay={{
             delay: 5000,
             disableOnInteraction: false,
+            pauseOnMouseEnter: true,
           }}
           navigation={false}
           modules={[Autoplay]}
@@ -226,6 +231,7 @@ export default function Home() {
               slidesPerView: 1,
             },
           }}
+     
         >
           {caseStudies.map((item, index) => (
             <SwiperSlide className="bg-img-cover" key={index}>
