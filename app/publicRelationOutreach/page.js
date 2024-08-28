@@ -59,7 +59,7 @@ const page = () => {
         image: img2
     },
     {
-      title: "Event Coordination and Promotion",
+      title: "Event Coordination",
       content:
         "Create Memorable Experiences. Our event planning experts will organise and promote impactful events to generate media coverage and public interest.",
         image: img3
@@ -222,6 +222,7 @@ const page = () => {
         <div className="service-faq-cont cont">
           <div className="left">
             <h4 className="hedding">
+            
               FAQs for Public Relations &{" "}
               <span className="gradient-text">Media Outreach Services</span>
             </h4>
