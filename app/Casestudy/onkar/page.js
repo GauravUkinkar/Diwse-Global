@@ -7,6 +7,12 @@ import { LuDot } from "react-icons/lu";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import About_card_swiper from "@/component/about/About_card_swiper";
+import onkars from "../../../public/assets/img/onkar.png";
+import onkar1 from "../../../public/assets/img/onka_1.webp";
+import onkar2 from "../../../public/assets/img/onka_2.webp";
+import onkar3 from "../../../public/assets/img/onka_3.webp";
+import onkar4 from "../../../public/assets/img/onka_4.webp";
+import onkar5 from "../../../public/assets/img/onka_5.webp";
 
 const page = () => {
   const caseStudy = useRef();
@@ -23,6 +29,27 @@ const page = () => {
     "Innovative approaches and cutting-edge digital solutions.",
     "Client focus is key, as your success is our top priority.",
     "Transparent and open communication at every step.",
+  ];
+
+  const onkarImage = [
+    {
+      image: onkars,
+    },
+    {
+      image: onkar1,
+    },
+    {
+      image: onkar2,
+    },
+    {
+      image: onkar3,
+    },
+    {
+      image: onkar4,
+    },
+    {
+      image: onkar5,
+    },
   ];
 
   return (
@@ -54,7 +81,7 @@ const page = () => {
 
       <div className="case-study-second parent" ref={caseStudyTrigger}>
         <div
-          className="case-study-second-cont top-img cont bg-img-cover"
+          className="case-study-second-cont onkar-top-img cont bg-img-cover"
           ref={caseStudy}
           data-aos="fade-up"
           data-aos-delay="600"
@@ -135,7 +162,7 @@ const page = () => {
           </div>
         </div>
       </div>
-      <About_card_swiper />
+      <About_card_swiper swiperImg={onkarImage} />
     </>
   );
 };

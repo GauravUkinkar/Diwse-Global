@@ -7,6 +7,11 @@ import { LuDot } from "react-icons/lu";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import About_card_swiper from "@/component/about/About_card_swiper";
+import hccs from "../../../public/assets/img/hcc.png";
+import hcc_about from "../../../public/assets/img/hcc_about.webp";
+import hcc_fb from "../../../public/assets/img/hcc_fb.webp";
+import hcc_insta from "../../../public/assets/img/hcc_insta.webp";
+import hcc_link from "../../../public/assets/img/hcc_link.webp";
 
 const page = () => {
   const caseStudy = useRef();
@@ -25,17 +30,45 @@ const page = () => {
     "Transparent and open communication at every step.",
   ];
 
+  const hccImages = [
+    {
+      image: hccs,
+    },
+    {
+      image: hcc_about,
+    },
+    {
+      image: hcc_fb,
+    },
+    {
+      image: hcc_insta,
+    },
+    {
+      image: hcc_link,
+    },
+  ];
+
   return (
     <>
       <div className="case-study-page parent">
         <div className="case-study-page-cont cont">
           <h3 className="case-heading" data-aos="fade-up">
-           
-            <span className="gradient-text"><a href="https://www.healthcareconcierge.net/" target="_blank"> Healthcare Concierge </a></span> Shakes hand to medical tourism digitally
-
+            <span className="gradient-text">
+              <a href="https://www.healthcareconcierge.net/" target="_blank">
+                {" "}
+                Healthcare Concierge{" "}
+              </a>
+            </span>{" "}
+            Shakes hand to medical tourism digitally
           </h3>
           <p className="case-para" data-aos="fade-up" data-aos-delay="200">
-          DIwise played a pivotal role in transforming Healthcare Concierge's services into a digital-first experience. By leveraging cutting-edge technology, we streamlined their operations, enhanced patient engagement, and facilitated seamless medical tourism experiences for patients worldwide. Our solutions helped Healthcare Concierge provide exceptional care and convenience to patients seeking medical treatments abroad.
+            DIwise played a pivotal role in transforming Healthcare Concierge's
+            services into a digital-first experience. By leveraging cutting-edge
+            technology, we streamlined their operations, enhanced patient
+            engagement, and facilitated seamless medical tourism experiences for
+            patients worldwide. Our solutions helped Healthcare Concierge
+            provide exceptional care and convenience to patients seeking medical
+            treatments abroad.
           </p>
           <div data-aos="fade-up" data-aos-delay="400">
             <Button_comp btn_text="Get Started" />
@@ -45,7 +78,7 @@ const page = () => {
 
       <div className="case-study-second parent" ref={caseStudyTrigger}>
         <div
-          className="case-study-second-cont top-img cont bg-img-cover"
+          className="case-study-second-cont hcc-top-img cont bg-img-cover"
           ref={caseStudy}
           data-aos="fade-up"
           data-aos-delay="600"
@@ -56,14 +89,18 @@ const page = () => {
         <div className="case-study-third-cont cont">
           <div className="top">
             <h4 className="heading" data-aos="fade-up" data-aos-delay="200">
-            Proven Results with <span className="gradient-text">DIwise</span>
+              Proven Results with <span className="gradient-text">DIwise</span>
             </h4>
           </div>
 
           <div className="middle">
             <div className="left" data-aos="fade-up" data-aos-delay="300">
               <p className="middlepara">
-              Our commitment to excellence has enabled us to deliver exceptional results for Healthcare Concierge, solidifying our reputation as a trusted partner in the digital healthcare industry. Our dedication to excellence has solidified our reputation as a trusted partner in the travel industry.
+                Our commitment to excellence has enabled us to deliver
+                exceptional results for Healthcare Concierge, solidifying our
+                reputation as a trusted partner in the digital healthcare
+                industry. Our dedication to excellence has solidified our
+                reputation as a trusted partner in the travel industry.
               </p>
             </div>
             <div className="btnlist" data-aos="fade-up" data-aos-delay="400">
@@ -71,8 +108,6 @@ const page = () => {
               <div className="case-btn">Web Development</div>
               <div className="case-btn">Lead Generation Campaigns</div>
               <div className="case-btn">Branding & Creative Services</div>
-              
-              
             </div>
           </div>
 
@@ -84,19 +119,34 @@ const page = () => {
 
       <div className="fifth-parent parent">
         <div className="fifth-section-cont cont ">
-          <div className="left section-img bg-img-cover" data-aos="fade-up" data-aos-delay="200"></div>
+          <div
+            className="left section-img bg-img-cover"
+            data-aos="fade-up"
+            data-aos-delay="200"
+          ></div>
           <div className="right" data-aos="fade-up" data-aos-delay="400">
             <h3 className="fifth-section-heading">
-            Why <span className="gradient-text">Clients Trust DIwise</span>
+              Why <span className="gradient-text">Clients Trust DIwise</span>
             </h3>
             <p className="fifth-section-para">
-            At DIwise, we believe in building strong partnerships based on mutual understanding and trust. By deeply understanding our clients' unique goals, stories, and perspectives, we develop customised strategies that deliver exceptional results.
+              At DIwise, we believe in building strong partnerships based on
+              mutual understanding and trust. By deeply understanding our
+              clients' unique goals, stories, and perspectives, we develop
+              customised strategies that deliver exceptional results.
             </p>
 
             <div className="list-item">
-              <p>Here are a few other things that might make us popular among our clients:</p>
+              <p>
+                Here are a few other things that might make us popular among our
+                clients:
+              </p>
               {listItem.map((item, index) => (
-                <p className="listItem" data-aos="fade-up" data-aos-delay={600 + index * 100} key={index}>
+                <p
+                  className="listItem"
+                  data-aos="fade-up"
+                  data-aos-delay={600 + index * 100}
+                  key={index}
+                >
                   <span>
                     <LuDot />
                   </span>
@@ -107,10 +157,9 @@ const page = () => {
           </div>
         </div>
       </div>
-      <About_card_swiper />
+      <About_card_swiper swiperImg={hccImages} />
     </>
   );
 };
 
 export default page;
- 

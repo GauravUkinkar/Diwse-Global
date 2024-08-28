@@ -28,6 +28,7 @@ import { SiWikimediafoundation } from "react-icons/si";
 import { TbBusinessplan } from "react-icons/tb";
 import New_home from "@/component/home/new_home";
 import { Toaster } from "react-hot-toast";
+import nimg from "../public/assets/icons/navIcon/Dcoument.png"
 
 gsap.registerPlugin(ScrollTrigger);
 

@@ -7,7 +7,11 @@ import { LuDot } from "react-icons/lu";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import About_card_swiper from "@/component/about/About_card_swiper";
-
+import axonic_facebook from "../../../public/assets/img/facebook_axon.webp"
+import axonic_insta from "../../../public/assets/img/axonic_insta.webp"
+import axonic_2 from "../../../public/assets/img/axon_2.webp"
+import Axonic from "../../../public/assets/img/Axonic.png"
+import Axon from "../../../public/assets/img/axon.webp"
 const page = () => {
   const caseStudy = useRef();
   const caseStudyTrigger = useRef();
@@ -24,6 +28,25 @@ const page = () => {
     "Client focus is key, as your success is our top priority.",
     "Transparent and open communication at every step.",
   ];
+
+
+  const axonicImage = [
+    {
+      image: axonic_facebook,
+    },
+    {
+      image: axonic_insta,
+    },
+    {
+      image: axonic_2,
+    },
+    {
+      image: Axonic,
+    },
+    {
+      image: Axon,
+    },
+  ]
 
   return (
     <>
@@ -135,7 +158,7 @@ const page = () => {
           </div>
         </div>
       </div>
-      <About_card_swiper />
+      <About_card_swiper swiperImg={axonicImage} />
     </>
   );
 };

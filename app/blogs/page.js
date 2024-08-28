@@ -1,8 +1,9 @@
 "use client";
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import "./blog.scss";
 import Blog_Details from "@/component/blog/Blog_Details";
 import axios from "axios";
+import Link from "next/link";
 
 // Sample blog data array
 const blogData = [
@@ -108,13 +109,21 @@ const Blogs = () => {
     setBlogs(blogData.slice(0, newblog));
   };
 
+  const [data, setdata] = useState([]);
   const fetchBlogs = async () => {
     try {
-      const response = await axios.post();
+      const response = await axios.get(
+        "https://api.diwiseglobal.com/auth/blogs/"
+      );
+      setdata(response.data.data);
     } catch (err) {
       console.log(err);
     }
   };
+
+  useEffect(() => {
+    fetchBlogs();
+  }, []);
   return (
     <>
       <div className="blog-parent-b  parent">
@@ -134,24 +143,28 @@ const Blogs = () => {
       <div className="blog-parent parent">
         <div className="blog-cont cont">
           <div className="card-box">
-            {blogs.map((blog) => (
-              <a href={blog.link} className="card-link" key={blog.id}>
-                <div className="card">
-                  <div className="card-data">
-                    <div
-                      className="card-image bg-img-cover"
-                      style={{ backgroundImage: `url(${blog.image})` }}
-                    ></div>
-                    <h4 className="card-title">{blog.title}</h4>
-                    <p className="short-desc">{blog.description}</p>
+            {data &&
+              data.map((blog) => (
+                <Link href={`/blogdetail/${blog.id}`} className="card-link" key={blog.id}>
+                  <div className="card">
+                    <div className="card-data">
+                      <div
+                        className="card-image bg-img-cover"
+                        style={{ backgroundImage: `url(${blog.image})` }}
+                      ></div>
+                      <h4 className="card-title">{blog.title}</h4>
+                      <p
+                        className="short-desc"
+                        dangerouslySetInnerHTML={{ __html: blog.description.slice(0,150) }}
+                      ></p>
+                    </div>
+                    <div className="bottom-card">
+                      <div className="category">{blog.category}</div>
+                      <div className="date">{blog.date}</div>
+                    </div>
                   </div>
-                  <div className="bottom-card">
-                    <div className="category">{blog.category}</div>
-                    <div className="date">{blog.date}</div>
-                  </div>
-                </div>
-              </a>
-            ))}
+                </Link>
+              ))}
           </div>
           {visibleblog < blogData.length && (
             <div className="load-more">
@@ -162,7 +175,6 @@ const Blogs = () => {
           )}
         </div>
       </div>
-      <Blog_Details />
     </>
   );
 };

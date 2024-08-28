@@ -9,8 +9,16 @@ import Faq from "@/component/faq/Faq";
 
 import AOS from "aos";
 import "aos/dist/aos.css";
-import img1 from '../../public/assets/sevice3/social.png';
+
+
 import topimg from '../../public/assets/web-development/web_third_section.jpeg'
+
+import img1 from '../../public/assets/web-development/CustomWebsiteDevelopment.svg';
+import img2 from '../../public/assets/web-development/UXDesign.svg';
+import img3 from '../../public/assets/web-development/E-commerceSolutions.svg';
+
+
+
 import Service3 from "@/component/servicesection3/Service3";
 const page = () => {
   
@@ -55,13 +63,13 @@ const page = () => {
       title: "UI/UX Design",
       content:
         "Crafting intuitive and appealing user interfaces and experiences that enhance usability and customer satisfaction across websites and mobile apps.",
-        image: img1
+        image: img2
     },
     {
       title: "E-commerce Solutions",
       content:
         "Developing secure, scalable ecommerce platforms with features like shopping carts, payment gateways, and inventory management systems.",
-        image: img1
+        image: img3
     },
   ];
 
