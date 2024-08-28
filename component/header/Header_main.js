@@ -213,9 +213,16 @@ const Header_main = () => {
                 ))}
               </div>
             </div>
-            <a href="/#home_casestudy" className="link link4">
+            <a href="/#home_casestudy"  onClick={() => {
+                closeAll();
+                setNavbar((element) => ({
+                  ...element,
+                  mobNav: false,
+                }));
+              }} className="link link4">
               Case Studies
             </a>
+            
             <a href="/blogs" className="link link5">
               Blogs
             </a>
