@@ -102,7 +102,7 @@ const blogData = [
 
 const Blogs = () => {
   const [visibleblog, setVisibleBlogs] = useState(3);
-  const [blogs, setBlogs] = useState(blogData.slice(0, 6));
+
   const active = () => {
     const newblog = visibleblog + 3;
     setVisibleBlogs(newblog);
@@ -144,8 +144,12 @@ const Blogs = () => {
         <div className="blog-cont cont">
           <div className="card-box">
             {data &&
-              data.map((blog) => (
-                <Link href={`/blogdetail/${blog.id}`} className="card-link" key={blog.id}>
+              data.slice(0, visibleblog).map((blog) => (
+                <Link
+                  href={`/blogdetail/${blog.id}`}
+                  className="card-link"
+                  key={blog.id}
+                >
                   <div className="card">
                     <div className="card-data">
                       <div
@@ -155,8 +159,11 @@ const Blogs = () => {
                       <h4 className="card-title">{blog.title}</h4>
                       <p
                         className="short-desc"
-                        dangerouslySetInnerHTML={{ __html: blog.description.slice(0,150) }}
-                      ></p>
+                        dangerouslySetInnerHTML={{
+                          __html: blog.description.slice(0, 150),
+                        }}
+                      >
+                      </p>
                     </div>
                     <div className="bottom-card">
                       <div className="category">{blog.category}</div>
