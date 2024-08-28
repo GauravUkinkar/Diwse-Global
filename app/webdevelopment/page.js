@@ -127,7 +127,7 @@ const page = () => {
 
           <div className="middle">
             <div className="left">
-              <div className="back-image bg-img-cover" data-aos="fade-up" data-aos-delay="600" data-aos-duration="1000"></div>
+              <div className="back-image web-image bg-img-cover" data-aos="fade-up" data-aos-delay="600" data-aos-duration="1000"></div>
               <div className="front-image bg-img-cover" data-aos="fade-up" data-aos-delay="800" data-aos-duration="1000"></div>
             </div>
             <div className="right">
