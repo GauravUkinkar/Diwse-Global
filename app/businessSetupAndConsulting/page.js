@@ -57,7 +57,7 @@ const page = () => {
     {
       title: "Company Formation and Registration",
       content:
-        "Establish Your Business. Let us guide you through the legal and administrative processes of setting up your new business.",
+        "Establish Your Business. Let us guide you through the legal and administrative processes of setting up your new business in the market.",
       image: img1
     },
     {

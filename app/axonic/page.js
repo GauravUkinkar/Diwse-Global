@@ -10,7 +10,6 @@ import About_card_swiper from "@/component/about/About_card_swiper";
 
 
 function axonic() {
-
   const listItem = [
     "Custom Strategies: Tailored to your unique goals.",
     "Global Reach: Experience across multiple markets.",
@@ -21,6 +20,7 @@ function axonic() {
   ];
   const caseStudy = useRef();
   const caseStudyTrigger = useRef();
+
 
   return (
     <>
@@ -98,19 +98,19 @@ function axonic() {
             </p>
 
             <div className="list-item">
-              {/* {listItem && listItem.map((item,index) => (
+              {listItem && listItem.map((item,index) => (
                 <p className="listItem" key={index}>
                   <span>
                     <LuDot />
                   </span>
                   {item}
                 </p>
-              ))} */}
+              ))}
             </div>
           </div>
         </div>
       </div>
-      <About_card_swiper />
+      {/* <About_card_swiper /> */}
     </>
   )
 }

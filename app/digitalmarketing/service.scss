@@ -83,7 +83,8 @@
       }
 
       &.prbranding {
-        background: url('../../public/assets/prbranding/pr-brand-hero.jpg');
+        background: url('../../public/assets/prbranding/pr-brand-hero2.jpg');
+        // background: url('../../public/assets/prbranding/pr-brand-hero.jpg');
         // background-image: url("../../public/assets/businessSetupAndConsulting/herosection.webp");
       }
 
@@ -716,8 +717,19 @@
 }
 
 @media only screen and (max-width: 500px) {
-  .service-hero-parent .service-hero-cont .left .service-p{
+  .service-hero-parent .service-hero-cont .left{ 
+  
+  .section-headding{
     text-align: center;
+  }
+  }
+
+
+  .service-hero-parent .service-hero-cont .left 
+  
+  {.service-p{
+    text-align: center;
+  }
   }
 
 
