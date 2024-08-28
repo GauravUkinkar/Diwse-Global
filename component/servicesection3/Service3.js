@@ -42,7 +42,7 @@ function Service3(props) {
 
 
                     <Swiper
-                        spaceBetween={30}
+                        spaceBetween={50}
                         centeredSlides={false}
                         slidesPerView={3}
                         autoplay={{
@@ -74,6 +74,10 @@ function Service3(props) {
                               slidesPerView: 3,
                               spaceBetween: 50,
                             },
+                            1200: {
+                                slidesPerView: 3,
+                                spaceBetween: 50,
+                              },
                           }}
                         pagination={{
                             clickable: false,
