@@ -7,12 +7,12 @@ import { motion } from "framer-motion";
 import img from "../../public/assets/home/hcc.jpg"
 
 const New_home = () => {
-//   useEffect(() => {
-//     const rightElement = document.querySelector(".right");
-//     setTimeout(() => {
-//       rightElement.classList.add("animate");
-//     }, 500);
-//   }, []);
+  useEffect(() => {
+    const rightElement = document.querySelector(".right");
+    setTimeout(() => {
+      rightElement.classList.add("animate");
+    }, 500);
+  }, []);
   return (
     <>
       <div className="home-parent parent">
@@ -60,7 +60,10 @@ const New_home = () => {
 
           {/* Right section */}
           <div className="right">
+          
+             
             <div className="img-box"></div>
+        
           </div>
         </div>
       </div>

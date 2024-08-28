@@ -7,7 +7,7 @@ import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
 import { useEffect, useRef } from "react";
 import "../app/Style/home.scss";
 
-import { Autoplay } from 'swiper/modules';
+import { Autoplay } from "swiper/modules";
 
 import Accordian from "@/component/accordian/Accordian";
 import Contact from "@/component/contact/Contact";
@@ -27,45 +27,52 @@ import { MdBrandingWatermark, MdDeveloperMode } from "react-icons/md";
 import { SiWikimediafoundation } from "react-icons/si";
 import { TbBusinessplan } from "react-icons/tb";
 import New_home from "@/component/home/new_home";
+import { Toaster } from "react-hot-toast";
+import nimg from "../public/assets/icons/navIcon/Dcoument.png"
 
 gsap.registerPlugin(ScrollTrigger);
 
 export default function Home() {
   const cardData = [
     {
-      icon: <FaSearchengin />,
+      icon: "assets/icons/navIcon/digital_marketing-1.png",
       title: "Digital Marketing & SEO",
       description:
         "Elevate your online presence. From crafting engaging content and managing your social media, we'll drive global visibility and engagement.",
       buttonText: "Get Started",
+      link:'digitalmarketing'
     },
     {
-      icon: <MdDeveloperMode />,
+      icon: "assets/icons/navIcon/Development.png",
       title: "Web & App Development",
       description:
         "Bring your digital vision to life. We specialise in creating user-friendly, responsive designs that leverage the latest technology to meet your business needs.",
       buttonText: "Get Started",
+      link:'webdevelopment'
     },
     {
-      icon: <MdBrandingWatermark />,
+      icon: "assets/icons/navIcon/digital_marketing.png",
       title: "Branding & Creative Services",
       description:
         "Make Your Brand Unforgettable. Our team of creative experts will design your logo, develop your brand story, and produce engaging multimedia content.",
       buttonText: "Get Started",
+      link:'prandbranding'
     },
     {
-      icon: <TbBusinessplan />,
+      icon: "assets/icons/navIcon/Dcoument.png",
       title: "Business Setup & Consulting",
       description:
         "Expand your business globally. We offer comprehensive support, from developing effective market entry strategies to providing ongoing operational consulting.",
       buttonText: "Get Started",
+      link:'businessSetupAndConsulting'
     },
     {
-      icon: <SiWikimediafoundation />,
+      icon: "assets/icons/navIcon/PR.png",
       title: "Public Relations & Media Outreach",
       description:
         "Manage Your Reputation Globally. We help you build and maintain a positive brand reputation across multiple markets, ensuring effective communication.",
       buttonText: "Get Started",
+      link:'publicRelationOutreach'
     },
   ];
 
@@ -145,8 +152,8 @@ export default function Home() {
       {/* 2 Section - Video section */}
       <div className="second-section" ref={videoBoxRef}>
         <div className="video-box" data-aos="fade-up">
-          <video autoPlay muted width="100%">
-            <source src="/assets/v2.mp4" type="video/mp4" />
+          <video autoPlay muted loop width="100%">
+            <source src="/assets/dvideo.webm" type="video/webm" />
             Your browser does not support the video tag.
           </video>
         </div>
@@ -161,15 +168,12 @@ export default function Home() {
       <div className="fourth-section parent" data-aos="fade-down">
         <div className="fourth-section-cont cont">
           <h3 className="title">
-            Comprehensive Solutions for <br />{" "}
-            <span className="gradient-text">Global Success</span>
+            Our Digital Suite of <br />{" "}
+            <span className="gradient-text">Services </span>
           </h3>
           <p className="desc">
-            At Diwise Global, we provide a full suite of services to elevate
-            your business on the world stage. From crafting compelling brand
-            identities to guiding you through international business setup and
-            managing global PR, our expertise ensures your success across all
-            markets.
+            Our comprehensive suite of digital services is designed to propel
+            your business to new heights, both domestically and internationally.
           </p>
           <Home_Card_Swiper
             cards={cardData}
@@ -195,7 +199,6 @@ export default function Home() {
             delay: 5000,
             disableOnInteraction: false,
           }}
-       
           navigation={false}
           modules={[Autoplay]}
           breakpoints={{
@@ -244,6 +247,8 @@ export default function Home() {
 
       {/* 8th Section - Footer */}
       {/* <Footer /> */}
+
+      <Toaster />
     </>
   );
 }

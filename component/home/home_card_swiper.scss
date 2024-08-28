@@ -47,8 +47,11 @@
           display:flex;
           flex-direction: column;
           gap:10px;
+          justify-content: flex-start;
+          align-items: flex-start;
           .icon{
-            font-size: 30px;
+           height: 50px;
+           aspect-ratio: 1;
             
           }
           .top-img{

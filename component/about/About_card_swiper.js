@@ -34,7 +34,7 @@ import img21 from "../../public/assets/img/vdmf.png";
 import img22 from "../../public/assets/img/align.png";
 import img23 from "../../public/assets/img/hcc.png";
 
-const About_card_swiper = () => {
+const About_card_swiper = (props) => {
   return (
     <div className="about-parent parent">
       <Swiper
@@ -73,136 +73,19 @@ const About_card_swiper = () => {
           },
         }}
       >
-        <SwiperSlide>
-          <Image src={img1} alt="Abhay Chopada" className="responsive-image" />
-        </SwiperSlide>
-        <SwiperSlide>
-          <Image
-            src={img2}
-            alt="Akka Foundation"
-            className="responsive-image"
-          />
-        </SwiperSlide>
-        <SwiperSlide>
-          <Image
-            src={img3}
-            alt="Prajakta Marwaha"
-            className="responsive-image"
-          />
-        </SwiperSlide>
-        <SwiperSlide>
-          <Image src={img4} alt="Travel & Taste" className="responsive-image" />
-        </SwiperSlide>
-        <SwiperSlide>
-          <Image src={img5} alt="Gastrosurgery" className="responsive-image" />
-        </SwiperSlide>
-        {/* <SwiperSlide>
-        <Image src={img6} alt="Axonic Health" className="responsive-image" />
-        </SwiperSlide> */}
-        <SwiperSlide>
-          <Image
-            src={img7}
-            alt="Arvind Patil Nilangekar"
-            className="responsive-image"
-          />
-        </SwiperSlide>
-        <SwiperSlide>
-          <Image
-            src={img8}
-            alt="Deeva Karnani Shah"
-            className="responsive-image"
-          />
-        </SwiperSlide>
-        <SwiperSlide>
-          <Image
-            src={img9}
-            alt="The Team Dental"
-            className="responsive-image"
-          />
-        </SwiperSlide>
-        <SwiperSlide>
-          <Image src={img10} alt="Onkar Sugars" className="responsive-image" />
-        </SwiperSlide>
-        <SwiperSlide>
-          <Image
-            src={img11}
-            alt="Sambhaji Patil Nilangekar"
-            className="responsive-image"
-          />
-        </SwiperSlide>
-        <SwiperSlide>
-          <Image src={img12} alt="Sai-digitek" className="responsive-image" />
-        </SwiperSlide>
-        <SwiperSlide>
-          <Image
-            src={img13}
-            alt="The Indian Journey"
-            className="responsive-image"
-          />
-        </SwiperSlide>
-        <SwiperSlide>
-          <Image
-            src={img14}
-            alt="Prashant Patil"
-            className="responsive-image"
-          />
-        </SwiperSlide>
-        <SwiperSlide>
-          <Image
-            src={img15}
-            alt="Pandoza Solutions"
-            className="responsive-image"
-          />
-        </SwiperSlide>
-        <SwiperSlide>
-          <Image
-            src={img16}
-            alt="Medical Licensing"
-            className="responsive-image"
-          />
-        </SwiperSlide>
-        <SwiperSlide>
-          <Image src={img17} alt="Diwise uk" className="responsive-image" />
-        </SwiperSlide>
-        <SwiperSlide>
-          <Image
-            src={img18}
-            alt="Shri Swami Samarth Smart City Nilanga"
-            className="responsive-image"
-          />
-        </SwiperSlide>
-        <SwiperSlide>
-          <Image src={img19} alt="NVM Infratech" className="responsive-image" />
-        </SwiperSlide>
-        <SwiperSlide>
-          <Image
-            src={img20}
-            alt="Narmada Solvent"
-            className="responsive-image"
-          />
-        </SwiperSlide>
-        <SwiperSlide>
-          <Image src={img21} alt="Vdmf" className="responsive-image" />
-        </SwiperSlide>
-        <SwiperSlide>
-          <Image
-            src={img22}
-            alt="The Aligner Dentist"
-            className="responsive-image"
-          />
-        </SwiperSlide>
-        <SwiperSlide>
-          <Image
-            src={img23}
-            alt="Healthcare concierge"
-            className="responsive-image"
-          />
-        </SwiperSlide>
+        {props.swiperImg.map((item, index) => (
+          <SwiperSlide>
+            <Image
+              key={index}
+              src={item.image}
+              alt="Image"
+              className="responsive-image"
+            />
+          </SwiperSlide>
+        ))}
       </Swiper>
     </div>
   );
-
-  vbnj;
 };
 
 export default About_card_swiper;

@@ -71,24 +71,24 @@ const page = () => {
 
   const faqContent = [
     {
-      title: "Who can benefit from your services ?",
+      title: " What's the difference between PR and marketing ?",
       content:
-        "Our services are for startups, expanding businesses, and those entering new markets.",
+        "PR focuses on relationships, while marketing promotes products.",
     },
     {
-      title: "What services do you offer ?",
+      title: "How can PR help my business grow ?",
       content:
-        "We offer company formation, business planning, regulatory compliance, market research, financial planning, operational consulting, and global expansion strategies.",
+        "PR can enhance your reputation, credibility, and visibility.",
     },
     {
-      title: "How long does a business setup take ?",
+      title: "What is media outreach ?",
       content:
-        "The timeline varies, but we strive for efficiency.",
+        "Media outreach involves contacting media outlets to pitch your stories.",
     },
     {
-      title: "Can you help with funding ?",
+      title: "How long does it take to see PR results ?",
       content:
-        "Yes, we can guide you through various funding options, including venture capital, angel investors, bank loans, grants, and crowdfunding.",
+        "Results can vary, but consistent PR efforts can yield results within a few months.",
     },
   ];
 
@@ -177,7 +177,7 @@ const page = () => {
           <div className="left">
 
             <h4 className="hedding">
-            FAQs for Public Relations &  <span className="gradient-text">Media Outreach</span>
+            FAQs for Public Relations &   <span className="gradient-text">Media Outreach Services</span>
             </h4>
             {faqContent.map((item, index) => (
               <Faq

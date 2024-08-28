@@ -53,27 +53,27 @@ const Header_main = () => {
     {
       path: "/digitalmarketing",
       name: "Digital Marketing",
-      images: "assets/digital_marketing/d_m_front.webp",
+      images: "assets/icons/navIcon/digital_marketing-1.png",
     },
     {
       path: "/businessSetupAndConsulting",
       name: "Business Setup And Consulting",
-      images: "assets/business-setup.jpg",
+      images: "assets/icons/navIcon/Dcoument.png",
     },
     {
       path: "/prandbranding",
       name: "Branding & Creative Services",
-      images: "assets/header/1.png",
+      images: "assets/icons/navIcon/digital_marketing.png",
     },
     {
       path: "/publicRelationOutreach",
       name: "Public Relation Outreach",
-      images: "assets/public-relation.jpg",
+      images: "assets/icons/navIcon/PR.png",
     },
     {
       path: "/webdevelopment",
       name: "Web Development",
-      images: "assets/web-development/mobileappdevelop.webp",
+      images: "assets/icons/navIcon/Development.png",
     },
   ];
 
@@ -154,7 +154,7 @@ const Header_main = () => {
               {servicelists.map((item) => (
                 <a href={item.path} className="link  link1">
                   <div
-                    className="top bg-img-cover"
+                    className="top bg-img-contain"
                     style={{ backgroundImage: `url(${item.images})` }}
                   ></div>
 
@@ -213,9 +213,16 @@ const Header_main = () => {
                 ))}
               </div>
             </div>
-            <a href="/#home_casestudy" className="link link4">
+            <a href="/#home_casestudy"  onClick={() => {
+                closeAll();
+                setNavbar((element) => ({
+                  ...element,
+                  mobNav: false,
+                }));
+              }} className="link link4">
               Case Studies
             </a>
+            
             <a href="/blogs" className="link link5">
               Blogs
             </a>
