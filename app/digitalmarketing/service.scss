@@ -331,6 +331,9 @@
         justify-content: flex-start;
         align-items: flex-start;
         gap: var(--unit);
+        .left-heding{
+          line-height: 120% !important;
+        }
 
         h5 {
           padding: calc(var(--unit) / 2);
@@ -580,7 +583,7 @@
 
         .left-heding {
           font-size: 22px;
-          line-height: 30px;
+          line-height: 120%;
         }
       }
 
@@ -589,7 +592,7 @@
 
         .left-heding {
           font-size: 22px;
-          line-height: 30px;
+          line-height: 120%;
         }
       }
     }
