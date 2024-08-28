@@ -195,12 +195,12 @@
 
 @media only screen and (max-width:600px) {
   .service-hero-parent {
-   
+
 
     .service-hero-cont {
- 
 
-    
+
+
 
       .right {
         width: 350px !important;
@@ -357,9 +357,10 @@
             align-items: flex-start;
             gap: calc(var(--unit) / 2);
 
-p{
-  text-align: justify !important;
-}
+            p {
+              text-align: justify !important;
+            }
+
             h5 {
               font-size: calc(var(--unit));
               line-height: 120%;
@@ -754,6 +755,13 @@ p{
 @media only screen and (max-width:500px) {
   .service-detail-parent {
     .service-detail-cont {
+      .top {
+        .para {
+          text-align: center !important;
+        }
+
+      }
+
       .middle .left {
         height: 400px !important;
       }
@@ -786,4 +794,7 @@ p{
     }
   }
 
+  .service-detail-parent .service-detail-cont .middle .right .content .right p {
+    text-align: left !important;
+  }
 }

@@ -50,31 +50,31 @@ const page = () => {
     {
       title: "Search Engine Optimisation",
       content:
-        "Boost Your Visibility: Our expert SEO strategies help your website rank higher in search engine results, attracting organic traffic and increasing brand awareness.",
+        "Boost Your Visibility: Our expert SEO strategies help your website rank higher, attract organic traffic and increase brand awareness.",
         image: img1
     },
     {
       title: "Social Media Marketing",
       content:
-        "Engage Your Audience: Connect with your target audience on popular social media platforms, build brand loyalty, and drive traffic to your website.",
-      image: img3
+        "Engage Your Audience: Connect with your target audience on social media platforms, build brand loyalty, and drive traffic to your website.",
+        image: img3
     },
     {
       title: "Content Marketing",
       content:
-        "Create Value: Develop high-quality, engaging content that attracts, informs, and converts your audience into customers.",
+        "Create Value: Develop high-quality, engaging and value content that attracts, informs, and converts your audience into customers.",
       image: img2
     },
     {
       title: "Email Marketing",
       content:
-        "Nurture Relationships: Build lasting relationships with your customers through targeted email campaigns that deliver valuable content and drive conversions.",
+        "Nurture Relationships: Build lasting relationships with your customers through targeted email campaigns that drive conversions.",
       image: img4
     },
     {
       title: "Pay-Per-Click Advertising",
       content:
-        "Achieve Immediate Results: Leverage paid advertising to reach your target audience quickly, drive traffic to your website, and generate leads or sales.",
+        "Achieve Immediate Results: Leverage paid advertising to reach your target audience quickly, and generate leads or sales.",
       image: img5
     }
   ];
