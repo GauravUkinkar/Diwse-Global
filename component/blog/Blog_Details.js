@@ -4,7 +4,7 @@ import Button_comp from "../button/Button_comp";
 import { SlCalender } from "react-icons/sl";
 import { IoTimeOutline } from "react-icons/io5";
 
-const Blog_Details = () => {
+const Blog_Details = ({ data }) => {
   const categories = [
     {
       title: "Business",
@@ -58,9 +58,6 @@ const Blog_Details = () => {
     },
   ];
 
-
-
-
   return (
     <div className="blog-details-parent parent">
       <div className="blog-details-cont cont">
@@ -69,51 +66,28 @@ const Blog_Details = () => {
           <div className="date-time-box">
             <div className="date-icon">
               <SlCalender />
-              <div className="date">12/12/1212</div>
+              <div className="date">{data.date}</div>
             </div>
             <div className="time-icon">
               <IoTimeOutline />
               <div className="time">12:54 AM</div>
             </div>
           </div>
-          <h4 className="blog-title">
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nam,
-            quaerat!
-          </h4>
-          <p className="blog-desc">
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Veniam
-            aliquam nisi obcaecati, error voluptates maiores at alias unde
-            commodi in quos assumenda hic corporis, distinctio vel doloribus
-            accusamus earum velit rerum exercitationem enim debitis odit eos?
-            Libero provident quis sapiente reiciendis voluptate quasi,
-            praesentium repellendus. Aperiam excepturi dolore, quam voluptas
-            architecto vero placeat velit blanditiis! Tempora nulla quibusdam,
-            non provident deserunt esse enim optio eveniet asperiores tempore
-            amet ut id molestiae rem, est facilis minima saepe unde laborum
-            neque odit molestias? Perferendis ullam magnam expedita minima,
-            dolorem optio facere non maxime nemo quidem perspiciatis
-            necessitatibus blanditiis consectetur molestiae deleniti
-            consequuntur placeat recusandae cupiditate possimus quo ea. Atque
-            nam laborum commodi repellat! Aperiam expedita accusantium ea,
-            delectus culpa, fuga dolor necessitatibus repellat recusandae animi
-            sint iste aliquam accusamus laudantium dolorum quae magni quaerat
-            eum! Totam error consequuntur, cumque accusamus est saepe debitis
-            dolore voluptas, voluptatum inventore vel cum iusto in voluptatibus,
-            dicta quasi dolorem aspernatur possimus. Laboriosam minus debitis
-            labore saepe rerum illo reprehenderit cupiditate, repudiandae
-            doloremque praesentium odio porro adipisci voluptate consectetur
-            deserunt nulla nemo veniam enim repellat dolore eveniet? Officia
-            rerum quia, voluptatibus placeat accusantium consequatur blanditiis,
-            est aspernatur earum incidunt ut natus vel vitae optio. Ad, ipsam
-            sit.
-          </p>
+          <h4 className="blog-title">{data.title}</h4>
+
+          <p
+            className="blog-desc"
+            dangerouslySetInnerHTML={{ __html: data.description }}
+          ></p>
           <div className="btn">
             <Button_comp btn_text="All Blogs" />
           </div>
         </div>
         <div className="right">
           <div className="categories">
-            <h4>Blog <span>Categories</span></h4>
+            <h4>
+              Blog <span>Categories</span>
+            </h4>
             {categories.map((category, index) => (
               <div className="category-main-box" key={index}>
                 <a href={category.link} className="category-box">
@@ -125,7 +99,9 @@ const Blog_Details = () => {
             ))}
           </div>
           <div className="recent-post">
-            <h4>Recent <span>Posts</span></h4>
+            <h4>
+              Recent <span>Posts</span>
+            </h4>
             {recentPosts.map((post, index) => (
               <div key={index}>
                 <a href={post.link} className="recent-post-box">

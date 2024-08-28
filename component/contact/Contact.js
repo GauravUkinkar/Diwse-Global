@@ -26,7 +26,7 @@ const Contact = () => {
         "https://api.diwiseglobal.com/auth/contact/",
         formdata
       );
-      toast.success("");
+      toast.success("Thank You for Your Inquiry in DIwise!");
       setformdata({
         fullname: "",
         email: "",
