@@ -140,7 +140,7 @@ const page = () => {
               </button>
             </form>
           </div>
-          <div className="right businessSetup bg-img-cover" data-aos="fade-right" data-aos-delay="600" data-aos-duration="1000">
+          <div className="right businessSetup " data-aos="fade-right" data-aos-delay="600" data-aos-duration="1000">
             {/* <div className="right-img-box bg-img-cover"></div> */}
           </div>
         </div>
