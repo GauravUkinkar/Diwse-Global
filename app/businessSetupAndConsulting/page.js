@@ -55,19 +55,19 @@ const page = () => {
     {
       title: "Company Formation and Registration",
       content:
-        "Establish Your Business. Let us guide you through the legal and administrative processes of setting up your new business, including selecting the optimal business structure, registering your company, and obtaining necessary licences and permits.",
+        "Establish Your Business. Let us guide you through the legal and administrative processes of setting up your new business.",
       image: img1
     },
     {
       title: "Comprehensive Business Planning",
       content:
-        "Chart Your Course. Our expert consultants will help you develop detailed business plans, conduct thorough market research, and create strategic roadmaps that align with your long-term goals.",
+        "Chart Your Course. Our expert consultants will help you develop detailed business plans, and strategic roadmaps that align with your goals.",
       image: img2
     },
     {
-      title: "Regulatory Compliance and Legal Advisory",
+      title: "Legal Compliance and Advisory",
       content:
-        "Navigate the Legal Landscape. Stay compliant with local regulations, tax laws, and industry-specific requirements, ensuring smooth operations and mitigating risks with our expert legal advice.",
+        "Navigate the Legal Landscape. Stay compliant with local regulations, tax laws, and industry-specific requirements with our expert legal advice.",
       image: img3
     },
   ];
@@ -160,9 +160,9 @@ const page = () => {
                 Create a Roadmap: Develop a comprehensive global expansion plan that aligns with your long-term goals, backed by in-depth market analysis, strategic positioning, and financial projections.
               </p>
             </div>
-
+          
             <div className="right">
-              <h5 className="left-heding"><span className="gradient-text">Strategic Planning for
+              <h5 className="left-heding"><span className="gradient-text">Strategic  for
               </span> Global Success</h5>
               <p className="bootom-section-para">
                 Achieve Your Objectives: Our strategic planning services guide you through the process of setting clear goals, conducting market research, and developing effective strategies to achieve your global ambitions.
