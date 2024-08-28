@@ -88,8 +88,10 @@
       &.relationoutreach{
         background-image: url("../../public/assets/publicRelationOutreach/secondsection.webp");
       }
+
+      // web developement
       &.web-image{
-        background-image: url("../../public/assets/businessSetupAndConsulting/herosection.webp");
+        background-image: url("../../public/assets/web-development/web_hero.jpg");
       }
 
       // .right-img-box {
@@ -242,6 +244,12 @@
           // background-color: yellow;
           background-image: url("../../public/assets/image2.jpg");
           border-radius: var(--unit);
+
+          // webdevelopment
+
+          &.web-back-image{
+            background-image: url("../../public/assets/web-development/coderteam.webp");
+          }
         }
 
         .front-image {
@@ -254,6 +262,12 @@
           right: 0;
           bottom: 0;
           box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.425);
+
+          // webdevelopment
+
+          &.web-front-image{
+            background-image: url("../../public/assets/web-development/mobileappdevelop.webp");
+          }
         }
       }
 
