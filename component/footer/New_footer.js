@@ -20,16 +20,16 @@ const New_footer = () => {
             </a>
             <div className="line"></div>
             <div className="icon-link">
-              <a href="">
+              <a href="https://www.facebook.com/DIwiseLtd" target="_blank">
                 Facebook <span className="icon"><FaArrowRight /></span>
               </a>
-              <a href="">
+              <a href="https://www.instagram.com/diwiseltd/" target="_blank">
                 Instagram <span className="icon"><FaArrowRight /></span>
               </a>
-              <a href="">
+              <a href="https://twitter.com/i/flow/login?redirect_after_login=%2FDIwiseLtd" target="_blank">
                 Twitter <span className="icon"><FaArrowRight /></span>
               </a>
-              <a href="">
+              <a href="https://www.linkedin.com/company/diwiseltd" target="_blank">
                 LinkedIn <span className="icon"><FaArrowRight /></span>
               </a>
             </div>
