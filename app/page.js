@@ -179,7 +179,7 @@ export default function Home() {
             cards={cardData}
             showButton={true}
             showImage={false}
-            cardHeight="300px"
+            cardHeight="350px"
           />
         </div>
       </div>

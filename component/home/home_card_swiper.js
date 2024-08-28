@@ -22,7 +22,7 @@ const Home_Card_Swiper = ({
           spaceBetween={20}
           pagination={false}
           autoplay={{
-            delay: 2000,
+            delay: 2000000000000000000,
             disableOnInteraction: false,  // Allows Swiper to pause on interaction
             pauseOnMouseEnter: pauseOnMouseEnter,  // Stops autoplay on mouse enter
           }}
@@ -45,15 +45,15 @@ const Home_Card_Swiper = ({
                     )}
                     <h4 className="card-title" style={{ textAlign: alignTitle }}>{card.title}</h4> 
                     <p className="card-desc" style={{ textAlign: alignDescription }}>{card.description}</p> 
-                    {showButton && (
+                   
+                  </div>
+                  {showButton && (
                     <div className="bottom-card">
                       <a href={card.link} className="btn1">
                         {card.buttonText}
                       </a>
                     </div>
                   )}
-                  </div>
-                 
                 </div>
               </SwiperSlide>
             ))}
