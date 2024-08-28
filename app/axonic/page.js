@@ -98,15 +98,14 @@ function axonic() {
             </p>
 
             <div className="list-item">
-              {listItem.map((item) => (
-                <p className="listItem">
+              {/* {listItem && listItem.map((item,index) => (
+                <p className="listItem" key={index}>
                   <span>
                     <LuDot />
                   </span>
-
                   {item}
                 </p>
-              ))}
+              ))} */}
             </div>
           </div>
         </div>
