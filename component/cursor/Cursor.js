@@ -11,24 +11,24 @@ import Image from "next/image";
 import axios from "axios";
 function Cursor() {
   const [data, setData] = useState([]);
-  const fetchBlogsImage = async () => {
-    try {
-      const response = await axios.get(
-        "https://api.diwiseglobal.com/auth/blogs/"
-      );
-      const filterImage = response.data.data
-        .filter((item) => item.image)
-        .map((item) => item.image);
-      console.log(filterImage, "kkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkk");
-      setData(filterImage);
-    } catch (err) {
-      console.log(err);
-    }
-  };
+  // const fetchBlogsImage = async () => {
+  //   try {
+  //     const response = await axios.get(
+  //       "https://api.diwiseglobal.com/auth/blogs/"
+  //     );
+  //     const filterImage = response.data.data
+  //       .filter((item) => item.image)
+  //       .map((item) => item.image);
+  //     console.log(filterImage, "kkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkk");
+  //     setData(filterImage);
+  //   } catch (err) {
+  //     console.log(err);
+  //   }
+  // };
 
-  useEffect(() => {
-    fetchBlogsImage();
-  });
+  // useEffect(() => {
+  //   fetchBlogsImage();
+  // });
   const [currentImage, setCurrentImage] = useState(null);
   // const images = data;
   const images = [image1,image2,image3]
