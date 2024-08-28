@@ -79,7 +79,7 @@
       }
 
       &.businessSetup{
-        background-image: url("../../public/assets/businessSetupAndConsulting/herosection.webp");
+        background-image: url("../../public/assets/bussiness-setup/business_setup_hero.webp");
       }
 
       &.prbranding{
@@ -255,6 +255,13 @@
           &.public_back{
             background-image: url("../../public/assets/public_relation_outreach/public_relation_back.webp");
           }
+
+          // business setup
+
+          &.business_setup_back{
+            background-image: url("../../public/assets/bussiness-setup/business_setup_back.webp");
+
+          }
         }
 
         .front-image {
@@ -278,6 +285,13 @@
              &.public_front{
               background-image: url("../../public/assets/public_relation_outreach/public_relation_front.webp");
             }
+
+            // business_setup
+
+          &.business_setup_front{
+            background-image: url("../../public/assets/bussiness-setup/business_setup_front.webp");
+
+          }
         }
       }
 
@@ -479,6 +493,13 @@
 
       &.public_search_faq{
         background-image: url("../../public/assets/public_relation_outreach/public_research_faq.webp");
+      }
+
+      // business setup 
+
+      &.business_setup_faq{
+        background-image: url("../../public/assets/bussiness-setup/business_setup_faq.webp");
+
       }
 
     }

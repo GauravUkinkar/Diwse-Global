@@ -16,7 +16,7 @@ import img1 from "../../public/assets/bussiness-setup/CompanyFormationandRegistr
 import img2 from "../../public/assets/bussiness-setup/ComprehensiveBusinessPlanning.svg"
 
 import img3 from '../../public/assets/bussiness-setup/RegulatoryComplianceandLegalAdvisory.svg'
-import topimg from "../../public/assets/business-setup.jpg";
+import topimg from "../../public/assets/bussiness-setup/business_setup_third_section.webp";
 
 
 
@@ -137,8 +137,8 @@ const page = () => {
 
           <div className="middle">
             <div className="left">
-              <div className="back-image bg-img-cover"></div>
-              <div className="front-image bg-img-cover"></div>
+              <div className="back-image business_setup_back bg-img-cover"></div>
+              <div className="front-image business_setup_front bg-img-cover"></div>
             </div>
             <div className="right">
               {serviceDetails.map((item) => (
@@ -185,7 +185,8 @@ const page = () => {
           <div className="left">
 
             <h4 className="hedding">
-              Why Choose Diwise Global for <span className="gradient-text">Business Setup & Consulting?</span>
+            FAQs for Business Setup & <span className="gradient-text">Consulting Services
+              </span>
             </h4>
             {faqContent.map((item, index) => (
               <Faq
@@ -197,7 +198,7 @@ const page = () => {
               />
             ))}
           </div>
-          <div className="right bg-img-cover">
+          <div className="right business_setup_faq bg-img-cover">
             {/* <div className="image">
 
             </div> */}

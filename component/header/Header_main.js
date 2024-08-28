@@ -53,7 +53,7 @@ const Header_main = () => {
     {
       path: "/digitalmarketing",
       name: "Digital Marketing",
-      images: "assets/header/3.png",
+      images: "assets/digital_marketing/d_m_front.webp",
     },
     {
       path: "/businessSetupAndConsulting",
@@ -73,7 +73,7 @@ const Header_main = () => {
     {
       path: "/webdevelopment",
       name: "Web Development",
-      images: "assets/header/2.png",
+      images: "assets/web-development/mobileappdevelop.webp",
     },
   ];
 
