@@ -46,7 +46,7 @@ export default function Home() {
       icon: "assets/icons/navIcon/Development.png",
       title: "Web & App Development",
       description:
-        "Bring your digital vision to life. We specialise in creating user-friendly, responsive designs that leverage the latest technology to meet your business needs.",
+        "Bring your digital vision to life. We specialise in creating user-friendly, responsive designs with the latest technology to meet your needs.",
       buttonText: "Get Started",
       link:'webdevelopment'
     },
@@ -54,7 +54,7 @@ export default function Home() {
       icon: "assets/icons/navIcon/digital_marketing.png",
       title: "Branding & Creative Services",
       description:
-        "Make Your Brand Unforgettable. Our team of creative experts will design your logo, develop your brand story, and produce engaging multimedia content.",
+        "Make Your Brand Unforgettable. Our team of creatives will design your logo, develop your brand story, and produce engaging multimedia content.",
       buttonText: "Get Started",
       link:'prandbranding'
     },
@@ -62,7 +62,7 @@ export default function Home() {
       icon: "assets/icons/navIcon/Dcoument.png",
       title: "Business Setup & Consulting",
       description:
-        "Expand your business globally. We offer comprehensive support, from developing effective market entry strategies to providing ongoing operational consulting.",
+        "Expand your business globally. We offer comprehensive support, from developing effective market entry strategies to providing operational consulting.",
       buttonText: "Get Started",
       link:'businessSetupAndConsulting'
     },
@@ -70,7 +70,7 @@ export default function Home() {
       icon: "assets/icons/navIcon/PR.png",
       title: "Public Relations & Media Outreach",
       description:
-        "Manage Your Reputation Globally. We help you build and maintain a positive brand reputation across multiple markets, ensuring effective communication.",
+        "Manage Your Reputation Globally. We help you build and maintain a positive brand reputation, ensuring effective communication.",
       buttonText: "Get Started",
       link:'publicRelationOutreach'
     },
@@ -186,12 +186,16 @@ export default function Home() {
             cards={cardData}
             showButton={true}
             showImage={false}
-            cardHeight="350px"
+            cardHeight="300px"
             gridTemplateColumns="repeat(3,1fr)"
             gridarea="2/1/3/4"
             display="grid"
             Icongridarea="1/1/2/2"
             titlegridarea="1/2/2/4"
+            titleLineHeight="120%"
+            titleCenter="center"
+            titleHeight="100%"
+            titledisplay="flex"
           />
         </div>
       </div>
@@ -210,6 +214,7 @@ export default function Home() {
           autoplay={{
             delay: 5000,
             disableOnInteraction: false,
+            pauseOnMouseEnter: true,
           }}
           navigation={false}
           modules={[Autoplay]}
@@ -226,6 +231,7 @@ export default function Home() {
               slidesPerView: 1,
             },
           }}
+     
         >
           {caseStudies.map((item, index) => (
             <SwiperSlide className="bg-img-cover" key={index}>

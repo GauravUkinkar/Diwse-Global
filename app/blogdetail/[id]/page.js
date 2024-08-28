@@ -14,7 +14,6 @@ const page = () => {
         `https://api.diwiseglobal.com/auth/blogs/${id}/`
       );
       setdata(response.data);
-      console.log(response)
     } catch (err) {
       console.log(err);
     }
