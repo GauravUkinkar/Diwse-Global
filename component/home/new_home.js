@@ -21,15 +21,15 @@ const New_home = () => {
           <div className="left">
             <h1 className="title">
               <motion.div
-                initial={{ Y: -100, opacity: 0 }}
-                animate={{ Y: 0, opacity: 1 }}
+                initial={{ y: 100, opacity: 0 }}
+                animate={{ y: 0, opacity: 1 }}
               >
                 Expand Your World,
               </motion.div>
               <br />
               <motion.div
-                initial={{ Y: -100, opacity: 0 }}
-                animate={{ Y: 0, opacity: 1 }}
+                initial={{ y: 100, opacity: 0 }}
+                animate={{ y: 0, opacity: 1 }}
                 transition={{ delay: 0.3 }}
               >
                 <span className="gradient-text">Digitally</span>
@@ -37,8 +37,8 @@ const New_home = () => {
             </h1>
 
             <motion.div
-              initial={{ Y: -100, opacity: 0 }}
-              animate={{ Y: 0, opacity: 1 }}
+              initial={{ y: 100, opacity: 0 }}
+              animate={{ y: 0, opacity: 1 }}
               transition={{ delay: 0.5 }}
             >
               <p className="desc">
@@ -50,8 +50,8 @@ const New_home = () => {
             </motion.div>
 
             <motion.div
-              initial={{ Y: -100, opacity: 0 }}
-              animate={{ Y: 0, opacity: 1 }}
+              initial={{ y: 100, opacity: 0 }}
+              animate={{ y: 0, opacity: 1 }}
               transition={{ delay: 0.7 }}
             >
               <Button_comp btn_text="Go Global Today " link="contact" />
