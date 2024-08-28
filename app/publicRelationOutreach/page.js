@@ -128,8 +128,8 @@ const page = () => {
 
           <div className="middle">
             <div className="left">
-              <div className="back-image bg-img-cover"></div>
-              <div className="front-image bg-img-cover"></div>
+              <div className="back-image public_back bg-img-cover"></div>
+              <div className="front-image public_front bg-img-cover"></div>
             </div>
             <div className="right">
               {serviceDetails.map((item) => (
