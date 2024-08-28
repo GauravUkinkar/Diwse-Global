@@ -6,25 +6,23 @@ import "../digitalmarketing/service.scss";
 import { MdKeyboardArrowDown } from "react-icons/md";
 import Faq from "@/component/faq/Faq";
 
-
 import AOS from "aos";
 import "aos/dist/aos.css";
 import Service3 from "@/component/servicesection3/Service3";
 
 import img1 from "../../public/assets/public_relation_outreach/PressReleaseManagement.svg";
 
-import img2 from "../../public/assets/public_relation_outreach/InfluencerandMediaOutreach.svg"
-import img3 from "../../public/assets/public_relation_outreach/EventCoordinationandPromotion.svg"
+import img2 from "../../public/assets/public_relation_outreach/InfluencerandMediaOutreach.svg";
+import img3 from "../../public/assets/public_relation_outreach/EventCoordinationandPromotion.svg";
 import topimg from "../../public/assets/public-relation.jpg";
+import axios from "axios";
+import toast, { Toaster } from "react-hot-toast";
 const page = () => {
-  
+  const [activeIndex, setActiveIndex] = useState(0);
 
-    const [activeIndex, setActiveIndex] = useState(0);
-  
-    const toggleFaq = (index) => {
-      setActiveIndex(activeIndex === index ? null : index);
-    };
-   
+  const toggleFaq = (index) => {
+    setActiveIndex(activeIndex === index ? null : index);
+  };
 
   const serviceDetails = [
     {
@@ -32,7 +30,6 @@ const page = () => {
       title: "Media Relations",
       content:
         "Cultivate Media Relationships: Build strong connections with influential media outlets to secure positive coverage and enhance your brand's visibility.",
-        
     },
     {
       srNo: 2,
@@ -53,19 +50,19 @@ const page = () => {
       title: "Press Release Management",
       content:
         "Amplify Your Message. Our team will craft compelling press releases, distribute them to relevant media outlets, and ensure your key messages reach your target audience.",
-        image: img1
+      image: img1,
     },
     {
       title: "Influencer and Media Outreach",
       content:
         "Partner with Influencers. We'll identify and collaborate with influential figures, bloggers, and media professionals to amplify your brand's message and reach a wider audience.",
-        image: img2
+      image: img2,
     },
     {
       title: "Event Coordination and Promotion",
       content:
         "Create Memorable Experiences. Our event planning experts will organise and promote impactful events, such as product launches, press conferences, and community activities, to generate media coverage and public interest.",
-        image: img3
+      image: img3,
     },
   ];
 
@@ -77,8 +74,7 @@ const page = () => {
     },
     {
       title: "How can PR help my business grow ?",
-      content:
-        "PR can enhance your reputation, credibility, and visibility.",
+      content: "PR can enhance your reputation, credibility, and visibility.",
     },
     {
       title: "What is media outreach ?",
@@ -93,26 +89,62 @@ const page = () => {
   ];
 
   useEffect(() => {
-
     AOS.init();
   }, []);
+
+  const [email, setEmail] = useState("");
+  const submitEmail = async (e) => {
+    e.preventDefault();
+    try {
+      const response = await axios.post(
+        "https://api.diwiseglobal.com/auth/contact/",
+        {
+          email,
+        }
+      );
+      toast.success("Thank You for Your Inquiry in DIwise!");
+      setEmail("");
+    } catch (err) {}
+  };
   return (
     <>
       <div className="service-hero-parent parent">
         <div className="service-hero-cont cont">
-          <div className="left" data-aos="fade-up" data-aos-delay="600" data-aos-duration="1000">
-            <h3 className="section-headding">Public Relations & Media Outreach</h3>
+          <div
+            className="left"
+            data-aos="fade-up"
+            data-aos-delay="600"
+            data-aos-duration="1000"
+          >
+            <h3 className="section-headding">
+              Public Relations & Media Outreach
+            </h3>
             <p className="service-p">
-            Manage Your Reputation Globally: Our global PR services include media relations, press release distribution, and crisis management. We help you build and maintain a positive brand reputation across multiple markets, ensuring effective communication and crisis preparedness.
+              Manage Your Reputation Globally: Our global PR services include
+              media relations, press release distribution, and crisis
+              management. We help you build and maintain a positive brand
+              reputation across multiple markets, ensuring effective
+              communication and crisis preparedness.
             </p>
-            <form action="">
-              <input type="email" placeholder="Your email address" />
+            <form onSubmit={submitEmail}>
+              <input
+                type="email"
+                placeholder="Your email address"
+                required
+                value={email}
+                onChange={(e) => setEmail(e.target.value)}
+              />
               <button type="submit" className="submit-btn">
                 Get Started
               </button>
             </form>
           </div>
-          <div className="right relationoutreach bg-img-cover" data-aos="fade-up" data-aos-delay="600" data-aos-duration="1000">
+          <div
+            className="right relationoutreach bg-img-cover"
+            data-aos="fade-up"
+            data-aos-delay="600"
+            data-aos-duration="1000"
+          >
             {/* <div className="right-img-box bg-img-cover"></div> */}
           </div>
         </div>
@@ -122,10 +154,14 @@ const page = () => {
         <div className="service-detail-cont cont">
           <div className="top">
             <h3 className="heading">
-            Elevate Your Brand with DIwise <br /> <span className="gradient-text">Global's PR Expertise</span>
+              Elevate Your Brand with DIwise <br />{" "}
+              <span className="gradient-text">Global's PR Expertise</span>
             </h3>
             <p className="para">
-            Enhance your brand's reputation and reach a global audience with our strategic PR and media outreach services. Our team of PR professionals will develop targeted campaigns that ensure your message is heard loud and clear across all markets.
+              Enhance your brand's reputation and reach a global audience with
+              our strategic PR and media outreach services. Our team of PR
+              professionals will develop targeted campaigns that ensure your
+              message is heard loud and clear across all markets.
             </p>
           </div>
 
@@ -136,7 +172,12 @@ const page = () => {
             </div>
             <div className="right">
               {serviceDetails.map((item) => (
-                <div className="content" data-aos="fade-up" data-aos-delay="600" data-aos-duration="1000" >
+                <div
+                  className="content"
+                  data-aos="fade-up"
+                  data-aos-delay="600"
+                  data-aos-duration="1000"
+                >
                   <div className="left">{item.srNo}</div>
                   <div className="right">
                     <h5>{item.title}</h5>
@@ -149,35 +190,40 @@ const page = () => {
 
           <div className="bottom">
             <div className="left">
-              <h5 className="left-heding"><span className="gradient-text">Global PR</span> Strategy</h5>
-              <p  className="bootom-section-para" >
-              Elevate Your Global Brand. Our experts develop tailored PR strategies that resonate across cultures, ensuring your brand maintains a positive image and effectively reaches international audiences.
+              <h5 className="left-heding">
+                <span className="gradient-text">Global PR</span> Strategy
+              </h5>
+              <p className="bootom-section-para">
+                Elevate Your Global Brand. Our experts develop tailored PR
+                strategies that resonate across cultures, ensuring your brand
+                maintains a positive image and effectively reaches international
+                audiences.
               </p>
             </div>
 
             <div className="right">
-              <h5 className="left-heding"><span className="gradient-text">Media </span> Training</h5>
-              <p  className="bootom-section-para" >
-              Empower Your Spokespeople. Prepare your team for media interactions with our expert training programs. We equip your spokespeople with the skills to represent your brand confidently and effectively in any market.
+              <h5 className="left-heding">
+                <span className="gradient-text">Media </span> Training
+              </h5>
+              <p className="bootom-section-para">
+                Empower Your Spokespeople. Prepare your team for media
+                interactions with our expert training programs. We equip your
+                spokespeople with the skills to represent your brand confidently
+                and effectively in any market.
               </p>
             </div>
           </div>
         </div>
       </div>
 
-      <Service3
-        contbgimg={topimg}
-        list={list}
-       
-      />
-     
+      <Service3 contbgimg={topimg} list={list} />
 
       <div className="service-faq-parent parent">
         <div className="service-faq-cont cont">
           <div className="left">
-
             <h4 className="hedding">
-            FAQs for Public Relations &   <span className="gradient-text">Media Outreach Services</span>
+              FAQs for Public Relations &{" "}
+              <span className="gradient-text">Media Outreach Services</span>
             </h4>
             {faqContent.map((item, index) => (
               <Faq
@@ -196,6 +242,8 @@ const page = () => {
           </div>
         </div>
       </div>
+
+      <Toaster/>
     </>
   );
 };
