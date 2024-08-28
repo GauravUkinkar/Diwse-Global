@@ -9,10 +9,22 @@ const Home_Card_Swiper = ({
   cards,
   showButton = true,
   showImage = true,
+  display,
+  gridTemplateColumns,
+  gridarea,
+  Icongridarea,
+  titlegridarea,
+  titleLineHeight,
+  cardJustify,
+  titledisplay,
+  titleHeight,
+  titleWidth,
+  titleCenter,
+  cardAlign,
   pauseOnMouseEnter = true,
   cardHeight = "auto",
-  alignTitle = "left",  // Default alignment for the title
-  alignDescription = "left" // Default alignment for the description
+  alignTitle = "left", // Default alignment for the title
+  alignDescription = "left", // Default alignment for the description
 }) => {
   return (
     <div className="card-parent">
@@ -22,9 +34,9 @@ const Home_Card_Swiper = ({
           spaceBetween={20}
           pagination={false}
           autoplay={{
-            delay: 2000,
-            disableOnInteraction: false,  // Allows Swiper to pause on interaction
-            pauseOnMouseEnter: pauseOnMouseEnter,  // Stops autoplay on mouse enter
+            delay: 20000000000000000000,
+            disableOnInteraction: false, // Allows Swiper to pause on interaction
+            pauseOnMouseEnter: pauseOnMouseEnter, // Stops autoplay on mouse enter
           }}
           modules={[Pagination, Autoplay]}
           className="mySwiper"
@@ -37,23 +49,68 @@ const Home_Card_Swiper = ({
           {cards &&
             cards.map((card, index) => (
               <SwiperSlide key={index}>
-                <div className="card" style={{ height: cardHeight }}>
-                  <div className="top-card">
-                    <div className="icon bg-img-contain"  style={{backgroundImage:`url(${card.icon})`}} ></div>
-                    {showImage && card.image && (
-                      <div className="top-img bg-img-cover" style={{ background: `url(${card.image.src})` }}></div>
+                <div
+                  className="card"
+                  style={{
+                    height: cardHeight,
+                    alignItems: cardAlign,
+                    justifyContent: cardJustify,
+                  }}
+                >
+                  <div
+                    className="top-card"
+                    style={{
+                      display: display,
+                      gridTemplateColumns: gridTemplateColumns,
+                    }}
+                  >
+                    {card.icon && (
+                      <div
+                        className="icon bg-img-contain"
+                        style={{
+                          backgroundImage: `url(${card.icon})`,
+                          gridArea: Icongridarea,
+                        }}
+                      ></div>
                     )}
-                    <h4 className="card-title" style={{ textAlign: alignTitle }}>{card.title}</h4> 
-                    <p className="card-desc" style={{ textAlign: alignDescription }}>{card.description}</p> 
-                    {showButton && (
+
+                    {showImage && card.image && (
+                      <div
+                        className="top-img bg-img-cover"
+                        style={{ background: `url(${card.image.src})` }}
+                      ></div>
+                    )}
+                    <h4
+                      className="card-title"
+                      style={{
+                        textAlign: alignTitle,
+                        gridArea: titlegridarea,
+                        lineHeight: titleLineHeight,
+                        width: titleWidth,
+                        height: titleHeight,
+                        display: titledisplay,
+                        placeItems:titleCenter
+                      }}
+                    >
+                      {card.title}
+                    </h4>
+                    <p
+                      className="card-desc"
+                      style={{
+                        textAlign: alignDescription,
+                        gridArea: gridarea,
+                      }}
+                    >
+                      {card.description}
+                    </p>
+                  </div>
+                  {showButton && (
                     <div className="bottom-card">
                       <a href={card.link} className="btn1">
                         {card.buttonText}
                       </a>
                     </div>
                   )}
-                  </div>
-                 
                 </div>
               </SwiperSlide>
             ))}

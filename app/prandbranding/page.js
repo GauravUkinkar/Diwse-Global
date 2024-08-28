@@ -6,26 +6,23 @@ import "../digitalmarketing/service.scss";
 import { MdKeyboardArrowDown } from "react-icons/md";
 import Faq from "@/component/faq/Faq";
 
-
 import AOS from "aos";
 import "aos/dist/aos.css";
 import Service3 from "@/component/servicesection3/Service3";
 
 import topimg from "../../public/assets/branding.jpg";
-import img1 from '../../public/assets/prbranding/LogoDesigning.svg';
-import img2 from '../../public/assets/prbranding/BrandIdentityDevelopment.svg';
-import img3 from '../../public/assets/prbranding/MultimediaContentProduction.svg';
-
+import img1 from "../../public/assets/prbranding/LogoDesigning.svg";
+import img2 from "../../public/assets/prbranding/BrandIdentityDevelopment.svg";
+import img3 from "../../public/assets/prbranding/MultimediaContentProduction.svg";
+import axios from "axios";
+import toast, { Toaster } from "react-hot-toast";
 
 const page = () => {
-
-
   const [activeIndex, setActiveIndex] = useState(0);
 
   const toggleFaq = (index) => {
     setActiveIndex(activeIndex === index ? null : index);
   };
-
 
   const serviceDetails = [
     {
@@ -48,31 +45,26 @@ const page = () => {
     },
   ];
 
-
-
-
   const list = [
     {
       title: "Logo Designing ",
       content:
         "Your Brand's Visual Identity. Our skilled designers will create a unique and memorable logo that perfectly captures the essence of your brand.",
-      image: img1
+      image: img1,
     },
     {
       title: "Brand Identity Development",
       content:
         "A Cohesive Brand. Develop a strong and consistent brand identity with our tailored solutions that reflect your brand's core values and vision.",
-      image: img2
+      image: img2,
     },
     {
       title: "Multimedia Content Production",
       content:
         "Captivate Your Audience. Engage your audience with compelling multimedia content. We create content that enhances your brand's presence across platforms.",
-      image: img3
+      image: img3,
     },
-
   ];
-
 
   const faqContent = [
     {
@@ -98,9 +90,23 @@ const page = () => {
   ];
 
   useEffect(() => {
-
     AOS.init();
   }, []);
+
+  const [email, setEmail] = useState("");
+  const submitEmail = async (e) => {
+    e.preventDefault();
+    try {
+      const response = await axios.post(
+        "https://api.diwiseglobal.com/auth/contact/",
+        {
+          email,
+        }
+      );
+      toast.success("Thank You for Your Inquiry in DIwise!");
+      setEmail("");
+    } catch (err) {}
+  };
   return (
     <>
       <div className="service-hero-parent parent">
@@ -108,16 +114,30 @@ const page = () => {
           <div className="left">
             <h3 className="section-headding">Branding & Creative Services </h3>
             <p className="service-p">
-              Build a Memorable Brand: Our expert branding team will develop a strong and distinctive brand identity that resonates with your target audience worldwide. From logo design to content creation, we ensure your brand stands out in the global marketplace.
+              Build a Memorable Brand: Our expert branding team will develop a
+              strong and distinctive brand identity that resonates with your
+              target audience worldwide. From logo design to content creation,
+              we ensure your brand stands out in the global marketplace.
             </p>
-            <form action="">
-              <input type="email" placeholder="Your email address" />
+            <form onSubmit={submitEmail}>
+              <input
+                type="email"
+                placeholder="Your email address"
+                required
+                value={email}
+                onChange={(e) => setEmail(e.target.value)}
+              />
               <button type="submit" className="submit-btn">
                 Get Started
               </button>
             </form>
           </div>
-          <div className="right prbranding bg-img-cover" data-aos="fade-right" data-aos-delay="600" data-aos-duration="1000">
+          <div
+            className="right prbranding "
+            data-aos="fade-right"
+            data-aos-delay="600"
+            data-aos-duration="1000"
+          >
             {/* <div className="right-img-box bg-img-cover"></div> */}
           </div>
         </div>
@@ -131,7 +151,12 @@ const page = () => {
               <br /> <span className="gradient-text">DIwise Global</span>
             </h3>
             <p className="para">
-              Our expertise in branding and creative services ensures that your business stands out in a crowded marketplace. We combine innovative strategies with a deep understanding of global trends to deliver results that matter. From crafting compelling brand identities to producing engaging multimedia content, our team is dedicated to helping you make a lasting impression.
+              Our expertise in branding and creative services ensures that your
+              business stands out in a crowded marketplace. We combine
+              innovative strategies with a deep understanding of global trends
+              to deliver results that matter. From crafting compelling brand
+              identities to producing engaging multimedia content, our team is
+              dedicated to helping you make a lasting impression.
             </p>
           </div>
 
@@ -142,7 +167,12 @@ const page = () => {
             </div>
             <div className="right">
               {serviceDetails.map((item) => (
-                <div className="content" data-aos="fade-up" data-aos-delay="600" data-aos-duration="1000" >
+                <div
+                  className="content"
+                  data-aos="fade-up"
+                  data-aos-delay="600"
+                  data-aos-duration="1000"
+                >
                   <div className="left">{item.srNo}</div>
                   <div className="right">
                     <h5>{item.title}</h5>
@@ -155,35 +185,40 @@ const page = () => {
 
           <div className="bottom">
             <div className="left">
-              <h5 className="left-heding"><span className="gradient-text">Brand</span> Positioning</h5>
+              <h5 className="left-heding">
+                <span className="gradient-text">Brand</span> Positioning
+              </h5>
               <p className="bootom-section-para">
-                Craft Your Message: We'll help you develop clear and compelling brand messaging that effectively communicates your unique value proposition to your target audience.
+                Craft Your Message: We'll help you develop clear and compelling
+                brand messaging that effectively communicates your unique value
+                proposition to your target audience.
               </p>
             </div>
 
             <div className="right">
-              <h5 className="left-heding">Creative<span className="gradient-text"> Campaigns</span> </h5>
+              <h5 className="left-heding">
+                Creative<span className="gradient-text"> Campaigns</span>{" "}
+              </h5>
               <p className="bootom-section-para">
-              Launch Successful Campaigns: Our creative team will develop innovative and effective marketing campaigns tailored to your specific goals. We'll create a variety of marketing materials, including print ads, digital banners, social media content, and more.
+                Launch Successful Campaigns: Our creative team will develop
+                innovative and effective marketing campaigns tailored to your
+                specific goals. We'll create a variety of marketing materials,
+                including print ads, digital banners, social media content, and
+                more.
               </p>
             </div>
           </div>
         </div>
       </div>
 
-      <Service3
-        contbgimg={topimg}
-        list={list}
-
-      />
-
+      <Service3 contbgimg={topimg} list={list} />
 
       <div className="service-faq-parent parent">
         <div className="service-faq-cont cont">
           <div className="left">
-
             <h4 className="hedding">
-              Why Choose Diwise Global for <span className="gradient-text">Digital Marketing & SEO?</span>
+              Why Choose Diwise Global for{" "}
+              <span className="gradient-text">Digital Marketing & SEO?</span>
             </h4>
             {faqContent.map((item, index) => (
               <Faq
@@ -202,6 +237,8 @@ const page = () => {
           </div>
         </div>
       </div>
+
+      <Toaster/>
     </>
   );
 };

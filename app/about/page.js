@@ -1,26 +1,19 @@
 "use client";
-
-import React, { useEffect, useRef } from "react";
-import { IoArrowForward } from "react-icons/io5";
-import "./about.scss";
+import { useEffect, useRef } from "react";
 import {
-  RiDoubleQuotesL,
-  RiDoubleQuotesR,
-  RiLinkedinFill,
+  RiLinkedinFill
 } from "react-icons/ri";
-import img from "../../public/assets/home/about/track-record.jpg"
-import img1 from "../../public/assets/home/about/global.jpg"
-import img2 from "../../public/assets/home/about/innovative.jpg"
-import img3 from "../../public/assets/home/about/customised.jpg"
-import img4 from "../../public/assets/home/about/result.jpg"
-import img5 from "../../public/assets/home/about/client.jpg"
-
+import img5 from "../../public/assets/home/about/client.jpg";
+import img3 from "../../public/assets/home/about/customised.jpg";
+import img1 from "../../public/assets/home/about/global.jpg";
+import img2 from "../../public/assets/home/about/innovative.jpg";
+import img4 from "../../public/assets/home/about/result.jpg";
+import img from "../../public/assets/home/about/track-record.jpg";
+import "./about.scss";
+import Home_Card_Swiper from "@/component/home/home_card_swiper";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import Head from "next/head";
-import Home_Card_Swiper from "@/component/home/home_card_swiper";
-import { FaSearchengin } from "react-icons/fa";
-
 const page = () => {
   const cardData = [
     {
@@ -61,8 +54,8 @@ const page = () => {
     },
   ];
 
+  
   const counterRef = useRef(null);
-
   useEffect(() => {
     AOS.init();
 
@@ -210,7 +203,7 @@ const page = () => {
               data-aos="fade-up"
               data-aos-delay="200"
               alignTitle="center"
-              alignDescription="center"
+              alignDescription="left"
 
 
 

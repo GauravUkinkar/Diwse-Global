@@ -4,7 +4,7 @@ import Button_comp from "../button/Button_comp";
 import Icon from "../dynamicIcon/Icon";
 import "../home/new_home.scss";
 import { motion } from "framer-motion";
-import img from "../../public/assets/home/hcc.jpg"
+import img from "../../public/assets/home/hcc.jpg";
 
 const New_home = () => {
   useEffect(() => {
@@ -21,15 +21,15 @@ const New_home = () => {
           <div className="left">
             <h1 className="title">
               <motion.div
-                initial={{ x: -100, opacity: 0 }}
-                animate={{ x: 0, opacity: 1 }}
+                initial={{ y: 100, opacity: 0 }}
+                animate={{ y: 0, opacity: 1 }}
               >
                 Expand Your World,
               </motion.div>
               <br />
               <motion.div
-                initial={{ x: -100, opacity: 0 }}
-                animate={{ x: 0, opacity: 1 }}
+                initial={{ y: 100, opacity: 0 }}
+                animate={{ y: 0, opacity: 1 }}
                 transition={{ delay: 0.3 }}
               >
                 <span className="gradient-text">Digitally</span>
@@ -37,8 +37,8 @@ const New_home = () => {
             </h1>
 
             <motion.div
-              initial={{ x: -100, opacity: 0 }}
-              animate={{ x: 0, opacity: 1 }}
+              initial={{ y: 100, opacity: 0 }}
+              animate={{ y: 0, opacity: 1 }}
               transition={{ delay: 0.5 }}
             >
               <p className="desc">
@@ -50,8 +50,8 @@ const New_home = () => {
             </motion.div>
 
             <motion.div
-              initial={{ x: -100, opacity: 0 }}
-              animate={{ x: 0, opacity: 1 }}
+              initial={{ y: 100, opacity: 0 }}
+              animate={{ y: 0, opacity: 1 }}
               transition={{ delay: 0.7 }}
             >
               <Button_comp btn_text="Go Global Today " link="contact" />
@@ -60,15 +60,13 @@ const New_home = () => {
 
           {/* Right section */}
           <div className="right">
-          
-          <div className="video-box" data-aos="fade-up">
-          <video autoPlay muted loop width="100%">
-            <source src="/assets/dvideo.webm" type="video/webm" />
-            Your browser does not support the video tag.
-          </video>
-        </div>
+            <div className="video-box" data-aos="fade-up">
+              <video autoPlay muted loop playsInline width="100%">
+                <source src="/assets/home.webm" type="video/webm" />
+                Your browser does not support the video tag.
+              </video>
+            </div>
             {/* <div className="img-box"></div> */}
-        
           </div>
         </div>
       </div>

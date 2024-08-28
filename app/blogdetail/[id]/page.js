@@ -7,6 +7,7 @@ import React, { useEffect, useState } from "react";
 const page = () => {
   const { id } = useParams();
   const [data, setdata] = useState([]);
+
   const fetchBlogs = async () => {
     try {
       const response = await axios.get(
@@ -21,10 +22,6 @@ const page = () => {
   useEffect(() => {
     fetchBlogs();
   }, []);
-
-
-
-  console.log("my data _________________",data)
   return (
     <div>
       <Blog_Details data={data}/>

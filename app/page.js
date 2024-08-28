@@ -152,7 +152,7 @@ export default function Home() {
       {/* 2 Section - Video section */}
       <div className="second-section" ref={videoBoxRef}>
         <div className="video-box" data-aos="fade-up">
-          <video autoPlay muted loop width="100%">
+          <video autoPlay muted loop playsInline width="100%">
             <source src="/assets/dvideo.webm" type="video/webm" />
             Your browser does not support the video tag.
           </video>
@@ -175,11 +175,27 @@ export default function Home() {
             Our comprehensive suite of digital services is designed to propel
             your business to new heights, both domestically and internationally.
           </p>
+          {/* <Home_Card_Swiper
+            cards={cardData}
+            showButton={true}
+            showImage={false}
+            cardHeight="350px"
+         
+          /> */}
           <Home_Card_Swiper
             cards={cardData}
             showButton={true}
             showImage={false}
-            cardHeight="300px"
+            cardHeight="350px"
+            gridTemplateColumns="repeat(3,1fr)"
+            gridarea="2/1/3/4"
+            display="grid"
+            Icongridarea="1/1/2/2"
+            titlegridarea="1/2/2/4"
+            titleLineHeight="120%"
+            titleCenter="center"
+            titleHeight="100%"
+            titledisplay="flex"
           />
         </div>
       </div>
@@ -198,6 +214,7 @@ export default function Home() {
           autoplay={{
             delay: 5000,
             disableOnInteraction: false,
+            pauseOnMouseEnter: true,
           }}
           navigation={false}
           modules={[Autoplay]}
@@ -214,6 +231,7 @@ export default function Home() {
               slidesPerView: 1,
             },
           }}
+     
         >
           {caseStudies.map((item, index) => (
             <SwiperSlide className="bg-img-cover" key={index}>
