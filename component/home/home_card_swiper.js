@@ -48,7 +48,7 @@ const Home_Card_Swiper = ({
                   </div>
                   {showButton && (
                     <div className="bottom-card">
-                      <a href="#" className="btn1">
+                      <a href={card.link} className="btn1">
                         {card.buttonText}
                       </a>
                     </div>
