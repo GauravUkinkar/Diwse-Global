@@ -57,18 +57,18 @@ const page = () => {
           <div className="box" data-aos="fade-up">
             <h3 className="title">Social Media</h3>
             <div className="social-i">
-              <div className="social">
+              <a href="https://www.facebook.com/DIwiseLtd" target="_blank" className="social">
                 <FaFacebookF />
-              </div>
-              <div className="social">
+              </a>
+              <a href="https://www.instagram.com/diwiseltd/" target="_blank" className="social">
                 <FaInstagram />
-              </div>
-              <div className="social">
+              </a>
+              <a href="https://twitter.com/i/flow/login?redirect_after_login=%2FDIwiseLtd" target="_blank" className="social">
                 <FaXTwitter />
-              </div>
-              <div className="social">
+              </a>
+              <a href="https://www.linkedin.com/company/diwiseltd" target="_blank" className="social">
                 <FaLinkedinIn />
-              </div>
+              </a>
             </div>
           </div>
         </div>
