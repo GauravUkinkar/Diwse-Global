@@ -9,12 +9,14 @@ import Faq from "@/component/faq/Faq";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import Service3 from "@/component/servicesection3/Service3";
-import topimg from "../../public/assets/digital_marketing/d_m_third_section.webp";
+import topimg from "../../public/assets/digital_marketing/4th.jpg";
 import img1 from '../../public/assets/sevice3/seo.png'
 import img2 from '../../public/assets/sevice3/content.png'
 import img3 from '../../public/assets/sevice3/social.png'
 import img4 from '../../public/assets/sevice3/EmailMarketing.svg';
 import img5 from '../../public/assets/sevice3/pay-per.svg';
+import axios from "axios";
+import toast, { Toaster } from "react-hot-toast";
 
 const page = () => {
   const [activeIndex, setActiveIndex] = useState(0);
@@ -105,6 +107,24 @@ const page = () => {
   useEffect(() => {
     AOS.init();
   }, []);
+
+
+  // 
+
+  const [email, setEmail] = useState("");
+  const submitEmail = async (e) => {
+    e.preventDefault();
+    try {
+      const response = await axios.post(
+        "https://api.diwiseglobal.com/auth/contact/",
+        {
+          email,
+        }
+      );
+      toast.success("Thank You for Your Inquiry in DIwise!");
+      setEmail("")
+    } catch (err) {}
+  };
   return (
     <>
       <div className="service-hero-parent parent">
@@ -119,8 +139,14 @@ const page = () => {
             <p className="service-p">
               Elevate Your Online Presence: Our comprehensive digital marketing strategies, including SEO, content marketing, social media management, and paid advertising, are designed to enhance your visibility, drive global engagement, and boost your bottom line.
             </p>
-            <form action="">
-              <input type="email" placeholder="Your email address" />
+            <form onSubmit={submitEmail}>
+              <input
+                type="email"
+                placeholder="Your email address"
+                required
+                value={email}
+                onChange={(e) => setEmail(e.target.value)}
+              />
               <button type="submit" className="submit-btn">
                 Get Started
               </button>
@@ -227,6 +253,8 @@ const page = () => {
           </div>
         </div>
       </div>
+
+      <Toaster/>
     </>
   );
 };

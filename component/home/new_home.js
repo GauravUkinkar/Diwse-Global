@@ -61,8 +61,13 @@ const New_home = () => {
           {/* Right section */}
           <div className="right">
           
-             
-            <div className="img-box"></div>
+          <div className="video-box" data-aos="fade-up">
+          <video autoPlay muted loop width="100%">
+            <source src="/assets/home.webm" type="video/webm" />
+            Your browser does not support the video tag.
+          </video>
+        </div>
+            {/* <div className="img-box"></div> */}
         
           </div>
         </div>
