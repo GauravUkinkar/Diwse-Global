@@ -115,7 +115,7 @@ const page = () => {
           </div>
         </div>
       </div>
-      <About_card_swiper />
+      {/* <About_card_swiper /> */}
     </>
   );
 };
