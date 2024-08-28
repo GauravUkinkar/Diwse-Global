@@ -49,20 +49,20 @@ const page = () => {
     {
       title: "Press Release Management",
       content:
-        "Amplify Your Message. Our team will craft compelling press releases, distribute them to relevant media outlets, and ensure your key messages reach your target audience.",
-      image: img1,
+        "Amplify Your Message. Our team crafts compelling press releases, distributing them to relevant media outlets so your messages reach your audience.",
+        image: img1
     },
     {
       title: "Influencer and Media Outreach",
       content:
-        "Partner with Influencers. We'll identify and collaborate with influential figures, bloggers, and media professionals to amplify your brand's message and reach a wider audience.",
-      image: img2,
+        "Partner with Influencers. We'll identify and collaborate with influential figures, bloggers, and media professionals to amplify your brand's message.",
+        image: img2
     },
     {
       title: "Event Coordination and Promotion",
       content:
-        "Create Memorable Experiences. Our event planning experts will organise and promote impactful events, such as product launches, press conferences, and community activities, to generate media coverage and public interest.",
-      image: img3,
+        "Create Memorable Experiences. Our event planning experts will organise and promote impactful events to generate media coverage and public interest.",
+        image: img3
     },
   ];
 

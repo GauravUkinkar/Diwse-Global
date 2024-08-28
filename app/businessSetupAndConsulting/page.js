@@ -124,7 +124,7 @@ const page = () => {
           <div className="left">
             <h3 className="section-headding">Business Setup & Consulting</h3>
             <p className="service-p">
-              EExpand Your Global Reach: Our experienced consultants provide expert guidance on setting up operations in international markets. We help you navigate legal compliance, develop effective market entry strategies, and optimise your operations for global success.
+              Expand Your Global Reach: Our experienced consultants provide expert guidance on setting up operations in international markets. We help you navigate legal compliance, develop effective market entry strategies, and optimise your operations for global success.
 
             </p>
             <form onSubmit={submitEmail}>
