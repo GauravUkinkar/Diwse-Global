@@ -68,24 +68,24 @@ const page = () => {
 
   const faqContent = [
     {
-      title: "Brand Storytelling",
+      title: "Who can benefit from your services ?",
       content:
-        "Craft compelling brand stories that capture your audience’s attention. We create and deliver narratives that highlight your brand’s values and impact, enhancing your overall brand image.",
+        "Our services are for startups, expanding businesses, and those entering new markets.",
     },
     {
-      title: "Influencer Partnerships",
+      title: "What services do you offer ?",
       content:
-        "Leverage influencer relationships to boost your brand’s credibility and reach. We connect you with key influencers who align with your brand’s message and audience.",
+        "We offer company formation, business planning, regulatory compliance, market research, financial planning, operational consulting, and global expansion strategies.",
     },
     {
-      title: "Event Management",
+      title: "How long does a business setup take ?",
       content:
-        "Organize impactful events that engage your audience and build brand awareness. From product launches to media briefings, we handle all aspects of event planning and execution.",
+        "The timeline varies, but we strive for efficiency.",
     },
     {
-      title: "Reputation Monitoring",
+      title: "Can you help with funding ?",
       content:
-        "Monitor and analyze public perception of your brand. We track media mentions and online sentiment to proactively manage and improve your brand’s reputation.",
+        "Yes, we can guide you through various funding options, including venture capital, angel investors, bank loans, grants, and crowdfunding.",
     },
   ];
 
@@ -174,7 +174,7 @@ const page = () => {
           <div className="left">
 
             <h4 className="hedding">
-            Why Choose Diwise Global for  <span className="gradient-text">Public Relations & Media Outreach?</span>
+            FAQs for Public Relations &  <span className="gradient-text">Media Outreach</span>
             </h4>
             {faqContent.map((item, index) => (
               <Faq

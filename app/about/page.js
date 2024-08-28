@@ -254,7 +254,7 @@ const page = () => {
                 ensures sustainable growth and success.
               </p>
               <div className="social-media">
-                <a href="https://www.linkedin.com/in/prajakta-marwaha-507b6410a/" className="icon">
+                <a href="https://www.linkedin.com/in/prajakta-marwaha-507b6410a/" target="_blank" className="icon">
                   <span>
                     <RiLinkedinFill />
                   </span>

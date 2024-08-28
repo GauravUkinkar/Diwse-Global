@@ -53,27 +53,27 @@ const Header_main = () => {
     {
       path: "/digitalmarketing",
       name: "Digital Marketing",
-      images: "assets/header/3.png",
+      images: "assets/icons/navIcon/digital_marketing-1.png",
     },
     {
       path: "/businessSetupAndConsulting",
       name: "Business Setup And Consulting",
-      images: "assets/business-setup.jpg",
+      images: "assets/icons/navIcon/Dcoument.png",
     },
     {
       path: "/prandbranding",
       name: "Branding & Creative Services",
-      images: "assets/header/1.png",
+      images: "assets/icons/navIcon/digital_marketing.png",
     },
     {
       path: "/publicRelationOutreach",
       name: "Public Relation Outreach",
-      images: "assets/public-relation.jpg",
+      images: "assets/icons/navIcon/PR.png",
     },
     {
       path: "/webdevelopment",
       name: "Web Development",
-      images: "assets/header/2.png",
+      images: "assets/icons/navIcon/Development.png",
     },
   ];
 
@@ -213,9 +213,16 @@ const Header_main = () => {
                 ))}
               </div>
             </div>
-            <a href="/#home_casestudy" className="link link4">
+            <a href="/#home_casestudy"  onClick={() => {
+                closeAll();
+                setNavbar((element) => ({
+                  ...element,
+                  mobNav: false,
+                }));
+              }} className="link link4">
               Case Studies
             </a>
+            
             <a href="/blogs" className="link link5">
               Blogs
             </a>

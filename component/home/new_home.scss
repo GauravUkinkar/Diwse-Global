@@ -23,14 +23,14 @@
     .right {
       width: 50%;
    
-    //   transform: translateY(100%);
-    //   opacity: 0;
-    //   transition: transform 1s ease-in-out, opacity 1s ease-in-out;
-    //   transition-delay: 1s;
-    //   &.animate {
-    //     transform: translateY(0);
-    //     opacity: 1;
-    //   }
+      transform: translateX(100%);
+      opacity: 0;
+      transition: transform 1s ease-in-out, opacity 0.5s ease-in-out;
+      transition-delay: 0.5s;
+      &.animate {
+        transform: translateX(0);
+        opacity: 1;
+      }
     .img-box{
         width:100%;
         height:500px;
