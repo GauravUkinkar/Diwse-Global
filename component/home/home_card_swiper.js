@@ -39,7 +39,10 @@ const Home_Card_Swiper = ({
               <SwiperSlide key={index}>
                 <div className="card" style={{ height: cardHeight }}>
                   <div className="top-card">
-                    <div className="icon bg-img-contain"  style={{backgroundImage:`url(${card.icon})`}} ></div>
+                    {
+                      card.icon &&   <div className="icon bg-img-contain"  style={{backgroundImage:`url(${card.icon})`}} ></div>
+                    }
+                  
                     {showImage && card.image && (
                       <div className="top-img bg-img-cover" style={{ background: `url(${card.image.src})` }}></div>
                     )}
