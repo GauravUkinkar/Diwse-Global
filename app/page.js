@@ -62,7 +62,7 @@ export default function Home() {
       icon: "assets/icons/navIcon/Dcoument.png",
       title: "Business Setup & Consulting",
       description:
-        "Expand your business globally. We offer comprehensive support, from developing effective market entry strategies to providing operational consulting.",
+        "Expand your business globally. We offer comprehensive support, from developing market entry strategies to providing operational consulting.",
       buttonText: "Get Started",
       link:'businessSetupAndConsulting'
     },
