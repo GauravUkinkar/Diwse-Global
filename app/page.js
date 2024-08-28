@@ -175,11 +175,23 @@ export default function Home() {
             Our comprehensive suite of digital services is designed to propel
             your business to new heights, both domestically and internationally.
           </p>
+          {/* <Home_Card_Swiper
+            cards={cardData}
+            showButton={true}
+            showImage={false}
+            cardHeight="350px"
+         
+          /> */}
           <Home_Card_Swiper
             cards={cardData}
             showButton={true}
             showImage={false}
             cardHeight="350px"
+            gridTemplateColumns="repeat(3,1fr)"
+            gridarea="2/1/3/4"
+            display="grid"
+            Icongridarea="1/1/2/2"
+            titlegridarea="1/2/2/4"
           />
         </div>
       </div>
