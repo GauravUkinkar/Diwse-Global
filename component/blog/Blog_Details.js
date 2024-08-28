@@ -1,8 +1,9 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import "./blog_details.scss";
 import Button_comp from "../button/Button_comp";
 import { SlCalender } from "react-icons/sl";
 import { IoTimeOutline } from "react-icons/io5";
+import axios from "axios";
 
 const Blog_Details = ({ data }) => {
   const categories = [
@@ -57,12 +58,33 @@ const Blog_Details = ({ data }) => {
         "https://img.freepik.com/free-photo/close-up-cutting-plant-leaves_23-2148905280.jpg?t=st=1723310026~exp=1723313626~hmac=1ff2a36de003258b64f0909d982340552e8b607a737183cd7ca2579fdc24dec2&w=996",
     },
   ];
+  const [updatedBlogs, setUpdatedBlogs] = useState([]);
+  const fetchData = async () => {
+    try {
+      const response = await axios.get(
+        "https://api.diwiseglobal.com/auth/blogs/"
+      );
+      setUpdatedBlogs(response.data.data);
+    } catch (err) {
+      console.log(err);
+    }
+  };
+
+
+
+  useEffect(() => {
+    fetchData();
+  }, []);
+
+
+
+  console.log("updated blogs________________________",updatedBlogs)
 
   return (
     <div className="blog-details-parent parent">
       <div className="blog-details-cont cont">
         <div className="left">
-          <div className="img-box bg-img-cover"></div>
+          <div className="img-box bg-img-cover" style={{background: `url(${data.image})`}}></div>
           <div className="date-time-box">
             <div className="date-icon">
               <SlCalender />
@@ -70,7 +92,7 @@ const Blog_Details = ({ data }) => {
             </div>
             <div className="time-icon">
               <IoTimeOutline />
-              <div className="time">12:54 AM</div>
+              <div className="time">{data.time}</div>
             </div>
           </div>
           <h4 className="blog-title">{data.title}</h4>
@@ -102,12 +124,12 @@ const Blog_Details = ({ data }) => {
             <h4>
               Recent <span>Posts</span>
             </h4>
-            {recentPosts.map((post, index) => (
+            {updatedBlogs && updatedBlogs.map((post, index) => (
               <div key={index}>
                 <a href={post.link} className="recent-post-box">
                   <div
                     className="left bg-img-cover"
-                    style={{ backgroundImage: `url(${post.imgSrc})` }}
+                    style={{ backgroundImage: `url(${post.image})` }}
                   ></div>
                   <div className="right">
                     <div className="date-time">
