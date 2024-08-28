@@ -29,6 +29,7 @@ import { TbBusinessplan } from "react-icons/tb";
 import New_home from "@/component/home/new_home";
 import { Toaster } from "react-hot-toast";
 import nimg from "../public/assets/icons/navIcon/Dcoument.png"
+import Link from "next/link";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -240,9 +241,9 @@ export default function Home() {
                 style={{ background: `url(${item.imgage.src})` }}
               >
                 <div className="overlay"></div>
-                <a href={item.url} className="case-btn">
+                <Link href={item.url} className="case-btn">
                   View
-                </a>
+                </Link>
                 <h4>
                   <span className="gradient-text"></span> {item.title}
                 </h4>
