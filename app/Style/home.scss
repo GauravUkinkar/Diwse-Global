@@ -52,8 +52,9 @@
     .fourth-section-cont {
       .title {
         text-align: center;
+        max-width: 100ch;
         line-height: 120% !important;
-        font-size: var(--unit);
+        font-size: 30px;
       }
 
       .desc {
@@ -95,7 +96,7 @@
     .image {
       height: 100%;
       width: 100%;
-      background-position: center center !important;
+      background-position: left top !important;
       background-size: cover !important;
       background-repeat: no-repeat !important;
       border-radius: var(--unit);
