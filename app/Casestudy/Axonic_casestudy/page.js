@@ -71,7 +71,7 @@ const page = () => {
             reach.
           </p>
           <div data-aos="fade-up" data-aos-delay="400">
-            <Button_comp btn_text="Get Started" />
+            <Button_comp link="/contact" btn_text="Get Started" />
           </div>
         </div>
       </div>
@@ -113,7 +113,7 @@ const page = () => {
           </div>
 
           <div className="bottom" data-aos="fade-up" data-aos-delay="500">
-            <Button_comp btn_text="Get Started" />
+            <Button_comp link="/contact" btn_text="Get Started" />
           </div>
         </div>
       </div>

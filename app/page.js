@@ -29,6 +29,7 @@ import { TbBusinessplan } from "react-icons/tb";
 import New_home from "@/component/home/new_home";
 import { Toaster } from "react-hot-toast";
 import nimg from "../public/assets/icons/navIcon/Dcoument.png"
+import Link from "next/link";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -62,7 +63,7 @@ export default function Home() {
       icon: "assets/icons/navIcon/Dcoument.png",
       title: "Business Setup & Consulting",
       description:
-        "Expand your business globally. We offer comprehensive support, from developing effective market entry strategies to providing operational consulting.",
+        "Expand your business globally. We offer comprehensive support, from developing market entry strategies to providing operational consulting.",
       buttonText: "Get Started",
       link:'businessSetupAndConsulting'
     },
@@ -180,7 +181,6 @@ export default function Home() {
             showButton={true}
             showImage={false}
             cardHeight="350px"
-         
           /> */}
           <Home_Card_Swiper
             cards={cardData}
@@ -240,9 +240,9 @@ export default function Home() {
                 style={{ background: `url(${item.imgage.src})` }}
               >
                 <div className="overlay"></div>
-                <a href={item.url} className="case-btn">
+                <Link href={item.url} className="case-btn">
                   View
-                </a>
+                </Link>
                 <h4>
                   <span className="gradient-text"></span> {item.title}
                 </h4>
