@@ -8,35 +8,14 @@ import image1 from "../../public/assets/image1.jpg";
 import image2 from "../../public/assets/image2.jpg";
 import image3 from "../../public/assets/image3.jpg";
 import Image from "next/image";
-import axios from "axios";
 function Cursor() {
-  const [data, setData] = useState([]);
-  const fetchBlogsImage = async () => {
-    try {
-      const response = await axios.get(
-        "https://api.diwiseglobal.com/auth/blogs/"
-      );
-      const filterImage = response.data.data
-        .filter((item) => item.image)
-        .map((item) => item.image);
-      console.log(filterImage, "kkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkk");
-      setData(filterImage);
-    } catch (err) {
-      console.log(err);
-    }
-  };
-
-  useEffect(() => {
-    fetchBlogsImage();
-  });
   const [currentImage, setCurrentImage] = useState(null);
-  // const images = data;
-  const images = [image1,image2,image3]
-  console.log(images,"ketan")
+  const images = [image1, image2, image3];
+
   useEffect(() => {
     const cursor = document.getElementsByClassName("cursor")[0];
     const imageElement = document.querySelectorAll(".imagehover");
-    const body = document.querySelectorAll(".body");
+    const body = document.querySelectorAll(".body")
 
     const dot = document.querySelector(".dot");
     const onMouseMove = (e) => {
@@ -58,7 +37,9 @@ function Cursor() {
           duration: 0.1,
         });
       }
-
+       
+  
+      
       if (e.target.classList.contains("scroll")) {
         if (text) {
           text.style.display = "flex";
@@ -105,13 +86,13 @@ function Cursor() {
       }
     };
 
-    const mouseleaveBody = () => {
+    const mouseleaveBody = ()=>{
       gsap.to(cursor, {
         duration: 0.1,
         opacity: 0,
         scale: 0,
       });
-    };
+    }
     document.addEventListener("mousemove", onMouseMove);
 
     imageElement.forEach((item, index) => {
@@ -119,9 +100,10 @@ function Cursor() {
       item.addEventListener("mouseleave", onMouseLeaveImage);
     });
 
-    body.forEach((item) => {
-      item.addEventListener("mouseleave", mouseleaveBody);
-    });
+    body.forEach(item =>{
+      item.addEventListener("mouseleave",mouseleaveBody)
+    })
+
 
     return () => {
       document.removeEventListener("mousemove", onMouseMove);
