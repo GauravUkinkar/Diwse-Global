@@ -38,7 +38,6 @@ const Contact = () => {
     }
   };
 
-  console.log("formdata______________________", formdata);
   return (
     <>
       <div className="contact-parent parent">
