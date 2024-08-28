@@ -13,12 +13,8 @@ import './service3.scss';
 
 // import topimg from " ../../../public/assets/dgmarketing.jpg"
 
-
-
 function Service3(props) {
-
  
-
     return (
         <>
             {/* -------service-top-section------ */}
@@ -50,14 +46,40 @@ function Service3(props) {
                         centeredSlides={false}
                         slidesPerView={3}
                         autoplay={{
-                            delay: 2500,
+                            delay: 250000,
                             disableOnInteraction: false,
                         }}
+                        breakpoints={{
+                            280: {
+                                slidesPerView: 1,
+                                spaceBetween: 20,
+                              },
+                            320: {
+                                slidesPerView: 1,
+                                spaceBetween: 20,
+                              },
+                            350: {
+                                slidesPerView: 1,
+                                spaceBetween: 20,
+                              },
+                            690: {
+                              slidesPerView: 2,
+                              spaceBetween: 20,
+                            },
+                            780: {
+                              slidesPerView: 2,
+                              spaceBetween: 40,
+                            },
+                            1024: {
+                              slidesPerView: 3,
+                              spaceBetween: 50,
+                            },
+                          }}
                         pagination={{
                             clickable: false,
                         }}
                         navigation={true}
-                        modules={[Autoplay, Pagination, Navigation]}
+                        modules={[Autoplay,  Navigation]}
                         className="mySwiper"
                     >
 

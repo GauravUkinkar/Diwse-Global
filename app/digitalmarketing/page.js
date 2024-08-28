@@ -41,7 +41,7 @@ const page = () => {
         "Captivate Your Audience. Develop high-quality, relevant content that resonates with your target audience, establishes your brand as an industry leader, and drives engagement.",
     },
   ];
-  // Swiper content\
+  // ----------Swiper content List -------\
 
 
   const list = [
@@ -137,6 +137,8 @@ const page = () => {
 
       <div className="service-detail-parent parent">
         <div className="service-detail-cont cont">
+          {/* ------------------TOP---------------- */}
+
           <div className="top">
             <h3 className="heading">
               Expert Digital Marketing for
@@ -147,7 +149,7 @@ const page = () => {
               DIwise Global offers expert digital marketing services tailored to help your business stand out on a global scale. Our deep understanding of SEO and cutting-edge techniques ensure that your brand is visible, relevant, and engaging to international audiences. We leverage global trends and insights to deliver results that drive growth and impact.
             </p>
           </div>
-
+          {/* ------------------Middle---------------- */}
           <div className="middle">
             <div className="left">
               <div className="back-image bg-img-cover"></div>
@@ -170,13 +172,13 @@ const page = () => {
               ))}
             </div>
           </div>
-
+          {/* ------------------BOTTOM---------------- */}
           <div className="bottom">
             <div className="left">
               <h5 className="left-heding">
                 <span className="gradient-text">Effective Ad</span> Campaigns
               </h5>
-              <p>
+              <p className="bootom-section-para">
                 Maximise Reach: Implement targeted advertising campaigns across various platforms to reach your ideal audience, drive conversions, and increase brand awareness.
               </p>
             </div>
@@ -185,7 +187,7 @@ const page = () => {
               <h5 className="left-heding">
                 <span className="gradient-text">Comprehensive</span> Analysis
               </h5>
-              <p>
+              <p className="bootom-section-para">
                 Measure and Improve: Conduct regular analysis of your marketing campaigns to track performance, identify areas for improvement, and make data-driven adjustments to optimise your overall digital strategy.
               </p>
             </div>
@@ -196,7 +198,7 @@ const page = () => {
       <Service3
         contbgimg={topimg}
         list={list}
-       
+
       />
 
       <div className="service-faq-parent parent">

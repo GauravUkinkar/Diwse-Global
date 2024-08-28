@@ -553,7 +553,7 @@
 
       .para {
         width: 100% !important;
-        text-align: center !important;
+        text-align: justify !important;
       }
     }
 
@@ -665,6 +665,32 @@
       .middle .left{
         height: 400px !important;
     }
+  
+
+.bottom{
+  .left{
+    .bootom-section-para{
+      text-align: left;
     }
   }
+  .right{
+    .bootom-section-para{
+      text-align: left;
+    }
+  }
+}
+}
+}
+
+.service-faq-parent {
+   .service-faq-cont {
+        .left {
+           .hedding {
+        font-size: 24px;
+        text-align: left;
+      }
+    }
+  }
+}
+
 }
