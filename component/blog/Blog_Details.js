@@ -58,6 +58,9 @@ const Blog_Details = () => {
     },
   ];
 
+
+
+
   return (
     <div className="blog-details-parent parent">
       <div className="blog-details-cont cont">

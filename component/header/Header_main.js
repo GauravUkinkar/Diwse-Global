@@ -1,21 +1,16 @@
 "use client";
-
-import React, { useEffect, useState } from "react";
-import logoImage from "../../assets/logo.png";
 import Image from "next/image";
-import "./header.scss";
+import { useEffect, useState } from "react";
 import { FaGripLines } from "react-icons/fa";
-import { MdKeyboardArrowDown } from "react-icons/md";
+import { MdKeyboardArrowDown, MdKeyboardArrowUp } from "react-icons/md";
 import { RxCross1 } from "react-icons/rx";
-import { MdKeyboardArrowUp } from "react-icons/md";
-import branding from "../../public/assets/icons/branding.gif";
-import Icon from "../dynamicIcon/Icon";
+import logoImage from "../../public/assets/logo/newlogo/svwhite.svg";
+import "./header.scss";
 
 const Header_main = () => {
   const [navbar, setNavbar] = useState({
     serviceList: false,
     mobNav: false,
-    // mobService: false,
     headerblur: false,
   });
 
@@ -58,7 +53,7 @@ const Header_main = () => {
     {
       path: "/digitalmarketing",
       name: "Digital Marketing",
-      images: "assets/image1.jpg",
+      images: "assets/header/3.png",
     },
     {
       path: "/businessSetupAndConsulting",
@@ -68,7 +63,7 @@ const Header_main = () => {
     {
       path: "/prandbranding",
       name: "Branding & Creative Services",
-      images: "assets/branding.jpg",
+      images: "assets/header/1.png",
     },
     {
       path: "/publicRelationOutreach",
@@ -78,7 +73,7 @@ const Header_main = () => {
     {
       path: "/webdevelopment",
       name: "Web Development",
-      images: "assets/website-development.jpg",
+      images: "assets/header/2.png",
     },
   ];
 
@@ -102,7 +97,7 @@ const Header_main = () => {
             <Image src={logoImage} className="logo-img" width={100} />
           </a>
           <div className="links">
-            <a href="/" className="link image link1 " >
+            <a href="/" className="link image link1 ">
               Home
             </a>
             <a href="/about" className="link link2">
@@ -162,6 +157,7 @@ const Header_main = () => {
                     className="top bg-img-cover"
                     style={{ backgroundImage: `url(${item.images})` }}
                   ></div>
+
                   <h5>{item.name}</h5>
                 </a>
               ))}
@@ -169,12 +165,11 @@ const Header_main = () => {
           </div>
         )}
       </div>
-
-      {/* {navbar.mobNav && (
+      {navbar.mobNav && (
         <div className="mob-nav">
           <div className="top">
-            <div className="logo">
-              <Image src={logoImage} />
+            <div className="logo2">
+              <Image src={logoImage}  className="logo-img-mobile" width={100}/>
             </div>
             <div
               className="cross"
@@ -190,46 +185,38 @@ const Header_main = () => {
             </div>
           </div>
           <div className="menus">
-            <a href="/" className="link link1 ">
+            <a href="/" className="link link1">
               Home
             </a>
             <a href="/about" className="link link2">
               About
             </a>
             <div
-              href=""
               className="link link3"
               onClick={() => setMobService(!mobService)}
+              style={{ cursor: "pointer" }}
             >
               Service
               <span className="downArrow arrow">
-                <MdKeyboardArrowDown />
+                {
+                  mobService ?<MdKeyboardArrowUp /> : <MdKeyboardArrowDown />
+                }
+                
               </span>
             </div>
-            <div
-              href=""
-              className={
-                mobService ? "link service-list active" : "link service-list"
-              }
-            >
+            <div className={`service-list ${mobService ? "active" : ""}`}>
               <div className="list">
-                {
-                  servicelists.map((item)=>(
-                    <a href={item.path}>
-                      {item.name}
-                    </a>
-
-                  ))
-                }
-
+                {servicelists.map((item) => (
+                  <a href={item.path} key={item.name}>
+                    {item.name}
+                  </a>
+                ))}
               </div>
             </div>
-            <a href="/Casestudy" className="link link4">
-              {" "}
+            <a href="/#home_casestudy" className="link link4">
               Case Studies
             </a>
-            <a href="blogs" className="link link5">
-              {" "}
+            <a href="/blogs" className="link link5">
               Blogs
             </a>
             <a className="btn1" href="/contact" style={{ marginTop: "20px" }}>
@@ -237,67 +224,7 @@ const Header_main = () => {
             </a>
           </div>
         </div>
-      )} */}
-      {navbar.mobNav && (
-  <div className="mob-nav" >
-    <div className="top">
-      <div className="logo">
-        <Image src={logoImage} />
-      </div>
-      <div
-        className="cross"
-        onClick={() => {
-          closeAll();
-          setNavbar((element) => ({
-            ...element,
-            mobNav: false,
-          }));
-        }}
-      >
-        <RxCross1 />
-      </div>
-    </div>
-    <div className="menus">
-      <a href="/" className="link link1">
-        Home
-      </a>
-      <a href="/about" className="link link2">
-        About
-      </a>
-      <div
-        className="link link3"
-        onClick={() => setMobService(!mobService)}
-        style={{ cursor: 'pointer' }}
-      >
-        Service
-        <span className="downArrow arrow">
-          <MdKeyboardArrowDown />
-        </span>
-      </div>
-      <div
-        className={`service-list ${mobService ? "active" : ""}`}
-      >
-        <div className="list">
-          {servicelists.map((item) => (
-            <a href={item.path} key={item.name}>
-              {item.name}
-            </a>
-          ))}
-        </div>
-      </div>
-      <a href="/#home_casestudy" className="link link4">
-        Case Studies
-      </a>
-      <a href="/blogs" className="link link5">
-        Blogs
-      </a>
-      <a className="btn1" href="/contact" style={{ marginTop: "20px" }}>
-        Get Started
-      </a>
-    </div>
-  </div>
-)}
-
+      )}
     </>
   );
 };
