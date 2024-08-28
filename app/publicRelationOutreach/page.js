@@ -11,7 +11,10 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 import Service3 from "@/component/servicesection3/Service3";
 
-import img1 from "../../public/assets/business-setup.jpg";
+import img1 from "../../public/assets/public_relation_outreach/PressReleaseManagement.svg";
+
+import img2 from "../../public/assets/public_relation_outreach/InfluencerandMediaOutreach.svg"
+import img3 from "../../public/assets/public_relation_outreach/EventCoordinationandPromotion.svg"
 import topimg from "../../public/assets/public-relation.jpg";
 const page = () => {
   
@@ -56,13 +59,13 @@ const page = () => {
       title: "Influencer and Media Outreach",
       content:
         "Partner with Influencers. We'll identify and collaborate with influential figures, bloggers, and media professionals to amplify your brand's message and reach a wider audience.",
-        image: img1
+        image: img2
     },
     {
       title: "Event Coordination and Promotion",
       content:
         "Create Memorable Experiences. Our event planning experts will organise and promote impactful events, such as product launches, press conferences, and community activities, to generate media coverage and public interest.",
-        image: img1
+        image: img3
     },
   ];
 

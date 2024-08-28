@@ -156,14 +156,14 @@ const page = () => {
           <div className="bottom">
             <div className="left">
               <h5 className="left-heding"><span className="gradient-text">Brand</span> Positioning</h5>
-              <p>
+              <p className="bootom-section-para">
                 Craft Your Message: We'll help you develop clear and compelling brand messaging that effectively communicates your unique value proposition to your target audience.
               </p>
             </div>
 
             <div className="right">
               <h5 className="left-heding">Creative<span className="gradient-text"> Campaigns</span> </h5>
-              <p>
+              <p className="bootom-section-para">
               Launch Successful Campaigns: Our creative team will develop innovative and effective marketing campaigns tailored to your specific goals. We'll create a variety of marketing materials, including print ads, digital banners, social media content, and more.
               </p>
             </div>
