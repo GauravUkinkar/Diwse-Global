@@ -1,7 +1,7 @@
 "use client"; // Add this line at the top
 
 import Contact from "@/component/contact/Contact";
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import "./contact_page.scss";
 import { FaInstagram } from "react-icons/fa";
 import { FaFacebookF } from "react-icons/fa";
@@ -11,13 +11,16 @@ import { GrLocation } from "react-icons/gr";
 import { IoCallSharp } from "react-icons/io5";
 import AOS from "aos";
 import "aos/dist/aos.css";
+import axios from "axios";
 
 const page = () => {
+ 
   useEffect(() => {
     AOS.init({
       duration: 500,
     });
   }, []);
+
 
   return (
     <>
@@ -47,8 +50,7 @@ const page = () => {
                 <IoCallSharp />
               </div>
               <p className="desc-d">
-                <a href="tel:+918482936866">
-                +91 8482936866</a>
+                <a href="tel:+918482936866">+91 8482936866</a>
               </p>
             </div>
           </div>
