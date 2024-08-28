@@ -63,7 +63,7 @@ const New_home = () => {
           
           <div className="video-box" data-aos="fade-up">
           <video autoPlay muted loop width="100%">
-            <source src="/assets/dvideo.webm" type="video/webm" />
+            <source src="/assets/home.webm" type="video/webm" />
             Your browser does not support the video tag.
           </video>
         </div>
