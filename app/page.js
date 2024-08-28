@@ -198,6 +198,7 @@ export default function Home() {
           autoplay={{
             delay: 5000,
             disableOnInteraction: false,
+            pauseOnMouseEnter: true,
           }}
           navigation={false}
           modules={[Autoplay]}
@@ -214,6 +215,7 @@ export default function Home() {
               slidesPerView: 1,
             },
           }}
+     
         >
           {caseStudies.map((item, index) => (
             <SwiperSlide className="bg-img-cover" key={index}>
