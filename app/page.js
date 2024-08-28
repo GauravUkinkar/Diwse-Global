@@ -27,6 +27,7 @@ import { MdBrandingWatermark, MdDeveloperMode } from "react-icons/md";
 import { SiWikimediafoundation } from "react-icons/si";
 import { TbBusinessplan } from "react-icons/tb";
 import New_home from "@/component/home/new_home";
+import { Toaster } from "react-hot-toast";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -244,6 +245,8 @@ export default function Home() {
 
       {/* 8th Section - Footer */}
       {/* <Footer /> */}
+
+      <Toaster />
     </>
   );
 }
