@@ -183,10 +183,10 @@ const Header_main = () => {
             </div>
           </div>
           <div className="menus">
-            <Link href="/" className="link link1">
+            <Link href="/" className="link link1" onClick={()=>setNavbar({...navbar,mobNav:false})}>
               Home
             </Link>
-            <Link href="/about" className="link link2">
+            <Link href="/about" className="link link2" onClick={()=>setNavbar({...navbar,mobNav:false})}>
               About
             </Link>
             <div
@@ -205,7 +205,7 @@ const Header_main = () => {
             <div className={`service-list ${mobService ? "active" : ""}`}>
               <div className="list">
                 {servicelists.map((item) => (
-                  <Link href={item.path} key={item.name}>
+                  <Link href={item.path} key={item.name} onClick={()=>setNavbar({...navbar,mobNav:false})}>
                     {item.name}
                   </Link>
                 ))}
@@ -221,10 +221,10 @@ const Header_main = () => {
               Case Studies
             </Link>
             
-            <Link href="/blogs" className="link link5">
+            <Link href="/blogs" className="link link5" onClick={()=>setNavbar({...navbar,mobNav:false})}>
               Blogs
             </Link>
-            <Link className="btn1" href="/contact" style={{ marginTop: "20px" }}>
+            <Link className="btn1" href="/contact" style={{ marginTop: "20px" }} onClick={()=>setNavbar({...navbar,mobNav:false})}>
               Get Started
             </Link>
           </div>
