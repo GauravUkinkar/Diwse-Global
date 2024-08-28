@@ -176,7 +176,7 @@
 }
 
 .top-imgt {
-  background: url("../../../public/assets/home/casestudy/t2.jpg");
+  background: url("../../../public/assets/home/casestudy/t22.jpg");
 }
 .hcc-top-img{
   background: url("../../../public/assets/home/casestudy/hcc_top.jpg");
@@ -297,6 +297,11 @@
     .case-study-page-cont {
       .case-heading {
         font-size: 26px !important;
+        text-align: center !important;
+      }
+
+      .case-para{
+        text-align: center !important;
       }
     }
   }
@@ -398,6 +403,10 @@
       .middle {
         .left {
           width: 100% !important;
+
+          .middlepara{
+          text-align: center !important;
+          }
         }
 
         .btnlist {
