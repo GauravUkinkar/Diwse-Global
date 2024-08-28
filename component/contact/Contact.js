@@ -45,8 +45,10 @@ const Contact = () => {
         <div className="contact-cont cont">
           <div className="left" data-aos="fade-up">
             <h2 className="c-title">
-              <span className="gradient-text">Get in Touch</span> with Diwise
+              <span className="gradient-text bold_text">Get in Touch</span> <span className="light_text">
+              with Diwise
               Global
+              </span>
             </h2>
             <div className="line"></div>
             <form className="contact-form" onSubmit={contactSubmission}>

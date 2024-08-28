@@ -34,7 +34,7 @@ gsap.registerPlugin(ScrollTrigger);
 export default function Home() {
   const cardData = [
     {
-      icon: <FaSearchengin />,
+      icon: "assets/icons/navIcon/digital_marketing-1.png",
       title: "Digital Marketing & SEO",
       description:
         "Elevate your online presence. From crafting engaging content and managing your social media, we'll drive global visibility and engagement.",
@@ -42,7 +42,7 @@ export default function Home() {
       link:'digitalmarketing'
     },
     {
-      icon: <MdDeveloperMode />,
+      icon: "assets/icons/navIcon/Development.png",
       title: "Web & App Development",
       description:
         "Bring your digital vision to life. We specialise in creating user-friendly, responsive designs that leverage the latest technology to meet your business needs.",
@@ -50,7 +50,7 @@ export default function Home() {
       link:'webdevelopment'
     },
     {
-      icon: <MdBrandingWatermark />,
+      icon: "assets/icons/navIcon/digital_marketing.png",
       title: "Branding & Creative Services",
       description:
         "Make Your Brand Unforgettable. Our team of creative experts will design your logo, develop your brand story, and produce engaging multimedia content.",
@@ -58,7 +58,7 @@ export default function Home() {
       link:'prandbranding'
     },
     {
-      icon: <TbBusinessplan />,
+      icon: "assets/icons/navIcon/Dcoument.png",
       title: "Business Setup & Consulting",
       description:
         "Expand your business globally. We offer comprehensive support, from developing effective market entry strategies to providing ongoing operational consulting.",
@@ -66,7 +66,7 @@ export default function Home() {
       link:'businessSetupAndConsulting'
     },
     {
-      icon: <SiWikimediafoundation />,
+      icon: "assets/icons/navIcon/PR.png",
       title: "Public Relations & Media Outreach",
       description:
         "Manage Your Reputation Globally. We help you build and maintain a positive brand reputation across multiple markets, ensuring effective communication.",
