@@ -83,7 +83,7 @@ const page = () => {
 
   const faqContent = [
     {
-      title: " Global Reach",
+      title: " SEO vs. SEM",
       content:
         "With a presence in India, the UK, and UAE, we have the experience and expertise to help your business succeed in diverse markets.",
     },
@@ -233,8 +233,9 @@ const page = () => {
         <div className="service-faq-cont cont">
           <div className="left">
             <h4 className="hedding">
-              Why Choose Diwise Global for{" "}
-              <span className="gradient-text">Digital Marketing & SEO?</span>
+           
+            FAQs for Digital{" "}
+              <span className="gradient-text">Marketing and SEO Services</span>
             </h4>
             {faqContent.map((item, index) => (
               <Faq
