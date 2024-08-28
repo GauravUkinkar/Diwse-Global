@@ -12,88 +12,88 @@ import "aos/dist/aos.css";
 import Service3 from "@/component/servicesection3/Service3";
 
 import topimg from "../../public/assets/branding.jpg";
-import img1 from '../../public/assets/sevice3/social.png';
+import img1 from '../../public/assets/prbranding/LogoDesigning.svg';
 import img2 from '../../public/assets/sevice3/social.png';
 import img3 from '../../public/assets/sevice3/social.png';
 
 
 const page = () => {
-  
 
-    const [activeIndex, setActiveIndex] = useState(0);
-  
-    const toggleFaq = (index) => {
-      setActiveIndex(activeIndex === index ? null : index);
-    };
-   
+
+  const [activeIndex, setActiveIndex] = useState(0);
+
+  const toggleFaq = (index) => {
+    setActiveIndex(activeIndex === index ? null : index);
+  };
+
 
   const serviceDetails = [
     {
       srNo: 1,
-      title: "Logo Design",
+      title: "Brand Strategy and Identity Development",
       content:
-        "Create a distinctive logo that represents your brand’s identity. Our design experts craft logos that are both unique and memorable.",
+        "Define Your Brand: Our experts will work with you to develop a comprehensive brand strategy that aligns with your business goals, target audience, and values. We'll create a unique brand identity that sets you apart.",
     },
     {
       srNo: 2,
-      title: "Brand Identity Creation",
+      title: "Logo Design and Branding Guidelines",
       content:
-        "Develop a cohesive brand identity with our tailored solutions. We design visual elements and messaging that reflect your brand’s core values and vision.",
+        "Create a Visual Identity: We'll design a memorable and visually appealing logo that captures the essence of your brand. We'll also provide comprehensive branding guidelines to ensure consistency across all marketing materials.",
     },
     {
       srNo: 3,
-      title: "Multimedia Content Production",
+      title: "Content Creation (Copywriting, Design, Multimedia)",
       content:
-        "Produce engaging multimedia content that captures attention. From videos to infographics, we create content that enhances your brand’s presence across various platforms.",
+        "Engage Your Audience: Our creative team will produce high-quality content that resonates with your target audience. We offer copywriting, design, and multimedia services to create engaging and effective marketing materials.",
     },
   ];
 
 
 
-  
+
   const list = [
     {
-      title: "Brand Strategy",
+      title: "Logo Designing ",
       content:
-        "Develop a strategic approach to brand growth. We help you define your brand’s vision and position in the market.",
+        "Your Brand's Visual Identity. Our skilled designers will create a unique and memorable logo that perfectly captures the essence of your brand.",
       image: img1
     },
     {
-      title: "Visual Consistency",
+      title: "Brand Identity Development",
       content:
-        "Ensure your brand’s visuals are consistent across all platforms. We design elements that unify your brand’s look and feel.",
+        "A Cohesive Brand. Develop a strong and consistent brand identity with our tailored solutions that reflect your brand's core values and vision.",
       image: img2
     },
     {
-      title: "Creative Storytelling",
+      title: "Multimedia Content Production",
       content:
-        "Tell your brand’s story with powerful impact. We craft compelling narratives that deeply connect with your audience.",
+        "Captivate Your Audience. Engage your audience with compelling multimedia content. We create content that enhances your brand's presence across platforms.",
       image: img3
     },
-   
+
   ];
 
 
   const faqContent = [
     {
-      title: "Global Expertise",
+      title: "What is the branding process like?",
       content:
-        "Benefit from our experience in crafting effective brand strategies for international markets.",
+        "Our collaborative process involves understanding your vision, creating a strategy, and developing a brand identity that aligns with your goals.",
     },
     {
-      title: "Tailored Solutions",
+      title: "How long does branding take?",
       content:
-        "Receive customized branding services that align with your specific business needs and goals.",
+        "The timeline varies depending on the project's complexity, but we strive for efficiency. Expect the process to take approximately 4-8 weeks.",
     },
     {
-      title: " Innovative Design",
+      title: "What creative services do you offer?",
       content:
-        "Leverage our creative design solutions to ensure your brand stands out and makes a lasting impression.",
+        "We offer a wide range of services, including logo design, content creation, brand messaging, and marketing materials.",
     },
     {
-      title: "Comprehensive Approach",
+      title: "How do you ensure alignment with our brand values?",
       content:
-        "Enjoy end-to-end branding services, from initial concept to final execution, for a cohesive brand experience.",
+        "We prioritise understanding your brand's values throughout the creative process to ensure all deliverables are consistent and effectively communicate your unique selling points.",
     },
   ];
 
@@ -106,9 +106,9 @@ const page = () => {
       <div className="service-hero-parent parent">
         <div className="service-hero-cont cont">
           <div className="left">
-            <h3 className="section-headding">Branding & Creative Services</h3>
+            <h3 className="section-headding">Branding & Creative Services </h3>
             <p className="service-p">
-              In today's digital landscape, a powerful online presence is crucial for global success. At Diwise Global, we excel in developing sophisticated digital marketing strategies that elevate your brand's visibility and foster meaningful engagement across international markets. Our approach is designed to help your business not only compete but thrive on a global stage.
+              Build a Memorable Brand: Our expert branding team will develop a strong and distinctive brand identity that resonates with your target audience worldwide. From logo design to content creation, we ensure your brand stands out in the global marketplace.
             </p>
             <form action="">
               <input type="email" placeholder="Your email address" />
@@ -127,10 +127,11 @@ const page = () => {
         <div className="service-detail-cont cont">
           <div className="top">
             <h3 className="heading">
-              Elevate Your Brand with<br /> <span className="gradient-text">Diwise Global's Expertise</span>
+              Elevate Your Brand with
+              <br /> <span className="gradient-text">DIwise Global</span>
             </h3>
             <p className="para">
-              Our expertise in digital marketing and SEO ensures that your business stands out in a crowded marketplace. We combine cutting-edge techniques with a deep understanding of global trends to deliver results that matter.
+              Our expertise in branding and creative services ensures that your business stands out in a crowded marketplace. We combine innovative strategies with a deep understanding of global trends to deliver results that matter. From crafting compelling brand identities to producing engaging multimedia content, our team is dedicated to helping you make a lasting impression.
             </p>
           </div>
 
@@ -154,16 +155,16 @@ const page = () => {
 
           <div className="bottom">
             <div className="left">
-              <h5 className="left-heding"><span className="gradient-text">Strategic</span> Branding</h5>
+              <h5 className="left-heding"><span className="gradient-text">Brand</span> Positioning</h5>
               <p>
-                Gain valuable insights with our comprehensive market consultation services. We analyze market trends, competitive landscapes, and consumer behavior to provide strategic recommendations that drive your business forward. Our expert team helps you navigate complex markets, identify opportunities, and develop effective strategies to achieve your goals.
+                Craft Your Message: We'll help you develop clear and compelling brand messaging that effectively communicates your unique value proposition to your target audience.
               </p>
             </div>
 
             <div className="right">
-              <h5 className="left-heding"><span className="gradient-text">Sales</span> Research</h5>
+              <h5 className="left-heding">Creative<span className="gradient-text"> Campaigns</span> </h5>
               <p>
-                Enhance your sales strategies with our in-depth sales research services. We conduct thorough analyses of market conditions, customer preferences, and competitive positioning to provide actionable insights. Our research helps you understand market dynamics, optimize your sales approach, and make data-driven decisions to boost your business performance.
+              Launch Successful Campaigns: Our creative team will develop innovative and effective marketing campaigns tailored to your specific goals. We'll create a variety of marketing materials, including print ads, digital banners, social media content, and more.
               </p>
             </div>
           </div>
@@ -173,9 +174,9 @@ const page = () => {
       <Service3
         contbgimg={topimg}
         list={list}
-       
+
       />
-     
+
 
       <div className="service-faq-parent parent">
         <div className="service-faq-cont cont">
