@@ -13,8 +13,8 @@ import Service3 from "@/component/servicesection3/Service3";
 
 import topimg from "../../public/assets/branding.jpg";
 import img1 from '../../public/assets/prbranding/LogoDesigning.svg';
-import img2 from '../../public/assets/sevice3/social.png';
-import img3 from '../../public/assets/sevice3/social.png';
+import img2 from '../../public/assets/prbranding/BrandIdentityDevelopment.svg';
+import img3 from '../../public/assets/prbranding/MultimediaContentProduction.svg';
 
 
 const page = () => {
