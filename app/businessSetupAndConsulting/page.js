@@ -10,39 +10,44 @@ import Faq from "@/component/faq/Faq";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import Service3 from "@/component/servicesection3/Service3";
-import img1 from "../../public/assets/business-setup.jpg";
+
+import img1 from "../../public/assets/bussiness-setup/CompanyFormationandRegistration.svg";
+
+import img2 from "../../public/assets/bussiness-setup/ComprehensiveBusinessPlanning.svg"
+
+import img3 from '../../public/assets/bussiness-setup/RegulatoryComplianceandLegalAdvisory.svg'
 import topimg from "../../public/assets/business-setup.jpg";
 
 
 
 const page = () => {
-  
 
-    const [activeIndex, setActiveIndex] = useState(0);
-  
-    const toggleFaq = (index) => {
-      setActiveIndex(activeIndex === index ? null : index);
-    };
-   
+
+  const [activeIndex, setActiveIndex] = useState(0);
+
+  const toggleFaq = (index) => {
+    setActiveIndex(activeIndex === index ? null : index);
+  };
+
 
   const serviceDetails = [
     {
       srNo: 1,
       title: " Tailored Market Entry Strategies",
       content:
-      "Navigate New Markets: Our experts develop customised strategies that consider regional nuances, helping you establish a strong foothold in your target international markets.",
+        "Navigate New Markets: Our experts develop customised strategies that consider regional nuances, helping you establish a strong foothold in your target international markets.",
     },
     {
       srNo: 2,
-      title: " Legal Compliance and Regulatory Guidance",
+      title: "Legal Compliance and Regulatory Guidance",
       content:
-      "Ensure Compliance: Stay compliant with international regulations, tax laws, and industry standards, minimising risks and ensuring smooth operations.",
+        "Ensure Compliance: Stay compliant with international regulations, tax laws, and industry standards, minimising risks and ensuring smooth operations.",
     },
     {
       srNo: 3,
       title: "Operational Optimisation and Consulting",
       content:
-        "Streamline Your Business: Our consulting services help you optimise your operations, enhance efficiency, and drive sustainable growth..",
+        "Streamline Your Business: Our consulting services help you optimise your operations, enhance efficiency, and drive sustainable growth.",
     },
   ];
 
@@ -51,42 +56,42 @@ const page = () => {
       title: "Company Formation and Registration",
       content:
         "Establish Your Business. Let us guide you through the legal and administrative processes of setting up your new business, including selecting the optimal business structure, registering your company, and obtaining necessary licences and permits.",
-        image: img1
+      image: img1
     },
     {
       title: "Comprehensive Business Planning",
       content:
         "Chart Your Course. Our expert consultants will help you develop detailed business plans, conduct thorough market research, and create strategic roadmaps that align with your long-term goals.",
-        image: img1
+      image: img2
     },
     {
       title: "Regulatory Compliance and Legal Advisory",
       content:
         "Navigate the Legal Landscape. Stay compliant with local regulations, tax laws, and industry-specific requirements, ensuring smooth operations and mitigating risks with our expert legal advice.",
-        image: img1
+      image: img3
     },
   ];
 
   const faqContent = [
     {
-      title: " Global Expertise",
+      title: " Who can benefit from your services?",
       content:
-        "Benefit from our deep understanding of international markets and regulations.",
+        "Our services are for startups, expanding businesses, and those entering new markets.",
     },
     {
-      title: " Tailored Strategies",
+      title: "What services do you offer? ",
       content:
-        "Receive customized business solutions that align with your specific goals and market conditions.",
+        "We offer company formation, business planning, regulatory compliance, market research, financial planning, operational consulting, and global expansion strategies.",
     },
     {
-      title: " End-to-End Support",
+      title: "How long does a business setup take?",
       content:
-        "From initial planning to full execution, we provide comprehensive support at every stage of your business expansion",
+        "The timeline varies, but we strive for efficiency.",
     },
     {
-      title: " Risk Mitigation",
+      title: "Can you help with funding? ",
       content:
-        "Our expertise helps you identify and mitigate potential risks, ensuring a smooth and successful market entry.",
+        "Yes, we can guide you through various funding options, including venture capital, angel investors, bank loans, grants, and crowdfunding.",
     },
   ];
 
@@ -101,7 +106,8 @@ const page = () => {
           <div className="left">
             <h3 className="section-headding">Business Setup & Consulting</h3>
             <p className="service-p">
-            Expand Your Global Reach: Our experienced consultants provide expert guidance on setting up operations in international markets. We help you navigate legal compliance, develop effective market entry strategies, and optimise your operations for global success.
+              EExpand Your Global Reach: Our experienced consultants provide expert guidance on setting up operations in international markets. We help you navigate legal compliance, develop effective market entry strategies, and optimise your operations for global success.
+
             </p>
             <form action="">
               <input type="email" placeholder="Your email address" />
@@ -120,11 +126,12 @@ const page = () => {
         <div className="service-detail-cont cont">
           <div className="top">
             <h3 className="heading">
-            Propel Your Business to Global Heights with <span className="gradient-text">  DIwise Global
-            </span>
+              Propel Your Business to Global Heights with
+              <span className="gradient-text">DIwise Global
+              </span>
             </h3>
             <p className="para">
-            Our expert consulting services empower businesses to conquer international markets with confidence. From navigating legal complexities to developing effective market entry strategies, we provide comprehensive support that ensures your business thrives on a global scale.
+              Our expert consulting services empower businesses to conquer international markets with confidence. From navigating legal complexities to developing effective market entry strategies, we provide comprehensive support that ensures your business thrives on a global scale.
             </p>
           </div>
 
@@ -149,15 +156,17 @@ const page = () => {
           <div className="bottom">
             <div className="left">
               <h5 className="left-heding"><span className="gradient-text">Global Expansion </span> Consultation</h5>
-              <p>
-              Create a Roadmap: Develop a comprehensive global expansion plan that aligns with your long-term goals, backed by in-depth market analysis, strategic positioning, and financial projections.
+              <p className="bootom-section-para">
+                Create a Roadmap: Develop a comprehensive global expansion plan that aligns with your long-term goals, backed by in-depth market analysis, strategic positioning, and financial projections.
               </p>
             </div>
 
             <div className="right">
-              <h5 className="left-heding"><span className="gradient-text">Strategies for  </span> Global Success</h5>
-              <p>
-              Achieve Your Objectives: Our strategic planning services guide you through the process of setting clear goals, conducting market research, and developing effective strategies to achieve your global ambitions.
+              <h5 className="left-heding"><span className="gradient-text">Strategic Planning for
+              </span> Global Success</h5>
+              <p className="bootom-section-para">
+                Achieve Your Objectives: Our strategic planning services guide you through the process of setting clear goals, conducting market research, and developing effective strategies to achieve your global ambitions.
+
               </p>
             </div>
           </div>
@@ -167,16 +176,17 @@ const page = () => {
       <Service3
         contbgimg={topimg}
         list={list}
-       
+
       />
-     
+
 
       <div className="service-faq-parent parent">
         <div className="service-faq-cont cont">
           <div className="left">
 
             <h4 className="hedding">
-            Why Choose Diwise Global for <span className="gradient-text">Business Setup & Consulting?</span>
+            FAQs for Business Setup & <span className="gradient-text">Consulting Services
+              </span>
             </h4>
             {faqContent.map((item, index) => (
               <Faq

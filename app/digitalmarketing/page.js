@@ -13,6 +13,8 @@ import topimg from "../../public/assets/digital_marketing/d_m_third_section.webp
 import img1 from '../../public/assets/sevice3/seo.png'
 import img2 from '../../public/assets/sevice3/content.png'
 import img3 from '../../public/assets/sevice3/social.png'
+import img4 from '../../public/assets/sevice3/EmailMarketing.svg';
+import img5 from '../../public/assets/sevice3/pay-per.svg';
 
 const page = () => {
   const [activeIndex, setActiveIndex] = useState(0);
@@ -55,25 +57,25 @@ const page = () => {
       title: "Social Media Marketing",
       content:
         "Engage Your Audience: Connect with your target audience on popular social media platforms, build brand loyalty, and drive traffic to your website.",
-      image: img2
+      image: img3
     },
     {
       title: "Content Marketing",
       content:
         "Create Value: Develop high-quality, engaging content that attracts, informs, and converts your audience into customers.",
-      image: img3
+      image: img2
     },
     {
       title: "Email Marketing",
       content:
         "Nurture Relationships: Build lasting relationships with your customers through targeted email campaigns that deliver valuable content and drive conversions.",
-      image: img1
+      image: img4
     },
     {
       title: "Pay-Per-Click Advertising",
       content:
         "Achieve Immediate Results: Leverage paid advertising to reach your target audience quickly, drive traffic to your website, and generate leads or sales.",
-      image: img1
+      image: img5
     }
   ];
 
