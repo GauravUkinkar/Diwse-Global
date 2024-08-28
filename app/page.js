@@ -192,6 +192,8 @@ export default function Home() {
             display="grid"
             Icongridarea="1/1/2/2"
             titlegridarea="1/2/2/4"
+            titleLineHeight="120%"
+            // cardJustify="center"
           />
         </div>
       </div>

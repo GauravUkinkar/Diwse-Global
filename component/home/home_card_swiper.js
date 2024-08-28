@@ -14,6 +14,9 @@ const Home_Card_Swiper = ({
   gridarea,
   Icongridarea,
   titlegridarea,
+  titleLineHeight,
+  cardJustify,
+  cardAlign,
   pauseOnMouseEnter = true,
   cardHeight = "auto",
   alignTitle = "left",  // Default alignment for the title
@@ -42,7 +45,7 @@ const Home_Card_Swiper = ({
           {cards &&
             cards.map((card, index) => (
               <SwiperSlide key={index}>
-                <div className="card" style={{ height: cardHeight }}>
+                <div className="card" style={{ height: cardHeight,alignItems:cardAlign , justifyContent:cardJustify}}>
                   <div className="top-card" style={{display:display, gridTemplateColumns:gridTemplateColumns}}   >
                     {
                       card.icon &&   <div className="icon bg-img-contain"  style={{backgroundImage:`url(${card.icon})`,gridArea:Icongridarea}} ></div>
@@ -51,7 +54,7 @@ const Home_Card_Swiper = ({
                     {showImage && card.image && (
                       <div className="top-img bg-img-cover" style={{ background: `url(${card.image.src})` }}></div>
                     )}
-                    <h4 className="card-title" style={{ textAlign: alignTitle,gridArea:titlegridarea }}>{card.title}</h4> 
+                    <h4 className="card-title" style={{ textAlign: alignTitle,gridArea:titlegridarea,lineHeight:titleLineHeight }}>{card.title}</h4> 
                     <p className="card-desc" style={{ textAlign: alignDescription , gridArea:gridarea }}>{card.description}</p> 
                    
                   </div>
