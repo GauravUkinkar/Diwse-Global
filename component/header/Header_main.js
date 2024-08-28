@@ -8,6 +8,7 @@ import logoImage from "../../public/assets/logo/newlogo/svwhite.svg";
 import "./header.scss";
 
 const Header_main = () => {
+
   const [navbar, setNavbar] = useState({
     serviceList: false,
     mobNav: false,
@@ -23,10 +24,7 @@ const Header_main = () => {
     });
   };
 
-  // const [serviceList, setServiceList] = useState(true);
-
   const [mobService, setMobService] = useState(false);
-
   const scrollingHeader = () => {
     if (window.scrollY > 50) {
       setNavbar((element) => ({
@@ -40,10 +38,8 @@ const Header_main = () => {
       }));
     }
   };
-
   useEffect(() => {
     document.addEventListener("scroll", scrollingHeader);
-
     return () => {
       document.removeEventListener("scroll", scrollingHeader);
     };
@@ -76,6 +72,7 @@ const Header_main = () => {
       images: "assets/icons/navIcon/Development.png",
     },
   ];
+
 
   return (
     <>
