@@ -10,7 +10,7 @@ import Faq from "@/component/faq/Faq";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import img1 from '../../public/assets/sevice3/social.png';
-import topimg from '../../public/assets/web-development/web_third_section.webp'
+import topimg from '../../public/assets/web-development/web_third_section.jpeg'
 import Service3 from "@/component/servicesection3/Service3";
 const page = () => {
   
