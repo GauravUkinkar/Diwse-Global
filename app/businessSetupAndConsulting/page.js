@@ -185,7 +185,8 @@ const page = () => {
           <div className="left">
 
             <h4 className="hedding">
-              Why Choose Diwise Global for <span className="gradient-text">Business Setup & Consulting?</span>
+            FAQs for Business Setup & <span className="gradient-text">Consulting Services
+              </span>
             </h4>
             {faqContent.map((item, index) => (
               <Faq
