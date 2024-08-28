@@ -17,6 +17,8 @@ import img2 from "../../public/assets/bussiness-setup/ComprehensiveBusinessPlann
 
 import img3 from '../../public/assets/bussiness-setup/RegulatoryComplianceandLegalAdvisory.svg'
 import topimg from "../../public/assets/bussiness-setup/business_setup_third_section.webp";
+import axios from "axios";
+import toast, { Toaster } from "react-hot-toast";
 
 
 
@@ -99,6 +101,22 @@ const page = () => {
 
     AOS.init();
   }, []);
+
+
+  const [email, setEmail] = useState("");
+  const submitEmail = async (e) => {
+    e.preventDefault();
+    try {
+      const response = await axios.post(
+        "https://api.diwiseglobal.com/auth/contact/",
+        {
+          email,
+        }
+      );
+      toast.success("Thank You for Your Inquiry in DIwise!");
+      setEmail("")
+    } catch (err) {}
+  };
   return (
     <>
       <div className="service-hero-parent parent">
@@ -106,11 +124,17 @@ const page = () => {
           <div className="left">
             <h3 className="section-headding">Business Setup & Consulting</h3>
             <p className="service-p">
-              EExpand Your Global Reach: Our experienced consultants provide expert guidance on setting up operations in international markets. We help you navigate legal compliance, develop effective market entry strategies, and optimise your operations for global success.
+              Expand Your Global Reach: Our experienced consultants provide expert guidance on setting up operations in international markets. We help you navigate legal compliance, develop effective market entry strategies, and optimise your operations for global success.
 
             </p>
-            <form action="">
-              <input type="email" placeholder="Your email address" />
+            <form onSubmit={submitEmail}>
+              <input
+                type="email"
+                placeholder="Your email address"
+                required
+                value={email}
+                onChange={(e) => setEmail(e.target.value)}
+              />
               <button type="submit" className="submit-btn">
                 Get Started
               </button>
@@ -205,6 +229,7 @@ const page = () => {
           </div>
         </div>
       </div>
+      <Toaster/>
     </>
   );
 };
