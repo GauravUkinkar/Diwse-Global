@@ -2,13 +2,15 @@
 import React, { useState } from "react";
 import "./blog.scss";
 import Blog_Details from "@/component/blog/Blog_Details";
+import axios from "axios";
 
 // Sample blog data array
 const blogData = [
   {
     id: 1,
     title: "Lorem ipsum dolor sit amet, consectetur adipisicing elit.",
-    image: "https://img.freepik.com/free-photo/close-up-cutting-plant-leaves_23-2148905280.jpg?t=st=1723205318~exp=1723208918~hmac=bee76a809d5085aed8124f68f1d0ba3234a9ec185bd7cc86dbed3e53cb524207&w=1380",
+    image:
+      "https://img.freepik.com/free-photo/close-up-cutting-plant-leaves_23-2148905280.jpg?t=st=1723205318~exp=1723208918~hmac=bee76a809d5085aed8124f68f1d0ba3234a9ec185bd7cc86dbed3e53cb524207&w=1380",
     description:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate dicta sint velit assumenda soluta aut veritatis obcaecati et? Culpa perspiciatis.",
     category: "News",
@@ -95,7 +97,6 @@ const blogData = [
     date: "08/07/2024",
     link: "#",
   },
-  
 ];
 
 const Blogs = () => {
@@ -107,60 +108,62 @@ const Blogs = () => {
     setBlogs(blogData.slice(0, newblog));
   };
 
+  const fetchBlogs = async () => {
+    try {
+      const response = await axios.post();
+    } catch (err) {
+      console.log(err);
+    }
+  };
   return (
     <>
-    <div className="blog-parent-b  parent">
+      <div className="blog-parent-b  parent">
         <div className="top-color  parent">
           <div className="top-color-cont cont">
             <h3 className="about-heading">
-           Latest <span className="gradient-text">Blogs</span>
+              Latest <span className="gradient-text">Blogs</span>
             </h3>
             <p className="about-para">
-            Stay updated with the latest trends and tips in digital marketing and web development. Our blog offers expert advice and industry insights to keep you informed and inspired.
-              
-
+              Stay updated with the latest trends and tips in digital marketing
+              and web development. Our blog offers expert advice and industry
+              insights to keep you informed and inspired.
             </p>
           </div>
         </div>
-       
       </div>
-    <div className="blog-parent parent">
-      <div className="blog-cont cont">
-        <div className="card-box">
-          {blogs.map((blog) => (
-            <a href={blog.link} className="card-link" key={blog.id}>
-              <div className="card">
-                <div className="card-data">
-                  <div
-                    className="card-image bg-img-cover"
-                    style={{ backgroundImage: `url(${blog.image})` }}
-                  ></div>
-                  <h4 className="card-title">{blog.title}</h4>
-                  <p className="short-desc">{blog.description}</p>
+      <div className="blog-parent parent">
+        <div className="blog-cont cont">
+          <div className="card-box">
+            {blogs.map((blog) => (
+              <a href={blog.link} className="card-link" key={blog.id}>
+                <div className="card">
+                  <div className="card-data">
+                    <div
+                      className="card-image bg-img-cover"
+                      style={{ backgroundImage: `url(${blog.image})` }}
+                    ></div>
+                    <h4 className="card-title">{blog.title}</h4>
+                    <p className="short-desc">{blog.description}</p>
+                  </div>
+                  <div className="bottom-card">
+                    <div className="category">{blog.category}</div>
+                    <div className="date">{blog.date}</div>
+                  </div>
                 </div>
-                <div className="bottom-card">
-                  <div className="category">{blog.category}</div>
-                  <div className="date">{blog.date}</div>
-                </div>
-              </div>
-            </a>
-          ))}
-        </div>
-        {visibleblog < blogData.length && (
-          <div className="load-more">
-            <button className="btn1" onClick={active}>
-              Load More Blog
-            </button>
+              </a>
+            ))}
           </div>
-        )}
+          {visibleblog < blogData.length && (
+            <div className="load-more">
+              <button className="btn1" onClick={active}>
+                Load More Blog
+              </button>
+            </div>
+          )}
+        </div>
       </div>
-     
-    </div>
-    <Blog_Details />
+      <Blog_Details />
     </>
-    
-
-    
   );
 };
 
