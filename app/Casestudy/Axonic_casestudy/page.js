@@ -46,7 +46,6 @@ const page = () => {
     {
       image: Axon,
     },
-    
   ]
 
   return (

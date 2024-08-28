@@ -81,7 +81,7 @@ const page = () => {
 
       <div className="case-study-second parent" ref={caseStudyTrigger}>
         <div
-          className="case-study-second-cont top-img cont bg-img-cover"
+          className="case-study-second-cont onkar-top-img cont bg-img-cover"
           ref={caseStudy}
           data-aos="fade-up"
           data-aos-delay="600"
