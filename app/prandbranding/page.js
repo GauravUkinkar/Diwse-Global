@@ -10,7 +10,7 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 import Service3 from "@/component/servicesection3/Service3";
 
-import topimg from "../../public/assets/branding.jpg";
+import topimg from "../../public/assets/prbranding/content-1.webp";
 import img1 from "../../public/assets/prbranding/LogoDesigning.svg";
 import img2 from "../../public/assets/prbranding/BrandIdentityDevelopment.svg";
 import img3 from "../../public/assets/prbranding/MultimediaContentProduction.svg";
@@ -133,7 +133,7 @@ const page = () => {
             </form>
           </div>
           <div
-            className="right prbranding "
+            className="right prbranding bg-img-cover "
             data-aos="fade-right"
             data-aos-delay="600"
             data-aos-duration="1000"
@@ -211,7 +211,9 @@ const page = () => {
         </div>
       </div>
 
-      <Service3 contbgimg={topimg} list={list} />
+      <Service3
+      bgImage="top center"
+      contbgimg={topimg} list={list} />
 
       <div className="service-faq-parent parent">
         <div className="service-faq-cont cont">

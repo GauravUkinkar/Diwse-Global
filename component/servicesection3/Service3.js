@@ -21,7 +21,7 @@ function Service3(props) {
             <div className="service-top-section parent">
                 <div
                     className="service-top-cont bg-img-cover cont"
-                    style={{ backgroundImage: `url(${props.contbgimg.src})` }}
+                    style={{ backgroundImage: `url(${props.contbgimg.src})`, backgroundPosition:props.bgImage }}
                 >
                 </div>
             </div>
