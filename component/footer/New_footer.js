@@ -47,7 +47,7 @@ const New_footer = () => {
                 </a>
               </div>
               <div className="link3">
-                <a href="Casestudy">
+                <a href="/#home_casestudy">
                   Case Studies <span className="icon1"><FaArrowRight /></span>
                 </a>
               </div>
