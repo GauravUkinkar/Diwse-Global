@@ -171,12 +171,13 @@ const page = () => {
               <div className="front-image public_front bg-img-cover"></div>
             </div>
             <div className="right">
-              {serviceDetails.map((item) => (
+              {serviceDetails.map((item,index) => (
                 <div
                   className="content"
                   data-aos="fade-up"
                   data-aos-delay="600"
                   data-aos-duration="1000"
+                  key={index}
                 >
                   <div className="left">{item.srNo}</div>
                   <div className="right">

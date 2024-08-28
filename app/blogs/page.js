@@ -144,11 +144,11 @@ const Blogs = () => {
         <div className="blog-cont cont">
           <div className="card-box">
             {data &&
-              data.slice(0, visibleblog).map((blog) => (
+              data.slice(0, visibleblog).map((blog,index) => (
                 <Link
                   href={`/blogdetail/${blog.id}`}
                   className="card-link"
-                  key={blog.id}
+                  key={index}
                 >
                   <div className="card">
                     <div className="card-data">

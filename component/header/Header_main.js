@@ -152,8 +152,8 @@ const Header_main = () => {
         {navbar.serviceList && (
           <div className="option cont" onMouseLeave={closeAll}>
             <div className="bottom">
-              {servicelists.map((item) => (
-                <Link href={item.path} className="link  link1">
+              {servicelists.map((item,index) => (
+                <Link href={item.path} key={index} className="link  link1">
                   <div
                     className="top bg-img-contain"
                     style={{ backgroundImage: `url(${item.images})` }}
@@ -207,8 +207,8 @@ const Header_main = () => {
             </div>
             <div className={`service-list ${mobService ? "active" : ""}`}>
               <div className="list">
-                {servicelists.map((item) => (
-                  <Link href={item.path} key={item.name} onClick={()=>setNavbar({...navbar,mobNav:false})}>
+                {servicelists.map((item,index) => (
+                  <Link href={item.path} key={index} onClick={()=>setNavbar({...navbar,mobNav:false})}>
                     {item.name}
                   </Link>
                 ))}
