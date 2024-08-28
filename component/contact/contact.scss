@@ -15,7 +15,17 @@
       align-items: flex-start;
       gap: calc(var(--unit));
 
-      .c-title {}
+      .c-title {
+        font-weight: 500;
+        // font-size: 20px;
+        .bold_text{
+          font-weight: 800;
+        }
+       .light_text{
+        font-weight: inherit;
+        color: var(--white);
+       }
+      }
 
       .line {
         width: 100%;
