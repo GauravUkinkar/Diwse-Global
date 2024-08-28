@@ -154,7 +154,7 @@ const Header_main = () => {
               {servicelists.map((item) => (
                 <a href={item.path} className="link  link1">
                   <div
-                    className="top bg-img-cover"
+                    className="top bg-img-contain"
                     style={{ backgroundImage: `url(${item.images})` }}
                   ></div>
 
