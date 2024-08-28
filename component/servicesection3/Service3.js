@@ -13,12 +13,8 @@ import './service3.scss';
 
 // import topimg from " ../../../public/assets/dgmarketing.jpg"
 
-
-
 function Service3(props) {
-
  
-
     return (
         <>
             {/* -------service-top-section------ */}
@@ -46,27 +42,58 @@ function Service3(props) {
 
 
                     <Swiper
-                        spaceBetween={30}
+                        spaceBetween={50}
                         centeredSlides={false}
                         slidesPerView={3}
                         autoplay={{
-                            delay: 2500,
+                            delay: 250000,
                             disableOnInteraction: false,
                         }}
+                        breakpoints={{
+                            280: {
+                                slidesPerView: 1,
+                                spaceBetween: 20,
+                              },
+                            320: {
+                                slidesPerView: 1,
+                                spaceBetween: 20,
+                              },
+                            350: {
+                                slidesPerView: 1,
+                                spaceBetween: 20,
+                              },
+                            690: {
+                              slidesPerView: 2,
+                              spaceBetween: 20,
+                            },
+                            780: {
+                              slidesPerView: 2,
+                              spaceBetween: 40,
+                            },
+                            1024: {
+                              slidesPerView: 3,
+                              spaceBetween: 50,
+                            },
+                            1200: {
+                                slidesPerView: 3,
+                                spaceBetween: 50,
+                              },
+                          }}
                         pagination={{
-                            clickable: false,
+                            clickable: true,
                         }}
-                        navigation={true}
+                        navigation={false}
                         modules={[Autoplay, Pagination, Navigation]}
                         className="mySwiper"
                     >
 
-                        {props.list.map((item) => (
+                   
+                      {props.list.map((item) => (
                             <SwiperSlide >
                                 <div className="slide-card">
                                     <div className="slide-card-img1 bg-img-cover" style={{ backgroundImage: `url(${item.image.src})` }} >
                                     </div>
-                                    <h4 className="slide-heading">{item.heading} </h4>
+                                    <h4 className="slide-heading">{item.title} </h4>
                                     <p>{item.content}
                                     </p>
                                 </div>
@@ -74,6 +101,7 @@ function Service3(props) {
                             </SwiperSlide>
                         ))
                         }
+                    
                     </Swiper>
 
                 </div>

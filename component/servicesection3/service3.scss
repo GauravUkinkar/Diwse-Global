@@ -85,7 +85,20 @@
         margin: auto;
     }
 
- 
+    .swiper-wrapper {
+    margin-bottom: 40px;
+    }
+   .swiper-pagination-bullet {
+        // color: black !important;
+        background: rgb(255, 255, 255);
+        height: 15px;
+        width: 15px;
+    }
+
+    // .swiper-slide {
+    //     margin: 0px !important;
+    // }
+
     .swiper-button-prev,
     .swiper-button-next {
         background: rgba(0, 0, 0, 0.815);
@@ -102,10 +115,11 @@
         }
     }
 
+
     .slide-card {
-        // margin: auto;
+        margin: auto;
         display: flex;
-        width: 350px;
+        width: 330px;
         flex-direction: column;
         gap: 10px;
         align-items: center;
@@ -121,15 +135,18 @@
         }
 
         .slide-heading {
-            font-size: 22px;
+            font-size: 20px;
             line-height: 120%;
             text-align: center;
         }
 
         p {
-            text-align: justify;
+            text-align: center;
+            color: white !important;
+            // font-size: 18px;
         }
     }
+
 
 
 
