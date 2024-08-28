@@ -30,31 +30,31 @@ const page = () => {
         "With years of experience and a proven track record, DIwise Global has helped numerous businesses achieve their digital goals.",
     },
     {
-      image:img1,
+      image: img1,
       title: "Global Expertise",
       description:
         "Our team of experts has a deep understanding of the global digital landscape, ensuring your brand reaches audiences worldwide.",
     },
     {
-      image:img2,
+      image: img2,
       title: "Innovative Solutions",
       description:
         "We stay ahead of the curve by constantly exploring, implementing  and analysing innovative digital strategies and tools.",
     },
     {
-      image:img3,
+      image: img3,
       title: "Customised Approach",
       description:
         "We tailor our services to meet the unique needs of your business, ensuring maximum impact and engagement.",
     },
     {
-      image:img4,
+      image: img4,
       title: "Results-Driven",
       description:
         " Our focus is on delivering tangible results that drive your business growth, we base our processes on the results they provide. ",
     },
     {
-      image:img5,
+      image: img5,
       title: "Client Satisfaction",
       description:
         "We prioritise client satisfaction and build long-term partnerships based on trust and collaboration that benefits mutually. ",
@@ -164,36 +164,36 @@ const page = () => {
 
       <div className="about-section-two-parent parent">
         <div className="about-section-two-cont cont">
-          
 
-        <div className="vision-mission ">
-        <div className="left"  data-aos="fade-up" data-aos-delay="200">
-        <h3 classname="ntitle">
-              Our &nbsp;
-              <span className="gradient-text">DIstinct Culture</span>
-            </h3>
-          
-          <p>The Diwise family thrives on the principles of teamwork, innovation, creativity, and unwavering commitment. Our reputation for meeting deadlines reflects our unparalleled work culture that fosters continuous learning and growth.</p>
-          </div>
-          <div className="right">
-            <div className="top"  data-aos="fade-up" data-aos-delay="200">
-            <h3>
-              Our &nbsp;
-              <span className="gradient-text">Mission</span>
-            </h3>
-             
-              <p>Our mission is to lead the way in dynamic and evolving digital marketing strategies, consistently delivering outstanding results.
-              </p>
+
+          <div className="vision-mission ">
+            <div className="left" data-aos="fade-up" data-aos-delay="200">
+              <h3 classname="ntitle">
+                Our &nbsp;
+                <span className="gradient-text">Distinct Culture</span>
+              </h3>
+
+              <p>At DIwise Global, we foster a collaborative and innovative culture that values teamwork, creativity, and unwavering commitment. Our reputation for meeting deadlines is a testament to our unparalleled work ethic and dedication to continuous learning and growth.</p>
             </div>
-            <div className="bottomm"  data-aos="fade-up" data-aos-delay="200">
-            <h3>
-              Our &nbsp;
-              <span className="gradient-text">Vision</span>
-            </h3>
-            <p>Empowering Businesses Through Innovative Digital Solutions: At Diwise, we envision a future where businesses thrive in the digital landscape.</p>
+            <div className="right">
+              <div className="top" data-aos="fade-up" data-aos-delay="200">
+                <h3>
+                  Our &nbsp;
+                  <span className="gradient-text">Mission</span>
+                </h3>
+
+                <p>To be a global leader in dynamic and evolving digital marketing strategies, consistently delivering exceptional results that exceed client expectations.
+                </p>
+              </div>
+              <div className="bottomm" data-aos="fade-up" data-aos-delay="200">
+                <h3>
+                  Our &nbsp;
+                  <span className="gradient-text">Vision</span>
+                </h3>
+                <p>At DIwise Global, we envision a future where businesses thrive in the digital landscape, achieving their goals and realising their full potential.</p>
+              </div>
             </div>
           </div>
-        </div>
 
           <div className="bottom cont">
             <h3 data-aos="fade-up" data-aos-delay="200">
@@ -201,24 +201,26 @@ const page = () => {
               <span className="gradient-text">Starts Here…</span>
             </h3>
 
-           
+
             <Home_Card_Swiper
               cards={cardData}
               showButton={false}
               showImage={true}
               cardHeight="450px"
               data-aos="fade-up"
-              data-aos-delay="200"            
-              
+              data-aos-delay="200"
+              alignTitle="center"
+              alignDescription="center"
 
-              
+
+
 
             />
           </div>
         </div>
       </div>
 
-      
+
 
       <div className="founder-parent parent">
         <div
@@ -243,8 +245,7 @@ const page = () => {
               </a>
               <h5 className="desgination">Founder and Managing Director</h5>
               <p className="founder-about">
-                "Marketing is about building partnerships and adding value to
-                their brand." <br />
+                <i><b>" Best marketing strategy ever – CARE - Gary V "</b></i><br />
                 As the visionary leader of DIwise Global, Prajakta Marwaha
                 brings unparalleled expertise and a strategic mindset. Her deep
                 understanding of digital marketing and innovative approach drive
@@ -253,12 +254,12 @@ const page = () => {
                 ensures sustainable growth and success.
               </p>
               <div className="social-media">
-                <p className="icon">
+                <a href="https://www.linkedin.com/in/prajakta-marwaha-507b6410a/" className="icon">
                   <span>
                     <RiLinkedinFill />
                   </span>
                   Let's Connect
-                </p>
+                </a>
               </div>
             </div>
           </div>

@@ -44,7 +44,7 @@ const Home_main = () => {
             </motion.div>
           </div>
           <div className="right">
-            {/* <Model/> */}
+            <Model/>
             {/* <Icon link="https://prod.spline.design/NYuiCG4g5eRD-H5i/scene.splinecode"/> */}
           </div>
         </div>

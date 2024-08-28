@@ -146,7 +146,7 @@ const page = () => {
           <div className="bottom">
             <div className="left">
               <h5 className="left-heding">Innovative <span className="gradient-text">Web Solutions</span></h5>
-              <p>
+              <p  className="bootom-section-para" >
               Elevate Your Digital Presence: Our team of skilled developers crafts cutting-edge web solutions that captivate your audience and drive results. From sleek websites to interactive web applications, we ensure your digital presence is engaging and effective.
               </p>
             </div>
@@ -154,7 +154,7 @@ const page = () => {
             <div className="right">
               <h5 className="left-heding">Mobile <span className="gradient-text">App Development
               </span></h5>
-              <p>
+              <p  className="bootom-section-para" >
               Enhance Your Reach: Expand your reach and engage your audience on the go with our expert mobile app development services. We specialise in creating high-performance iOS and Android apps that deliver exceptional user experiences and drive business growth.
               </p>
             </div>
@@ -187,7 +187,7 @@ const page = () => {
               />
             ))}
           </div>
-          <div className="right bg-img-cover">
+          <div className="right web_faq bg-img-cover">
           
           </div>
         </div>
