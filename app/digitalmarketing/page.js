@@ -46,33 +46,33 @@ const page = () => {
 
   const list = [
     {
-      title: "Search Engine Optimization",
+      title: "Search Engine Optimisation",
       content:
-        "Boost your search rankings with our SEO expertise in keyword research, on-page optimization, and quality backlinks.",
+        "Boost Your Visibility: Our expert SEO strategies help your website rank higher in search engine results, attracting organic traffic and increasing brand awareness.",
         image: img1
+    },
+    {
+      title: "Social Media Marketing",
+      content:
+        "Engage Your Audience: Connect with your target audience on popular social media platforms, build brand loyalty, and drive traffic to your website.",
+      image: img2
     },
     {
       title: "Content Marketing",
       content:
-        "Engage your audience with impactful content, including blogs, infographics, and videos that build brand authority.",
-      image: img2
-    },
-    {
-      title: "Social Media Management",
-      content:
-        "Elevate your social media presence with tailored posts and targeted ads on platforms like Facebook, Instagram, and LinkedIn.",
+        "Create Value: Develop high-quality, engaging content that attracts, informs, and converts your audience into customers.",
       image: img3
     },
     {
-      title: "Social Media Management",
+      title: "Email Marketing",
       content:
-        "Elevate your social media presence with tailored posts and targeted ads on platforms like Facebook, Instagram, and LinkedIn.",
+        "Nurture Relationships: Build lasting relationships with your customers through targeted email campaigns that deliver valuable content and drive conversions.",
       image: img1
     },
     {
-      title: "Social Media Management",
+      title: "Pay-Per-Click Advertising",
       content:
-        "Elevate your social media presence with tailored posts and targeted ads on platforms like Facebook, Instagram, and LinkedIn.",
+        "Achieve Immediate Results: Leverage paid advertising to reach your target audience quickly, drive traffic to your website, and generate leads or sales.",
       image: img1
     }
   ];
