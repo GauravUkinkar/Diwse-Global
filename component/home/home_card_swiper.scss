@@ -1,5 +1,5 @@
 .card-parent {
-  // height:auto;
+  // height:300px;
   .card-box {
     display: flex;
     align-items: center;
@@ -29,7 +29,7 @@
         border: 1px solid rgba(255, 255, 255, 0.2);
         background: rgba(255, 255, 255, 0.1);
         backdrop-filter: blur(10px);
-      gap: calc(var(--unit)/2);
+        gap: calc(var(--unit)/2);
         // height:300px;
           height: var(--card-height, auto); 
   
