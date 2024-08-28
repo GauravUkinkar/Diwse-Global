@@ -20,10 +20,11 @@ const Blog_Details = ({ data }) => {
       console.log(err);
     }
   };
-
   useEffect(() => {
     fetchData();
   }, []);
+
+  
   const [categories,setCategories] = useState([])
   const fetchCategories = async () => {
     try {

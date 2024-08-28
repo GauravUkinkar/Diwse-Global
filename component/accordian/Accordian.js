@@ -26,8 +26,6 @@ const Accordian = () => {
   useEffect(() => {
     fetchBlogs();
   }, []);
-
-  console.log("my data__________________",data);
   return (
     <>
       <div className="accordian-parent parent ">
