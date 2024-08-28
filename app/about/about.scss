@@ -57,16 +57,16 @@
 
         border-radius: calc(var(--unit) / 2);
         &.image1 {
-          background: url("../../public/assets/about/company-setup.webp");
+          background: url("../../public/assets/home/about/about.jpg");
         }
         &.image2 {
-          background: url("../../public/assets/about/web-design.webp");
+          background: url("../../public/assets/home/about/about-2.jpg");
         }
         &.image3 {
-          background: url("../../public/assets/about/market-research.webp");
+          background: url("../../public/assets/home/about/about-3.jpg");
         }
         &.image4 {
-          background: url("../../public/assets/about/pr.webp");
+          background: url("../../public/assets/home/about/about-4.jpg");
         }
 
         &.rect {
@@ -96,7 +96,7 @@
       display: flex;
       align-items: center;
       justify-content: center;
-      gap: var(--unit);
+      gap: calc(var(--unit)/2);
       .left {
         width: 50%;
         display: flex;
@@ -107,9 +107,15 @@
         backdrop-filter: blur(10px);
         height: 350px;
         justify-content: center;
+        align-items: center;
         padding: var(--unit);
         border-radius: calc(var(--unit) / 2);
         gap: calc(var(--unit) / 2);
+
+        p{
+          text-align: center;
+          padding: 20px;
+        }
        
       }
       .right {
@@ -125,11 +131,20 @@
           backdrop-filter: blur(10px);
           border-radius: calc(var(--unit) / 2);
           padding: var(--unit);
-          gap: calc(var(--unit) / 2);
+          gap: calc(var(--unit)/2);
           height: calc(350px / 2);
           display: flex;
+          align-items: center;
+          justify-content: center ;
           flex-direction: column;
         }
+
+        
+          p{
+            text-align: center;
+            padding: 5px 0px;
+          }
+       
 
       }
     }
@@ -375,7 +390,7 @@
         }
 
         .founder-about {
-          text-align: justify;
+          text-align: left;
           padding: 15px 0px;
         }
         .social-media {
@@ -502,6 +517,10 @@
           justify-content: center !important;
         }
       }
+    }
+    .founder-about {
+      text-align: center !important;
+      padding: 15px 0px;
     }
   }
 }
