@@ -23,12 +23,12 @@
     .right {
       width: 50%;
    
-      transform: translateX(100%);
+      transform: translateY(100%);
       opacity: 0;
       transition: transform 1s ease-in-out, opacity 0.5s ease-in-out;
       transition-delay: 0.5s;
       &.animate {
-        transform: translateX(0);
+        transform: translateY(0);
         opacity: 1;
       }
     .img-box{

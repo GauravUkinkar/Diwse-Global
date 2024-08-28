@@ -133,7 +133,7 @@ const page = () => {
             </form>
           </div>
           <div
-            className="right prbranding bg-img-cover"
+            className="right prbranding "
             data-aos="fade-right"
             data-aos-delay="600"
             data-aos-duration="1000"

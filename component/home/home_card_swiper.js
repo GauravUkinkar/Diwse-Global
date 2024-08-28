@@ -9,6 +9,11 @@ const Home_Card_Swiper = ({
   cards,
   showButton = true,
   showImage = true,
+  display,
+  gridTemplateColumns,
+  gridarea,
+  Icongridarea,
+  titlegridarea,
   pauseOnMouseEnter = true,
   cardHeight = "auto",
   alignTitle = "left",  // Default alignment for the title
@@ -22,7 +27,7 @@ const Home_Card_Swiper = ({
           spaceBetween={20}
           pagination={false}
           autoplay={{
-            delay: 2000000000000000000,
+            delay: 20000000000000000000,
             disableOnInteraction: false,  // Allows Swiper to pause on interaction
             pauseOnMouseEnter: pauseOnMouseEnter,  // Stops autoplay on mouse enter
           }}
@@ -38,13 +43,16 @@ const Home_Card_Swiper = ({
             cards.map((card, index) => (
               <SwiperSlide key={index}>
                 <div className="card" style={{ height: cardHeight }}>
-                  <div className="top-card">
-                    <div className="icon bg-img-contain"  style={{backgroundImage:`url(${card.icon})`}} ></div>
+                  <div className="top-card" style={{display:display, gridTemplateColumns:gridTemplateColumns}}   >
+                    {
+                      card.icon &&   <div className="icon bg-img-contain"  style={{backgroundImage:`url(${card.icon})`,gridArea:Icongridarea}} ></div>
+                    }
+                  
                     {showImage && card.image && (
                       <div className="top-img bg-img-cover" style={{ background: `url(${card.image.src})` }}></div>
                     )}
-                    <h4 className="card-title" style={{ textAlign: alignTitle }}>{card.title}</h4> 
-                    <p className="card-desc" style={{ textAlign: alignDescription }}>{card.description}</p> 
+                    <h4 className="card-title" style={{ textAlign: alignTitle,gridArea:titlegridarea }}>{card.title}</h4> 
+                    <p className="card-desc" style={{ textAlign: alignDescription , gridArea:gridarea }}>{card.description}</p> 
                    
                   </div>
                   {showButton && (
