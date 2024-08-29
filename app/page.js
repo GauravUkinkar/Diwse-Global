@@ -124,7 +124,7 @@ export default function Home() {
       content:
         "DIwise played a crucial role in digitising healthcare concierge services, facilitating seamless medical tourism experiences for patients worldwide.",
       imgage: img3,
-      url: "/Casestudy/hcc",
+      url: "/hcc",
     },
     {
       title: "Trading the best of the world, Onkar World’s Digital Partner",

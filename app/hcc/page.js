@@ -1,17 +1,17 @@
 "use client";
 
 import React, { useEffect, useRef } from "react";
-import "../Axonic_casestudy/casestudy.scss";
+import "../Casestudy/Axonic_casestudy/casestudy.scss";
 import Button_comp from "@/component/button/Button_comp";
 import { LuDot } from "react-icons/lu";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import About_card_swiper from "@/component/about/About_card_swiper";
-import hccs from "../../../public/assets/img/hcc.png";
-import hcc_about from "../../../public/assets/img/hcc_about.webp";
-import hcc_fb from "../../../public/assets/img/hcc_fb.webp";
-import hcc_insta from "../../../public/assets/img/hcc_insta.webp";
-import hcc_link from "../../../public/assets/img/hcc_link.webp";
+import hccs from "../../public/assets/img/hcc.png";
+import hcc_about from "../../public/assets/img/hcc_about.webp";
+import hcc_fb from "../../public/assets/img/hcc_fb.webp";
+import hcc_insta from "../../public/assets/img/hcc_insta.webp";
+import hcc_link from "../../public/assets/img/hcc_link.webp";
 
 const page = () => {
   const caseStudy = useRef();
