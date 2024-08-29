@@ -196,9 +196,8 @@ export default function Home() {
       </div>
 
       {/* 5th Section - Swiper section */}
-      <div id="home_casestudy"></div>
-      <div className="fifth-section parent"
-        data-aos="fade-up"
+      <div></div> 
+      <div className="fifth-section parent" id="home_casestudy"
       >
         <Swiper
           className="mySwiper"
@@ -227,7 +226,7 @@ export default function Home() {
           }}
         >
           {caseStudies.map((item, index) => (
-            <SwiperSlide className="bg-img-cover" key={index}>
+            <SwiperSlide className="bg-img-cover"   key={index}>
               <div
                 className="image "
                 style={{ background: `url(${item.imgage.src})` }}
