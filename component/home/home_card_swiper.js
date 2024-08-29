@@ -3,7 +3,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import "../home/home_card_swiper.scss";
 import "swiper/css";
 import "swiper/css/pagination";
-import { Autoplay, Pagination } from "swiper/modules";
+import { Autoplay, Navigation, Pagination } from "swiper/modules";
 
 const Home_Card_Swiper = ({
   cards,
@@ -32,14 +32,15 @@ const Home_Card_Swiper = ({
         <Swiper
           slidesPerView={3}
           spaceBetween={20}
-          pagination={false}
+          pagination={{ clickable: true }}
+          navigation={true}
           autoplay={{
             delay: 2000,
             disableOnInteraction: false, // Allows Swiper to pause on interaction
-            pauseOnMouseEnter: pauseOnMouseEnter, // Stops autoplay on mouse enter
+            pauseOnMouseEnter: true, // Stops autoplay on mouse enter
           }}
-          modules={[Pagination, Autoplay]}
-          className="mySwiper"
+          modules={[Pagination, Autoplay, Navigation]}
+          className="mySwiper test-swiper"
           breakpoints={{
             300: { slidesPerView: 1, spaceBetween: 10 },
             768: { slidesPerView: 2, spaceBetween: 15 },

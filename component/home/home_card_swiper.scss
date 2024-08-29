@@ -118,3 +118,31 @@
     }
   }
 }
+
+
+
+.swiper-pagination-bullet {
+  background: gray;
+  opacity: 1 !important;
+  width: 50px !important;
+  height: 3px !important;
+  border-radius: 0px !important;
+  &.swiper-pagination-bullet-active {
+    background: var(--accent-grad) !important;
+  }
+}
+
+
+.test-swiper 
+{
+  padding:0px 0px 40px 0px !important;
+}
+
+.swiper-button-prev 
+{
+  display: none !important;
+}
+.swiper-button-next 
+{
+  display: none !important;
+}

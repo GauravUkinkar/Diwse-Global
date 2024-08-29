@@ -1,14 +1,12 @@
 "use client";
 import { useEffect, useRef } from "react";
-import {
-  RiLinkedinFill
-} from "react-icons/ri";
-import img5 from "../../public/assets/home/about/client.jpg";
-import img3 from "../../public/assets/home/about/customised.jpg";
-import img1 from "../../public/assets/home/about/global.jpg";
-import img2 from "../../public/assets/home/about/innovative.jpg";
-import img4 from "../../public/assets/home/about/result.jpg";
-import img from "../../public/assets/home/about/track-record.jpg";
+import { RiLinkedinFill } from "react-icons/ri";
+import img5 from "../../public/assets/home/about/client.webp";
+import img3 from "../../public/assets/home/about/customised.webp";
+import img1 from "../../public/assets/home/about/global.webp";
+import img2 from "../../public/assets/home/about/innovative.webp";
+import img4 from "../../public/assets/home/about/result.webp";
+import img from "../../public/assets/home/about/track-record-new.webp";
 import "./about.scss";
 import Home_Card_Swiper from "@/component/home/home_card_swiper";
 import AOS from "aos";
@@ -54,7 +52,6 @@ const page = () => {
     },
   ];
 
-  
   const counterRef = useRef(null);
   useEffect(() => {
     AOS.init();
@@ -157,43 +154,57 @@ const page = () => {
 
       <div className="about-section-two-parent parent">
         <div className="about-section-two-cont cont">
-
-
-          <div className="vision-mission ">
-            <div className="left" data-aos="fade-up" data-aos-delay="200">
+          <div
+            className="vision-mission "
+            data-aos="fade-up"
+            data-aos-delay="200"
+          >
+            <div className="left">
               <h3 classname="ntitle">
                 Our &nbsp;
                 <span className="gradient-text">Distinct Culture</span>
               </h3>
 
-              <p>At DIwise Global, we foster a collaborative and innovative culture that values teamwork, creativity, and unwavering commitment. Our reputation for meeting deadlines is a testament to our unparalleled work ethic and dedication to continuous learning and growth.</p>
+              <p>
+                At DIwise Global, we foster a collaborative and innovative
+                culture that values teamwork, creativity, and unwavering
+                commitment. Our reputation for meeting deadlines is a testament
+                to our unparalleled work ethic and dedication to continuous
+                learning and growth.
+              </p>
             </div>
             <div className="right">
-              <div className="top" data-aos="fade-up" data-aos-delay="200">
+              <div className="top">
                 <h3>
                   Our &nbsp;
                   <span className="gradient-text">Mission</span>
                 </h3>
 
-                <p>To be a global leader in dynamic and evolving digital marketing strategies, consistently delivering exceptional results that exceed client expectations.
+                <p>
+                  To be a global leader in dynamic and evolving digital
+                  marketing strategies, consistently delivering exceptional
+                  results that exceed client expectations.
                 </p>
               </div>
-              <div className="bottomm" data-aos="fade-up" data-aos-delay="200">
+              <div className="bottomm">
                 <h3>
                   Our &nbsp;
                   <span className="gradient-text">Vision</span>
                 </h3>
-                <p>At DIwise Global, we envision a future where businesses thrive in the digital landscape, achieving their goals and realising their full potential.</p>
+                <p>
+                  At DIwise Global, we envision a future where businesses thrive
+                  in the digital landscape, achieving their goals and realising
+                  their full potential.
+                </p>
               </div>
             </div>
           </div>
 
           <div className="bottom cont">
-            <h3 data-aos="fade-up" data-aos-delay="200">
+            <h3>
               Your Global Digital Success &nbsp;
               <span className="gradient-text">Starts Here…</span>
             </h3>
-
 
             <Home_Card_Swiper
               cards={cardData}
@@ -204,16 +215,10 @@ const page = () => {
               data-aos-delay="200"
               alignTitle="center"
               alignDescription="left"
-
-
-
-
             />
           </div>
         </div>
       </div>
-
-
 
       <div className="founder-parent parent">
         <div
@@ -238,7 +243,13 @@ const page = () => {
               </a>
               <h5 className="desgination">Founder and Managing Director</h5>
               <p className="founder-about">
-                <i><b>" Best marketing strategy ever – CARE - Gary V "</b></i><br />
+                <i>
+                  <b className="gradient-text" style={{ fontWeight: "700" }}>
+                    " Best marketing strategy ever – CARE - Gary V "
+                  </b>
+                </i>
+                <br />
+                <br />
                 As the visionary leader of DIwise Global, Prajakta Marwaha
                 brings unparalleled expertise and a strategic mindset. Her deep
                 understanding of digital marketing and innovative approach drive
@@ -247,7 +258,11 @@ const page = () => {
                 ensures sustainable growth and success.
               </p>
               <div className="social-media">
-                <a href="https://www.linkedin.com/in/prajakta-marwaha-507b6410a/" target="_blank" className="icon">
+                <a
+                  href="https://www.linkedin.com/in/prajakta-marwaha-507b6410a/"
+                  target="_blank"
+                  className="icon"
+                >
                   <span>
                     <RiLinkedinFill />
                   </span>
