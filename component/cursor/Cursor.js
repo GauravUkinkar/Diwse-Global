@@ -8,37 +8,29 @@ import axios from "axios";
 function Cursor() {
   const [images, setImages] = useState([]);
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
+  const [hovered, setHovered] = useState(false); 
+  const fetchImages = async () => {
+    try {
+      const response = await axios.get(
+        "https://api.diwiseglobal.com/auth/blogs/"
+      );
+      setImages(
+        response.data.data
+          .filter((item) => item.image)
+          .map((item) => item.image)
+      );
+    } catch (error) {
+      console.error("Error fetching images", error);
+    }
+  };
 
   useEffect(() => {
-    const fetchImages = async () => {
-      try {
-        const response = await axios.get(
-          "https://api.diwiseglobal.com/auth/blogs/"
-        );
-        setImages(
-          response.data.data
-            .filter((item) => item.image)
-            .map((item) => item.image)
-        );
-      } catch (error) {
-        console.error("Error fetching images", error);
-      }
-    };
+    const cursor = document.querySelector(".cursor");
+    const imageContainer = document.querySelector(".image-container");
+    const scrolldiv = document.querySelector(".scrollDiv");
 
-    fetchImages();
-
-    const cursor = document.getElementsByClassName("cursor")[0];
-    const imageContainer =
-      document.getElementsByClassName("image-container")[0];
-    const scrolldiv = document.getElementsByClassName("scrollDiv");
     const onMouseMove = (e) => {
       const { clientX, clientY } = e;
-
-      console.log("Hovered element:", e.target);
-      console.log(
-        "Has imageHover class:",
-        e.target.classList.contains("imageHover")
-      );
 
       gsap.to(cursor, {
         x: clientX,
@@ -49,6 +41,11 @@ function Cursor() {
       });
 
       if (e.target.classList.contains("imageHover")) {
+        if (!hovered) {
+          setHovered(true);
+          fetchImages();
+        }
+
         const index = e.target.getAttribute("data-index");
         cursor.style.display = "none";
         imageContainer.style.display = "block";
@@ -61,15 +58,23 @@ function Cursor() {
         setCurrentImageIndex(index);
       } else if (e.target.classList.contains("scroll")) {
         cursor.style.display = "none";
-        scrolldiv.style.display = "flex";
-        gsap.to(scrolldiv, {
-          x: clientX,
-          y: clientY,
-          duration: 0.1,
-        });
+        if (scrolldiv) {
+          scrolldiv.style.display = "flex";
+          gsap.to(scrolldiv, {
+            x: clientX,
+            y: clientY,
+            // duration: 0.1,
+          });
+        }
       } else {
         cursor.style.display = "flex";
-        imageContainer.style.display = "none";
+        if (imageContainer) {
+          imageContainer.style.display = "none";
+        }
+
+        if(scrolldiv){
+          scrolldiv.style.display = "none";
+        }
       }
     };
 
@@ -78,7 +83,7 @@ function Cursor() {
     return () => {
       document.removeEventListener("mousemove", onMouseMove);
     };
-  }, [images]);
+  }, [hovered]); 
 
   return (
     <>
