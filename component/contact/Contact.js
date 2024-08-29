@@ -15,9 +15,12 @@ const Contact = () => {
     contact: "",
     message: "",
   });
+  
   useEffect(() => {
     AOS.init();
   }, []);
+
+
 
   const contactSubmission = async (e) => {
     e.preventDefault();
