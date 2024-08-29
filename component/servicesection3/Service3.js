@@ -18,7 +18,11 @@ function Service3(props) {
     return (
         <>
             {/* -------service-top-section------ */}
-            <div className="service-top-section parent">
+            <div className="service-top-section parent"
+               data-aos="fade-up"
+               data-aos-delay="600"
+               data-aos-duration="1000"
+            >
                 <div
                     className="service-top-cont bg-img-cover cont"
                     style={{ backgroundImage: `url(${props.contbgimg.src})`, backgroundPosition:props.bgImage }}
@@ -27,7 +31,9 @@ function Service3(props) {
             </div>
 
             {/* -------service-bottom-section------ */}
-            <div className="service-bottom-section parent bg-img-cover">
+            <div className="service-bottom-section parent bg-img-cover"
+            
+            >
                 <div className="service-bottom-cont  cont">
                     {/* {list.map((item) => (
                         <div className="service-bottom-card">
@@ -46,7 +52,7 @@ function Service3(props) {
                         centeredSlides={false}
                         slidesPerView={3}
                         autoplay={{
-                            delay: 250000,
+                            delay: 2500,
                             disableOnInteraction: false,
                         }}
                         breakpoints={{
