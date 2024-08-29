@@ -166,7 +166,7 @@ export default function Home() {
       </div>
 
       {/* 4 Section - Card swiper section */}
-      <div className="fourth-section parent" data-aos="fade-up">
+      <div className="fourth-section parent" data-aos="fade-down">
         <div className="fourth-section-cont cont">
           <h3 className="title">
             Our Digital Suite of <br />{" "}
@@ -235,17 +235,18 @@ export default function Home() {
           {caseStudies.map((item, index) => (
             <SwiperSlide className="bg-img-cover" key={index}>
               <div
-                className="image scroll"
+                className="image "
                 style={{ background: `url(${item.imgage.src})` }}
               >
-                <div className="overlay"></div>
-                <Link href={item.url} className="case-btn">
-                  View
-                </Link>
-                <h4>
-                  <span className="gradient-text"></span> {item.title}
-                </h4>
-                <p>{item.content}</p>
+                <div className="overlay"  id="scroll" >
+                  <Link href={item.url} className="case-btn">
+                    View
+                  </Link>
+                  <h4>
+                    <span className="gradient-text"></span> {item.title}
+                  </h4>
+                  <p>{item.content}</p>
+                </div>
               </div>
             </SwiperSlide>
           ))}
@@ -253,7 +254,7 @@ export default function Home() {
       </div>
 
       {/* 6th Section - Accordion */}
-      <div data-aos="fade-up">
+      <div data-aos="fade-down">
         <Accordian />
       </div>
 

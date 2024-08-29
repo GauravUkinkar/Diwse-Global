@@ -38,12 +38,13 @@
         width: 100%;
         display: flex;
         justify-content: flex-start;
-        align-items: center;
+        align-items: center;        
         gap: calc(var(--unit) / 2);
 
         input {
           // height: 50px;
           width: 50%;
+          border-radius: 100px !important;
           background-color: rgb(255, 255, 255);
           border-radius: calc(var(--unit) / 2);
           outline: none;
@@ -57,9 +58,9 @@
         }
 
         .submit-btn {
-          padding: calc(var(--unit) / 2) var(--unit);
+          padding: calc(var(--unit) /2) var(--unit);
           color: var(--white);
-          border-radius: calc(var(--unit) / 2);
+          border-radius: 100px !important;
           background-color: var(--black);
         }
       }

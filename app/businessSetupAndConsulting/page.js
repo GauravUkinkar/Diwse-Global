@@ -112,7 +112,11 @@ const page = () => {
     <>
       <div className="service-hero-parent parent">
         <div className="service-hero-cont cont">
-          <div className="left">
+          <div className="left"
+           data-aos="fade-up"
+           data-aos-delay="600"
+           data-aos-duration="1000"
+          >
             <h3 className="section-headding">Business Setup & Consulting</h3>
             <p className="service-p">
               Expand Your Global Reach: Our experienced consultants provide
@@ -135,8 +139,8 @@ const page = () => {
           </div>
           <div
             className="right businessSetup "
-            data-aos="fade-right"
-            data-aos-delay="600"
+            data-aos="fade-up"
+            data-aos-delay="900"
             data-aos-duration="1000"
           >
             {/* <div className="right-img-box bg-img-cover"></div> */}
@@ -146,7 +150,12 @@ const page = () => {
 
       <div className="service-detail-parent parent">
         <div className="service-detail-cont cont">
-          <div className="top">
+             {/* ------------------TOP---------------- */}
+          <div className="top"
+           data-aos="fade-up"
+           data-aos-delay="600"
+           data-aos-duration="1000"
+          >
             <h3 className="heading">
               Propel Your Business to Global Heights with
               <span className="gradient-text">DIwise Global</span>
@@ -159,9 +168,14 @@ const page = () => {
               on a global scale.
             </p>
           </div>
-
-          <div className="middle">
-            <div className="left">
+  {/* ------------------Middle---------------- */}
+          <div className="middle"
+          data-aos="fade-up"
+          data-aos-delay="200"
+          data-aos-duration="1000"
+          >
+            <div className="left"
+                        >
               <div className="back-image business_setup_back bg-img-cover"></div>
               <div className="front-image business_setup_front bg-img-cover"></div>
             </div>
@@ -169,9 +183,7 @@ const page = () => {
               {serviceDetails.map((item, index) => (
                 <div
                   className="content"
-                  data-aos="fade-left"
-                  data-aos-delay="600"
-                  data-aos-duration="1000"
+                  
                   key={index}
                 >
                   <div className="left">{item.srNo}</div>
@@ -183,9 +195,12 @@ const page = () => {
               ))}
             </div>
           </div>
-
-          <div className="bottom">
-            <div className="left">
+   {/* ------------------BOTTOM---------------- */}
+          <div className="bottom"
+           data-aos="fade-up"
+           data-aos-delay="200"
+           data-aos-duration="800">
+                   <div className="left">
               <h5 className="left-heding">
                 <span className="gradient-text">Global Expansion </span>{" "}
                 Consultation
@@ -217,7 +232,11 @@ const page = () => {
 
       <div className="service-faq-parent parent">
         <div className="service-faq-cont cont">
-          <div className="left">
+          <div className="left"
+          data-aos="fade-up"
+          data-aos-delay="600"
+          data-aos-duration="1000"
+          >
             <h4 className="hedding">
               FAQs for Business Setup &{" "}
               <span className="gradient-text">Consulting Services</span>
@@ -232,7 +251,12 @@ const page = () => {
               />
             ))}
           </div>
-          <div className="right business_setup_faq bg-img-cover">
+          <div className="right business_setup_faq bg-img-cover"
+          
+          data-aos="fade-up"
+           data-aos-delay="900"
+           data-aos-duration="1000"
+          >
             {/* <div className="image">
 
             </div> */}
