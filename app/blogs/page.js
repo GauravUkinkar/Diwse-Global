@@ -4,6 +4,7 @@ import "./blog.scss";
 import Blog_Details from "@/component/blog/Blog_Details";
 import axios from "axios";
 import Link from "next/link";
+import AOS from "aos";
 
 // Sample blog data array
 const blogData = [
@@ -142,7 +143,7 @@ const Blogs = () => {
       </div>
       <div className="blog-parent parent">
         <div className="blog-cont cont">
-          <div className="card-box">
+          <div className="card-box" data-aos="fade-up">
             {data &&
               data.slice(0, visibleblog).map((blog,index) => (
                 <Link
