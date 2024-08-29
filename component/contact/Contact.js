@@ -98,7 +98,7 @@ const Contact = () => {
               </button>
             </form>
           </div>
-          <div className="right bg-img-cover" data-aos="fade-up"></div>
+          <div className="right bg-img-cover" data-aos="fade-up" data-aos-delay="200"></div>
         </div>
       </div>
     </>
