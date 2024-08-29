@@ -154,10 +154,35 @@
         backdrop-filter: blur(10px);
         .top {
           height: 70%;
-          // background-color: red;
+       
           // background-image: url("../../public/assets/image1.jpg");
           width: 100%;
+
+
+       
+          
         }
+
+        #image1{
+          animation: float 3s infinite linear;
+        }
+        #image2{
+          animation: floatTwo 3s infinite linear;
+        }
+        #image3{
+          animation: floatThree 3s infinite linear;
+        }
+        #image4{
+          animation: floatFour 3s infinite linear;
+        }
+        #image5{
+          animation: floatFive 3s infinite linear;
+        }
+
+
+
+    
+        
 
         h5 {
           height: fit-content;
@@ -321,5 +346,64 @@
 }
 
 
+// First Icon
 
-
+@keyframes float {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+// Second Icon
+@keyframes floatTwo {
+  0% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(-10px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+//Third Icon
+@keyframes floatThree {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+//Fourth Icon
+@keyframes floatFour {
+  0% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(-10px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+//Fifth Icon
+@keyframes floatFive {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
