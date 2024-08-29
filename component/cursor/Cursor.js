@@ -8,7 +8,8 @@ import axios from "axios";
 function Cursor() {
   const [images, setImages] = useState([]);
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
-  const [hovered, setHovered] = useState(false); 
+  const [hovered, setHovered] = useState(false);
+
   const fetchImages = async () => {
     try {
       const response = await axios.get(
@@ -27,7 +28,9 @@ function Cursor() {
   useEffect(() => {
     const cursor = document.querySelector(".cursor");
     const imageContainer = document.querySelector(".image-container");
-    const scrolldiv = document.querySelector(".scrollDiv");
+    const scrollDivs = document.querySelectorAll(".scroll");
+    const dot = document.querySelector(".dot"); // Assuming this exists
+    const scrollDiv = document.querySelector(".scrollDiv"); // Assuming this exists
 
     const onMouseMove = (e) => {
       const { clientX, clientY } = e;
@@ -56,42 +59,84 @@ function Cursor() {
         });
 
         setCurrentImageIndex(index);
-      } else if (e.target.classList.contains("scroll")) {
-        cursor.style.display = "none";
-        if (scrolldiv) {
-          scrolldiv.style.display = "flex";
-          gsap.to(scrolldiv, {
-            x: clientX,
-            y: clientY,
-            // duration: 0.1,
-          });
-        }
       } else {
         cursor.style.display = "flex";
-        if (imageContainer) {
-          imageContainer.style.display = "none";
-        }
-
-        if(scrolldiv){
-          scrolldiv.style.display = "none";
-        }
+        imageContainer.style.display = "none";
       }
     };
 
+    const onMouseEnterScroll = () => {
+      gsap.to(cursor, {
+        height: "100px",
+        width: "100px",
+        backgroundColor: "#fe62016b",
+        border: "none",
+        // duration:0.1
+      });
+
+      if (scrollDiv) {
+        scrollDiv.style.display = "flex";
+      }
+      if (dot) {
+        dot.style.display = "none";
+      }
+    };
+
+    const onMouseLeaveScroll = () => {
+      gsap.to(cursor, {
+        scale: 1,
+        width: "30px",
+        height: "30px",
+        borderRadius: "50%",
+        backgroundColor: "transparent",
+        border: "1px solid #ffffff",
+        opacity: 1,
+        overflow: "visible",
+        duration:0.8
+      });
+
+      if (scrollDiv) {
+        scrollDiv.style.display = "none";
+      }
+      if (dot) {
+        dot.style.display = "block";
+      }
+    };
+
+    const onMouseLeave = () => {
+      gsap.to(cursor, { opacity: 0, scale: 0 });
+      gsap.to(imageContainer, { opacity: 0 });
+    };
+
+    scrollDivs.forEach((item) => {
+      item.addEventListener("mouseenter", onMouseEnterScroll);
+      item.addEventListener("mouseleave", onMouseLeaveScroll);
+    });
     document.addEventListener("mousemove", onMouseMove);
+    document.addEventListener("mouseleave", onMouseLeave);
 
     return () => {
       document.removeEventListener("mousemove", onMouseMove);
+      document.removeEventListener("mouseleave", onMouseLeave);
+      scrollDivs.forEach((item) => {
+        item.removeEventListener("mouseenter", onMouseEnterScroll);
+        item.removeEventListener("mouseleave", onMouseLeaveScroll);
+      });
     };
-  }, [hovered]); 
+  }, [hovered]);
 
   return (
     <>
       <div className="cursor">
         <div className="dot"></div>
-      </div>
+        <div className="scrollDiv">
 
-      <div className="scrollDiv">scroll</div>
+
+          <p>
+            scroll
+          </p>
+        </div>
+      </div>
 
       <div className="image-container">
         {images.length > 0 && (

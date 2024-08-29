@@ -6,7 +6,7 @@ import gsap from "gsap";
 import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
 import { useEffect, useRef } from "react";
 import "../app/Style/home.scss";
-import { Autoplay } from "swiper/modules";
+import { Autoplay, Pagination } from "swiper/modules";
 import Accordian from "@/component/accordian/Accordian";
 import Contact from "@/component/contact/Contact";
 import Home_Card_Swiper from "@/component/home/home_card_swiper";
@@ -27,6 +27,7 @@ import New_home from "@/component/home/new_home";
 import { Toaster } from "react-hot-toast";
 import nimg from "../public/assets/icons/navIcon/Dcoument.png";
 import Link from "next/link";
+
 gsap.registerPlugin(ScrollTrigger);
 export default function Home() {
   const cardData = [
@@ -210,6 +211,7 @@ export default function Home() {
             disableOnInteraction: false,
             pauseOnMouseEnter: true,
           }}
+          // pagination={{clickable:false}}
           navigation={false}
           modules={[Autoplay]}
           breakpoints={{
@@ -227,12 +229,12 @@ export default function Home() {
           }}
         >
           {caseStudies.map((item, index) => (
-            <SwiperSlide className="bg-img-cover"   key={index}>
+            <SwiperSlide className="bg-img-cover "   key={index}>
               <div
-                className="image"
+                className="image scroll"
                 style={{ background: `url(${item.imgage.src})` }}
               >
-                <div className="overlay "  >
+                <div className="overlay"  >
                   <Link href={item.url} className="case-btn">
                     View
                   </Link>

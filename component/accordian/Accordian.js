@@ -22,7 +22,7 @@ const Accordian = () => {
     <>
       <div className="accordian-parent parent">
         <div className="accoridan-cont cont">
-          <h3 className="heading scroll">
+          <h3 className="heading">
             Stay Digitalised with our <span className="gradeint-text">Blog Insights</span>
           </h3>
           <div className="blogs-list">

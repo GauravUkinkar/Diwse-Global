@@ -59,7 +59,7 @@ const Header_main = () => {
     },
     {
       path: "/businessSetupAndConsulting",
-      name: "Business Setup And Consultation",
+      name: "Business Setup and Consultation",
       images: "assets/icons/navIcon/Dcoument.png",
       className: "image2",
     },
