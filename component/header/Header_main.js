@@ -99,7 +99,7 @@ const Header_main = () => {
               : "header-cont cont"
           }
         >
-          <Link href="/" className="logo scroll">
+          <Link href="/" className="logo">
             <Image src={logoImage} className="logo-img" width={100} />
           </Link>
           <div className="links" >
