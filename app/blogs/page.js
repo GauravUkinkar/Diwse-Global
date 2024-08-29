@@ -103,7 +103,6 @@ const blogData = [
 
 const Blogs = () => {
   const [visibleblog, setVisibleBlogs] = useState(3);
-
   const active = () => {
     const newblog = visibleblog + 3;
     setVisibleBlogs(newblog);
@@ -121,7 +120,6 @@ const Blogs = () => {
       console.log(err);
     }
   };
-
   useEffect(() => {
     fetchBlogs();
   }, []);
