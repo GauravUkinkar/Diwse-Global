@@ -39,15 +39,13 @@ function Cursor() {
       }
        
   
-      
-      if (e.target.classList.contains("scroll")) {
+      if (e.target.id.includes("scroll")) {
         if (text) {
           text.style.display = "flex";
         }
         cursor.style.display = "none";
       } else if (text) {
         text.style.display = "none";
-
         cursor.style.display = "flex";
       }
     };

@@ -28,7 +28,7 @@ import { SiWikimediafoundation } from "react-icons/si";
 import { TbBusinessplan } from "react-icons/tb";
 import New_home from "@/component/home/new_home";
 import { Toaster } from "react-hot-toast";
-import nimg from "../public/assets/icons/navIcon/Dcoument.png"
+import nimg from "../public/assets/icons/navIcon/Dcoument.png";
 import Link from "next/link";
 
 gsap.registerPlugin(ScrollTrigger);
@@ -41,7 +41,7 @@ export default function Home() {
       description:
         "Elevate your online presence. From crafting engaging content and managing your social media, we'll drive global visibility and engagement.",
       buttonText: "Get Started",
-      link:'digitalmarketing'
+      link: "digitalmarketing",
     },
     {
       icon: "assets/icons/navIcon/Development.png",
@@ -49,7 +49,7 @@ export default function Home() {
       description:
         "Bring your digital vision to life. We specialise in creating user-friendly, responsive designs with the latest technology to meet your needs.",
       buttonText: "Get Started",
-      link:'webdevelopment'
+      link: "webdevelopment",
     },
     {
       icon: "assets/icons/navIcon/digital_marketing.png",
@@ -57,7 +57,7 @@ export default function Home() {
       description:
         "Make Your Brand Unforgettable. Our team of creatives will design your logo, develop your brand story, and produce engaging multimedia content.",
       buttonText: "Get Started",
-      link:'prandbranding'
+      link: "prandbranding",
     },
     {
       icon: "assets/icons/navIcon/Dcoument.png",
@@ -65,7 +65,7 @@ export default function Home() {
       description:
         "Expand your business globally. We offer comprehensive support, from developing market entry strategies to providing operational consulting.",
       buttonText: "Get Started",
-      link:'businessSetupAndConsulting'
+      link: "businessSetupAndConsulting",
     },
     {
       icon: "assets/icons/navIcon/PR.png",
@@ -73,7 +73,7 @@ export default function Home() {
       description:
         "Manage Your Reputation Globally. We help you build and maintain a positive brand reputation, ensuring effective communication.",
       buttonText: "Get Started",
-      link:'publicRelationOutreach'
+      link: "publicRelationOutreach",
     },
   ];
 
@@ -166,7 +166,7 @@ export default function Home() {
       </div>
 
       {/* 4 Section - Card swiper section */}
-      <div className="fourth-section parent" data-aos="fade-up">
+      <div className="fourth-section parent" data-aos="fade-down">
         <div className="fourth-section-cont cont">
           <h3 className="title">
             Our Digital Suite of <br />{" "}
@@ -231,22 +231,22 @@ export default function Home() {
               slidesPerView: 1,
             },
           }}
-     
         >
           {caseStudies.map((item, index) => (
             <SwiperSlide className="bg-img-cover" key={index}>
               <div
-                className="image scroll"
+                className="image "
                 style={{ background: `url(${item.imgage.src})` }}
               >
-                <div className="overlay"></div>
-                <Link href={item.url} className="case-btn">
-                  View
-                </Link>
-                <h4>
-                  <span className="gradient-text"></span> {item.title}
-                </h4>
-                <p>{item.content}</p>
+                <div className="overlay"  id="scroll" >
+                  <Link href={item.url} className="case-btn">
+                    View
+                  </Link>
+                  <h4>
+                    <span className="gradient-text"></span> {item.title}
+                  </h4>
+                  <p>{item.content}</p>
+                </div>
               </div>
             </SwiperSlide>
           ))}
@@ -254,7 +254,7 @@ export default function Home() {
       </div>
 
       {/* 6th Section - Accordion */}
-      <div data-aos="fade-up">
+      <div data-aos="fade-down">
         <Accordian />
       </div>
 
