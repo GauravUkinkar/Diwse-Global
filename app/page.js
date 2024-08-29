@@ -193,11 +193,12 @@ export default function Home() {
             titledisplay="flex"
           />
         </div>
+        <div id="home_casestudy"></div>
       </div>
 
       {/* 5th Section - Swiper section */}
-      <div></div> 
-      <div className="fifth-section parent" id="home_casestudy"
+      
+      <div className="fifth-section parent" 
       >
         <Swiper
           className="mySwiper"
