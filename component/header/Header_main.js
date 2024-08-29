@@ -53,7 +53,7 @@ const Header_main = () => {
   const servicelists = [
     {
       path: "/digitalmarketing",
-      name: "Digital Marketing & SEO",
+      name: "Digital Marketing and SEO",
       images: "assets/icons/navIcon/digital_marketing-1.png",
       className: "image1",
     },
