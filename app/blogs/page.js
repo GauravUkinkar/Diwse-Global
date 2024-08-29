@@ -100,7 +100,7 @@ const blogData = [
     link: "#",
   },
 ];
-AOS.init();
+
 const Blogs = () => {
   const [visibleblog, setVisibleBlogs] = useState(3);
 
@@ -126,6 +126,9 @@ const Blogs = () => {
     fetchBlogs();
   }, []);
 
+  useEffect(() => {
+    AOS.init();
+  }, []);
   return (
     <>
       <div className="blog-parent-b  parent">
