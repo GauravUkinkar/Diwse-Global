@@ -100,7 +100,7 @@ const blogData = [
     link: "#",
   },
 ];
-
+AOS.init();
 const Blogs = () => {
   const [visibleblog, setVisibleBlogs] = useState(3);
 
@@ -125,6 +125,7 @@ const Blogs = () => {
   useEffect(() => {
     fetchBlogs();
   }, []);
+
   return (
     <>
       <div className="blog-parent-b  parent">
@@ -143,7 +144,7 @@ const Blogs = () => {
       </div>
       <div className="blog-parent parent">
         <div className="blog-cont cont">
-          <div className="card-box" data-aos="fade-up">
+          <div className="card-box" data-aos="fade-up" data-aos-delay="400">
             {data &&
               data.slice(0, visibleblog).map((blog,index) => (
                 <Link

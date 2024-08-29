@@ -48,7 +48,7 @@ const Contact = () => {
           <div className="left" data-aos="fade-up">
             <h2 className="c-title">
               <span className="gradient-text bold_text">Get in Touch</span> <span className="light_text">
-              with Diwise
+              with DIwise
               Global
               </span>
             </h2>

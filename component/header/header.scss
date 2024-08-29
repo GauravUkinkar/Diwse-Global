@@ -6,6 +6,7 @@
   top: 0px;
 
   &.scrolling {
+    background-color: rgba(0, 0, 0, 0.493);
     -webkit-backdrop-filter: blur(10px);
     backdrop-filter: blur(10px);
   }
