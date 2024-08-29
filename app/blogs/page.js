@@ -103,11 +103,6 @@ const blogData = [
 
 const Blogs = () => {
   const [visibleblog, setVisibleBlogs] = useState(3);
-  const active = () => {
-    const newblog = visibleblog + 3;
-    setVisibleBlogs(newblog);
-    setBlogs(blogData.slice(0, newblog));
-  };
 
   const [data, setdata] = useState([]);
   const fetchBlogs = async () => {
@@ -178,7 +173,7 @@ const Blogs = () => {
           </div>
           {visibleblog < blogData.length && (
             <div className="load-more">
-              <button className="btn1" onClick={active}>
+              <button className="btn1">
                 Load More Blog
               </button>
             </div>

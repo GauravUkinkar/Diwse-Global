@@ -41,7 +41,7 @@ const page = () => {
     },
     {
       srNo: 3,
-      title: "Operational Optimisation and Consulting",
+      title: "Operational Optimisation and Consultation",
       content:
         "Streamline Your Business: Our consulting services help you optimise your operations, enhance efficiency, and drive sustainable growth.",
     },
@@ -61,7 +61,7 @@ const page = () => {
       image: img2,
     },
     {
-      title: "Legal Compliance and Advisory",
+      title: "Expert Legal Guidance for Compliance",
       content:
         "Navigate the Legal Landscape. Stay compliant with local regulations, tax laws, and industry-specific requirements with our expert legal advice.",
       image: img3,
@@ -117,7 +117,7 @@ const page = () => {
            data-aos-delay="600"
            data-aos-duration="1000"
           >
-            <h3 className="section-headding">Business Setup & Consulting</h3>
+            <h3 className="section-headding">Business Setup & Consultation</h3>
             <p className="service-p">
               Expand Your Global Reach: Our experienced consultants provide
               expert guidance on setting up operations in international markets.
@@ -158,7 +158,7 @@ const page = () => {
           >
             <h3 className="heading">
               Propel Your Business to Global Heights with
-              <span className="gradient-text">DIwise Global</span>
+              <span className="gradient-text"> DIwise Global</span>
             </h3>
             <p className="para">
               Our expert consulting services empower businesses to conquer

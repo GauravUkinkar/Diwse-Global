@@ -7,9 +7,6 @@ import axios from "axios";
 import Link from "next/link";
 
 const Blog_Details = ({ data }) => {
-
-
-  const [categoryname,setCategoryname] = useState("")
   const [updatedBlogs, setUpdatedBlogs] = useState([]);
   const fetchData = async () => {
     try {
@@ -34,7 +31,7 @@ const Blog_Details = ({ data }) => {
       );
 
       setCategories(response.data)
-      // setCategoryname(response.data[0].)
+    
     } catch (err) {}
   };
 
