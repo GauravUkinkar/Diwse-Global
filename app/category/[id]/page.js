@@ -8,18 +8,19 @@ import { useParams } from "next/navigation";
 
 // Sample blog data array
 
-
 const Blogs = () => {
-
-  const [visibleblog,setVisibleBlogs] = useState(3)
+  const [categoryname, setCategoryname] = useState("");
+  const [visibleblog, setVisibleBlogs] = useState(3);
   const [data, setdata] = useState([]);
-  const {id} = useParams()
+  const { id } = useParams();
   const fetchBlogs = async () => {
     try {
       const response = await axios.get(
         `https://api.diwiseglobal.com/auth/category/${id}/`
       );
       setdata(response.data);
+      console.log(response.data)
+      setCategoryname(response.data[0].category)
     } catch (err) {
       console.log(err);
     }
@@ -32,13 +33,14 @@ const Blogs = () => {
   useEffect(() => {
     AOS.init();
   }, []);
+
   return (
     <>
       <div className="blog-parent-b  parent">
         <div className="top-color  parent">
           <div className="top-color-cont cont">
             <h3 className="about-heading">
-              Blog <span className="gradient-text"> Category</span>
+              {categoryname}
             </h3>
             <p className="about-para">
               Stay updated with the latest trends and tips in digital marketing
@@ -62,7 +64,9 @@ const Blogs = () => {
                     <div className="card-data">
                       <div
                         className="card-image bg-img-cover"
-                        style={{ backgroundImage: `url(https://api.diwiseglobal.com${blog.image})` }}
+                        style={{
+                          backgroundImage: `url(https://api.diwiseglobal.com${blog.image})`,
+                        }}
                       ></div>
                       <h4 className="card-title">{blog.title}</h4>
                       <p
@@ -80,11 +84,9 @@ const Blogs = () => {
                 </Link>
               ))}
           </div>
-          {data  && (
+          {data && (
             <div className="load-more">
-              <button className="btn1">
-                Load More Blog
-              </button>
+              <button className="btn1">Load More Blog</button>
             </div>
           )}
         </div>
