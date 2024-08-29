@@ -21,6 +21,10 @@ export default function RootLayout({ children }) {
     backgroundImage: `url('${img2.src}')`,
   };
 
+
+
+
+  
   return (
     <html lang="en">
       <body className="body">

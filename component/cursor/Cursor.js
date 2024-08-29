@@ -3,26 +3,43 @@
 import React, { useEffect, useState } from "react";
 import "./cursor.scss";
 import gsap from "gsap";
-import { MdOutlineKeyboardArrowLeft } from "react-icons/md";
-import image1 from "../../public/assets/image1.jpg";
-import image2 from "../../public/assets/image2.jpg";
-import image3 from "../../public/assets/image3.jpg";
-import Image from "next/image";
+import axios from "axios";
+
 function Cursor() {
-  const [currentImage, setCurrentImage] = useState(null);
-  const images = [image1, image2, image3];
+  const [images, setImages] = useState([]);
+  const [currentImageIndex, setCurrentImageIndex] = useState(0);
 
   useEffect(() => {
-    const cursor = document.getElementsByClassName("cursor")[0];
-    const imageElement = document.querySelectorAll(".imagehover");
-    const body = document.querySelectorAll(".body")
+    const fetchImages = async () => {
+      try {
+        const response = await axios.get(
+          "https://api.diwiseglobal.com/auth/blogs/"
+        );
+        setImages(
+          response.data.data
+            .filter((item) => item.image)
+            .map((item) => item.image)
+        );
+      } catch (error) {
+        console.error("Error fetching images", error);
+      }
+    };
 
-    const dot = document.querySelector(".dot");
+    fetchImages();
+
+    const cursor = document.getElementsByClassName("cursor")[0];
+    const imageContainer =
+      document.getElementsByClassName("image-container")[0];
+    const scrolldiv = document.getElementsByClassName("scrollDiv");
     const onMouseMove = (e) => {
-      const text = document.querySelector(".scrollDiv");
       const { clientX, clientY } = e;
 
-      // Move custom cursor
+      console.log("Hovered element:", e.target);
+      console.log(
+        "Has imageHover class:",
+        e.target.classList.contains("imageHover")
+      );
+
       gsap.to(cursor, {
         x: clientX,
         y: clientY,
@@ -30,117 +47,52 @@ function Cursor() {
         opacity: 1,
         scale: 1,
       });
-      if (text) {
-        gsap.to(text, {
+
+      if (e.target.classList.contains("imageHover")) {
+        const index = e.target.getAttribute("data-index");
+        cursor.style.display = "none";
+        imageContainer.style.display = "block";
+        gsap.to(imageContainer, {
           x: clientX,
           y: clientY,
           duration: 0.1,
         });
-      }
-       
-  
-      if (e.target.id.includes("scroll")) {
-        if (text) {
-          text.style.display = "flex";
-        }
+
+        setCurrentImageIndex(index);
+      } else if (e.target.classList.contains("scroll")) {
         cursor.style.display = "none";
-      } else if (text) {
-        text.style.display = "none";
+        scrolldiv.style.display = "flex";
+        gsap.to(scrolldiv, {
+          x: clientX,
+          y: clientY,
+          duration: 0.1,
+        });
+      } else {
         cursor.style.display = "flex";
-      }
-    };
-    const onMouseEnterImage = (index) => {
-      gsap.to(cursor, {
-        width: "300px",
-        height: "200px",
-        borderRadius: "25px",
-        overflow: "hidden",
-        // duration: 0.1,
-      });
-      setCurrentImage(images[index]);
-
-      if (dot) {
-        dot.style.display = "none";
+        imageContainer.style.display = "none";
       }
     };
 
-    const onMouseLeaveImage = () => {
-      gsap.to(cursor, {
-        scale: 1,
-        width: "30px",
-        height: "30px",
-        borderRadius: "50%",
-        backgroundColor: "transperant",
-        border: "1px solid #ffffff",
-        opacity: 1,
-        overflow: "visible",
-        // duration: 0.05,
-      });
-
-      setCurrentImage(null);
-
-      if (dot) {
-        dot.style.display = "block";
-      }
-    };
-
-    const mouseleaveBody = ()=>{
-      gsap.to(cursor, {
-        duration: 0.1,
-        opacity: 0,
-        scale: 0,
-      });
-    }
     document.addEventListener("mousemove", onMouseMove);
-
-    imageElement.forEach((item, index) => {
-      item.addEventListener("mouseenter", () => onMouseEnterImage(index));
-      item.addEventListener("mouseleave", onMouseLeaveImage);
-    });
-
-    body.forEach(item =>{
-      item.addEventListener("mouseleave",mouseleaveBody)
-    })
-
 
     return () => {
       document.removeEventListener("mousemove", onMouseMove);
-
-      imageElement.forEach((item, index) => {
-        item.removeEventListener("mouseenter", () => onMouseEnterImage(index));
-        item.removeEventListener("mouseleave", onMouseLeaveImage);
-      });
     };
-  }, []);
+  }, [images]);
 
   return (
     <>
       <div className="cursor">
         <div className="dot"></div>
+      </div>
 
-        {currentImage && (
-          <div className="imagecontainer">
-            <Image
-              src={currentImage}
-              alt="Cursor Image"
-              width={300}
-              height={200}
-            />
-          </div>
+      <div className="scrollDiv">scroll</div>
+
+      <div className="image-container">
+        {images.length > 0 && (
+          <img src={images[currentImageIndex]} alt="Hovered" />
         )}
       </div>
-
-      <div className="scrollDiv">
-        scroll
-        <span className="leftIcon icon">
-          <MdOutlineKeyboardArrowLeft />
-        </span>
-        <span className="rightIcon ">
-          <MdOutlineKeyboardArrowLeft />
-        </span>
-      </div>
-
-      <div className="blurcursor"></div>
     </>
   );
 }
