@@ -163,7 +163,7 @@ export default function Home() {
       {/* 4 Section - Card swiper section */}
       <div className="fourth-section parent" data-aos="fade-down">
         <div className="fourth-section-cont cont">
-          <h3 className="title">
+          <h3 className="title"   >
             Our Digital Suite of <br />{" "}
             <span className="gradient-text">Services </span>
           </h3>
@@ -193,11 +193,12 @@ export default function Home() {
             titledisplay="flex"
           />
         </div>
+        <div id="home_casestudy"></div>
       </div>
 
       {/* 5th Section - Swiper section */}
-      <div></div> 
-      <div className="fifth-section parent" id="home_casestudy"
+      
+      <div className="fifth-section parent" 
       >
         <Swiper
           className="mySwiper"
@@ -228,10 +229,10 @@ export default function Home() {
           {caseStudies.map((item, index) => (
             <SwiperSlide className="bg-img-cover"   key={index}>
               <div
-                className="image "
+                className="image"
                 style={{ background: `url(${item.imgage.src})` }}
               >
-                <div className="overlay"  id="scroll" >
+                <div className="overlay "  >
                   <Link href={item.url} className="case-btn">
                     View
                   </Link>

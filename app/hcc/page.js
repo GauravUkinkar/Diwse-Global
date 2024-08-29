@@ -12,6 +12,7 @@ import hcc_about from "../../public/assets/img/hcc_about.webp";
 import hcc_fb from "../../public/assets/img/hcc_fb.webp";
 import hcc_insta from "../../public/assets/img/hcc_insta.webp";
 import hcc_link from "../../public/assets/img/hcc_link.webp";
+import hccp from "../../public/assets/img/hcc-p.webp"
 
 const page = () => {
   const caseStudy = useRef();
@@ -45,6 +46,9 @@ const page = () => {
     },
     {
       image: hcc_link,
+    },
+    {
+      image: hccp,
     },
   ];
 

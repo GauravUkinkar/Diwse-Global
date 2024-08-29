@@ -53,7 +53,7 @@ const Header_main = () => {
   const servicelists = [
     {
       path: "/digitalmarketing",
-      name: "Digital Marketing & SEO",
+      name: "Digital Marketing and SEO",
       images: "assets/icons/navIcon/digital_marketing-1.png",
       className: "image1",
     },
@@ -102,7 +102,7 @@ const Header_main = () => {
           <Link href="/" className="logo scroll">
             <Image src={logoImage} className="logo-img" width={100} />
           </Link>
-          <div className="links">
+          <div className="links" >
             <Link href="/" className="link image link1 ">
               Home
             </Link>

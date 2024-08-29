@@ -2,16 +2,15 @@
   width: 100%;
   height: auto;
   padding: calc(var(--unit) * 3);
-  
-  background:rgb(20, 20, 20);
- 
+
+  background: rgb(20, 20, 20);
 
   .accoridan-cont {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
-    padding:50px 0px;
+    padding: 50px 0px;
 
     .heading {
       width: 100%;
@@ -22,37 +21,42 @@
 
     .blogs-list {
       width: 100%;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: flex-start;
-      .blog-para {
-        width: 100% !important;
-        padding: calc(var(--unit) * 2) 10px;
-        font-size: var(--unit);
+
+      .blogs-navigation {
+        width: 100%;
         display: flex;
-        justify-content: space-between;
-        align-items: center;
-        border-bottom: 1px solid var(--accent1);
-
-        .rightend {
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        .blog-para {
+          width: 100% !important;
+          padding: calc(var(--unit) * 2) 10px;
+          font-size: var(--unit);
           display: flex;
-          justify-content: center;
+          justify-content: space-between;
           align-items: center;
-          gap: calc(var(--unit) / 2);
+          border-bottom: 1px solid var(--accent1);
+          // cursor: all-scroll;
 
-          .date {
+          .rightend {
             display: flex;
             justify-content: center;
             align-items: center;
-            font-size: 14px;
-          }
+            gap: calc(var(--unit) / 2);
 
-          .btnbllog{
-            border: 1px solid var(--white);
-                    padding: calc(var(--unit)/3) calc(var(--unit)/2);
-                    border-radius: var(--unit);
-                    font-size: 12px;
+            .date {
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              font-size: 14px;
+            }
+
+            .btnbllog {
+              border: 1px solid var(--white);
+              padding: calc(var(--unit) / 3) calc(var(--unit) / 2);
+              border-radius: var(--unit);
+              font-size: 12px;
+            }
           }
         }
       }
@@ -64,8 +68,8 @@
   .accordian-parent {
     padding: 10px !important;
 
-    .accoridan-cont{
-align-items: center !important;
+    .accoridan-cont {
+      align-items: center !important;
     }
   }
   .rightend {
@@ -86,17 +90,16 @@ align-items: center !important;
   }
 }
 @media screen and (max-width: 700px) {
-  .heading{
+  .heading {
     text-align: center;
-    font-size:30px !important;
+    font-size: 30px !important;
     font-weight: 600;
   }
 }
 @media screen and (max-width: 600px) {
-.heading{
-  text-align: center;
-  
-}
+  .heading {
+    text-align: center;
+  }
   .rightend {
     gap: 10px !important;
     .date {
