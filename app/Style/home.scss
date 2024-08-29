@@ -44,15 +44,11 @@
     }
 
     .desc {
-      
     }
-
   }
 }
 
-
-
-@media only screen and (max-width:700px) {
+@media only screen and (max-width: 700px) {
   .fourth-section {
     padding: 50px 0px !important;
     .fourth-section-cont {
@@ -70,7 +66,6 @@
   }
 }
 
-
 // fifthsection
 
 .fifth-section {
@@ -79,7 +74,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: calc(var(--unit)*2) 0px calc(var(--unit)*5) 0px;
+  padding: calc(var(--unit) * 2) 0px calc(var(--unit) * 5) 0px;
 
   .mySwiper {
     width: 100%;
@@ -92,13 +87,13 @@
       border-radius: var(--unit);
       overflow: hidden;
     }
-    
+
     .image-container {
       position: relative;
       height: 100%;
       width: 100%;
     }
-    
+
     .image {
       height: 100%;
       width: 100%;
@@ -106,41 +101,39 @@
       background-size: cover !important;
       background-repeat: no-repeat !important;
       border-radius: var(--unit);
-      display: flex;
-      justify-content: flex-end;
-      align-items: flex-start;
-      flex-direction: column;
-      padding: calc(var(--unit) * 3);
-      position: relative;
-    }
-    
-    .overlay {
-      position: absolute;
-      bottom: 0;
-      left: 0;
-      width: 100%;
-      height: 100%; 
-      background: linear-gradient(to top, rgba(0, 0, 0, 0.918), rgba(0, 0, 0, 0)); 
-      border-radius: 0 0 var(--unit) var(--unit);
-  }
-  
-    
-    // .content {
-    //   position: relative;
-    //   z-index: 1;
-    // }
-    
-    .case-btn {
-      padding: calc(var(--unit) / 2) calc(var(--unit));
-      border: 1px solid var(--white);
-      border-radius: var(--unit);
-      z-index: 1;
-    }
-    
-    h4, p {
-      z-index: 1;
-      color: var(--white);
-    }
+
+      // position: relative;
+
+      .overlay {
+        // position: absolute;
+        // bottom: 0;
+        // left: 0;
+        display: flex;
+        justify-content: flex-end;
+        align-items: flex-start;
+        flex-direction: column;
+        padding: calc(var(--unit) * 3);
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(
+          to top,
+          rgba(0, 0, 0, 0.918),
+          rgba(0, 0, 0, 0)
+        );
+        border-radius: 0 0 var(--unit) var(--unit);
+
+        .case-btn {
+          padding: calc(var(--unit) / 2) calc(var(--unit));
+          border: 1px solid var(--white);
+          border-radius: var(--unit);
+          // z-index: 1;
+        }
+
+        h4,
+        p {
+          // z-index: 1;
+          color: var(--white);
+        }
 
         h4 {
           line-height: 110%;
@@ -148,53 +141,59 @@
         }
       }
     }
-  
 
+    // .content {
+    //   position: relative;
+    //   z-index: 1;
+    // }
+  }
+}
 
-
-@media screen and (max-width:900px) {
+@media screen and (max-width: 900px) {
   .fifth-section {
     height: 100svh;
     .swiper-slide {
       .image {
-        padding: var(--unit) !important;
-        align-items: center !important;
-        gap: 10px !important;
+        .overlay {
+          padding: var(--unit) !important;
+          align-items: center !important;
+          gap: 10px !important;
+          h4 {
+            text-align: center;
+            line-height: 120%;
+          }
 
-        h4 {
-          text-align: center;
-          line-height: 120%;
-        }
-
-        p {
-          text-align: center;
-          width: 100%;
+          p {
+            text-align: center;
+            width: 100%;
+          }
         }
       }
     }
   }
 }
 
-@media only screen and (max-height:700px){
-  .fifth-section{
-    .swiper-slide{
+@media only screen and (max-height: 700px) {
+  .fifth-section {
+    .swiper-slide {
+      .image {
+        .overlay {
+          padding: 10px !important;
+          gap: calc(var(--unit) / 2) !important;
 
-      .image{
-        padding: 10px !important;
-gap: calc(var(--unit)/2) !important;
-
-.case-btn {
-  padding: 5px 10px;
-}
-       h4{
-        font-size: 20px;
-        max-width: 30ch;
-        line-height: 130%;
-        padding: 0;
-       }
-       p{
-        font-size: 14px;
-       }
+          .case-btn {
+            padding: 5px 10px;
+          }
+          h4 {
+            font-size: 20px;
+            max-width: 30ch;
+            line-height: 130%;
+            padding: 0;
+          }
+          p {
+            font-size: 14px;
+          }
+        }
       }
     }
   }
