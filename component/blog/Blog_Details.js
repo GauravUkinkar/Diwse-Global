@@ -64,7 +64,7 @@ const Blog_Details = ({ data }) => {
             dangerouslySetInnerHTML={{ __html: data.description }}
           ></p>
           <div className="btn">
-            <Button_comp btn_text="All Blogs" />
+            <Button_comp link="/blogs" btn_text="All Blogs" />
           </div>
         </div>
         <div className="right">
