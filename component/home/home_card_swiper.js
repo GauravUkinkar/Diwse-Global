@@ -34,7 +34,7 @@ const Home_Card_Swiper = ({
           spaceBetween={20}
           pagination={false}
           autoplay={{
-            delay: 20000000000000000000,
+            delay: 2000,
             disableOnInteraction: false, // Allows Swiper to pause on interaction
             pauseOnMouseEnter: pauseOnMouseEnter, // Stops autoplay on mouse enter
           }}
