@@ -50,19 +50,19 @@ const page = () => {
       title: "Press Release Management",
       content:
         "Amplify Your Message. Our team crafts compelling press releases, distributing them to relevant media outlets so your messages reach your audience.",
-        image: img1
+      image: img1
     },
     {
       title: "Influencer and Media Outreach",
       content:
         "Partner with Influencers. We'll identify and collaborate with influential figures, bloggers, and media professionals to amplify your brand's message.",
-        image: img2
+      image: img2
     },
     {
       title: "Event Coordination",
       content:
         "Create Memorable Experiences. Our event planning experts will organise and promote impactful events to generate media coverage and public interest.",
-        image: img3
+      image: img3
     },
   ];
 
@@ -104,7 +104,7 @@ const page = () => {
       );
       toast.success("Thank You for Your Inquiry in DIwise!");
       setEmail("");
-    } catch (err) {}
+    } catch (err) { }
   };
   return (
     <>
@@ -152,12 +152,12 @@ const page = () => {
 
       <div className="service-detail-parent parent">
         <div className="service-detail-cont cont">
-            {/* ------------------TOP---------------- */}
+          {/* ------------------TOP---------------- */}
 
           <div className="top"
-           data-aos="fade-up"
-           data-aos-delay="600"
-           data-aos-duration="1000"
+            data-aos="fade-up"
+            data-aos-delay="600"
+            data-aos-duration="1000"
           >
             <h3 className="heading">
               Elevate Your Brand with DIwise <br />{" "}
@@ -170,23 +170,20 @@ const page = () => {
               message is heard loud and clear across all markets.
             </p>
           </div>
-   {/* ------------------Middle---------------- */}
+          {/* ------------------Middle---------------- */}
           <div className="middle">
             <div className="left"
               data-aos="fade-up"
-              data-aos-delay="600"
+              data-aos-delay="200"
               data-aos-duration="1000"
             >
               <div className="back-image public_back bg-img-cover"></div>
               <div className="front-image public_front bg-img-cover"></div>
             </div>
             <div className="right">
-              {serviceDetails.map((item,index) => (
+              {serviceDetails.map((item, index) => (
                 <div
                   className="content"
-                  data-aos="fade-up"
-                  data-aos-delay="200"
-                  data-aos-duration="1000"
                   key={index}
                 >
                   <div className="left">{item.srNo}</div>
@@ -198,11 +195,11 @@ const page = () => {
               ))}
             </div>
           </div>
- {/* ------------------BOTTOM---------------- */}
+          {/* ------------------BOTTOM---------------- */}
           <div className="bottom"
-           data-aos="fade-up"
-           data-aos-delay="200"
-           data-aos-duration="800"
+            data-aos="fade-up"
+            data-aos-delay="200"
+            data-aos-duration="800"
           >
             <div className="left">
               <h5 className="left-heding">
@@ -236,12 +233,12 @@ const page = () => {
       <div className="service-faq-parent parent">
         <div className="service-faq-cont cont">
           <div className="left"
-           data-aos="fade-up"
-           data-aos-delay="600"
-           data-aos-duration="1000"
+            data-aos="fade-up"
+            data-aos-delay="600"
+            data-aos-duration="1000"
           >
             <h4 className="hedding">
-            
+
               FAQs for Public Relations &{" "}
               <span className="gradient-text">Media Outreach Services</span>
             </h4>
@@ -256,9 +253,9 @@ const page = () => {
             ))}
           </div>
           <div className="right public_search_faq bg-img-cover"
-          data-aos="fade-up"
-          data-aos-delay="900"
-          data-aos-duration="1000"
+            data-aos="fade-up"
+            data-aos-delay="900"
+            data-aos-duration="1000"
           >
             {/* <div className="image">
 
@@ -267,7 +264,7 @@ const page = () => {
         </div>
       </div>
 
-      <Toaster/>
+      <Toaster />
     </>
   );
 };

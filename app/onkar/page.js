@@ -7,12 +7,13 @@ import { LuDot } from "react-icons/lu";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import About_card_swiper from "@/component/about/About_card_swiper";
-import onkars from "../../public/assets/img/onkar.png";
+// import onkars from "../../public/assets/img/onkar.png";
 import onkar1 from "../../public/assets/img/onka_1.webp";
 import onkar2 from "../../public/assets/img/onka_2.webp";
 import onkar3 from "../../public/assets/img/onka_3.webp";
 import onkar4 from "../../public/assets/img/onka_4.webp";
 import onkar5 from "../../public/assets/img/onka_5.webp";
+import onkarp from "../../public/assets/img/onkar-p.webp"
 
 const page = () => {
   const caseStudy = useRef();
@@ -32,9 +33,7 @@ const page = () => {
   ];
 
   const onkarImage = [
-    {
-      image: onkars,
-    },
+        
     {
       image: onkar1,
     },
@@ -49,6 +48,9 @@ const page = () => {
     },
     {
       image: onkar5,
+    },
+    {
+      image: onkarp,
     },
   ];
 

@@ -1,7 +1,6 @@
 "use client";
 import React, { useEffect, useState } from "react";
-import "./blog.scss";
-import Blog_Details from "@/component/blog/Blog_Details";
+import "../blogs/blog.scss";
 import axios from "axios";
 import Link from "next/link";
 import AOS from "aos";
@@ -135,7 +134,7 @@ const Blogs = () => {
         <div className="top-color  parent">
           <div className="top-color-cont cont">
             <h3 className="about-heading">
-              Latest <span className="gradient-text">Blogs</span>
+              Blog <span className="gradient-text"> Category</span>
             </h3>
             <p className="about-para">
               Stay updated with the latest trends and tips in digital marketing
@@ -149,7 +148,7 @@ const Blogs = () => {
         <div className="blog-cont cont" data-aos="fade-up">
           <div className="card-box" data-aos="fade-up" data-aos-delay="200">
             {data &&
-              data.slice(0, visibleblog).map((blog,index) => (
+              data.slice(0, visibleblog).map((blog, index) => (
                 <Link
                   href={`/blogdetail/${blog.id}`}
                   className="card-link"
@@ -167,8 +166,7 @@ const Blogs = () => {
                         dangerouslySetInnerHTML={{
                           __html: blog.description.slice(0, 150),
                         }}
-                      >
-                      </p>
+                      ></p>
                     </div>
                     <div className="bottom-card">
                       <div className="category">{blog.category}</div>

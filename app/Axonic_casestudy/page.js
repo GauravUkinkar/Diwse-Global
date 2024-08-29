@@ -12,6 +12,7 @@ import axonic_insta from "../../public/assets/img/axonic_insta.webp"
 import axonic_2 from "../../public/assets/img/axon_2.webp"
 import Axonic from "../../public/assets/img/Axonic.png"
 import Axon from "../../public/assets/img/axon.webp"
+import axonp from "../../public/assets/img/axonic-p.webp"
 const page = () => {
   const caseStudy = useRef();
   const caseStudyTrigger = useRef();
@@ -45,6 +46,9 @@ const page = () => {
     },
     {
       image: Axon,
+    },
+    {
+      image: axonp,
     },
   ]
 

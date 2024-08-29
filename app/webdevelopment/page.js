@@ -108,16 +108,16 @@ const page = () => {
       );
       toast.success("Thank You for Your Inquiry in DIwise!");
       setEmail("")
-    } catch (err) {}
+    } catch (err) { }
   };
   return (
     <>
       <div className="service-hero-parent parent">
         <div className="service-hero-cont cont">
           <div className="left"
-           data-aos="fade-up"
-           data-aos-delay="600"
-           data-aos-duration="1000"
+            data-aos="fade-up"
+            data-aos-delay="600"
+            data-aos-duration="1000"
           >
             <h3 className="section-headding">Web & App Development</h3>
             <p className="service-p">
@@ -153,11 +153,11 @@ const page = () => {
 
       <div className="service-detail-parent parent">
         <div className="service-detail-cont cont">
-           {/* ------------------TOP---------------- */}
+          {/* ------------------TOP---------------- */}
           <div className="top"
-          data-aos="fade-up"
-          data-aos-delay="600"
-          data-aos-duration="1000"
+            data-aos="fade-up"
+            data-aos-delay="600"
+            data-aos-duration="1000"
           >
             <h3 className="heading">
               DIwise Custom Web & App{" "}
@@ -171,33 +171,25 @@ const page = () => {
               business goals.
             </p>
           </div>
-   {/* ------------------Middle---------------- */}
-          <div className="middle">
+          {/* ------------------Middle---------------- */}
+          <div className="middle"
+            data-aos="fade-up"
+            data-aos-delay="200"
+            data-aos-duration="1000"
+          >
             <div className="left"
-             data-aos="fade-up"
-             data-aos-delay="600"
-             data-aos-duration="1000"
             >
               <div
                 className="back-image web-back-image bg-img-cover"
-                data-aos="fade-up"
-                data-aos-delay="600"
-                data-aos-duration="1000"
               ></div>
               <div
                 className="front-image web-front-image bg-img-cover"
-                data-aos="fade-up"
-                data-aos-delay="600"
-                data-aos-duration="1000"
               ></div>
             </div>
             <div className="right">
-              {serviceDetails.map((item,index) => (
+              {serviceDetails.map((item, index) => (
                 <div
                   className="content"
-                  data-aos="fade-up"
-                  data-aos-delay="200"
-                  data-aos-duration="1000"
                   key={index}
                 >
                   <div className="left">{item.srNo}</div>
@@ -209,11 +201,11 @@ const page = () => {
               ))}
             </div>
           </div>
-  {/* ------------------BOTTOM---------------- */}
+          {/* ------------------BOTTOM---------------- */}
           <div className="bottom"
-          data-aos="fade-up"
-          data-aos-delay="200"
-          data-aos-duration="800">
+            data-aos="fade-up"
+            data-aos-delay="200"
+            data-aos-duration="800">
             <div className="left">
               <h5 className="left-heding">
                 Innovative <span className="gradient-text">Web Solutions</span>
@@ -248,9 +240,9 @@ const page = () => {
       <div className="service-faq-parent parent">
         <div className="service-faq-cont cont">
           <div className="left"
-           data-aos="fade-up"
-           data-aos-delay="600"
-           data-aos-duration="1000"
+            data-aos="fade-up"
+            data-aos-delay="600"
+            data-aos-duration="1000"
           >
             <h4 className="hedding">
               FAQs for Web & App{" "}
@@ -267,14 +259,14 @@ const page = () => {
             ))}
           </div>
           <div className="right web_faq bg-img-cover"
-           data-aos="fade-up"
-           data-aos-delay="900"
-           data-aos-duration="1000"
+            data-aos="fade-up"
+            data-aos-delay="900"
+            data-aos-duration="1000"
           ></div>
         </div>
       </div>
 
-      <Toaster/>
+      <Toaster />
     </>
   );
 };

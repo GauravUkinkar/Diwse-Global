@@ -6,9 +6,7 @@ import gsap from "gsap";
 import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
 import { useEffect, useRef } from "react";
 import "../app/Style/home.scss";
-
 import { Autoplay } from "swiper/modules";
-
 import Accordian from "@/component/accordian/Accordian";
 import Contact from "@/component/contact/Contact";
 import Home_Card_Swiper from "@/component/home/home_card_swiper";
@@ -20,7 +18,6 @@ import img2 from "../public/assets/home/Travel-and-Taste.jpg";
 import img3 from "../public/assets/home/hcc.jpg";
 import img4 from "../public/assets/home/onkar.webp";
 import "swiper/swiper-bundle.css";
-
 import Head from "next/head";
 import { FaSearchengin } from "react-icons/fa";
 import { MdBrandingWatermark, MdDeveloperMode } from "react-icons/md";
@@ -30,9 +27,7 @@ import New_home from "@/component/home/new_home";
 import { Toaster } from "react-hot-toast";
 import nimg from "../public/assets/icons/navIcon/Dcoument.png";
 import Link from "next/link";
-
 gsap.registerPlugin(ScrollTrigger);
-
 export default function Home() {
   const cardData = [
     {
@@ -76,11 +71,8 @@ export default function Home() {
       link: "publicRelationOutreach",
     },
   ];
-
   const videoBoxRef = useRef(null);
-
   useEffect(() => {
-    // Initialize AOS
     AOS.init({
       duration: 1000,
       once: false,
@@ -103,7 +95,6 @@ export default function Home() {
       }
     );
   }, []);
-
   const caseStudies = [
     {
       title: "Revolutionising healthcare delivery with AxonCare by Axonic",
@@ -153,8 +144,12 @@ export default function Home() {
       {/* 2 Section - Video section */}
       <div className="second-section" ref={videoBoxRef}>
         <div className="video-box" data-aos="fade-up">
-          <video autoPlay muted loop playsInline width="100%">
+          <video autoPlay muted loop playsInline width="100%" className="video-laptop">
             <source src="/assets/dvideo.webm" type="video/webm" />
+            Your browser does not support the video tag.
+          </video>
+          <video autoPlay muted loop playsInline width="100%" className="video-mobile">
+            <source src="/assets/mob-video.webm" type="video/webm" />
             Your browser does not support the video tag.
           </video>
         </div>
@@ -172,7 +167,7 @@ export default function Home() {
             Our Digital Suite of <br />{" "}
             <span className="gradient-text">Services </span>
           </h3>
-          <p className="desc">
+          <p className="desc" >
             Our comprehensive suite of digital services is designed to propel
             your business to new heights, both domestically and internationally.
           </p>
@@ -198,13 +193,12 @@ export default function Home() {
             titledisplay="flex"
           />
         </div>
+        <div id="home_casestudy"></div>
       </div>
 
       {/* 5th Section - Swiper section */}
-      <div
-        id="home_casestudy"
-        className="fifth-section parent"
-        data-aos="fade-up"
+      
+      <div className="fifth-section parent" 
       >
         <Swiper
           className="mySwiper"
@@ -233,7 +227,7 @@ export default function Home() {
           }}
         >
           {caseStudies.map((item, index) => (
-            <SwiperSlide className="bg-img-cover" key={index}>
+            <SwiperSlide className="bg-img-cover"   key={index}>
               <div
                 className="image"
                 style={{ background: `url(${item.imgage.src})` }}

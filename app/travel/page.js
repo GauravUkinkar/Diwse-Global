@@ -12,6 +12,7 @@ import travel_fb from "../../public/assets/img/travel_facebook.png"
 import travel_insta from "../../public/assets/img/travel_instagram.png"
 import travel_package from "../../public/assets/img/travel_package.png"
 import travel_destination from "../../public/assets/img/travel_des.webp"
+import travelp from "../../public/assets/img/travel-p.webp"
 
 const page = () => {
   const caseStudy = useRef();
@@ -45,6 +46,9 @@ const page = () => {
     },
     {
       image: travel_destination,
+    },
+    {
+      image: travelp,
     },
   ];
 

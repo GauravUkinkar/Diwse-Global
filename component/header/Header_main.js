@@ -53,28 +53,33 @@ const Header_main = () => {
   const servicelists = [
     {
       path: "/digitalmarketing",
-      name: "Digital Marketing",
+      name: "Digital Marketing and SEO",
       images: "assets/icons/navIcon/digital_marketing-1.png",
+      className: "image1",
     },
     {
       path: "/businessSetupAndConsulting",
-      name: "Business Setup And Consulting",
+      name: "Business Setup And Consultation",
       images: "assets/icons/navIcon/Dcoument.png",
+      className: "image2",
     },
     {
       path: "/prandbranding",
       name: "Branding & Creative Services",
       images: "assets/icons/navIcon/digital_marketing.png",
+      className: "image3",
     },
     {
       path: "/publicRelationOutreach",
-      name: "Public Relation Outreach",
+      name: "Public Relation & Media Outreach",
       images: "assets/icons/navIcon/PR.png",
+      className: "image4",
     },
     {
       path: "/webdevelopment",
-      name: "Web Development",
+      name: "Website & App Development",
       images: "assets/icons/navIcon/Development.png",
+      className: "image5",
     },
   ];
 
@@ -152,10 +157,10 @@ const Header_main = () => {
         {navbar.serviceList && (
           <div className="option cont" onMouseLeave={closeAll}>
             <div className="bottom">
-              {servicelists.map((item,index) => (
+              {servicelists.map((item, index) => (
                 <Link href={item.path} key={index} className="link  link1">
                   <div
-                    className="top bg-img-contain"
+                    className="top bg-img-contain"  id={item.className}
                     style={{ backgroundImage: `url(${item.images})` }}
                   ></div>
 
@@ -170,7 +175,7 @@ const Header_main = () => {
         <div className="mob-nav">
           <div className="top">
             <div className="logo2">
-              <Image src={logoImage}  className="logo-img-mobile" width={100}/>
+              <Image src={logoImage} className="logo-img-mobile" width={100} />
             </div>
             <div
               className="cross"
@@ -186,10 +191,18 @@ const Header_main = () => {
             </div>
           </div>
           <div className="menus">
-            <Link href="/" className="link link1" onClick={()=>setNavbar({...navbar,mobNav:false})}>
+            <Link
+              href="/"
+              className="link link1"
+              onClick={() => setNavbar({ ...navbar, mobNav: false })}
+            >
               Home
             </Link>
-            <Link href="/about" className="link link2" onClick={()=>setNavbar({...navbar,mobNav:false})}>
+            <Link
+              href="/about"
+              className="link link2"
+              onClick={() => setNavbar({ ...navbar, mobNav: false })}
+            >
               About
             </Link>
             <div
@@ -199,35 +212,49 @@ const Header_main = () => {
             >
               Service
               <span className="downArrow arrow">
-                {
-                  mobService ?<MdKeyboardArrowUp /> : <MdKeyboardArrowDown />
-                }
-                
+                {mobService ? <MdKeyboardArrowUp /> : <MdKeyboardArrowDown />}
               </span>
             </div>
             <div className={`service-list ${mobService ? "active" : ""}`}>
               <div className="list">
-                {servicelists.map((item,index) => (
-                  <Link href={item.path} key={index} onClick={()=>setNavbar({...navbar,mobNav:false})}>
+                {servicelists.map((item, index) => (
+                  <Link
+                    href={item.path}
+                    key={index}
+                    onClick={() => setNavbar({ ...navbar, mobNav: false })}
+                  >
                     {item.name}
                   </Link>
                 ))}
               </div>
             </div>
-            <Link href="/#home_casestudy"  onClick={() => {
+            <Link
+              href="/#home_casestudy"
+              onClick={() => {
                 closeAll();
                 setNavbar((element) => ({
                   ...element,
                   mobNav: false,
                 }));
-              }} className="link link4">
+              }}
+              className="link link4"
+            >
               Case Studies
             </Link>
-            
-            <Link href="/blogs" className="link link5" onClick={()=>setNavbar({...navbar,mobNav:false})}>
+
+            <Link
+              href="/blogs"
+              className="link link5"
+              onClick={() => setNavbar({ ...navbar, mobNav: false })}
+            >
               Blogs
             </Link>
-            <Link className="btn1" href="/contact" style={{ marginTop: "20px" }} onClick={()=>setNavbar({...navbar,mobNav:false})}>
+            <Link
+              className="btn1"
+              href="/contact"
+              style={{ marginTop: "20px" }}
+              onClick={() => setNavbar({ ...navbar, mobNav: false })}
+            >
               Get Started
             </Link>
           </div>
