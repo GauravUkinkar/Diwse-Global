@@ -232,7 +232,7 @@ export default function Home() {
                 className="image"
                 style={{ background: `url(${item.imgage.src})` }}
               >
-                <div className="overlay "  >
+                <div className="overlay"  >
                   <Link href={item.url} className="case-btn">
                     View
                   </Link>
