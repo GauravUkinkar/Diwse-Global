@@ -15,7 +15,7 @@ const Contact = () => {
     contact: "",
     message: "",
   });
-  
+
   useEffect(() => {
     AOS.init();
   }, []);
@@ -98,7 +98,7 @@ const Contact = () => {
               </button>
             </form>
           </div>
-          <div className="right bg-img-cover" data-aos="fade-down"></div>
+          <div className="right bg-img-cover" data-aos="fade-up"></div>
         </div>
       </div>
     </>
