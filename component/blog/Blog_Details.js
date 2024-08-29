@@ -4,6 +4,7 @@ import Button_comp from "../button/Button_comp";
 import { SlCalender } from "react-icons/sl";
 import { IoTimeOutline } from "react-icons/io5";
 import axios from "axios";
+import Link from "next/link";
 
 const Blog_Details = ({ data }) => {
 
@@ -73,13 +74,13 @@ const Blog_Details = ({ data }) => {
               Blog <span>Categories</span>
             </h4>
             {categories.map((category, index) => (
-              <div className="category-main-box" key={index}>
+              <Link href={`/category/${category.id}`} className="category-main-box" key={index}>
                 <a href={category.link} className="category-box">
                   <div className="category-title">{category.category_name}</div>
                   <div className="total">({category.items})</div>
                 </a>
                 <div className="line"></div>
-              </div>
+              </Link>
             ))}
           </div>
           <div className="recent-post">
@@ -88,7 +89,7 @@ const Blog_Details = ({ data }) => {
             </h4>
             {updatedBlogs &&
               updatedBlogs.map((post, index) => (
-                <div key={index}>
+                <Link href={`/blogdetail/${post.id}`} key={index}>
                   <a href={post.link} className="recent-post-box">
                     <div
                       className="left bg-img-cover"
@@ -109,7 +110,7 @@ const Blog_Details = ({ data }) => {
                     </div>
                   </a>
                   <div className="line"></div>
-                </div>
+                </Link>
               ))}
           </div>
         </div>
