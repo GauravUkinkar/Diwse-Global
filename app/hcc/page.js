@@ -1,7 +1,7 @@
 "use client";
 
 import React, { useEffect, useRef } from "react";
-import "../Casestudy/Axonic_casestudy/casestudy.scss";
+import "../Axonic_casestudy/casestudy.scss";
 import Button_comp from "@/component/button/Button_comp";
 import { LuDot } from "react-icons/lu";
 import AOS from "aos";

@@ -110,14 +110,14 @@ export default function Home() {
       content:
         "DIwise helped AxonCare transform healthcare delivery through innovative digital solutions, improving patient outcomes and accessibility.",
       imgage: img1,
-      url: "/Casestudy/Axonic_casestudy",
+      url: "/Axonic_casestudy",
     },
     {
       title: "When Travel and Taste Got the taste of Digital Adventures",
       content:
         "DIwise powered Travel and Taste's digital transformation, enabling them to offer unforgettable culinary experiences and personalised travel itineraries.",
       imgage: img2,
-      url: "/Casestudy/travel",
+      url: "/travel",
     },
     {
       title: "Healthcare Concierge Shakes hand to medical tourism digitally",
@@ -131,7 +131,7 @@ export default function Home() {
       content:
         "DIwise partnered with Onkar World to enhance their online presence and drive global trade through effective digital marketing strategies.",
       imgage: img4,
-      url: "/Casestudy/onkar",
+      url: "/onkar",
     },
   ];
   return (

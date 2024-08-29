@@ -1,19 +1,17 @@
 "use client";
 
 import React, { useEffect, useRef } from "react";
-import "../Axonic_casestudy/casestudy.scss";
+import "./casestudy.scss";
 import Button_comp from "@/component/button/Button_comp";
 import { LuDot } from "react-icons/lu";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import About_card_swiper from "@/component/about/About_card_swiper";
-import onkars from "../../../public/assets/img/onkar.png";
-import onkar1 from "../../../public/assets/img/onka_1.webp";
-import onkar2 from "../../../public/assets/img/onka_2.webp";
-import onkar3 from "../../../public/assets/img/onka_3.webp";
-import onkar4 from "../../../public/assets/img/onka_4.webp";
-import onkar5 from "../../../public/assets/img/onka_5.webp";
-
+import axonic_facebook from "../../public/assets/img/facebook_axon.webp"
+import axonic_insta from "../../public/assets/img/axonic_insta.webp"
+import axonic_2 from "../../public/assets/img/axon_2.webp"
+import Axonic from "../../public/assets/img/Axonic.png"
+import Axon from "../../public/assets/img/axon.webp"
 const page = () => {
   const caseStudy = useRef();
   const caseStudyTrigger = useRef();
@@ -31,47 +29,46 @@ const page = () => {
     "Transparent and open communication at every step.",
   ];
 
-  const onkarImage = [
+
+  const axonicImage = [
     {
-      image: onkars,
+      image: axonic_facebook,
     },
     {
-      image: onkar1,
+      image: axonic_insta,
     },
     {
-      image: onkar2,
+      image: axonic_2,
     },
     {
-      image: onkar3,
+      image: Axonic,
     },
     {
-      image: onkar4,
+      image: Axon,
     },
-    {
-      image: onkar5,
-    },
-  ];
+  ]
 
   return (
     <>
       <div className="case-study-page parent">
         <div className="case-study-page-cont cont">
           <h3 className="case-heading" data-aos="fade-up">
-            Trading the best of the world,
+            Revolutionising healthcare delivery with AxonCare by
             <span className="gradient-text">
-              <a href="https://onkarsugars.com/" target="_blank">
+              <a href="https://axonichealth.com/" target="_blank">
                 {" "}
-                Onkar World’s{" "}
+                Axonic
               </a>
-            </span>{" "}
-            Digital Partner
+            </span>
           </h3>
           <p className="case-para" data-aos="fade-up" data-aos-delay="200">
-            As Onkar World's digital partner, DIwise played a crucial role in
-            establishing their online presence and driving global trade. Through
-            effective digital marketing strategies, we helped them solidify
-            their position as the first and only trading company worldwide and
-            generated valuable leads through targeted social media campaigns.
+            Recognising AxonCare's groundbreaking approach to healthcare, DIwise
+            became their trusted partner in driving digital transformation. By
+            leveraging innovative technology to make healthcare accessible,
+            affordable, and available, AxonCare is revolutionising the industry.
+            As their one-stop digital marketing solution, DIwise has been
+            instrumental in enhancing patient outcomes and expanding their
+            reach.
           </p>
           <div data-aos="fade-up" data-aos-delay="400">
             <Button_comp link="/contact" btn_text="Get Started" />
@@ -81,7 +78,7 @@ const page = () => {
 
       <div className="case-study-second parent" ref={caseStudyTrigger}>
         <div
-          className="case-study-second-cont onkar-top-img cont bg-img-cover"
+          className="case-study-second-cont top-img cont bg-img-cover"
           ref={caseStudy}
           data-aos="fade-up"
           data-aos-delay="600"
@@ -99,19 +96,18 @@ const page = () => {
           <div className="middle">
             <div className="left" data-aos="fade-up" data-aos-delay="300">
               <p className="middlepara">
-                Our commitment to excellence has enabled us to deliver
-                exceptional results for Onkar World, solidifying our reputation
-                as a trusted partner in the global trade industry. Through our
-                innovative digital marketing strategies, we've helped them
-                enhance their online presence, attract new customers, and drive
-                sustainable growth.
+                Through our comprehensive marketing services, we've been
+                instrumental in positioning Axonic as a pioneering force in the
+                industry. By delivering exceptional results that exceed client
+                expectations, we've solidified our reputation as a trusted
+                partner.
               </p>
             </div>
             <div className="btnlist" data-aos="fade-up" data-aos-delay="400">
               <div className="case-btn">Digital Marketing & SEO</div>
-              <div className="case-btn">Web development</div>
-              <div className="case-btn">Lead Generation Campaigns</div>
-              <div className="case-btn">Branding and Creative Services</div>
+              <div className="case-btn">Web & App Development</div>
+              <div className="case-btn">UX/UI designing</div>
+              <div className="case-btn">Branding & Creative Services</div>
               <div className="case-btn">Public Relations Outreach</div>
             </div>
           </div>
@@ -162,7 +158,7 @@ const page = () => {
           </div>
         </div>
       </div>
-      <About_card_swiper swiperImg={onkarImage} />
+      <About_card_swiper swiperImg={axonicImage} />
     </>
   );
 };

@@ -1,17 +1,18 @@
 "use client";
 
 import React, { useEffect, useRef } from "react";
-import "./casestudy.scss";
+import "../Axonic_casestudy/casestudy.scss";
 import Button_comp from "@/component/button/Button_comp";
 import { LuDot } from "react-icons/lu";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import About_card_swiper from "@/component/about/About_card_swiper";
-import axonic_facebook from "../../../public/assets/img/facebook_axon.webp"
-import axonic_insta from "../../../public/assets/img/axonic_insta.webp"
-import axonic_2 from "../../../public/assets/img/axon_2.webp"
-import Axonic from "../../../public/assets/img/Axonic.png"
-import Axon from "../../../public/assets/img/axon.webp"
+import travels from "../../public/assets/img/travel.png";
+import travel_fb from "../../public/assets/img/travel_facebook.png"
+import travel_insta from "../../public/assets/img/travel_instagram.png"
+import travel_package from "../../public/assets/img/travel_package.png"
+import travel_destination from "../../public/assets/img/travel_des.webp"
+
 const page = () => {
   const caseStudy = useRef();
   const caseStudyTrigger = useRef();
@@ -29,46 +30,45 @@ const page = () => {
     "Transparent and open communication at every step.",
   ];
 
-
-  const axonicImage = [
+  const travelImages = [
     {
-      image: axonic_facebook,
+      image: travels,
     },
     {
-      image: axonic_insta,
+      image: travel_fb,
     },
     {
-      image: axonic_2,
+      image: travel_insta,
     },
     {
-      image: Axonic,
+      image: travel_package,
     },
     {
-      image: Axon,
+      image: travel_destination,
     },
-  ]
+  ];
 
   return (
     <>
       <div className="case-study-page parent">
         <div className="case-study-page-cont cont">
           <h3 className="case-heading" data-aos="fade-up">
-            Revolutionising healthcare delivery with AxonCare by
+            When
             <span className="gradient-text">
-              <a href="https://axonichealth.com/" target="_blank">
+              <a href="https://www.travelandtaste.com.au/" target="_blank">
                 {" "}
-                Axonic
+                Travel and Taste
               </a>
-            </span>
+            </span>{" "}
+            Got the taste of Digital Adventures
           </h3>
           <p className="case-para" data-aos="fade-up" data-aos-delay="200">
-            Recognising AxonCare's groundbreaking approach to healthcare, DIwise
-            became their trusted partner in driving digital transformation. By
-            leveraging innovative technology to make healthcare accessible,
-            affordable, and available, AxonCare is revolutionising the industry.
-            As their one-stop digital marketing solution, DIwise has been
-            instrumental in enhancing patient outcomes and expanding their
-            reach.
+            Our collaboration with Travel and Taste was a journey filled with
+            adventures and digital innovation. DIwise played a pivotal role in
+            their digital transformation, empowering them to offer unforgettable
+            travel experiences and personalised itineraries. Through strategic
+            campaigns and engaging social media content, we helped them achieve
+            their goals and exceed customer expectations.
           </p>
           <div data-aos="fade-up" data-aos-delay="400">
             <Button_comp link="/contact" btn_text="Get Started" />
@@ -78,7 +78,7 @@ const page = () => {
 
       <div className="case-study-second parent" ref={caseStudyTrigger}>
         <div
-          className="case-study-second-cont top-img cont bg-img-cover"
+          className="case-study-second-cont top-imgt cont bg-img-cover"
           ref={caseStudy}
           data-aos="fade-up"
           data-aos-delay="600"
@@ -96,19 +96,20 @@ const page = () => {
           <div className="middle">
             <div className="left" data-aos="fade-up" data-aos-delay="300">
               <p className="middlepara">
-                Through our comprehensive marketing services, we've been
-                instrumental in positioning Axonic as a pioneering force in the
-                industry. By delivering exceptional results that exceed client
-                expectations, we've solidified our reputation as a trusted
-                partner.
+                Our shared passion for travel ignited our excitement to work
+                with Travel and Taste. By crafting innovative strategies,
+                creating engaging content, and generating valuable leads, we've
+                helped them achieve remarkable results. Our dedication to
+                excellence has solidified our reputation as a trusted partner in
+                the travel industry.
               </p>
             </div>
             <div className="btnlist" data-aos="fade-up" data-aos-delay="400">
               <div className="case-btn">Digital Marketing & SEO</div>
-              <div className="case-btn">Web & App Development</div>
-              <div className="case-btn">UX/UI designing</div>
+              <div className="case-btn">Web development</div>
+              <div className="case-btn">Lead Generation Campaigns</div>
               <div className="case-btn">Branding & Creative Services</div>
-              <div className="case-btn">Public Relations Outreach</div>
+              <div className="case-btn">Ads and Social media campaigns</div>
             </div>
           </div>
 
@@ -121,7 +122,7 @@ const page = () => {
       <div className="fifth-parent parent">
         <div className="fifth-section-cont cont ">
           <div
-            className="left section-img bg-img-cover"
+            className="left section-imgt bg-img-cover"
             data-aos="fade-up"
             data-aos-delay="200"
           ></div>
@@ -158,7 +159,7 @@ const page = () => {
           </div>
         </div>
       </div>
-      <About_card_swiper swiperImg={axonicImage} />
+      <About_card_swiper swiperImg={travelImages} />
     </>
   );
 };

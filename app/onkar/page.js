@@ -7,11 +7,12 @@ import { LuDot } from "react-icons/lu";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import About_card_swiper from "@/component/about/About_card_swiper";
-import travels from "../../../public/assets/img/travel.png";
-import travel_fb from "../../../public/assets/img/travel_facebook.png"
-import travel_insta from "../../../public/assets/img/travel_instagram.png"
-import travel_package from "../../../public/assets/img/travel_package.png"
-import travel_destination from "../../../public/assets/img/travel_des.webp"
+import onkars from "../../public/assets/img/onkar.png";
+import onkar1 from "../../public/assets/img/onka_1.webp";
+import onkar2 from "../../public/assets/img/onka_2.webp";
+import onkar3 from "../../public/assets/img/onka_3.webp";
+import onkar4 from "../../public/assets/img/onka_4.webp";
+import onkar5 from "../../public/assets/img/onka_5.webp";
 
 const page = () => {
   const caseStudy = useRef();
@@ -30,21 +31,24 @@ const page = () => {
     "Transparent and open communication at every step.",
   ];
 
-  const travelImages = [
+  const onkarImage = [
     {
-      image: travels,
+      image: onkars,
     },
     {
-      image: travel_fb,
+      image: onkar1,
     },
     {
-      image: travel_insta,
+      image: onkar2,
     },
     {
-      image: travel_package,
+      image: onkar3,
     },
     {
-      image: travel_destination,
+      image: onkar4,
+    },
+    {
+      image: onkar5,
     },
   ];
 
@@ -53,22 +57,21 @@ const page = () => {
       <div className="case-study-page parent">
         <div className="case-study-page-cont cont">
           <h3 className="case-heading" data-aos="fade-up">
-            When
+            Trading the best of the world,
             <span className="gradient-text">
-              <a href="https://www.travelandtaste.com.au/" target="_blank">
+              <a href="https://onkarsugars.com/" target="_blank">
                 {" "}
-                Travel and Taste
+                Onkar World’s{" "}
               </a>
             </span>{" "}
-            Got the taste of Digital Adventures
+            Digital Partner
           </h3>
           <p className="case-para" data-aos="fade-up" data-aos-delay="200">
-            Our collaboration with Travel and Taste was a journey filled with
-            adventures and digital innovation. DIwise played a pivotal role in
-            their digital transformation, empowering them to offer unforgettable
-            travel experiences and personalised itineraries. Through strategic
-            campaigns and engaging social media content, we helped them achieve
-            their goals and exceed customer expectations.
+            As Onkar World's digital partner, DIwise played a crucial role in
+            establishing their online presence and driving global trade. Through
+            effective digital marketing strategies, we helped them solidify
+            their position as the first and only trading company worldwide and
+            generated valuable leads through targeted social media campaigns.
           </p>
           <div data-aos="fade-up" data-aos-delay="400">
             <Button_comp link="/contact" btn_text="Get Started" />
@@ -78,7 +81,7 @@ const page = () => {
 
       <div className="case-study-second parent" ref={caseStudyTrigger}>
         <div
-          className="case-study-second-cont top-imgt cont bg-img-cover"
+          className="case-study-second-cont onkar-top-img cont bg-img-cover"
           ref={caseStudy}
           data-aos="fade-up"
           data-aos-delay="600"
@@ -96,20 +99,20 @@ const page = () => {
           <div className="middle">
             <div className="left" data-aos="fade-up" data-aos-delay="300">
               <p className="middlepara">
-                Our shared passion for travel ignited our excitement to work
-                with Travel and Taste. By crafting innovative strategies,
-                creating engaging content, and generating valuable leads, we've
-                helped them achieve remarkable results. Our dedication to
-                excellence has solidified our reputation as a trusted partner in
-                the travel industry.
+                Our commitment to excellence has enabled us to deliver
+                exceptional results for Onkar World, solidifying our reputation
+                as a trusted partner in the global trade industry. Through our
+                innovative digital marketing strategies, we've helped them
+                enhance their online presence, attract new customers, and drive
+                sustainable growth.
               </p>
             </div>
             <div className="btnlist" data-aos="fade-up" data-aos-delay="400">
               <div className="case-btn">Digital Marketing & SEO</div>
               <div className="case-btn">Web development</div>
               <div className="case-btn">Lead Generation Campaigns</div>
-              <div className="case-btn">Branding & Creative Services</div>
-              <div className="case-btn">Ads and Social media campaigns</div>
+              <div className="case-btn">Branding and Creative Services</div>
+              <div className="case-btn">Public Relations Outreach</div>
             </div>
           </div>
 
@@ -122,7 +125,7 @@ const page = () => {
       <div className="fifth-parent parent">
         <div className="fifth-section-cont cont ">
           <div
-            className="left section-imgt bg-img-cover"
+            className="left section-img bg-img-cover"
             data-aos="fade-up"
             data-aos-delay="200"
           ></div>
@@ -159,7 +162,7 @@ const page = () => {
           </div>
         </div>
       </div>
-      <About_card_swiper swiperImg={travelImages} />
+      <About_card_swiper swiperImg={onkarImage} />
     </>
   );
 };
