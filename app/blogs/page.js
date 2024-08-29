@@ -125,6 +125,10 @@ const Blogs = () => {
   useEffect(() => {
     fetchBlogs();
   }, []);
+
+  useEffect(() => {
+    AOS.init();
+  }, []);
   return (
     <>
       <div className="blog-parent-b  parent">
