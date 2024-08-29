@@ -167,7 +167,7 @@ export default function Home() {
             Our Digital Suite of <br />{" "}
             <span className="gradient-text">Services </span>
           </h3>
-          <p className="desc">
+          <p className="desc" >
             Our comprehensive suite of digital services is designed to propel
             your business to new heights, both domestically and internationally.
           </p>
@@ -196,9 +196,8 @@ export default function Home() {
       </div>
 
       {/* 5th Section - Swiper section */}
-      <div
-        id="home_casestudy"
-        className="fifth-section parent"
+      <div id="home_casestudy"></div>
+      <div className="fifth-section parent"
         data-aos="fade-up"
       >
         <Swiper
