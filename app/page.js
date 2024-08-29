@@ -166,7 +166,7 @@ export default function Home() {
       </div>
 
       {/* 4 Section - Card swiper section */}
-      <div className="fourth-section parent" data-aos="fade-down">
+      <div className="fourth-section parent" data-aos="fade-up">
         <div className="fourth-section-cont cont">
           <h3 className="title">
             Our Digital Suite of <br />{" "}
@@ -254,7 +254,7 @@ export default function Home() {
       </div>
 
       {/* 6th Section - Accordion */}
-      <div data-aos="fade-down">
+      <div data-aos="fade-up">
         <Accordian />
       </div>
 
