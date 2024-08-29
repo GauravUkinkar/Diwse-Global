@@ -53,13 +53,13 @@ const page = () => {
       title: "Search Engine Optimisation",
       content:
         "Boost Your Visibility: Our expert SEO strategies help your website rank higher, attract organic traffic and increase brand awareness.",
-        image: img1
+      image: img1
     },
     {
       title: "Social Media Marketing",
       content:
         "Engage Your Audience: Connect with your target audience on social media platforms, build brand loyalty, and drive traffic to your website.",
-        image: img3
+      image: img3
     },
     {
       title: "Content Marketing",
@@ -123,10 +123,10 @@ const page = () => {
       );
       toast.success("Thank You for Your Inquiry in DIwise!");
       setEmail("")
-    } catch (err) {}
+    } catch (err) { }
   };
 
- 
+
 
   return (
     <>
@@ -157,8 +157,8 @@ const page = () => {
           </div>
           <div
             className="right digitalmarketing bg-img-cover"
-            data-aos="fade-down"
-            data-aos-delay="600"
+            data-aos="fade-up"
+            data-aos-delay="900"
             data-aos-duration="1000"
           >
             {/* <div className="right-img-box bg-img-cover"></div> */}
@@ -170,7 +170,11 @@ const page = () => {
         <div className="service-detail-cont cont">
           {/* ------------------TOP---------------- */}
 
-          <div className="top">
+          <div className="top"
+            data-aos="fade-up"
+            data-aos-delay="600"
+            data-aos-duration="1000"
+          >
             <h3 className="heading">
               Expert Digital Marketing for
               <br />{" "}
@@ -182,16 +186,20 @@ const page = () => {
           </div>
           {/* ------------------Middle---------------- */}
           <div className="middle">
-            <div className="left">
+            <div className="left"
+              data-aos="fade-up"
+              data-aos-delay="600"
+              data-aos-duration="1000"
+            >
               <div className="back-image bg-img-cover"></div>
               <div className="front-image bg-img-cover"></div>
             </div>
             <div className="right">
-              {serviceDetails.map((item,index) => (
+              {serviceDetails.map((item, index) => (
                 <div
                   className="content"
                   data-aos="fade-up"
-                  data-aos-delay="600"
+                  data-aos-delay="200"
                   data-aos-duration="1000"
                   key={index}
                 >
@@ -205,7 +213,10 @@ const page = () => {
             </div>
           </div>
           {/* ------------------BOTTOM---------------- */}
-          <div className="bottom">
+          <div className="bottom"
+            data-aos="fade-up"
+            data-aos-delay="200"
+            data-aos-duration="800">
             <div className="left">
               <h5 className="left-heding">
                 <span className="gradient-text">Effective Ad</span> Campaigns
@@ -233,12 +244,18 @@ const page = () => {
 
       />
 
-      <div className="service-faq-parent parent">
+      <div className="service-faq-parent parent"
+        
+      >
         <div className="service-faq-cont cont">
-          <div className="left">
+          <div className="left"
+           data-aos="fade-up"
+           data-aos-delay="600"
+           data-aos-duration="1000"
+          >
             <h4 className="hedding">
-           
-            FAQs for Digital{" "}
+
+              FAQs for Digital{" "}
               <span className="gradient-text">Marketing and SEO Services</span>
             </h4>
             {faqContent.map((item, index) => (
@@ -251,7 +268,11 @@ const page = () => {
               />
             ))}
           </div>
-          <div className="right bg-img-cover">
+          <div className="right bg-img-cover"
+           data-aos="fade-up"
+           data-aos-delay="900"
+           data-aos-duration="1000"
+          >
             {/* <div className="image">
 
             </div> */}
@@ -259,7 +280,7 @@ const page = () => {
         </div>
       </div>
 
-      <Toaster/>
+      <Toaster />
     </>
   );
 };
