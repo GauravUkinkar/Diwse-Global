@@ -111,7 +111,11 @@ const page = () => {
     <>
       <div className="service-hero-parent parent">
         <div className="service-hero-cont cont">
-          <div className="left">
+          <div className="left"
+          data-aos="fade-up"
+          data-aos-delay="600"
+          data-aos-duration="1000"
+          >
             <h3 className="section-headding">Branding & Creative Services </h3>
             <p className="service-p">
               Build a Memorable Brand: Our expert branding team will develop a
@@ -134,8 +138,8 @@ const page = () => {
           </div>
           <div
             className="right prbranding bg-img-cover "
-            data-aos="fade-right"
-            data-aos-delay="600"
+            data-aos="fade-up"
+            data-aos-delay="900"
             data-aos-duration="1000"
           >
             {/* <div className="right-img-box bg-img-cover"></div> */}
@@ -145,7 +149,12 @@ const page = () => {
 
       <div className="service-detail-parent parent">
         <div className="service-detail-cont cont">
-          <div className="top">
+  {/* ------------------TOP---------------- */}
+          <div className="top"
+           data-aos="fade-up"
+           data-aos-delay="600"
+           data-aos-duration="1000"
+          >
             <h3 className="heading">
               Elevate Your Brand with
               <br /> <span className="gradient-text">DIwise Global</span>
@@ -159,9 +168,13 @@ const page = () => {
               dedicated to helping you make a lasting impression.
             </p>
           </div>
-
+        {/* ------------------Middle---------------- */}
           <div className="middle">
-            <div className="left">
+            <div className="left"
+             data-aos="fade-up"
+             data-aos-delay="600"
+             data-aos-duration="1000"
+            >
               <div className="back-image prback bg-img-cover"></div>
               <div className="front-image prfront bg-img-cover"></div>
             </div>
@@ -170,7 +183,7 @@ const page = () => {
                 <div
                   className="content"
                   data-aos="fade-up"
-                  data-aos-delay="600"
+                  data-aos-delay="200"
                   data-aos-duration="1000"
                   key={index}
                 >
@@ -183,8 +196,12 @@ const page = () => {
               ))}
             </div>
           </div>
-
-          <div className="bottom">
+         {/* ------------------BOTTOM---------------- */}
+          <div className="bottom"
+          data-aos="fade-up"
+          data-aos-delay="200"
+          data-aos-duration="800">
+       
             <div className="left">
               <h5 className="left-heding">
                 <span className="gradient-text">Brand</span> Positioning
@@ -218,7 +235,12 @@ const page = () => {
 
       <div className="service-faq-parent parent">
         <div className="service-faq-cont cont">
-          <div className="left">
+          <div className="left"
+          
+          data-aos="fade-up"
+          data-aos-delay="600"
+          data-aos-duration="1000"
+          >
             <h4 className="hedding">
               Why Choose Diwise Global for{" "}
               <span className="gradient-text">Digital Marketing & SEO?</span>
@@ -233,7 +255,11 @@ const page = () => {
               />
             ))}
           </div>
-          <div className="right bg-img-cover">
+          <div className="right bg-img-cover"
+                    data-aos="fade-up"
+          data-aos-delay="900"
+          data-aos-duration="1000"
+          >
             {/* <div className="image">
 
             </div> */}
