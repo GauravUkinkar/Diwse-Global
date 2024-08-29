@@ -169,12 +169,13 @@ const page = () => {
             </p>
           </div>
   {/* ------------------Middle---------------- */}
-          <div className="middle">
+          <div className="middle"
+          data-aos="fade-up"
+          data-aos-delay="200"
+          data-aos-duration="1000"
+          >
             <div className="left"
-             data-aos="fade-up"
-             data-aos-delay="600"
-             data-aos-duration="1000"
-            >
+                        >
               <div className="back-image business_setup_back bg-img-cover"></div>
               <div className="front-image business_setup_front bg-img-cover"></div>
             </div>
@@ -182,9 +183,7 @@ const page = () => {
               {serviceDetails.map((item, index) => (
                 <div
                   className="content"
-                  data-aos="fade-up"
-                  data-aos-delay="200"
-                  data-aos-duration="1000"
+                  
                   key={index}
                 >
                   <div className="left">{item.srNo}</div>
