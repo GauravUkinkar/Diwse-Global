@@ -214,7 +214,7 @@ const page = () => {
               data-aos="fade-up"
               data-aos-delay="200"
               alignTitle="center"
-              alignDescription="left"
+              alignDescription="center"
             />
           </div>
         </div>
