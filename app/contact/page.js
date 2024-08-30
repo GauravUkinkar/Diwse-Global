@@ -69,8 +69,8 @@ const page = () => {
               </p>
             </div> */}
           </div>
-         <div className="right">
-         <div className="box box2" data-aos="fade-up" data-aos-delay="300">
+          <div className="right">
+          <div className="box box2" data-aos="fade-up" data-aos-delay="300">
             <h3 className="title">Contact</h3>
             <div className="add-box">
               <div className="icon">
@@ -114,7 +114,7 @@ const page = () => {
               </a>
             </div>
           </div>
-         </div>
+          </div>
         </div>
       </div>
     </>

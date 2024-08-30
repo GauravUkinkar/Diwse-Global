@@ -2,13 +2,14 @@
   padding: 0px 0px 80px 0px;
   .contact-box {
     display: flex;
-    align-items: flex-start;
+    align-items: stretch;
     justify-content: center;
-  gap: var(--unit);
+    gap: var(--unit);
 
     .box {
-      width: auto;
+      width: 50%;
       gap: 20px;
+      // height: 100%;
       flex-direction: column;
       background: rgba(255, 255, 255, 0.1);
       backdrop-filter: blur(10px);
@@ -23,7 +24,7 @@
       .title {
         text-align: center;
         font-weight: 400;
-       
+        width: 100%;
       }
       .add-box {
         display: flex;
@@ -39,9 +40,9 @@
           }
         }
 
-        .desc-d{
-          max-width: 30ch;
-        }
+        // .desc-d{
+        //   max-width: 30ch;
+        // }
       }
       .social-i {
         display: flex;
@@ -59,65 +60,78 @@
       }
     }
 
-
-    .right{
-      width: auto;
+    .right {
+      width: 50%;
       height: auto;
       display: flex;
       flex-direction: column;
       justify-content: center;
       // align-items: center;
       gap: var(--unit);
+
+      .box {
+        width: 100%;
+
+
+        .add-box{
+          width: 100%;
+          display: flex;
+          justify-content: center;
+          align-items: start;
+        }
+        .social-i {
+          width: 100%;
+          display: flex;
+          justify-content: center;
+          align-items: start;
+        }
+      }
     }
   }
 }
 
-
-@media(max-width:800px){
+@media (max-width: 800px) {
   .contact-box {
     flex-direction: column !important;
 
     .box {
-      width: 100%!important;
+      width: 100% !important;
 
-  .add-box{
-    .desc-d{
-      max-width: 100% !important;
-    }
-  }
+      .add-box {
+        .desc-d {
+          max-width: 100% !important;
+        }
+      }
     }
 
-    .right{
+    .right {
       width: 100% !important;
       flex-direction: row !important;
-align-items: flex-start;
-
+      align-items: flex-start;
     }
   }
 }
 
-
-@media(max-width:600px){
+@media (max-width: 600px) {
   .contact-box {
     .box {
-      width: 100%!important;
+      width: 100% !important;
       padding: 8px !important;
       height: auto !important;
     }
   }
 }
 
-@media(max-width:500px){
+@media (max-width: 500px) {
   .contact-box {
     .box {
-      width: 100%!important;
+      width: 100% !important;
 
-      .title{
+      .title {
         font-size: 24px !important;
-       
       }
 
-      .desc-d{
+      .desc-d {
         text-align: left !important;
         font-size: 16px !important;
       }
@@ -127,10 +141,9 @@ align-items: flex-start;
           font-size: 24px !important;
         }
       }
-     
     }
-    .right{
-flex-direction: column !important;
+    .right {
+      flex-direction: column !important;
     }
   }
 }
