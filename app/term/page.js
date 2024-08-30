@@ -12,7 +12,7 @@ const page = () => {
             Terms, please do not use our services.
           </p>
 
-          <h2>1. Digital Services</h2>
+          <h4>1. Digital Services</h4>
           <p>
             We provide digital services that may include, but are not limited
             to, website development, digital marketing, and other online
@@ -20,14 +20,14 @@ const page = () => {
             financial trading.
           </p>
 
-          <h2>2. User Responsibilities</h2>
+          <h4>2. User Responsibilities</h4>
           <p>
             You are responsible for ensuring that any information you provide to
             us is accurate and up-to-date. You agree to use our services in
             compliance with all applicable laws and regulations.
           </p>
 
-          <h2>3. Intellectual Property</h2>
+          <h4>3. Intellectual Property</h4>
           <p>
             All content, trademarks, and other intellectual property used in
             connection with our services are owned by us or our licensors. You
@@ -35,7 +35,7 @@ const page = () => {
             property without our prior written consent.
           </p>
 
-          <h2>4. Limitation of Liability</h2>
+          <h4>4. Limitation of Liability</h4>
           <p>
             We strive to provide high-quality digital services, but we do not
             guarantee that our services will meet your specific needs. We are
@@ -44,14 +44,14 @@ const page = () => {
             damages.
           </p>
 
-          <h2>5. Termination</h2>
+          <h4>5. Termination</h4>
           <p>
             We reserve the right to terminate or suspend your access to our
             services at any time, without notice, if we believe that you have
             violated these Terms or any applicable law.
           </p>
 
-          <h2>6. Changes to These Terms</h2>
+          <h4>6. Changes to These Terms</h4>
           <p>
             We may update these Terms from time to time. Any changes will be
             posted on this page, and we encourage you to review these Terms
@@ -59,7 +59,7 @@ const page = () => {
             constitute your acceptance of the new Terms.
           </p>
 
-          <h2>7. Contact Us</h2>
+          <h4>7. Contact Us</h4>
           <p>
             If you have any questions or concerns about these Terms, please
             contact us at info@diwiseglobal.com
