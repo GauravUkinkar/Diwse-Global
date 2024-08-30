@@ -308,3 +308,26 @@ button:hover .button-text {
     display: block !important;
   }
 }
+
+.swiper-pagination-bullet {
+  background: gray;
+  opacity: 1 !important;
+  width: 50px !important;
+  height: 3px !important;
+  border-radius: 0px !important;
+  &.swiper-pagination-bullet-active {
+    background: var(--accent-grad) !important;
+  }
+}
+.swiper-pagination {
+  .swiper-pagination-bullet {
+    background: white;
+    width: 20px;
+    height: 20px;
+    margin-top: 100px;
+
+    &.swiper-pagination-bullet-active {
+      background: var(--accent-grad) !important;
+    }
+  }
+}

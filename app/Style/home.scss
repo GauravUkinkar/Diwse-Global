@@ -79,13 +79,15 @@
   .mySwiper {
     width: 100%;
     height: 100%;
-
+    // border: 1px solid red;
+    padding-bottom: 20px;
     .swiper-slide {
       width: 100%;
       height: 100%;
       padding: var(--unit);
       border-radius: var(--unit);
       overflow: hidden;
+     
     }
 
     .image-container {

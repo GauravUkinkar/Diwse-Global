@@ -4,7 +4,7 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
-import { useEffect, useRef } from "react";
+import { useEffect, useRef, useState } from "react";
 import "../app/Style/home.scss";
 import { Autoplay, Pagination } from "swiper/modules";
 import Accordian from "@/component/accordian/Accordian";
@@ -30,6 +30,8 @@ import Link from "next/link";
 
 gsap.registerPlugin(ScrollTrigger);
 export default function Home() {
+  const [swiperNavigation, setSwiperNavigation] = useState(false);
+
   const cardData = [
     {
       icon: "assets/icons/navIcon/digital_marketing-1.png",
@@ -126,6 +128,21 @@ export default function Home() {
       url: "/onkar",
     },
   ];
+
+  useEffect(() => {
+    const handlePagination = () => {
+      if (window.innerWidth < 500) {
+        setSwiperNavigation(true);
+      }
+    };
+
+    window.addEventListener("resize", handlePagination);
+
+    return () => {
+      window.removeEventListener("resize", handlePagination);
+    };
+  }, []);
+
   return (
     <>
       <Head>
@@ -145,11 +162,25 @@ export default function Home() {
       {/* 2 Section - Video section */}
       <div className="second-section" ref={videoBoxRef}>
         <div className="video-box" data-aos="fade-up">
-          <video autoPlay muted loop playsInline width="100%" className="video-laptop">
+          <video
+            autoPlay
+            muted
+            loop
+            playsInline
+            width="100%"
+            className="video-laptop"
+          >
             <source src="/assets/dvideo.webm" type="video/webm" />
             Your browser does not support the video tag.
           </video>
-          <video autoPlay muted loop playsInline width="100%" className="video-mobile">
+          <video
+            autoPlay
+            muted
+            loop
+            playsInline
+            width="100%"
+            className="video-mobile"
+          >
             <source src="/assets/mob-video.webm" type="video/webm" />
             Your browser does not support the video tag.
           </video>
@@ -164,11 +195,11 @@ export default function Home() {
       {/* 4 Section - Card swiper section */}
       <div className="fourth-section parent" data-aos="fade-down">
         <div className="fourth-section-cont cont">
-          <h3 className="title"   >
+          <h3 className="title">
             Our Digital Suite of <br />{" "}
             <span className="gradient-text">Services </span>
           </h3>
-          <p className="desc" >
+          <p className="desc">
             Our comprehensive suite of digital services is designed to propel
             your business to new heights, both domestically and internationally.
           </p>
@@ -198,9 +229,8 @@ export default function Home() {
       </div>
 
       {/* 5th Section - Swiper section */}
-      
-      <div className="fifth-section parent" 
-      >
+
+      <div className="fifth-section parent">
         <Swiper
           className="mySwiper"
           spaceBetween={10}
@@ -211,9 +241,9 @@ export default function Home() {
             disableOnInteraction: false,
             pauseOnMouseEnter: true,
           }}
-          // pagination={{clickable:false}}
+          pagination={swiperNavigation ? { clickable: true } : false}
           navigation={false}
-          modules={[Autoplay]}
+          modules={[Autoplay, Pagination]}
           breakpoints={{
             1100: {
               centeredSlides: true,
@@ -229,12 +259,12 @@ export default function Home() {
           }}
         >
           {caseStudies.map((item, index) => (
-            <SwiperSlide className="bg-img-cover "   key={index}>
+            <SwiperSlide className="bg-img-cover " key={index}>
               <div
                 className="image scroll"
                 style={{ background: `url(${item.imgage.src})` }}
               >
-                <div className="overlay"  >
+                <div className="overlay">
                   <Link href={item.url} className="case-btn">
                     View
                   </Link>
