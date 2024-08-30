@@ -26,7 +26,7 @@ const page = () => {
       <div className="contact-box-p parent">
         <div className="contact-box cont">
           <div className="box box1" data-aos="fade-up" data-aos-delay="200">
-            <h3 className="title">Address</h3>
+            <h3 className="title g">Address</h3>
             <div className="add-box">
               <div className="icon">
                 <GrLocation />
@@ -97,7 +97,7 @@ const page = () => {
               </p>
             </div> */}
           </div>
-          <div className="box" data-aos="fade-up" data-aos-delay="400">
+          <div className="box" data-aos="fade-up" data-aos-delay="350">
             <h3 className="title">Social Media</h3>
             <div className="social-i">
               <a href="https://www.facebook.com/DIwiseLtd" target="_blank" className="social">
