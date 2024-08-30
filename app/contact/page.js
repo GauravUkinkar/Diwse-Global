@@ -69,8 +69,8 @@ const page = () => {
               </p>
             </div> */}
           </div>
-          <div className="right">
-          <div className="box box2" data-aos="fade-up" >
+          <div className="right" data-aos="fade-up">
+          <div className="box box2" >
             <h3 className="title">Contact</h3>
             <div className="add-box">
               <div className="icon">
@@ -97,7 +97,7 @@ const page = () => {
               </p>
             </div> */}
           </div>
-          <div className="box" data-aos="fade-up" >
+          <div className="box"  >
             <h3 className="title">Social Media</h3>
             <div className="social-i">
               <a href="https://www.facebook.com/DIwiseLtd" target="_blank" className="social">
