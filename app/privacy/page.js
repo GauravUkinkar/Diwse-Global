@@ -8,43 +8,66 @@ const Page = () => {
         <div className="privacy-cont cont">
           <h1>Privacy Policy</h1>
           <p>
-            This Privacy Policy outlines how we handle your personal information
-            when you use our digital services. We value your privacy and are
-            committed to protecting your personal data.
+            At DIwise Global, we respect your privacy and are committed to
+            protecting your personal information. This Privacy Policy explains
+            how we collect, use, and protect your data when you use our
+            services.
           </p>
-          <h2>Information We Collect</h2>
+          <h4>1. Information We Collect Personal Information:</h4>
           <p>
-            We collect information necessary to provide our digital services,
-            such as your name, email address, and any other information you
-            provide when using our services.
+            {" "}
+            We collect information like your name, email address, phone number,
+            and company details when you sign up for our services or contact us.
+            Usage Information: We gather data on how you use our website,
+            including your IP address and browsing activity.
           </p>
-          <h2>How We Use Your Information</h2>
+         <p>Cookies: We use cookies to improve your experience and
+          analyze website usage.</p>
+          <h4>2. How We Use Your Information Service Delivery:</h4>{" "}
           <p>
-            Your information is used solely for providing and improving our
-            digital services. We do not deal with shares, equity, or any form of
-            financial trading.
+            We use your information to provide our services, such as Digital
+            Marketing & SEO, Web & App Development, and more. Communication: We
+            may contact you with updates, respond to inquiries, and send
+            promotional materials (you can opt out anytime).
+          </p>{" "}
+          <p>Service Improvement: We analyze data to enhance our offerings
+          and user experience.<br></br></p>
+          <h4>3. Sharing Your Information</h4>
+          <p>
+            {" "}
+            We do not sell your personal information. We may share it with
+            trusted partners for service delivery and comply with legal
+            obligations.
           </p>
-          <h2>Sharing of Information</h2>
+          <h4>4. Data Security</h4>
           <p>
-            We do not share your personal information with third parties except
-            as required by law or as necessary to provide our digital services.
+            {" "}
+            We implement measures to protect your data, but please note that no
+            method is completely secure.
           </p>
-          <h2>Your Rights</h2>
+          <h4>5. Your Choices</h4>
           <p>
-            You have the right to access, update, and delete your personal
-            information. If you wish to exercise these rights, please contact
-            us.
-          </p>
-          <h2>Changes to This Policy</h2>
+            {" "}
+            You can access, update, or delete your information by contacting us.
+            You can also opt out of marketing communications.{" "}
+          </p>{" "}
+          <h4>6. Third-Party Links</h4>
           <p>
-            We may update this Privacy Policy from time to time. Any changes
-            will be posted on this page, and we encourage you to review this
-            policy regularly.
-          </p>
-          <h2>Contact Us</h2>
+            {" "}
+            Our website may link to third-party sites. We are not responsible
+            for their privacy practices.
+          </p>{" "}
+          <h4>7. Changes to This Policy</h4>
           <p>
-            If you have any questions or concerns about this Privacy Policy,
-            please contact us at info@diwiseglobal.com
+            {" "}
+            We may update this Privacy Policy occasionally and will notify you
+            of significant changes.
+          </p>{" "}
+          <h4>8. Contact Us</h4>
+          <p>
+            {" "}
+            For questions about this policy, please contact us at
+            info@diwiseglobal.com
           </p>
         </div>
       </div>
