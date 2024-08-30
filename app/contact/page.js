@@ -47,7 +47,7 @@ const page = () => {
               </div>
               <p className="desc-d">
                 <a
-                  href="https://maps.app.goo.gl/nN6Vi6L55yzdAU6h9"
+                  href="https://maps.app.goo.gl/LVSP2ZzFGkCNvMbB9"
                   target="_blank"
                 >
                   Docklands Business Centre, Suite 12/3D 10-16 Tiller Road,
