@@ -78,7 +78,7 @@ const New_footer = () => {
             </a>
             <a href="/term">
               <span className="circle1"><GiPlainCircle /></span>
-              Terms & Condition
+              Terms & Conditions
             </a>
           </div>
         </div>
