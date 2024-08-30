@@ -14,13 +14,11 @@ import "aos/dist/aos.css";
 import axios from "axios";
 
 const page = () => {
- 
   useEffect(() => {
     AOS.init({
       duration: 500,
     });
   }, []);
-
 
   return (
     <>
@@ -38,7 +36,8 @@ const page = () => {
                   href="https://maps.app.goo.gl/nN6Vi6L55yzdAU6h9"
                   target="_blank"
                 >
-                  10 Biz Park, Viman Nagar , Pune - 411014
+                  Office no. 214-216, 10 Biz Park,Near Symbiosis Law College,
+                  Airport Road,Vimannagar, Pune- 411014
                 </a>
               </p>
             </div>
@@ -51,11 +50,12 @@ const page = () => {
                   href="https://maps.app.goo.gl/nN6Vi6L55yzdAU6h9"
                   target="_blank"
                 >
-                  10 Biz Park, Viman Nagar , Pune - 411014
+                  Docklands Business Centre, Suite 12/3D 10-16 Tiller Road,
+                  London, England E14 8PX
                 </a>
               </p>
             </div>
-            <div className="add-box">
+            {/* <div className="add-box">
               <div className="icon">
                 <GrLocation />
               </div>
@@ -67,9 +67,10 @@ const page = () => {
                   10 Biz Park, Viman Nagar , Pune - 411014
                 </a>
               </p>
-            </div>
+            </div> */}
           </div>
-          <div className="box box2" data-aos="fade-up" data-aos-delay="300">
+         <div className="right">
+         <div className="box box2" data-aos="fade-up" data-aos-delay="300">
             <h3 className="title">Contact</h3>
             <div className="add-box">
               <div className="icon">
@@ -84,19 +85,19 @@ const page = () => {
                 <IoCallSharp />
               </div>
               <p className="desc-d">
-                <a href="tel:+918482936866">+91 8482936866</a>
+                <a href="tel:+447398814161">+44 7398 814161</a>
               </p>
             </div>
-            <div className="add-box">
+            {/* <div className="add-box">
               <div className="icon">
                 <IoCallSharp />
               </div>
               <p className="desc-d">
                 <a href="tel:+918482936866">+91 8482936866</a>
               </p>
-            </div>
+            </div> */}
           </div>
-          {/* <div className="box" data-aos="fade-up" data-aos-delay="400">
+          <div className="box" data-aos="fade-up" data-aos-delay="400">
             <h3 className="title">Social Media</h3>
             <div className="social-i">
               <a href="https://www.facebook.com/DIwiseLtd" target="_blank" className="social">
@@ -112,7 +113,8 @@ const page = () => {
                 <FaLinkedinIn />
               </a>
             </div>
-          </div> */}
+          </div>
+         </div>
         </div>
       </div>
     </>
