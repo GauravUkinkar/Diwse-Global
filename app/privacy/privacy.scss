@@ -1,12 +1,14 @@
 .privacy-parent{
     .privacy-cont{
-        padding:100px 0px;
+        padding:100px 10px;
         display:flex;
         gap:var(--unit);
         flex-direction: column;
-        // .title{
-        //     font-size:25px;
-        //     // padding-bottom:10px;
-        // }
+        
+        h1,h4{
+            font-size:22px;
+           line-height: 100%;
+           font-weight: 500;
+        }
     }
 }
