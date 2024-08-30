@@ -59,17 +59,18 @@
           text-decoration: none;
           display: flex;
           align-items: center;
-          gap: 10px;
+          gap: 5px;
+          font-size: 25px;
 
+       
           .icon {
-            font-size: 16px;
             transition: transform 0.3s ease, color 0.3s ease;
             transform: rotate(45deg);
           }
 
           &:hover .icon {
             transform: rotate(0deg);
-            color: red;
+            // color: red;
           }
 
           &:hover::before {
@@ -193,7 +194,7 @@
 
       a {
         display: flex;
-        gap: calc(var(--unit)/2);
+        gap: calc(var(--unit) / 2);
         align-items: center;
         justify-content: center;
 
@@ -202,7 +203,6 @@
         }
       }
     }
-
   }
 }
 
@@ -218,7 +218,6 @@
 }
 
 @keyframes blink-caret-mail {
-
   from,
   to {
     border-color: transparent;
@@ -240,12 +239,7 @@
 
 // Media queries and other styles remain the same
 
-
-
-
-
-
-@media only screen and (max-width:1050px) {
+@media only screen and (max-width: 1050px) {
   .nfooter-parent {
     padding: 70px 10px !important;
 
@@ -282,13 +276,13 @@
   }
 }
 
-@media only screen and (max-width:900px) {
+@media only screen and (max-width: 900px) {
   .nfooter-parent {
     padding: 50px 10px !important;
   }
 }
 
-@media only screen and (max-width:550px) {
+@media only screen and (max-width: 550px) {
   .nfooter-parent {
     padding: 30px 10px 40px 10px !important;
 
@@ -298,20 +292,16 @@
           font-size: 26px !important;
         }
         .mail {
-
         }
 
         .line {
-       
         }
       }
     }
   }
 }
 
-
-
-@media only screen and (max-width:700px) {
+@media only screen and (max-width: 700px) {
   .copyright-parent {
     .copyright-cont {
       flex-wrap: wrap;

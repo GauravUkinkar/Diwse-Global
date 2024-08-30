@@ -2,7 +2,10 @@ import React from "react";
 import { FaArrowRight } from "react-icons/fa";
 import { GiPlainCircle } from "react-icons/gi";
 import "./new_footer.scss";
-
+import { FaInstagram } from "react-icons/fa";
+import { FaFacebookF } from "react-icons/fa";
+import { FaXTwitter } from "react-icons/fa6";
+import { FaLinkedinIn } from "react-icons/fa";
 const New_footer = () => {
   return (
     <>
@@ -21,16 +24,16 @@ const New_footer = () => {
             <div className="line"></div>
             <div className="icon-link">
               <a href="https://www.facebook.com/DIwiseLtd" target="_blank">
-                Facebook <span className="icon"><FaArrowRight /></span>
+              <FaFacebookF /><span className="icon"><FaArrowRight /></span>
               </a>
               <a href="https://www.instagram.com/diwiseltd/" target="_blank">
-                Instagram <span className="icon"><FaArrowRight /></span>
+              <FaInstagram /> <span className="icon"><FaArrowRight /></span>
               </a>
               <a href="https://www.linkedin.com/company/diwiseltd" target="_blank">
-                LinkedIn <span className="icon"><FaArrowRight /></span>
+              <FaLinkedinIn /> <span className="icon"><FaArrowRight /></span>
               </a>
               <a href="https://twitter.com/i/flow/login?redirect_after_login=%2FDIwiseLtd" target="_blank">
-                X <span className="icon"><FaArrowRight /></span>
+              <FaXTwitter />  <span className="icon"><FaArrowRight /></span>
               </a>
             </div>
           </div>
