@@ -51,14 +51,7 @@ const page = () => {
             violated these Terms or any applicable law.
           </p>
 
-          <h2>6. Governing Law</h2>
-          <p>
-            These Terms are governed by and construed in accordance with the
-            laws of [Your Jurisdiction]. Any disputes arising from these Terms
-            will be resolved in the courts of [Your Jurisdiction].
-          </p>
-
-          <h2>7. Changes to These Terms</h2>
+          <h2>6. Changes to These Terms</h2>
           <p>
             We may update these Terms from time to time. Any changes will be
             posted on this page, and we encourage you to review these Terms
@@ -66,7 +59,7 @@ const page = () => {
             constitute your acceptance of the new Terms.
           </p>
 
-          <h2>8. Contact Us</h2>
+          <h2>7. Contact Us</h2>
           <p>
             If you have any questions or concerns about these Terms, please
             contact us at info@diwiseglobal.com
