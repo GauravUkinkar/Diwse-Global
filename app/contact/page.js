@@ -27,7 +27,7 @@ const page = () => {
       <Contact />
       <div className="contact-box-p parent">
         <div className="contact-box cont">
-          <div className="box" data-aos="fade-up" data-aos-delay="200">
+          <div className="box box1" data-aos="fade-up" data-aos-delay="200">
             <h3 className="title">Address</h3>
             <div className="add-box">
               <div className="icon">
@@ -42,8 +42,34 @@ const page = () => {
                 </a>
               </p>
             </div>
+            <div className="add-box">
+              <div className="icon">
+                <GrLocation />
+              </div>
+              <p className="desc-d">
+                <a
+                  href="https://maps.app.goo.gl/nN6Vi6L55yzdAU6h9"
+                  target="_blank"
+                >
+                  10 Biz Park, Viman Nagar , Pune - 411014
+                </a>
+              </p>
+            </div>
+            <div className="add-box">
+              <div className="icon">
+                <GrLocation />
+              </div>
+              <p className="desc-d">
+                <a
+                  href="https://maps.app.goo.gl/nN6Vi6L55yzdAU6h9"
+                  target="_blank"
+                >
+                  10 Biz Park, Viman Nagar , Pune - 411014
+                </a>
+              </p>
+            </div>
           </div>
-          <div className="box" data-aos="fade-up" data-aos-delay="300">
+          <div className="box box2" data-aos="fade-up" data-aos-delay="300">
             <h3 className="title">Contact</h3>
             <div className="add-box">
               <div className="icon">
@@ -53,8 +79,24 @@ const page = () => {
                 <a href="tel:+918482936866">+91 8482936866</a>
               </p>
             </div>
+            <div className="add-box">
+              <div className="icon">
+                <IoCallSharp />
+              </div>
+              <p className="desc-d">
+                <a href="tel:+918482936866">+91 8482936866</a>
+              </p>
+            </div>
+            <div className="add-box">
+              <div className="icon">
+                <IoCallSharp />
+              </div>
+              <p className="desc-d">
+                <a href="tel:+918482936866">+91 8482936866</a>
+              </p>
+            </div>
           </div>
-          <div className="box" data-aos="fade-up" data-aos-delay="400">
+          {/* <div className="box" data-aos="fade-up" data-aos-delay="400">
             <h3 className="title">Social Media</h3>
             <div className="social-i">
               <a href="https://www.facebook.com/DIwiseLtd" target="_blank" className="social">
@@ -70,7 +112,7 @@ const page = () => {
                 <FaLinkedinIn />
               </a>
             </div>
-          </div>
+          </div> */}
         </div>
       </div>
     </>
