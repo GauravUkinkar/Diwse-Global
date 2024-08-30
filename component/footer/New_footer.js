@@ -26,11 +26,11 @@ const New_footer = () => {
               <a href="https://www.instagram.com/diwiseltd/" target="_blank">
                 Instagram <span className="icon"><FaArrowRight /></span>
               </a>
-              <a href="https://twitter.com/i/flow/login?redirect_after_login=%2FDIwiseLtd" target="_blank">
-                X <span className="icon"><FaArrowRight /></span>
-              </a>
               <a href="https://www.linkedin.com/company/diwiseltd" target="_blank">
                 LinkedIn <span className="icon"><FaArrowRight /></span>
+              </a>
+              <a href="https://twitter.com/i/flow/login?redirect_after_login=%2FDIwiseLtd" target="_blank">
+                X <span className="icon"><FaArrowRight /></span>
               </a>
             </div>
           </div>
