@@ -25,7 +25,7 @@ const page = () => {
       <Contact />
       <div className="contact-box-p parent">
         <div className="contact-box cont">
-          <div className="box box1" data-aos="fade-up" data-aos-delay="300">
+          <div className="box box1" data-aos="fade-up" >
             <h3 className="title g">Address</h3>
             <div className="add-box">
               <div className="icon">
@@ -70,7 +70,7 @@ const page = () => {
             </div> */}
           </div>
           <div className="right">
-          <div className="box box2" data-aos="fade-up" data-aos-delay="300">
+          <div className="box box2" data-aos="fade-up" >
             <h3 className="title">Contact</h3>
             <div className="add-box">
               <div className="icon">
@@ -97,7 +97,7 @@ const page = () => {
               </p>
             </div> */}
           </div>
-          <div className="box" data-aos="fade-up" data-aos-delay="300">
+          <div className="box" data-aos="fade-up" >
             <h3 className="title">Social Media</h3>
             <div className="social-i">
               <a href="https://www.facebook.com/DIwiseLtd" target="_blank" className="social">
