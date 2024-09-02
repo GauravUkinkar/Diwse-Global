@@ -52,17 +52,17 @@ const Header_main = () => {
 
   const servicelists = [
     {
-      path: "/digitalmarketing",
-      name: "Digital Marketing and SEO",
-      images: "assets/icons/navIcon/digital_marketing-1.png",
-      className: "image1",
-    },
-    {
       path: "/businessSetupAndConsulting",
       name: "Business Setup and Consultation",
       images: "assets/icons/navIcon/Dcoument.png",
       className: "image2",
     },
+    {
+      path: "/digitalmarketing",
+      name: "Digital Marketing and SEO",
+      images: "assets/icons/navIcon/digital_marketing-1.png",
+      className: "image1",
+    },    
     {
       path: "/prandbranding",
       name: "Branding & Creative Services",
