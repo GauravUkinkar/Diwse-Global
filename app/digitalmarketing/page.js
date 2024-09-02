@@ -10,11 +10,11 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 import Service3 from "@/component/servicesection3/Service3";
 import topimg from "../../public/assets/digital_marketing/4th.jpg";
-import img1 from '../../public/assets/sevice3/seo.png'
-import img2 from '../../public/assets/sevice3/content.png'
-import img3 from '../../public/assets/sevice3/social.png'
-import img4 from '../../public/assets/sevice3/EmailMarketing.svg';
-import img5 from '../../public/assets/sevice3/pay-per.svg';
+import img1 from "../../public/assets/sevice3/seo.png";
+import img2 from "../../public/assets/sevice3/content.png";
+import img3 from "../../public/assets/sevice3/social.png";
+import img4 from "../../public/assets/sevice3/EmailMarketing.svg";
+import img5 from "../../public/assets/sevice3/pay-per.svg";
 import axios from "axios";
 import toast, { Toaster } from "react-hot-toast";
 
@@ -47,38 +47,37 @@ const page = () => {
   ];
   // ----------Swiper content List -------\
 
-
   const list = [
     {
       title: "Search Engine Optimisation",
       content:
         "Boost Your Visibility: Our expert SEO strategies help your website rank higher, attract organic traffic and increase brand awareness.",
-      image: img1
+      image: img1,
     },
     {
       title: "Social Media Marketing",
       content:
         "Engage Your Audience: Connect with your target audience on social media platforms, build brand loyalty, and drive traffic to your website.",
-      image: img3
+      image: img3,
     },
     {
       title: "Content Marketing",
       content:
         "Create Value: Develop high-quality, engaging and value content that attracts, informs, and converts your audience into customers.",
-      image: img2
+      image: img2,
     },
     {
       title: "Email Marketing",
       content:
         "Nurture Relationships: Build lasting relationships with your customers through targeted email campaigns that drive conversions.",
-      image: img4
+      image: img4,
     },
     {
       title: "Pay-Per-Click Advertising",
       content:
         "Achieve Immediate Results: Leverage paid advertising to reach your target audience quickly, and generate leads or sales.",
-      image: img5
-    }
+      image: img5,
+    },
   ];
 
   const faqContent = [
@@ -108,8 +107,7 @@ const page = () => {
     AOS.init();
   }, []);
 
-
-  // 
+  //
 
   const [email, setEmail] = useState("");
   const submitEmail = async (e) => {
@@ -122,11 +120,9 @@ const page = () => {
         }
       );
       toast.success("Thank You for Your Inquiry in DIwise!");
-      setEmail("")
-    } catch (err) { }
+      setEmail("");
+    } catch (err) {}
   };
-
-
 
   return (
     <>
@@ -138,9 +134,12 @@ const page = () => {
             data-aos-delay="600"
             data-aos-duration="1000"
           >
-            <h3 className="section-headding">Digital Marketing & SEO</h3>
+            <h3 className="section-headding">Digital Marketing and SEO</h3>
             <p className="service-p">
-              Elevate Your Online Presence: Our comprehensive digital marketing strategies, including SEO, content marketing, social media management, and paid advertising, are designed to enhance your visibility, drive global engagement, and boost your bottom line.
+              Elevate Your Online Presence: Our comprehensive digital marketing
+              strategies, including SEO, content marketing, social media
+              management, and paid advertising, are designed to enhance your
+              visibility, drive global engagement, and boost your bottom line.
             </p>
             <form onSubmit={submitEmail}>
               <input
@@ -161,6 +160,17 @@ const page = () => {
             data-aos-delay="900"
             data-aos-duration="1000"
           >
+            <video
+              autoPlay
+              muted
+              loop
+              playsInline
+              width="100%"
+              className="video-laptop"
+            >
+              <source src="/assets/servicevideos/DigitalMarketing.mp4" type="video/webm" />
+              Your browser does not support the video tag.
+            </video>
             {/* <div className="right-img-box bg-img-cover"></div> */}
           </div>
         </div>
@@ -170,39 +180,39 @@ const page = () => {
         <div className="service-detail-cont cont">
           {/* ------------------TOP---------------- */}
 
-          <div className="top"
+          <div
+            className="top"
             data-aos="fade-up"
             data-aos-delay="600"
             data-aos-duration="1000"
           >
             <h3 className="heading">
               Expert Digital Marketing for
-              <br />{" "}
-              <span className="gradient-text">Global Impact</span>
+              <br /> <span className="gradient-text">Global Impact</span>
             </h3>
             <p className="para">
-              DIwise Global offers expert digital marketing services tailored to help your business stand out on a global scale. Our deep understanding of SEO and cutting-edge techniques ensure that your brand is visible, relevant, and engaging to international audiences. We leverage global trends and insights to deliver results that drive growth and impact.
+              DIwise Global offers expert digital marketing services tailored to
+              help your business stand out on a global scale. Our deep
+              understanding of SEO and cutting-edge techniques ensure that your
+              brand is visible, relevant, and engaging to international
+              audiences. We leverage global trends and insights to deliver
+              results that drive growth and impact.
             </p>
           </div>
           {/* ------------------Middle---------------- */}
-          <div className="middle" 
-           data-aos="fade-up"
-           data-aos-delay="200"
-           data-aos-duration="1000"
+          <div
+            className="middle"
+            data-aos="fade-up"
+            data-aos-delay="200"
+            data-aos-duration="1000"
           >
-            <div className="left"
-             
-            >
+            <div className="left">
               <div className="back-image bg-img-cover"></div>
               <div className="front-image bg-img-cover"></div>
             </div>
             <div className="right">
               {serviceDetails.map((item, index) => (
-                <div
-                  className="content"
-                 
-                  key={index}
-                >
+                <div className="content" key={index}>
                   <div className="left">{item.srNo}</div>
                   <div className="right">
                     <h5>{item.title}</h5>
@@ -213,16 +223,20 @@ const page = () => {
             </div>
           </div>
           {/* ------------------BOTTOM---------------- */}
-          <div className="bottom"
+          <div
+            className="bottom"
             data-aos="fade-up"
             data-aos-delay="200"
-            data-aos-duration="800">
+            data-aos-duration="800"
+          >
             <div className="left">
               <h5 className="left-heding">
                 <span className="gradient-text">Effective Ad</span> Campaigns
               </h5>
               <p className="bootom-section-para">
-                Maximise Reach: Implement targeted advertising campaigns across various platforms to reach your ideal audience, drive conversions, and increase brand awareness.
+                Maximise Reach: Implement targeted advertising campaigns across
+                various platforms to reach your ideal audience, drive
+                conversions, and increase brand awareness.
               </p>
             </div>
 
@@ -231,30 +245,27 @@ const page = () => {
                 <span className="gradient-text">Comprehensive</span> Analysis
               </h5>
               <p className="bootom-section-para">
-                Measure and Improve: Conduct regular analysis of your marketing campaigns to track performance, identify areas for improvement, and make data-driven adjustments to optimise your overall digital strategy.
+                Measure and Improve: Conduct regular analysis of your marketing
+                campaigns to track performance, identify areas for improvement,
+                and make data-driven adjustments to optimise your overall
+                digital strategy.
               </p>
             </div>
           </div>
         </div>
       </div>
 
-      <Service3
-        contbgimg={topimg}
-        list={list}
+      <Service3 contbgimg={topimg} list={list} />
 
-      />
-
-      <div className="service-faq-parent parent"
-        
-      >
+      <div className="service-faq-parent parent">
         <div className="service-faq-cont cont">
-          <div className="left"
-           data-aos="fade-up"
-           data-aos-delay="600"
-           data-aos-duration="1000"
+          <div
+            className="left"
+            data-aos="fade-up"
+            data-aos-delay="600"
+            data-aos-duration="1000"
           >
             <h4 className="hedding">
-
               FAQs for Digital{" "}
               <span className="gradient-text">Marketing and SEO Services</span>
             </h4>
@@ -268,10 +279,11 @@ const page = () => {
               />
             ))}
           </div>
-          <div className="right bg-img-cover"
-           data-aos="fade-up"
-           data-aos-delay="900"
-           data-aos-duration="1000"
+          <div
+            className="right bg-img-cover"
+            data-aos="fade-up"
+            data-aos-delay="900"
+            data-aos-duration="1000"
           >
             {/* <div className="image">
 
