@@ -321,7 +321,8 @@
         flex-direction: column;
         justify-content: start;
         align-items: flex-start;
-        gap: calc(var(--unit) / 2);
+        gap: var(--unit);
+        // gap: calc(var(--unit) / 2);
 
         .content {
           width: 100%;
@@ -329,10 +330,10 @@
           justify-content: flex-start;
           align-items: flex-start;
           gap: var(--unit);
-          border: 1px solid var(--white);
-          padding: var(--unit);
-          box-shadow: var(--shadow);
-          border-radius: calc(var(--unit) / 2);
+          // border: 1px solid var(--white);
+          // padding: var(--unit);
+          // box-shadow: var(--shadow);
+          // border-radius: calc(var(--unit) / 2);
           .left {
             width: 33px;
             height: 33px;
