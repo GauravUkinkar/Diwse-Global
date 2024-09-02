@@ -96,7 +96,7 @@ function Service3(props) {
                    
                       {props.list.map((item,index) => (
                             <SwiperSlide key={index}>
-                                <div className="slide-card">
+                                <div className="slide-card glass">
                                     <div className="slide-card-img1 " style={{ backgroundImage: `url(${item.image.src})` }} >
                                     </div>
                                     <h4 className="slide-heading">{item.title} </h4>

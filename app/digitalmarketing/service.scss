@@ -38,7 +38,7 @@
         width: 100%;
         display: flex;
         justify-content: flex-start;
-        align-items: center;        
+        align-items: center;
         gap: calc(var(--unit) / 2);
 
         input {
@@ -58,7 +58,7 @@
         }
 
         .submit-btn {
-          padding: calc(var(--unit) /2) var(--unit);
+          padding: calc(var(--unit) / 2) var(--unit);
           color: var(--white);
           border-radius: 100px !important;
           background-color: var(--black);
@@ -67,15 +67,20 @@
     }
 
     .right {
-      width: 50%;
+      width: fit-content;
       height: 80%;
       background-size: cover;
       background-repeat: no-repeat;
       background-position: top center;
       border-radius: calc(var(--unit) / 2);
-
+      // border: 1px solid red;
+      overflow: hidden !important;
+      video 
+      {
+        height: 100%;
+      }
       &.digitalmarketing {
-        background-image: url("../../public/assets/digital_marketing/1st.jpg");
+        // background-image: url("../../public/assets/digital_marketing/1st.jpg");
         // background-color: red;
       }
 
@@ -84,7 +89,7 @@
       }
 
       &.prbranding {
-        background: url('../../public/assets/prbranding/pr-brand-hero2.jpg');
+        background: url("../../public/assets/prbranding/pr-brand-hero2.jpg");
         // background: url('../../public/assets/prbranding/pr-brand-hero.jpg');
         // background-image: url("../../public/assets/businessSetupAndConsulting/herosection.webp");
       }
@@ -278,7 +283,7 @@
         .front-image {
           width: 50%;
           height: 60%;
-          background: url('../../public/assets/digital_marketing/small_front.jpg');
+          background: url("../../public/assets/digital_marketing/small_front.jpg");
           // background-image: url("../../public/assets/digital_marketing/small_front.jpg");
           border-radius: var(--unit);
           position: absolute;
@@ -303,10 +308,9 @@
             background-image: url("../../public/assets/prbranding/pr_front.jpg");
           }
 
-          &.prfront{
+          &.prfront {
             // background-image: url("../../public/assets/prbranding/pr_front.jpg");
-background: url('../../public/assets/prbranding/brand-front.webp');
-
+            background: url("../../public/assets/prbranding/brand-front.webp");
           }
         }
       }
@@ -724,21 +728,17 @@ background: url('../../public/assets/prbranding/brand-front.webp');
 }
 
 @media only screen and (max-width: 500px) {
-  .service-hero-parent .service-hero-cont .left{ 
-  
-  .section-headding{
-    text-align: center;
-  }
-  }
-
-
-  .service-hero-parent .service-hero-cont .left 
-  
-  {.service-p{
-    text-align: center;
-  }
+  .service-hero-parent .service-hero-cont .left {
+    .section-headding {
+      text-align: center;
+    }
   }
 
+  .service-hero-parent .service-hero-cont .left {
+    .service-p {
+      text-align: center;
+    }
+  }
 
   .service-detail-parent {
     .service-detail-cont {
