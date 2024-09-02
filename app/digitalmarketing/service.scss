@@ -85,7 +85,7 @@
       }
 
       &.businessSetup {
-        background-image: url("../../public/assets/bussiness-setup/business_setup_hero.webp");
+        // background-image: url("../../public/assets/bussiness-setup/business_setup_hero.webp");
       }
 
       &.prbranding {
@@ -246,7 +246,7 @@
       align-items: stretch;
       gap: calc(var(--unit) * 2);
       background: #1e1d1d;
-      padding: 30px 20px;
+      padding: 20px 20px;
       border-radius: calc(var(--unit) / 2);
 
       .left {
@@ -321,7 +321,7 @@
         flex-direction: column;
         justify-content: start;
         align-items: flex-start;
-        gap: var(--unit);
+        gap: calc(var(--unit) / 2);
 
         .content {
           width: 100%;
@@ -329,7 +329,10 @@
           justify-content: flex-start;
           align-items: flex-start;
           gap: var(--unit);
-
+          border: 1px solid var(--white);
+          padding: var(--unit);
+          box-shadow: var(--shadow);
+          border-radius: calc(var(--unit) / 2);
           .left {
             width: 33px;
             height: 33px;
@@ -495,7 +498,7 @@
       width: 50%;
       height: auto;
       // background-color: var(--white);
-      background-image: url("../../public//assets/digital_marketing/5th.jpg");
+      background-image: url("../../public/assets/digital_marketing/5th.jpg");
       border-radius: calc(var(--unit) / 2);
 
       // .image {

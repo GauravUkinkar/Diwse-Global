@@ -117,7 +117,7 @@ const page = () => {
             data-aos-duration="1000"
           >
             <h3 className="section-headding">
-              Public Relations & Media Outreach
+              Public Relations and Media Outreach
             </h3>
             <p className="service-p">
               Manage Your Reputation Globally: Our global PR services include
@@ -145,7 +145,17 @@ const page = () => {
             data-aos-delay="900"
             data-aos-duration="1000"
           >
-            {/* <div className="right-img-box bg-img-cover"></div> */}
+             <video
+              autoPlay
+              muted
+              loop
+              playsInline
+              width="100%"
+              className="video-laptop"
+            >
+              <source src="/assets/servicevideos/PublicRelations.mp4" type="video/webm" />
+              Your browser does not support the video tag.
+            </video>
           </div>
         </div>
       </div>

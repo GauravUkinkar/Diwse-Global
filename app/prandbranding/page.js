@@ -111,12 +111,13 @@ const page = () => {
     <>
       <div className="service-hero-parent parent">
         <div className="service-hero-cont cont">
-          <div className="left"
-          data-aos="fade-up"
-          data-aos-delay="600"
-          data-aos-duration="1000"
+          <div
+            className="left"
+            data-aos="fade-up"
+            data-aos-delay="600"
+            data-aos-duration="1000"
           >
-            <h3 className="section-headding">Branding & Creative Services </h3>
+            <h3 className="section-headding">Branding and Creative Services </h3>
             <p className="service-p">
               Build a Memorable Brand: Our expert branding team will develop a
               strong and distinctive brand identity that resonates with your
@@ -142,18 +143,32 @@ const page = () => {
             data-aos-delay="900"
             data-aos-duration="1000"
           >
-            {/* <div className="right-img-box bg-img-cover"></div> */}
+            <video
+              autoPlay
+              muted
+              loop
+              playsInline
+              width="100%"
+              className="video-laptop"
+            >
+              <source
+                src="/assets/servicevideos/prbranding.mp4"
+                type="video/webm"
+              />
+              Your browser does not support the video tag.
+            </video>
           </div>
         </div>
       </div>
 
       <div className="service-detail-parent parent">
         <div className="service-detail-cont cont">
-  {/* ------------------TOP---------------- */}
-          <div className="top"
-           data-aos="fade-up"
-           data-aos-delay="600"
-           data-aos-duration="1000"
+          {/* ------------------TOP---------------- */}
+          <div
+            className="top"
+            data-aos="fade-up"
+            data-aos-delay="600"
+            data-aos-duration="1000"
           >
             <h3 className="heading">
               Elevate Your Brand with
@@ -168,23 +183,20 @@ const page = () => {
               dedicated to helping you make a lasting impression.
             </p>
           </div>
-        {/* ------------------Middle---------------- */}
+          {/* ------------------Middle---------------- */}
           <div className="middle">
-            <div className="left"
-             data-aos="fade-up"
-             data-aos-delay="200"
-             data-aos-duration="1000"
+            <div
+              className="left"
+              data-aos="fade-up"
+              data-aos-delay="200"
+              data-aos-duration="1000"
             >
               <div className="back-image prback bg-img-cover"></div>
               <div className="front-image prfront bg-img-cover"></div>
             </div>
             <div className="right">
-              {serviceDetails.map((item,index) => (
-                <div
-                  className="content"
-                 
-                  key={index}
-                >
+              {serviceDetails.map((item, index) => (
+                <div className="content" key={index}>
                   <div className="left">{item.srNo}</div>
                   <div className="right">
                     <h5>{item.title}</h5>
@@ -194,12 +206,13 @@ const page = () => {
               ))}
             </div>
           </div>
-         {/* ------------------BOTTOM---------------- */}
-          <div className="bottom"
-          data-aos="fade-up"
-          data-aos-delay="200"
-          data-aos-duration="800">
-       
+          {/* ------------------BOTTOM---------------- */}
+          <div
+            className="bottom"
+            data-aos="fade-up"
+            data-aos-delay="200"
+            data-aos-duration="800"
+          >
             <div className="left">
               <h5 className="left-heding">
                 <span className="gradient-text">Brand</span> Positioning
@@ -227,17 +240,15 @@ const page = () => {
         </div>
       </div>
 
-      <Service3
-      bgImage="top center"
-      contbgimg={topimg} list={list} />
+      <Service3 bgImage="top center" contbgimg={topimg} list={list} />
 
       <div className="service-faq-parent parent">
         <div className="service-faq-cont cont">
-          <div className="left"
-          
-          data-aos="fade-up"
-          data-aos-delay="600"
-          data-aos-duration="1000"
+          <div
+            className="left"
+            data-aos="fade-up"
+            data-aos-delay="600"
+            data-aos-duration="1000"
           >
             <h4 className="hedding">
               Why Choose Diwise Global for{" "}
@@ -253,10 +264,11 @@ const page = () => {
               />
             ))}
           </div>
-          <div className="right bg-img-cover"
-                    data-aos="fade-up"
-          data-aos-delay="900"
-          data-aos-duration="1000"
+          <div
+            className="right bg-img-cover"
+            data-aos="fade-up"
+            data-aos-delay="900"
+            data-aos-duration="1000"
           >
             {/* <div className="image">
 
@@ -265,7 +277,7 @@ const page = () => {
         </div>
       </div>
 
-      <Toaster/>
+      <Toaster />
     </>
   );
 };

@@ -117,7 +117,7 @@ const page = () => {
            data-aos-delay="600"
            data-aos-duration="1000"
           >
-            <h3 className="section-headding">Business Setup & Consultation</h3>
+            <h3 className="section-headding">Business Setup and Consultation</h3>
             <p className="service-p">
               Expand Your Global Reach: Our experienced consultants provide
               expert guidance on setting up operations in international markets.
@@ -143,7 +143,17 @@ const page = () => {
             data-aos-delay="900"
             data-aos-duration="1000"
           >
-            {/* <div className="right-img-box bg-img-cover"></div> */}
+          <video
+              autoPlay
+              muted
+              loop
+              playsInline
+              width="100%"
+              className="video-laptop"
+            >
+              <source src="/assets/servicevideos/Buissnesssetup.mp4" type="video/webm" />
+              Your browser does not support the video tag.
+            </video>
           </div>
         </div>
       </div>
@@ -182,7 +192,7 @@ const page = () => {
             <div className="right">
               {serviceDetails.map((item, index) => (
                 <div
-                  className="content"
+                  className="content glass"
                   
                   key={index}
                 >

@@ -119,7 +119,7 @@ const page = () => {
             data-aos-delay="600"
             data-aos-duration="1000"
           >
-            <h3 className="section-headding">Web & App Development</h3>
+            <h3 className="section-headding">Web and App Development</h3>
             <p className="service-p">
               Tailored Digital Solutions: We create custom web and mobile apps
               that not only look great but also deliver exceptional user
@@ -146,7 +146,17 @@ const page = () => {
             data-aos-delay="600"
             data-aos-duration="1000"
           >
-            {/* <div className="right-img-box bg-img-cover"></div> */}
+             <video
+              autoPlay
+              muted
+              loop
+              playsInline
+              width="100%"
+              className="video-laptop"
+            >
+              <source src="/assets/servicevideos/WebDevelopment.mp4" type="video/webm" />
+              Your browser does not support the video tag.
+            </video>
           </div>
         </div>
       </div>
