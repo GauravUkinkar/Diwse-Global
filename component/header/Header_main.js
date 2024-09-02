@@ -65,19 +65,19 @@ const Header_main = () => {
     },    
     {
       path: "/prandbranding",
-      name: "Branding & Creative Services",
+      name: "Branding and Creative Services",
       images: "assets/icons/navIcon/digital_marketing.png",
       className: "image3",
     },
     {
       path: "/publicRelationOutreach",
-      name: "Public Relation & Media Outreach",
+      name: "Public Relation and Media Outreach",
       images: "assets/icons/navIcon/PR.png",
       className: "image4",
     },
     {
       path: "/webdevelopment",
-      name: "Website & App Development",
+      name: "Website and App Development",
       images: "assets/icons/navIcon/Development.png",
       className: "image5",
     },
