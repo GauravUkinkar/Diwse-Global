@@ -2,7 +2,6 @@
   width: 100%;
   height: 100vh;
   background-image: url("../../public/assets/img/background-footer.jpg");
-
   background-position: center top;
   background-size: cover;
   background-repeat: no-repeat;
@@ -31,7 +30,7 @@
       }
 
       .service-p {
-        text-align: justify;
+        text-align: left;
       }
 
       form {
@@ -235,7 +234,7 @@
 
       .para {
         width: 50%;
-        text-align: justify;
+        text-align: left;
       }
     }
 
@@ -355,7 +354,7 @@
             gap: calc(var(--unit) / 2);
 
             p {
-              text-align: justify !important;
+              text-align: left !important;
             }
 
             h5 {
@@ -394,7 +393,7 @@
         }
 
         p {
-          text-align: justify;
+          text-align: left;
         }
       }
 

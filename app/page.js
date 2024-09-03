@@ -137,35 +137,35 @@ export default function Home() {
       content:
         "DIwise partnered with Onkar World to enhance their online presence and drive global trade through effective digital marketing strategies.",
       imgage: img5,
-      url: "/onkar",
+      url: "/nvm",
     },
     {
       title: "akka",
       content:
         "DIwise partnered with Onkar World to enhance their online presence and drive global trade through effective digital marketing strategies.",
       imgage: img6,
-      url: "/onkar",
+      url: "/akka-foundation",
     },
     {
       title: "team dental",
       content:
         "DIwise partnered with Onkar World to enhance their online presence and drive global trade through effective digital marketing strategies.",
       imgage: img7,
-      url: "/onkar",
+      url: "/theTeamDental",
     },
     {
       title: "the indian journey",
       content:
         "DIwise partnered with Onkar World to enhance their online presence and drive global trade through effective digital marketing strategies.",
       imgage: img8,
-      url: "/onkar",
+      url: "/theIndianJourney",
     },
     {
       title: "pandoza",
       content:
         "DIwise partnered with Onkar World to enhance their online presence and drive global trade through effective digital marketing strategies.",
       imgage: img9,
-      url: "/onkar",
+      url: "/pandoza",
     },
     
   ];
