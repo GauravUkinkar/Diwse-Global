@@ -201,7 +201,7 @@ export default function Home() {
           </h3>
           <p className="desc">
             Our comprehensive suite of digital services is designed to propel
-            your business to new heights, both domestically and internationally.
+            your business to new heights, internationally.
           </p>
           {/* <Home_Card_Swiper
             cards={cardData}

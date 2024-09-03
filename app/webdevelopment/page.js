@@ -33,19 +33,19 @@ const page = () => {
       srNo: 1,
       title: "Custom Web Development",
       content:
-        "Your Digital Showcase. Create a website that perfectly reflects your brand identity and drives business objectives. Our expert developers craft responsive, user-friendly designs that captivate your audience.",
+        "Create a website that perfectly reflects your brand identity. Our expert developers craft responsive, user-friendly designs for your audience.",
     },
     {
       srNo: 2,
       title: "Mobile App Development",
       content:
-        "Elevate User Engagement. Enhance your reach and user experience with custom mobile apps. Our team specialises in developing innovative iOS and Android applications that deliver seamless performance across all devices.",
+        "Enhance your user experience with custom mobile apps. Our team develops innovative iOS and Android applications that deliver across all devices.",
     },
     {
       srNo: 3,
       title: "User Experience (UX) Design",
       content:
-        "Focus on User Needs. Prioritise user satisfaction with our expert UX design services. We create intuitive interfaces that are both functional and engaging, ensuring a positive user experience.",
+        "Prioritise user satisfaction with our expert UX design services. We create intuitive functional interfaces for a positive user experience.",
     },
   ];
 
@@ -121,7 +121,7 @@ const page = () => {
           >
             <h3 className="section-headding">Web and App Development</h3>
             <p className="service-p">
-              Tailored Digital Solutions: We create custom web and mobile apps
+              We create custom web and mobile apps
               that not only look great but also deliver exceptional user
               experiences. Our focus on responsive design and cutting-edge
               technology ensures your digital assets are optimised for global
@@ -136,7 +136,7 @@ const page = () => {
                 onChange={(e) => setEmail(e.target.value)}
               />
               <button type="submit" className="submit-btn">
-                Get Started
+                Grow With Web
               </button>
             </form>
           </div>
@@ -175,7 +175,7 @@ const page = () => {
             </h3>
             <p className="para">
               Our team of skilled developers crafts cutting-edge web and mobile
-              applications that captivate your audience and drive results. From
+              applications. From
               sleek websites to powerful mobile apps, we ensure your digital
               presence is engaging, user-friendly, and aligned with your
               business goals.
@@ -221,12 +221,13 @@ const page = () => {
                 Innovative <span className="gradient-text">Web Solutions</span>
               </h5>
               <p className="bootom-section-para">
-                Elevate Your Digital Presence: Our team of skilled developers
+                 Our team of skilled developers
                 crafts cutting-edge web solutions that captivate your audience
                 and drive results. From sleek websites to interactive web
                 applications, we ensure your digital presence is engaging and
                 effective.
               </p>
+              <button className="button">Elevate Digital Presence</button>
             </div>
 
             <div className="right">
@@ -234,12 +235,12 @@ const page = () => {
                 Mobile <span className="gradient-text">App Development</span>
               </h5>
               <p className="bootom-section-para">
-                Enhance Your Reach: Expand your reach and engage your audience
+                Expand your reach and engage your audience
                 on the go with our expert mobile app development services. We
                 specialise in creating high-performance iOS and Android apps
-                that deliver exceptional user experiences and drive business
-                growth.
+                that deliver exceptional user experiences.
               </p>
+              <button className="button">Enhance Your Reach</button>
             </div>
           </div>
         </div>

@@ -29,19 +29,19 @@ const page = () => {
       srNo: 1,
       title: "Media Relations",
       content:
-        "Cultivate Media Relationships: Build strong connections with influential media outlets to secure positive coverage and enhance your brand's visibility.",
+        "Build strong connections with influential media outlets to secure positive coverage and enhance your brand's visibility.",
     },
     {
       srNo: 2,
       title: "Strategic Press Release Distribution",
       content:
-        "Amplify Your Message: Distribute targeted press releases that resonate with your audience and drive meaningful media coverage. Our global network ensures your news reaches the right people in the right markets.",
+        "Distribute targeted press releases that resonate with your audience and drive meaningful media coverage through our global networks.",
     },
     {
       srNo: 3,
       title: "Crisis Communication Management",
       content:
-        "Protect Your Brand: Be prepared for challenges with our effective crisis management strategies. We provide swift and strategic communication to safeguard your reputation during difficult times.",
+        "We provide swift and strategic communication to safeguard your reputation so that you are prepared during difficult times.",
     },
   ];
 
@@ -53,7 +53,7 @@ const page = () => {
       image: img1
     },
     {
-      title: "Influencer and Media Outreach",
+      title: "Media Outreach",
       content:
         "Partner with Influencers. We'll identify and collaborate with influential figures, bloggers, and media professionals to amplify your brand's message.",
       image: img2
@@ -61,7 +61,7 @@ const page = () => {
     {
       title: "Event Coordination",
       content:
-        "Create Memorable Experiences. Our event planning experts will organise and promote impactful events to generate media coverage and public interest.",
+        "Create Memorable Experiences. Our event planning experts organise and promote events to generate media coverage and public interest.",
       image: img3
     },
   ];
@@ -117,10 +117,10 @@ const page = () => {
             data-aos-duration="1000"
           >
             <h3 className="section-headding">
-              Public Relations and Media Outreach
+              Public Relations and Outreach
             </h3>
             <p className="service-p">
-              Manage Your Reputation Globally: Our global PR services include
+              Our global PR services include
               media relations, press release distribution, and crisis
               management. We help you build and maintain a positive brand
               reputation across multiple markets, ensuring effective
@@ -135,7 +135,7 @@ const page = () => {
                 onChange={(e) => setEmail(e.target.value)}
               />
               <button type="submit" className="submit-btn">
-                Get Started
+              Build Reputation Globally 
               </button>
             </form>
           </div>
@@ -170,13 +170,13 @@ const page = () => {
             data-aos-duration="1000"
           >
             <h3 className="heading">
-              Elevate Your Brand with DIwise <br />{" "}
-              <span className="gradient-text">Global's PR Expertise</span>
+              Elevate Your Brand with  <br />{" "}
+              <span className="gradient-text">DIwise Global's PR Expertise</span>
             </h3>
             <p className="para">
               Enhance your brand's reputation and reach a global audience with
               our strategic PR and media outreach services. Our team of PR
-              professionals will develop targeted campaigns that ensure your
+              professionals ensure your
               message is heard loud and clear across all markets.
             </p>
           </div>
@@ -216,11 +216,12 @@ const page = () => {
                 <span className="gradient-text">Global PR</span> Strategy
               </h5>
               <p className="bootom-section-para">
-                Elevate Your Global Brand. Our experts develop tailored PR
+                 Our experts develop tailored PR
                 strategies that resonate across cultures, ensuring your brand
                 maintains a positive image and effectively reaches international
                 audiences.
               </p>
+              <button className="button">Elevate Brand Globally</button>
             </div>
 
             <div className="right">
@@ -228,11 +229,12 @@ const page = () => {
                 <span className="gradient-text">Media </span> Training
               </h5>
               <p className="bootom-section-para">
-                Empower Your Spokespeople. Prepare your team for media
+                Prepare your team for media
                 interactions with our expert training programs. We equip your
                 spokespeople with the skills to represent your brand confidently
                 and effectively in any market.
               </p>
+              <button className="button">Empower Your Spokespeople</button>
             </div>
           </div>
         </div>

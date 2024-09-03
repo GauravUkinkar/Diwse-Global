@@ -29,19 +29,19 @@ const page = () => {
       srNo: 1,
       title: "Brand Strategy and Identity Development",
       content:
-        "Define Your Brand: Our experts will work with you to develop a comprehensive brand strategy that aligns with your business goals, target audience, and values. We'll create a unique brand identity that sets you apart.",
+        "Our experts will help you develop a comprehensive brand strategy. We'll create a unique brand identity that sets you apart.",
     },
     {
       srNo: 2,
       title: "Logo Design and Branding Guidelines",
       content:
-        "Create a Visual Identity: We'll design a memorable and visually appealing logo that captures the essence of your brand. We'll also provide comprehensive branding guidelines to ensure consistency across all marketing materials.",
+        "We'll design a memorable and visually appealing logo that captures the essence of your brand along with brand guidelines.",
     },
     {
       srNo: 3,
-      title: "Content Creation (Copywriting, Design, Multimedia)",
+      title: "Content Creation",
       content:
-        "Engage Your Audience: Our creative team will produce high-quality content that resonates with your target audience. We offer copywriting, design, and multimedia services to create engaging and effective marketing materials.",
+        "Our creative team will produce high-quality content that resonates with your target audience like copywriting, design, and multimedia services.",
     },
   ];
 
@@ -59,7 +59,7 @@ const page = () => {
       image: img2,
     },
     {
-      title: "Multimedia Content Production",
+      title: "Multimedia  Production",
       content:
         "Captivate Your Audience. Engage your audience with compelling multimedia content. We create content that enhances your brand's presence across platforms.",
       image: img3,
@@ -119,7 +119,7 @@ const page = () => {
           >
             <h3 className="section-headding">Branding and Creative Services </h3>
             <p className="service-p">
-              Build a Memorable Brand: Our expert branding team will develop a
+              Our expert branding team will develop a
               strong and distinctive brand identity that resonates with your
               target audience worldwide. From logo design to content creation,
               we ensure your brand stands out in the global marketplace.
@@ -133,7 +133,7 @@ const page = () => {
                 onChange={(e) => setEmail(e.target.value)}
               />
               <button type="submit" className="submit-btn">
-                Get Started
+              Build Your Brand
               </button>
             </form>
           </div>
@@ -176,10 +176,8 @@ const page = () => {
             </h3>
             <p className="para">
               Our expertise in branding and creative services ensures that your
-              business stands out in a crowded marketplace. We combine
-              innovative strategies with a deep understanding of global trends
-              to deliver results that matter. From crafting compelling brand
-              identities to producing engaging multimedia content, our team is
+              business stands out in a crowded marketplace. From crafting compelling brand
+              identities to producing engaging multimedia content, we are
               dedicated to helping you make a lasting impression.
             </p>
           </div>
@@ -218,10 +216,11 @@ const page = () => {
                 <span className="gradient-text">Brand</span> Positioning
               </h5>
               <p className="bootom-section-para">
-                Craft Your Message: We'll help you develop clear and compelling
+                We'll help you develop clear and compelling
                 brand messaging that effectively communicates your unique value
                 proposition to your target audience.
               </p>
+              <button className="button">Create Your Brand</button>
             </div>
 
             <div className="right">
@@ -229,12 +228,12 @@ const page = () => {
                 Creative<span className="gradient-text"> Campaigns</span>{" "}
               </h5>
               <p className="bootom-section-para">
-                Launch Successful Campaigns: Our creative team will develop
+                Our creative team will develop
                 innovative and effective marketing campaigns tailored to your
-                specific goals. We'll create a variety of marketing materials,
-                including print ads, digital banners, social media content, and
-                more.
+                specific goals with a variety of marketing materials.
+                
               </p>
+              <button className="button">Grow Your Brand</button>
             </div>
           </div>
         </div>

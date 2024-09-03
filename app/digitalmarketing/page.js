@@ -17,6 +17,7 @@ import img4 from "../../public/assets/sevice3/EmailMarketing.svg";
 import img5 from "../../public/assets/sevice3/pay-per.svg";
 import axios from "axios";
 import toast, { Toaster } from "react-hot-toast";
+import Button_comp from "@/component/button/Button_comp";
 
 const page = () => {
   const [activeIndex, setActiveIndex] = useState(0);
@@ -30,19 +31,19 @@ const page = () => {
       srNo: 1,
       title: "Advanced SEO Techniques",
       content:
-        "Drive Organic Growth. Our expert SEO team applies cutting-edge strategies, including keyword research and on-page optimization, to boost your search engine rankings and attract qualified traffic.",
+        "Drive Organic Growth with our expert SEO that applies cutting-edge strategies to boost your search engine rankings and attract qualified traffic.",
     },
     {
       srNo: 2,
       title: "Data-Driven Marketing Solutions",
       content:
-        "Maximise ROI. Leverage data-driven insights to optimise your marketing campaigns for precise targeting and measurable improvements in return on investment.",
+        "Maximise ROI by leveraging data-driven insights to optimise your marketing campaigns for precise targeting and measurable improvements.",
     },
     {
       srNo: 3,
       title: "Engaging Content Creation",
       content:
-        "Captivate Your Audience. Develop high-quality, relevant content that resonates with your target audience, establishes your brand as an industry leader, and drives engagement.",
+        "Develop high-quality, relevant content that resonates with your target audience, and establishes your brand as an industry leader.",
     },
   ];
   // ----------Swiper content List -------\
@@ -51,38 +52,38 @@ const page = () => {
     {
       title: "Search Engine Optimisation",
       content:
-        "Boost Your Visibility: Our expert SEO strategies help your website rank higher, attract organic traffic and increase brand awareness.",
+        "Boost Your Visibility. Our expert SEO strategies help your website rank higher, attract organic traffic and increase brand awareness.",
       image: img1,
     },
     {
       title: "Social Media Marketing",
       content:
-        "Engage Your Audience: Connect with your target audience on social media platforms, build brand loyalty, and drive traffic to your website.",
+        "Engage with your target audience on social media platforms, build brand loyalty, and drive traffic to your website.",
       image: img3,
     },
     {
       title: "Content Marketing",
       content:
-        "Create Value: Develop high-quality, engaging and value content that attracts, informs, and converts your audience into customers.",
+        "Create Value. Develop high-quality, engaging and value content that attracts, informs, and converts your audience into customers.",
       image: img2,
     },
     {
       title: "Email Marketing",
       content:
-        "Nurture Relationships: Build lasting relationships with your customers through targeted email campaigns that drive conversions.",
+        "Nurture Relationships. Build lasting relationships with your customers through targeted email campaigns that drive conversions.",
       image: img4,
     },
     {
       title: "Pay-Per-Click Advertising",
       content:
-        "Achieve Immediate Results: Leverage paid advertising to reach your target audience quickly, and generate leads or sales.",
+        "Achieve Immediate Results. Leverage paid advertising to reach your target audience quickly, and generate leads or sales.",
       image: img5,
     },
   ];
 
   const faqContent = [
     {
-      title: " SEO vs. SEM",
+      title: " SEO or SEM",
       content:
         "With a presence in India, the UK, and UAE, we have the experience and expertise to help your business succeed in diverse markets.",
     },
@@ -136,7 +137,7 @@ const page = () => {
           >
             <h3 className="section-headding">Digital Marketing and SEO</h3>
             <p className="service-p">
-              Elevate Your Online Presence: Our comprehensive digital marketing
+              Our comprehensive digital marketing
               strategies, including SEO, content marketing, social media
               management, and paid advertising, are designed to enhance your
               visibility, drive global engagement, and boost your bottom line.
@@ -150,7 +151,7 @@ const page = () => {
                 onChange={(e) => setEmail(e.target.value)}
               />
               <button type="submit" className="submit-btn">
-                Get Started
+              Elevate Online Presence 
               </button>
             </form>
           </div>
@@ -195,8 +196,7 @@ const page = () => {
               help your business stand out on a global scale. Our deep
               understanding of SEO and cutting-edge techniques ensure that your
               brand is visible, relevant, and engaging to international
-              audiences. We leverage global trends and insights to deliver
-              results that drive growth and impact.
+              audiences. 
             </p>
           </div>
           {/* ------------------Middle---------------- */}
@@ -234,10 +234,11 @@ const page = () => {
                 <span className="gradient-text">Effective Ad</span> Campaigns
               </h5>
               <p className="bootom-section-para">
-                Maximise Reach: Implement targeted advertising campaigns across
+                Implement targeted advertising campaigns across
                 various platforms to reach your ideal audience, drive
                 conversions, and increase brand awareness.
-              </p>
+              </p>              
+              <Button_comp btn_text="Maximise Your Reach" link="contact" />
             </div>
 
             <div className="right">
@@ -245,11 +246,11 @@ const page = () => {
                 <span className="gradient-text">Comprehensive</span> Analysis
               </h5>
               <p className="bootom-section-para">
-                Measure and Improve: Conduct regular analysis of your marketing
+                Conduct regular analysis of marketing
                 campaigns to track performance, identify areas for improvement,
-                and make data-driven adjustments to optimise your overall
-                digital strategy.
-              </p>
+                and optimise overall digital strategy.
+              </p>              
+              <Button_comp btn_text="Go Global Today " link="contact" />
             </div>
           </div>
         </div>
@@ -266,8 +267,8 @@ const page = () => {
             data-aos-duration="1000"
           >
             <h4 className="hedding">
-              FAQs for Digital{" "}
-              <span className="gradient-text">Marketing and SEO Services</span>
+              FAQs for {" "}
+              <span className="gradient-text"> Digital Marketing and SEO Services</span>
             </h4>
             {faqContent.map((item, index) => (
               <Faq

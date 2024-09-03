@@ -53,7 +53,7 @@ const Header_main = () => {
   const servicelists = [
     {
       path: "/businessSetupAndConsulting",
-      name: "Business Setup and Consultation",
+      name: "Business Formation and Advisory",
       images: "assets/icons/navIcon/Dcoument.png",
       className: "image2",
     },

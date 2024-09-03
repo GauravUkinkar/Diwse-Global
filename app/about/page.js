@@ -123,7 +123,7 @@ const page = () => {
               About <span className="gradient-text"> DIwise</span>
             </h3>
             <p className="about-para">
-              Elevate Your Brand, Dominate the Digital World
+            A Global Network of Digital Experts, From India to London, UAE, and Beyond
             </p>
           </div>
         </div>

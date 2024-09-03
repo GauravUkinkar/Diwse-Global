@@ -18,6 +18,7 @@ import img3 from "../../public/assets/bussiness-setup/RegulatoryComplianceandLeg
 import topimg from "../../public/assets/bussiness-setup/business_setup_third_section.webp";
 import axios from "axios";
 import toast, { Toaster } from "react-hot-toast";
+import Button_comp from "@/component/button/Button_comp";
 
 const page = () => {
   const [activeIndex, setActiveIndex] = useState(0);
@@ -31,19 +32,19 @@ const page = () => {
       srNo: 1,
       title: " Tailored Market Entry Strategies",
       content:
-        "Navigate New Markets: Our experts develop customised strategies that consider regional nuances, helping you establish a strong foothold in your target international markets.",
+        "Navigate new markets as our experts develop customised strategies helping you establish a strong foothold in international markets.",
     },
     {
       srNo: 2,
       title: "Legal Compliance and Regulatory Guidance",
       content:
-        "Ensure Compliance: Stay compliant with international regulations, tax laws, and industry standards, minimising risks and ensuring smooth operations.",
+        "Ensure Compliance with international regulations, tax laws, and industry standards, minimising risks and ensuring smooth operations.",
     },
     {
       srNo: 3,
       title: "Operational Optimisation and Consultation",
       content:
-        "Streamline Your Business: Our consulting services help you optimise your operations, enhance efficiency, and drive sustainable growth.",
+        "Streamline Your Business with our consulting services, enhance efficiency, and drive sustainable growth.",
     },
   ];
 
@@ -51,7 +52,7 @@ const page = () => {
     {
       title: "Company Formation and Registration",
       content:
-        "Establish Your Business. Let us guide you through the legal and administrative processes of setting up your new business in the market.",
+        "Establish Your Business. Let us guide you through the legal, hiring and administrative processes of setting up your new business in the market.",
       image: img1,
     },
     {
@@ -117,12 +118,12 @@ const page = () => {
            data-aos-delay="600"
            data-aos-duration="1000"
           >
-            <h3 className="section-headding">Business Setup and Consultation</h3>
+            <h3 className="section-headding">Business Formation and Advisory</h3>
             <p className="service-p">
-              Expand Your Global Reach: Our experienced consultants provide
+              Our experienced consultants provide
               expert guidance on setting up operations in international markets.
               We help you navigate legal compliance, develop effective market
-              entry strategies, and optimise your operations for global success.
+             strategies, hire best of talent and optimise your operations for global success.
             </p>
             <form onSubmit={submitEmail}>
               <input
@@ -133,7 +134,7 @@ const page = () => {
                 onChange={(e) => setEmail(e.target.value)}
               />
               <button type="submit" className="submit-btn">
-                Get Started
+              Expand Reach Globally
               </button>
             </form>
           </div>
@@ -216,10 +217,11 @@ const page = () => {
                 Consultation
               </h5>
               <p className="bootom-section-para">
-                Create a Roadmap: Develop a comprehensive global expansion plan
+                Develop a comprehensive global expansion plan
                 that aligns with your long-term goals, backed by in-depth market
                 analysis, strategic positioning, and financial projections.
-              </p>
+              </p>              
+              <Button_comp btn_text="Consult with us" link="contact" />
             </div>
 
             <div className="right">
@@ -228,11 +230,12 @@ const page = () => {
                 Success
               </h5>
               <p className="bootom-section-para">
-                Achieve Your Objectives: Our strategic planning services guide
+                Our strategic planning services guide
                 you through the process of setting clear goals, conducting
                 market research, and developing effective strategies to achieve
                 your global ambitions.
-              </p>
+              </p>              
+              <Button_comp btn_text="Click to Consult " link="contact" />
             </div>
           </div>
         </div>
