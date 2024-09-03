@@ -149,7 +149,7 @@ const page = () => {
               loop
               playsInline
               width="100%"
-              className="video-laptop"
+              // className="video-laptop"
             >
               <source
                 src="/assets/servicevideos/prbranding.mp4"
