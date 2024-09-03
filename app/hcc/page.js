@@ -108,10 +108,10 @@ const page = () => {
               </p>
             </div>
             <div className="btnlist" data-aos="fade-up" data-aos-delay="400">
-              <div className="case-btn">Digital Marketing & SEO</div>
+              <div className="case-btn">Digital Marketing and SEO</div>
               <div className="case-btn">Web Development</div>
               <div className="case-btn">Lead Generation Campaigns</div>
-              <div className="case-btn">Branding & Creative Services</div>
+              <div className="case-btn">Branding and Creative Services</div>
             </div>
           </div>
 

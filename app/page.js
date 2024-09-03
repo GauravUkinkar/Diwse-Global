@@ -17,6 +17,11 @@ import img1 from "../public/assets/home/axonic.jpg";
 import img2 from "../public/assets/home/Travel-and-Taste.jpg";
 import img3 from "../public/assets/home/hcc.jpg";
 import img4 from "../public/assets/home/onkar.webp";
+import img5 from "../public/assets/home/NVM.jpg";
+import img6 from "../public/assets/home/Akka-Foundation.jpg";
+import img7 from "../public/assets/home/The-Team-Dental.jpg";
+import img8 from "../public/assets/home/The-Indian-Journey.jpg";
+import img9 from "../public/assets/home/Pandoza.jpg";
 import "swiper/swiper-bundle.css";
 import Head from "next/head";
 import { FaSearchengin } from "react-icons/fa";
@@ -127,6 +132,42 @@ export default function Home() {
       imgage: img4,
       url: "/onkar",
     },
+    {
+      title: "nvm",
+      content:
+        "DIwise partnered with Onkar World to enhance their online presence and drive global trade through effective digital marketing strategies.",
+      imgage: img5,
+      url: "/onkar",
+    },
+    {
+      title: "akka",
+      content:
+        "DIwise partnered with Onkar World to enhance their online presence and drive global trade through effective digital marketing strategies.",
+      imgage: img6,
+      url: "/onkar",
+    },
+    {
+      title: "team dental",
+      content:
+        "DIwise partnered with Onkar World to enhance their online presence and drive global trade through effective digital marketing strategies.",
+      imgage: img7,
+      url: "/onkar",
+    },
+    {
+      title: "the indian journey",
+      content:
+        "DIwise partnered with Onkar World to enhance their online presence and drive global trade through effective digital marketing strategies.",
+      imgage: img8,
+      url: "/onkar",
+    },
+    {
+      title: "pandoza",
+      content:
+        "DIwise partnered with Onkar World to enhance their online presence and drive global trade through effective digital marketing strategies.",
+      imgage: img9,
+      url: "/onkar",
+    },
+    
   ];
 
   useEffect(() => {
