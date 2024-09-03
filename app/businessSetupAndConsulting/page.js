@@ -193,7 +193,7 @@ const page = () => {
             <div className="right">
               {serviceDetails.map((item, index) => (
                 <div
-                  className="content glass"
+                  className="content"
                   
                   key={index}
                 >
