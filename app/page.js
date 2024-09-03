@@ -237,8 +237,8 @@ export default function Home() {
       <div className="fourth-section parent" data-aos="fade-down">
         <div className="fourth-section-cont cont">
           <h3 className="title">
-            Our Digital Suite of <br />{" "}
-            <span className="gradient-text">Services </span>
+            Our Digital Suite of {" "}
+            <span className="gradient-text"> Services </span>
           </h3>
           <p className="desc">
             Our comprehensive suite of digital services is designed to propel
