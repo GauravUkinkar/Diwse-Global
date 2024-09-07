@@ -40,7 +40,7 @@ export default function Home() {
   const cardData = [
     {
       icon: "assets/icons/navIcon/digital_marketing-1.png",
-      title: "Digital Marketing and SEO",
+      title: "Digital Marketing and Search Engine Optimization (SEO)",
       description:
         "Elevate your online presence. From crafting engaging content and managing your social media, we'll drive global visibility and engagement.",
       buttonText: "Get Started",

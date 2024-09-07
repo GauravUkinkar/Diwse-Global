@@ -59,7 +59,7 @@ const Header_main = () => {
     },
     {
       path: "/digitalmarketing",
-      name: "Digital Marketing and SEO",
+      name: "Digital Marketing and Search Engine Optimization (SEO)",
       images: "assets/icons/navIcon/digital_marketing-1.png",
       className: "image1",
     },    
