@@ -1,3 +1,4 @@
+
 .home-parent {
   height: 100vh;
   padding-top: 80px;
@@ -13,12 +14,17 @@
       gap: calc(var(--unit) * 2 - 10px);
       display: flex;
       flex-direction: column;
-      h1 {
+      .title {
         // line-height: 105%;
+        // font-weight: 700;
+        font-family: "Playfair Display", serif !important;
+        // font-family: "Lora", serif !important;
         font-weight: 700;
+        font-style: normal
       }
       .desc {
         text-align: left;
+        font-family: "Kanit", sans-serif;
       }
     }
     .right {
@@ -38,7 +44,7 @@
       height: auto !important;
       padding: 50px 10px;
       flex-direction: column-reverse;
-      gap:calc(var(--unit) *2);
+      gap: calc(var(--unit) * 2);
       .left {
         width: 100% !important;
       }
