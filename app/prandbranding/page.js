@@ -254,7 +254,7 @@ const page = () => {
           >
             <h4 className="hedding">
               Why Choose Diwise Global for{" "}
-              <span className="gradient-text">Digital Marketing and SEO?</span>
+              <span className="gradient-text">Digital Marketing and Search Engine Optimization (SEO)?</span>
             </h4>
             {faqContent.map((item, index) => (
               <Faq

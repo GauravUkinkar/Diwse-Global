@@ -83,7 +83,7 @@ const page = () => {
 
   const faqContent = [
     {
-      title: " SEO or SEM",
+      title: " Search Engine Optimization (SEO) or Search Engine Marketing (SEM)",
       content:
         "With a presence in India, the UK, and UAE, we have the experience and expertise to help your business succeed in diverse markets.",
     },
@@ -135,10 +135,10 @@ const page = () => {
             data-aos-delay="600"
             data-aos-duration="1000"
           >
-            <h3 className="section-headding">Digital Marketing and SEO</h3>
+            <h3 className="section-headding">Digital Marketing and Search Engine Optimization (SEO)</h3>
             <p className="service-p">
               Our comprehensive digital marketing
-              strategies, including SEO, content marketing, social media
+              strategies, including Search Engine Optimization (SEO), content marketing, social media
               management, and paid advertising, are designed to enhance your
               visibility, drive global engagement, and boost your bottom line.
             </p>
@@ -194,7 +194,7 @@ const page = () => {
             <p className="para">
               DIwise Global offers expert digital marketing services tailored to
               help your business stand out on a global scale. Our deep
-              understanding of SEO and cutting-edge techniques ensure that your
+              understanding of Search Engine Optimization (SEO) and cutting-edge techniques ensure that your
               brand is visible, relevant, and engaging to international
               audiences. 
             </p>
@@ -268,7 +268,7 @@ const page = () => {
           >
             <h4 className="hedding">
               FAQs for {" "}
-              <span className="gradient-text"> Digital Marketing and SEO Services</span>
+              <span className="gradient-text"> Digital Marketing and Search Engine Optimization (SEO) Services</span>
             </h4>
             {faqContent.map((item, index) => (
               <Faq

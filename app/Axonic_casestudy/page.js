@@ -108,7 +108,7 @@ const page = () => {
               </p>
             </div>
             <div className="btnlist" data-aos="fade-up" data-aos-delay="400">
-              <div className="case-btn">Digital Marketing and SEO</div>
+              <div className="case-btn">Digital Marketing and Search Engine Optimization (SEO)</div>
               <div className="case-btn">Web and App Development</div>
               <div className="case-btn">UX/UI designing</div>
               <div className="case-btn">Branding and Creative Services</div>
