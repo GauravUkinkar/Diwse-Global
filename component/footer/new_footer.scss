@@ -42,7 +42,7 @@
       }
 
       .line {
-        width: 80%;
+        width: 90%;
         height: 2px;
         background: white;
         margin-top: -15px;
@@ -213,7 +213,7 @@
   }
 
   to {
-    width: 80%;
+    width: 90%;
   }
 }
 
@@ -261,12 +261,10 @@
 
         .line {
           margin-top: 1px !important;
-          width: 30%;
         }
 
         .mail {
           font-size: 25px !important;
-          width: 30% ;
         }
       }
 
@@ -276,94 +274,11 @@
       }
     }
   }
-
-  @keyframes typingMail {
-    from {
-      width: 0;
-    }
-  
-    to {
-      width: 30%;
-    }
-  }
 }
 
 @media only screen and (max-width: 900px) {
   .nfooter-parent {
     padding: 50px 10px !important;
-
-    .nfooter-cont{
-
-      .left{
-        .line {
-
-          width: 40%;
-        }
-
-      }
-    }
-  }
-
-
-  .mail {
- 
-    width: 40% ;
-  }
-  @keyframes typingMail {
-    from {
-      width: 0;
-    }
-  
-    to {
-      width: 40%;
-    }
-  }
-}
-
-
-@media only screen and (max-width: 700px) {
-  .copyright-parent {
-    .copyright-cont {
-      flex-wrap: wrap;
-      align-items: center;
-      justify-content: center;
-
-
-
-    }
-  }
-
-  .nfooter-parent{
-
-    .nfooter-cont{
-
-      
-        .left {
-          .title {
-            font-size: 26px !important;
-          }
-          .mail {
-            width: 50%;
-          }
-  
-          .line {
-            width: 50%;
-          }
-  
-  
-        }
-      
-    }
-  }
-
-  @keyframes typingMail {
-    from {
-      width: 0;
-    }
-  
-    to {
-      width: 50%;
-    }
   }
 }
 
@@ -377,23 +292,21 @@
           font-size: 26px !important;
         }
         .mail {
-          width: 100% !important;
         }
 
         .line {
-          width: 100% !important;
         }
       }
     }
   }
-  @keyframes typingMail {
-    from {
-      width: 0;
-    }
-  
-    to {
-      width: 100%;
+}
+
+@media only screen and (max-width: 700px) {
+  .copyright-parent {
+    .copyright-cont {
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: center;
     }
   }
-
 }
