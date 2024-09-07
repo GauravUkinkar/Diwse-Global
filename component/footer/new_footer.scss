@@ -42,7 +42,7 @@
       }
 
       .line {
-        width: 80%;
+        width: 90%;
         height: 2px;
         background: white;
         margin-top: -15px;
@@ -62,7 +62,6 @@
           gap: 5px;
           font-size: 25px;
 
-       
           .icon {
             transition: transform 0.3s ease, color 0.3s ease;
             transform: rotate(45deg);
@@ -213,7 +212,7 @@
   }
 
   to {
-    width: 80%;
+    width: 90%;
   }
 }
 
@@ -261,6 +260,7 @@
 
         .line {
           margin-top: 1px !important;
+          width: 30%;
         }
 
         .mail {
@@ -274,11 +274,41 @@
       }
     }
   }
+
+  // Keyframes for animations
+  @keyframes typingMail {
+    from {
+      width: 0;
+    }
+
+    to {
+      width: 30%;
+    }
+  }
 }
 
 @media only screen and (max-width: 900px) {
   .nfooter-parent {
     padding: 50px 10px !important;
+
+    .nfooter-cont {
+      .left {
+        .line {
+          width: 40%;
+        }
+      }
+    }
+  }
+
+  // Keyframes for animations
+  @keyframes typingMail {
+    from {
+      width: 0;
+    }
+
+    to {
+      width: 40%;
+    }
   }
 }
 
@@ -292,11 +322,24 @@
           font-size: 26px !important;
         }
         .mail {
+          width: 65%;
         }
 
         .line {
+          width: 65%;
         }
       }
+    }
+  }
+
+  // Keyframes for animations
+  @keyframes typingMail {
+    from {
+      width: 0;
+    }
+
+    to {
+      width: 65%;
     }
   }
 }
@@ -307,6 +350,53 @@
       flex-wrap: wrap;
       align-items: center;
       justify-content: center;
+    }
+  }
+
+  .nfooter-parent {
+    .nfooter-cont {
+      .left {
+        .line {
+          width: 60%;
+        }
+      }
+    }
+  }
+
+  // Keyframes for animations
+  @keyframes typingMail {
+    from {
+      width: 0;
+    }
+
+    to {
+      width: 60%;
+    }
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .nfooter-parent {
+    .nfooter-cont {
+      .left {
+        .mail {
+          width: 100%;
+        }
+        .line {
+          width: 100%;
+        }
+      }
+    }
+  }
+
+  // Keyframes for animations
+  @keyframes typingMail {
+    from {
+      width: 0;
+    }
+
+    to {
+      width: 100%;
     }
   }
 }
