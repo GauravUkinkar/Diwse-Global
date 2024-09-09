@@ -12,7 +12,10 @@ const CardComp = (props) => {
         }}
       >
         <h3>
-            {props.Main_heading}
+            <span className="gradient-text">
+                {props.highlight_heading} 
+            </span>
+             {props.Main_heading}
         </h3>
         <div className="branches-cont">
           {props.branchesData.map((item, index) => (

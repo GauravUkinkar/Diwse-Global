@@ -230,7 +230,8 @@ export default function Home() {
       <New_home />
       <CardComp
         branchesData={branchesData}
-        Main_heading="Our digital marketing empire is anchored by three strategic strongholds"
+        highlight_heading="Our digital marketing empire"
+        Main_heading=" is anchored by three strategic strongholds"
         paddingB="80px"
         heading={true}
       />
