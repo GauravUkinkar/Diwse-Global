@@ -261,7 +261,7 @@ const page = () => {
           data-aos="fade-up"
           data-aos-delay="200"
         >
-          <h3 data-aos-delay="400">
+          <h3 data-aos-delay="400"  className="heading">
             Meet Our <span className="gradient-text">Team</span>
           </h3>
 
@@ -307,11 +307,11 @@ const page = () => {
             </div>
           </div>
           <div className="founder flex-row-reverse">
-            <div className="image" data-aos-delay="600"></div>
+            <div className="image prashantpatil" data-aos-delay="600"></div>
 
             <div className="content" data-aos-delay="800">
               <a
-                href="https://prajaktamarwaha.com/"
+                href="https://prashantpatil.co.uk/"
                 target="_blank"
                 className="name1"
               >
@@ -333,7 +333,7 @@ const page = () => {
               </p>
               <div className="social-media">
                 <a
-                  href="https://www.linkedin.com/in/prajakta-marwaha-507b6410a/"
+                  href="https://www.linkedin.com/in/prash-patil/"
                   target="_blank"
                   className="icon"
                 >

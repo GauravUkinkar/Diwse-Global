@@ -22,13 +22,14 @@
       .about-heading {
         color: var(--white);
         font-size: calc(var(--unit) * 2);
+       
       }
 
       .about-para {
         max-width: 80ch;
         text-align: center;
         color: var(--white);
-        font-weight: 700;
+        font-weight: 500;
         font-size: 24px;
       }
     }
@@ -344,6 +345,11 @@
     align-items: flex-start;
     gap: calc(var(--unit) );
 
+    .heading{
+      width: 100%;
+      text-align: center;
+    }
+
     .founder {
       width: 100%;
       height: 100%;
@@ -371,6 +377,10 @@
          background-size: cover;
          background-repeat: no-repeat;
         }
+
+        // &.prashantpatil{
+        //   background: url("../../public/assets/img/prashant_patil.png");
+        // }
       }
       .content {
         width: 70%;

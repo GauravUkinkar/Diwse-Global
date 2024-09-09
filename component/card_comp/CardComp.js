@@ -11,7 +11,7 @@ const CardComp = (props) => {
           paddingBottom: `${props.paddingB}`,
         }}
       >
-        <h3>
+        <h3 className="heading_text">
             <span className="gradient-text">
                 {props.highlight_heading} 
             </span>
@@ -31,8 +31,7 @@ const CardComp = (props) => {
                     style={{
                       background: `url(${item.flag_img.src})`,
                       backgroundPosition: item.flagePosition || "center center"
-
-                    }}
+              }}
                   ></div>
                   {props.heading ? (
                     <h3 className="heading">{item.countryName}</h3>
