@@ -156,7 +156,7 @@ const page = () => {
             </h3>
             <p className="about-para">
               Our digital marketing empire is anchored by three strategic
-              strongholds: the glittering metropolis of Dubai, the tech-savvy
+              strongholds - the glittering metropolis of Dubai, the tech-savvy
               hub of India, and the cosmopolitan crossroads of London.
             </p>
           </div>
