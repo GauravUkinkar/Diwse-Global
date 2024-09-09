@@ -342,7 +342,7 @@
     flex-direction: column;
     justify-content: flex-start;
     align-items: flex-start;
-    gap: calc(var(--unit) * 2);
+    gap: calc(var(--unit) );
 
     .founder {
       width: 100%;
@@ -351,23 +351,25 @@
       justify-content: center;
       align-items: stretch;
       gap: calc(var(--unit) * 2);
-      border-bottom: 1px solid var(--text);
-      padding: var(--unit) 0px;
+      border: 1px solid var(--text);
+      padding: var(--unit) ;
+      border-radius: calc(var(--unit));
 
       .image {
-        width: 30%;
-        aspect-ratio: 1;
+       height: auto;
+      width: 30%;
         background: url("../../public/assets/img/prajaktaM.webp");
         background-size: cover;
         background-repeat: no-repeat;
         background-position: center center;
-        border-radius: var(--unit);
+        border-radius: calc(var(--unit)/2);
 
 
 
         &.omar-image{
           background: url("../../public/assets/img/umar_moghal.webp");
-         background-size: contain;
+         background-size: cover;
+         background-repeat: no-repeat;
         }
       }
       .content {
@@ -387,6 +389,7 @@
         .desgination {
           font-size: 18px;
           font-weight: 500;
+          opacity: 0.7;
         }
 
         .founder-about {

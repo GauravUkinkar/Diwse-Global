@@ -276,7 +276,7 @@ const page = () => {
               >
                 Prajakta Marwaha
               </a>
-              <h5 className="desgination">Founder and Managing Director</h5>
+              <h5 className="desgination">( Founder and Managing Director )</h5>
               <p className="founder-about">
                 <i>
                   <b className="gradient-text" style={{ fontWeight: "700" }}>
@@ -317,7 +317,7 @@ const page = () => {
               >
                 Prashant Patil
               </a>
-              <h5 className="desgination">Director</h5>
+              <h5 className="desgination">( Director )</h5>
               <p className="founder-about">
                 {/* <i>
                   <b className="gradient-text" style={{ fontWeight: "700" }}>
@@ -356,7 +356,7 @@ const page = () => {
               >
                 Gaurav Ukinkar
               </a>
-              <h5 className="desgination">Director </h5>
+              <h5 className="desgination">( Director ) </h5>
               <p className="founder-about">
                 {/* <i>
                   <b className="gradient-text" style={{ fontWeight: "700" }}>
@@ -394,7 +394,7 @@ const page = () => {
               >
                 Omar Mughal
               </a>
-              <h5 className="desgination"> Company Secretary </h5>
+              <h5 className="desgination">( Company Secretary )</h5>
               <p className="founder-about">
                 {/* <i>
                   <b className="gradient-text" style={{ fontWeight: "700" }}>

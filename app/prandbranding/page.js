@@ -111,12 +111,12 @@ const page = () => {
   return (
     <>
       <div className="service-hero-parent parent">
-        <div className="service-hero-cont cont">
+        <div className="service-hero-cont cont" data-aos="fade-up"
+            data-aos-delay="600"
+            data-aos-duration="1000"  >
           <div
             className="left"
-            data-aos="fade-up"
-            data-aos-delay="600"
-            data-aos-duration="1000"
+            
           >
             <h3 className="section-headding">Branding and Creative Services </h3>
             <p className="service-p">
@@ -140,9 +140,7 @@ const page = () => {
           </div>
           <div
             className="right prbranding bg-img-cover "
-            data-aos="fade-up"
-            data-aos-delay="900"
-            data-aos-duration="1000"
+            
           >
             <video
               autoPlay
