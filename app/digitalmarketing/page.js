@@ -9,7 +9,7 @@ import Faq from "@/component/faq/Faq";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import Service3 from "@/component/servicesection3/Service3";
-import topimg from "../../public/assets/digital_marketing/4th.jpg";
+import topimg from "../../public/assets/digital_marketing/4th.webp";
 import img1 from "../../public/assets/sevice3/seo.png";
 import img2 from "../../public/assets/sevice3/content.png";
 import img3 from "../../public/assets/sevice3/social.png";

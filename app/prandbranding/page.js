@@ -10,7 +10,7 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 import Service3 from "@/component/servicesection3/Service3";
 
-import topimg from "../../public/assets/prbranding/content-1.jpg";
+import topimg from "../../public/assets/prbranding/content-1.webp";
 import img1 from "../../public/assets/prbranding/LogoDesigning.svg";
 import img2 from "../../public/assets/prbranding/BrandIdentityDevelopment.svg";
 import img3 from "../../public/assets/prbranding/MultimediaContentProduction.svg";
@@ -182,13 +182,12 @@ const page = () => {
               dedicated to helping you make a lasting impression.
             </p>
           </div>
-          {/* ------------------Middle---------------- */}
-          <div className="middle">
-            <div
-              className="left"
-              data-aos="fade-up"
-              data-aos-delay="200"
-              data-aos-duration="1000"
+        {/* ------------------Middle---------------- */}
+          <div className="middle"data-aos="fade-up"
+             data-aos-delay="200"
+             data-aos-duration="1000">
+            <div className="left"
+             
             >
               <div className="back-image prback bg-img-cover"></div>
               <div className="front-image prfront bg-img-cover"></div>

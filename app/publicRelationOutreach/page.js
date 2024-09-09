@@ -182,11 +182,11 @@ const page = () => {
             </p>
           </div>
           {/* ------------------Middle---------------- */}
-          <div className="middle">
-            <div className="left"
-              data-aos="fade-up"
+          <div className="middle"data-aos="fade-up"
               data-aos-delay="200"
-              data-aos-duration="1000"
+              data-aos-duration="1000">
+            <div className="left"
+              
             >
               <div className="back-image public_back bg-img-cover"></div>
               <div className="front-image public_front bg-img-cover"></div>

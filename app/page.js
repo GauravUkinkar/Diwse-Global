@@ -13,15 +13,15 @@ import Home_Card_Swiper from "@/component/home/home_card_swiper";
 import Logo_Corousel from "@/component/home/logo_corousel";
 import "swiper/css";
 import { Swiper, SwiperSlide } from "swiper/react";
-import img1 from "../public/assets/home/axonic.jpg";
-import img2 from "../public/assets/home/Travel-and-Taste.jpg";
-import img3 from "../public/assets/home/hcc.jpg";
+import img1 from "../public/assets/home/axonic.webp";
+import img2 from "../public/assets/home/Travel-and-Taste.webp";
+import img3 from "../public/assets/home/hcc.webp";
 import img4 from "../public/assets/home/onkar.webp";
-import img5 from "../public/assets/home/NVM.jpg";
-import img6 from "../public/assets/home/Akka-Foundation.jpg";
-import img7 from "../public/assets/home/The-Team-Dental.jpg";
-import img8 from "../public/assets/home/The-Indian-Journey.jpg";
-import img9 from "../public/assets/home/Pandoza.jpg";
+import img5 from "../public/assets/home/NVM.webp";
+import img6 from "../public/assets/home/Akka-Foundation.webp";
+import img7 from "../public/assets/home/The-Team-Dental.webp";
+import img8 from "../public/assets/home/The-Indian-Journey.webp";
+import img9 from "../public/assets/home/Pandoza.webp";
 import "swiper/swiper-bundle.css";
 import Head from "next/head";
 import { FaSearchengin } from "react-icons/fa";
@@ -133,9 +133,9 @@ export default function Home() {
       url: "/onkar",
     },
     {
-      title: "nvm",
+      title: "Building Brand and Growing Capital with NVM Capital",
       content:
-        "DIwise partnered with Onkar World to enhance their online presence and drive global trade through effective digital marketing strategies.",
+        "DIwise powered NVM Capital's digital transformation, enabling them to deliver exceptional services to their customers and establish a strong online presence.",
       imgage: img5,
       url: "/nvm",
     },
@@ -154,9 +154,9 @@ export default function Home() {
       url: "/theTeamDental",
     },
     {
-      title: "the indian journey",
+      title: "Digitally Experiencing the Best of India with The Indian Journey ",
       content:
-        "DIwise partnered with Onkar World to enhance their online presence and drive global trade through effective digital marketing strategies.",
+        "DIwise has brought The Indian Journey to the forefront of digital experiences, offering innovative solutions that create unforgettable memories.",
       imgage: img8,
       url: "/theIndianJourney",
     },

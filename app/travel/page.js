@@ -7,10 +7,10 @@ import { LuDot } from "react-icons/lu";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import About_card_swiper from "@/component/about/About_card_swiper";
-import travels from "../../public/assets/img/travel.png";
-import travel_fb from "../../public/assets/img/travel_facebook.png"
-import travel_insta from "../../public/assets/img/travel_instagram.png"
-import travel_package from "../../public/assets/img/travel_package.png"
+import travels from "../../public/assets/img/travel.webp";
+import travel_fb from "../../public/assets/img/travel_facebook.webp"
+import travel_insta from "../../public/assets/img/travel_instagram.webp"
+import travel_package from "../../public/assets/img/travel_package.webp"
 import travel_destination from "../../public/assets/img/travel_des.webp"
 import travelp from "../../public/assets/img/travel-p.webp"
 

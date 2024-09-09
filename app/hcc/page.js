@@ -7,7 +7,7 @@ import { LuDot } from "react-icons/lu";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import About_card_swiper from "@/component/about/About_card_swiper";
-import hccs from "../../public/assets/img/hcc.png";
+import hccs from "../../public/assets/img/hcc.webp";
 import hcc_about from "../../public/assets/img/hcc_about.webp";
 import hcc_fb from "../../public/assets/img/hcc_fb.webp";
 import hcc_insta from "../../public/assets/img/hcc_insta.webp";
