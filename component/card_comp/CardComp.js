@@ -11,6 +11,9 @@ const CardComp = (props) => {
           paddingBottom: `${props.paddingB}`,
         }}
       >
+        <h3>
+            {props.Main_heading}
+        </h3>
         <div className="branches-cont">
           {props.branchesData.map((item, index) => (
             <div

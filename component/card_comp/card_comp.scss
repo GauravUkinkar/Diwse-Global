@@ -1,7 +1,11 @@
 .branches {
   width: 100%;
   height: auto;
-
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+gap: calc(var(--unit)*2);
   .branches-cont {
     height: 100%;
     display: grid;

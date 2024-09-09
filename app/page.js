@@ -160,7 +160,8 @@ export default function Home() {
       url: "/theTeamDental",
     },
     {
-      title: "Digitally Experiencing the Best of India with The Indian Journey ",
+      title:
+        "Digitally Experiencing the Best of India with The Indian Journey ",
       content:
         "DIwise has brought The Indian Journey to the forefront of digital experiences, offering innovative solutions that create unforgettable memories.",
       imgage: img8,
@@ -173,7 +174,6 @@ export default function Home() {
       imgage: img9,
       url: "/pandoza",
     },
-
   ];
 
   useEffect(() => {
@@ -189,8 +189,6 @@ export default function Home() {
       window.removeEventListener("resize", handlePagination);
     };
   }, []);
-
-
 
   const branchesData = [
     {
@@ -230,7 +228,12 @@ export default function Home() {
       {/* 1 Section - One side text and one side 3D model */}
       {/* <Home_main /> */}
       <New_home />
-      <CardComp branchesData={branchesData}  paddingB="80px" heading={true} />
+      <CardComp
+        branchesData={branchesData}
+        Main_heading="Our digital marketing empire is anchored by three strategic strongholds"
+        paddingB="80px"
+        heading={true}
+      />
       {/* 2 Section - Video section */}
       <div className="second-section" ref={videoBoxRef}>
         <div className="video-box" data-aos="fade-up">
@@ -268,7 +271,7 @@ export default function Home() {
       <div className="fourth-section parent" data-aos="fade-down">
         <div className="fourth-section-cont cont">
           <h3 className="title">
-            Our Digital Suite of {" "}
+            Our Digital Suite of{" "}
             <span className="gradient-text"> Services </span>
           </h3>
           <p className="desc">
@@ -299,7 +302,7 @@ export default function Home() {
         </div>
         <div id="home_casestudy"></div>
       </div>
-      
+
       {/* 5th Section - Swiper section */}
 
       <div className="fifth-section parent">
