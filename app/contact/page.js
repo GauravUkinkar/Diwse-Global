@@ -55,7 +55,7 @@ const page = () => {
           <div className="branch2 bg-img-cover branch">
             <div className="country">
               <div className="flag "></div>
-              <p>India</p>
+              <p>UAE</p>
             </div>
 
             <a href="tel:+971508060418" className="number">
@@ -82,7 +82,7 @@ const page = () => {
           <div className="branch3 bg-img-cover branch">
             <div className="country">
               <div className="flag bg-img-cover"></div>
-              <p>India</p>
+              <p>United Kingdom</p>
             </div>
 
             <a href="tel:+447398814161" className="number">
