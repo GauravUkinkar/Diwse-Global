@@ -17,7 +17,7 @@ import img1 from "../public/assets/home/axonic.webp";
 import img2 from "../public/assets/home/Travel-and-Taste.webp";
 import img3 from "../public/assets/home/hcc.webp";
 import img4 from "../public/assets/home/onkar.webp";
-import img5 from "../public/assets/home/NVM.jpg";
+import img5 from "../public/assets/home/nvm.jpg";
 import img6 from "../public/assets/home/Akka-Foundation.webp";
 import img7 from "../public/assets/home/The-Team-Dental.webp";
 import img8 from "../public/assets/home/The-Indian-Journey.webp";
