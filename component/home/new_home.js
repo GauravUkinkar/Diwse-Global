@@ -4,7 +4,7 @@ import Button_comp from "../button/Button_comp";
 import Icon from "../dynamicIcon/Icon";
 import "../home/new_home.scss";
 import { motion } from "framer-motion";
-import img from "../../public/assets/home/hcc.jpg";
+import img from "../../public/assets/home/hcc.webp";
 
 const New_home = () => {
   useEffect(() => {

@@ -10,7 +10,7 @@ import About_card_swiper from "@/component/about/About_card_swiper";
 import axonic_facebook from "../../public/assets/img/facebook_axon.webp"
 import axonic_insta from "../../public/assets/img/axonic_insta.webp"
 import axonic_2 from "../../public/assets/img/axon_2.webp"
-import Axonic from "../../public/assets/img/Axonic.png"
+import Axonic from "../../public/assets/img/Axonic.webp"
 import Axon from "../../public/assets/img/axon.webp"
 import axonp from "../../public/assets/img/axonic-p.webp"
 const page = () => {
