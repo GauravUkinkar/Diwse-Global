@@ -10,7 +10,7 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 
 
-import topimg from '../../public/assets/web-development/web_third_section.jpeg'
+import topimg from '../../public/assets/web-development/web_third_section.webp'
 
 import img1 from '../../public/assets/web-development/CustomWebsiteDevelopment.svg';
 import img2 from '../../public/assets/web-development/UXDesign.svg';
