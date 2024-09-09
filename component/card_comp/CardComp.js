@@ -2,7 +2,7 @@ import React from 'react'
 import "./card_comp.scss"
 import { GrLocation } from "react-icons/gr";
 import { IoCallSharp } from "react-icons/io5";
-const Card_comp = (props) => {
+const CardComp = (props) => {
   return (
     <>
       <div className="branches parent">
@@ -92,4 +92,4 @@ const Card_comp = (props) => {
   )
 }
 
-export default Card_comp
+export default CardComp

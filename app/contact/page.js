@@ -12,7 +12,8 @@ import { IoCallSharp } from "react-icons/io5";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import axios from "axios";
-import Card_comp from "@/component/card_comp/card_comp";
+import CardComp from "@/component/card_comp/CardComp";
+
 
 const page = () => {
   useEffect(() => {
@@ -24,8 +25,8 @@ const page = () => {
   return (
     <>
       <Contact />
-
-      <Card_comp/>
+<CardComp/>
+  
       {/* <div className="contact-box-p parent">
         <div className="contact-box cont">
           <div className="box box1" data-aos="fade-up" >
