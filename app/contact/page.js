@@ -49,6 +49,7 @@ const page = () => {
       CallIcon: <IoCallSharp />,
       address_link: "https://maps.app.goo.gl/5HJr7gqHrCPyjLTKA",
       locationIcon: <GrLocation />,
+      flagePosition:"left center",
       address_text:
         "Office no. 1304 | Building no. LB19 | JAZFA View 18-19, Jebel Ali Free Zone, PO Box 262746 Downtown Jabel Ali - Dubai - United Arab Emirates",
     },

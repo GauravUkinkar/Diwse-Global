@@ -27,9 +27,11 @@ const CardComp = (props) => {
               <div className="overlay">
                 <div className="country">
                   <div
-                    className="flag bg-img-cover"
+                    className="flag "
                     style={{
                       background: `url(${item.flag_img.src})`,
+                      backgroundPosition: item.flagePosition || "center center"
+
                     }}
                   ></div>
                   {props.heading ? (
