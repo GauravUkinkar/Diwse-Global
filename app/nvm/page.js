@@ -7,12 +7,13 @@ import { LuDot } from "react-icons/lu";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import About_card_swiper from "@/component/about/About_card_swiper";
-import hccs from "../../public/assets/img/hcc.webp";
-import hcc_about from "../../public/assets/img/hcc_about.webp";
-import hcc_fb from "../../public/assets/img/hcc_fb.webp";
-import hcc_insta from "../../public/assets/img/hcc_insta.webp";
-import hcc_link from "../../public/assets/img/hcc_link.webp";
-import hccp from "../../public/assets/img/hcc-p.webp"
+import nvm1 from "../../public/assets/casestudy/nvm/nvm1.webp";
+import nvm2 from "../../public/assets/casestudy/nvm/nvm2.webp";
+import nvm3 from "../../public/assets/casestudy/nvm/nvm3.webp";
+import nvm4 from "../../public/assets/casestudy/nvm/nvm4.webp";
+import nvm5 from "../../public/assets/casestudy/nvm/nvm5.webp";
+import nvm6 from "../../public/assets/casestudy/nvm/nvm6.webp";
+
 
 const page = () => {
   const caseStudy = useRef();
@@ -33,22 +34,22 @@ const page = () => {
 
   const hccImages = [
     {
-      image: hccs,
+      image: nvm1,
     },
     {
-      image: hcc_about,
+      image: nvm2,
     },
     {
-      image: hcc_fb,
+      image: nvm3,
     },
     {
-      image: hcc_insta,
+      image: nvm4,
     },
     {
-      image: hcc_link,
+      image: nvm5,
     },
     {
-      image: hccp,
+      image: nvm6,
     },
   ];
 
