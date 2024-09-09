@@ -10,7 +10,7 @@ import About_card_swiper from "@/component/about/About_card_swiper";
 import axonic_facebook from "../../public/assets/img/facebook_axon.webp"
 import axonic_insta from "../../public/assets/img/axonic_insta.webp"
 import axonic_2 from "../../public/assets/img/axon_2.webp"
-import Axonic from "../../public/assets/img/Axonic.png"
+import Axonic from "../../public/assets/img/Axonic.webp"
 import Axon from "../../public/assets/img/axon.webp"
 import axonp from "../../public/assets/img/axonic-p.webp"
 const page = () => {
@@ -108,10 +108,10 @@ const page = () => {
               </p>
             </div>
             <div className="btnlist" data-aos="fade-up" data-aos-delay="400">
-              <div className="case-btn">Digital Marketing & SEO</div>
-              <div className="case-btn">Web & App Development</div>
+              <div className="case-btn">Digital Marketing and Search Engine Optimization (SEO)</div>
+              <div className="case-btn">Web and App Development</div>
               <div className="case-btn">UX/UI designing</div>
-              <div className="case-btn">Branding & Creative Services</div>
+              <div className="case-btn">Branding and Creative Services</div>
               <div className="case-btn">Public Relations Outreach</div>
             </div>
           </div>

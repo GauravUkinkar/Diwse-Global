@@ -17,6 +17,7 @@ import img3 from "../../public/assets/public_relation_outreach/EventCoordination
 import topimg from "../../public/assets/public-relation.jpg";
 import axios from "axios";
 import toast, { Toaster } from "react-hot-toast";
+import Button_comp from "@/component/button/Button_comp";
 const page = () => {
   const [activeIndex, setActiveIndex] = useState(0);
 
@@ -221,7 +222,8 @@ const page = () => {
                 maintains a positive image and effectively reaches international
                 audiences.
               </p>
-              <button className="button">Elevate Brand Globally</button>
+              
+              <Button_comp btn_text="Elevate Globally" link="contact" />
             </div>
 
             <div className="right">
@@ -234,7 +236,8 @@ const page = () => {
                 spokespeople with the skills to represent your brand confidently
                 and effectively in any market.
               </p>
-              <button className="button">Empower Your Spokespeople</button>
+             
+              <Button_comp btn_text="Get Media Ready" link="contact" />
             </div>
           </div>
         </div>
@@ -251,7 +254,7 @@ const page = () => {
           >
             <h4 className="hedding">
 
-              FAQs for Public Relations &{" "}
+              FAQs for Public Relations and{" "}
               <span className="gradient-text">Media Outreach Services</span>
             </h4>
             {faqContent.map((item, index) => (

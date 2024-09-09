@@ -10,12 +10,13 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 import Service3 from "@/component/servicesection3/Service3";
 
-import topimg from "../../public/assets/prbranding/content-1.jpg";
+import topimg from "../../public/assets/prbranding/content-1.webp";
 import img1 from "../../public/assets/prbranding/LogoDesigning.svg";
 import img2 from "../../public/assets/prbranding/BrandIdentityDevelopment.svg";
 import img3 from "../../public/assets/prbranding/MultimediaContentProduction.svg";
 import axios from "axios";
 import toast, { Toaster } from "react-hot-toast";
+import Button_comp from "@/component/button/Button_comp";
 
 const page = () => {
   const [activeIndex, setActiveIndex] = useState(0);
@@ -220,7 +221,8 @@ const page = () => {
                 brand messaging that effectively communicates your unique value
                 proposition to your target audience.
               </p>
-              <button className="button">Create Your Brand</button>
+             
+              <Button_comp btn_text="Create Your Brand " link="contact" />
             </div>
 
             <div className="right">
@@ -233,7 +235,8 @@ const page = () => {
                 specific goals with a variety of marketing materials.
                 
               </p>
-              <button className="button">Grow Your Brand</button>
+              
+              <Button_comp btn_text="Grow Your Brand" link="contact" />
             </div>
           </div>
         </div>
@@ -251,7 +254,7 @@ const page = () => {
           >
             <h4 className="hedding">
               Why Choose Diwise Global for{" "}
-              <span className="gradient-text">Digital Marketing & SEO?</span>
+              <span className="gradient-text">Digital Marketing and Search Engine Optimization (SEO)?</span>
             </h4>
             {faqContent.map((item, index) => (
               <Faq

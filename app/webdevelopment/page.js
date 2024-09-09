@@ -21,6 +21,7 @@ import img3 from '../../public/assets/web-development/E-commerceSolutions.svg';
 import Service3 from "@/component/servicesection3/Service3";
 import axios from "axios";
 import toast, { Toaster } from "react-hot-toast";
+import Button_comp from "@/component/button/Button_comp";
 const page = () => {
   const [activeIndex, setActiveIndex] = useState(0);
 
@@ -170,7 +171,7 @@ const page = () => {
             data-aos-duration="1000"
           >
             <h3 className="heading">
-              DIwise Custom Web & App{" "}
+              DIwise Custom Web and App{" "}
               <span className="gradient-text"> Solutions for Growth</span>
             </h3>
             <p className="para">
@@ -227,7 +228,8 @@ const page = () => {
                 applications, we ensure your digital presence is engaging and
                 effective.
               </p>
-              <button className="button">Elevate Digital Presence</button>
+          
+              <Button_comp btn_text="Elevate Digital Presence" link="contact" />
             </div>
 
             <div className="right">
@@ -240,7 +242,8 @@ const page = () => {
                 specialise in creating high-performance iOS and Android apps
                 that deliver exceptional user experiences.
               </p>
-              <button className="button">Enhance Your Reach</button>
+              
+              <Button_comp btn_text="Enhance Your Reach" link="contact" />
             </div>
           </div>
         </div>
@@ -256,7 +259,7 @@ const page = () => {
             data-aos-duration="1000"
           >
             <h4 className="hedding">
-              FAQs for Web & App{" "}
+              FAQs for Web and App{" "}
               <span className="gradient-text">Development Services</span>
             </h4>
             {faqContent.map((item, index) => (

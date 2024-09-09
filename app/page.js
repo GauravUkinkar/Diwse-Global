@@ -13,10 +13,15 @@ import Home_Card_Swiper from "@/component/home/home_card_swiper";
 import Logo_Corousel from "@/component/home/logo_corousel";
 import "swiper/css";
 import { Swiper, SwiperSlide } from "swiper/react";
-import img1 from "../public/assets/home/axonic.jpg";
-import img2 from "../public/assets/home/Travel-and-Taste.jpg";
-import img3 from "../public/assets/home/hcc.jpg";
+import img1 from "../public/assets/home/axonic.webp";
+import img2 from "../public/assets/home/Travel-and-Taste.webp";
+import img3 from "../public/assets/home/hcc.webp";
 import img4 from "../public/assets/home/onkar.webp";
+import img5 from "../public/assets/home/NVM.webp";
+import img6 from "../public/assets/home/Akka-Foundation.webp";
+import img7 from "../public/assets/home/The-Team-Dental.webp";
+import img8 from "../public/assets/home/The-Indian-Journey.webp";
+import img9 from "../public/assets/home/Pandoza.webp";
 import "swiper/swiper-bundle.css";
 import Head from "next/head";
 import { FaSearchengin } from "react-icons/fa";
@@ -35,7 +40,7 @@ export default function Home() {
   const cardData = [
     {
       icon: "assets/icons/navIcon/digital_marketing-1.png",
-      title: "Digital Marketing and SEO",
+      title: "Digital Marketing and Search Engine Optimization (SEO)",
       description:
         "Elevate your online presence. From crafting engaging content and managing your social media, we'll drive global visibility and engagement.",
       buttonText: "Get Started",
@@ -127,6 +132,42 @@ export default function Home() {
       imgage: img4,
       url: "/onkar",
     },
+    {
+      title: "nvm",
+      content:
+        "DIwise partnered with Onkar World to enhance their online presence and drive global trade through effective digital marketing strategies.",
+      imgage: img5,
+      url: "/nvm",
+    },
+    {
+      title: "akka",
+      content:
+        "DIwise partnered with Onkar World to enhance their online presence and drive global trade through effective digital marketing strategies.",
+      imgage: img6,
+      url: "/akka-foundation",
+    },
+    {
+      title: "team dental",
+      content:
+        "DIwise partnered with Onkar World to enhance their online presence and drive global trade through effective digital marketing strategies.",
+      imgage: img7,
+      url: "/theTeamDental",
+    },
+    {
+      title: "the indian journey",
+      content:
+        "DIwise partnered with Onkar World to enhance their online presence and drive global trade through effective digital marketing strategies.",
+      imgage: img8,
+      url: "/theIndianJourney",
+    },
+    {
+      title: "pandoza",
+      content:
+        "DIwise partnered with Onkar World to enhance their online presence and drive global trade through effective digital marketing strategies.",
+      imgage: img9,
+      url: "/pandoza",
+    },
+    
   ];
 
   useEffect(() => {
@@ -196,8 +237,8 @@ export default function Home() {
       <div className="fourth-section parent" data-aos="fade-down">
         <div className="fourth-section-cont cont">
           <h3 className="title">
-            Our Digital Suite of <br />{" "}
-            <span className="gradient-text">Services </span>
+            Our Digital Suite of {" "}
+            <span className="gradient-text"> Services </span>
           </h3>
           <p className="desc">
             Our comprehensive suite of digital services is designed to propel
