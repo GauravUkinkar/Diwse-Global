@@ -32,7 +32,13 @@ import New_home from "@/component/home/new_home";
 import { Toaster } from "react-hot-toast";
 import nimg from "../public/assets/icons/navIcon/Dcoument.png";
 import Link from "next/link";
-
+import indiaBranch from "../public/assets/New_folder/delhi.jpg";
+import uaeBranch from "../public/assets/New_folder/dubai.webp";
+import ukBranch from "../public/assets/New_folder/uk.webp";
+import indiaFlag from "../public/assets/New_folder/flag.jpg";
+import uaelag from "../public/assets/New_folder/uae_flag.webp";
+import ukFlag from "../public/assets/New_folder/uk_flag.webp";
+import CardComp from "@/component/card_comp/CardComp";
 gsap.registerPlugin(ScrollTrigger);
 export default function Home() {
   const [swiperNavigation, setSwiperNavigation] = useState(false);
@@ -184,6 +190,31 @@ export default function Home() {
     };
   }, []);
 
+
+
+  const branchesData = [
+    {
+      branch_img: indiaBranch,
+      flag_img: indiaFlag,
+      countryName: "India",
+      branch_desc:
+        "As the technological powerhouse of our network, our Indian office serves as the nerve centre of our technical prowess. Our brilliant team of tech wizards operates from this bustling hub, crafting cutting-edge solutions that drive our digital success.",
+    },
+    {
+      branch_img: uaeBranch,
+      flag_img: uaelag,
+      countryName: "UAE",
+      branch_desc:
+        "The gleaming heart of our global operations, our UAE head office is the epicentre of innovation and expansion. From this bustling metropolis, we orchestrate brilliant campaigns and execute flawless strategies, harnessing the region's boundless potential.",
+    },
+    {
+      branch_img: ukBranch,
+      flag_img: ukFlag,
+      countryName: "London",
+      branch_desc:
+        "Standing as the bridge between East and West, our London office is a strategic outpost that connects our Asian operations. This global city provides the perfect platform for forging international partnerships and tapping into the European market.",
+    },
+  ];
   return (
     <>
       <Head>
@@ -199,7 +230,7 @@ export default function Home() {
       {/* 1 Section - One side text and one side 3D model */}
       {/* <Home_main /> */}
       <New_home />
-
+      <CardComp branchesData={branchesData}  paddingB="80px" heading={true} />
       {/* 2 Section - Video section */}
       <div className="second-section" ref={videoBoxRef}>
         <div className="video-box" data-aos="fade-up">
@@ -268,7 +299,7 @@ export default function Home() {
         </div>
         <div id="home_casestudy"></div>
       </div>
-
+      
       {/* 5th Section - Swiper section */}
 
       <div className="fifth-section parent">

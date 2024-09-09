@@ -12,6 +12,14 @@ import Home_Card_Swiper from "@/component/home/home_card_swiper";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import Head from "next/head";
+import CardComp from "@/component/card_comp/CardComp";
+
+import indiaBranch from "../../public/assets/New_folder/delhi.jpg";
+import uaeBranch from "../../public/assets/New_folder/dubai.webp";
+import ukBranch from "../../public/assets/New_folder/uk.webp";
+import indiaFlag from "../../public/assets/New_folder/flag.jpg";
+import uaelag from "../../public/assets/New_folder/uae_flag.webp";
+import ukFlag from "../../public/assets/New_folder/uk_flag.webp";
 const page = () => {
   const cardData = [
     {
@@ -105,6 +113,30 @@ const page = () => {
     { count: 10, title: "Awards Won" },
   ];
 
+  const branchesData = [
+    {
+      branch_img: indiaBranch,
+      flag_img: indiaFlag,
+      countryName: "India",
+      branch_desc:
+        "As the technological powerhouse of our network, our Indian office serves as the nerve centre of our technical prowess. Our brilliant team of tech wizards operates from this bustling hub, crafting cutting-edge solutions that drive our digital success.",
+    },
+    {
+      branch_img: uaeBranch,
+      flag_img: uaelag,
+      countryName: "UAE",
+      branch_desc:
+        "The gleaming heart of our global operations, our UAE head office is the epicentre of innovation and expansion. From this bustling metropolis, we orchestrate brilliant campaigns and execute flawless strategies, harnessing the region's boundless potential.",
+    },
+    {
+      branch_img: ukBranch,
+      flag_img: ukFlag,
+      countryName: "London",
+      branch_desc:
+        "Standing as the bridge between East and West, our London office is a strategic outpost that connects our Asian operations. This global city provides the perfect platform for forging international partnerships and tapping into the European market.",
+    },
+  ];
+
   return (
     <>
       <Head>
@@ -154,51 +186,7 @@ const page = () => {
         </div>
       </div>
 
-      <div className="branches-info parent">
-        <div className="branches-cont">
-          <div className="branch1 bg-img-cover branch">
-            <div className="country ">
-              <h3>India</h3>
-            </div>
-            <div className="info">
-              <p>
-                As the technological powerhouse of our network, our Indian
-                office serves as the nerve centre of our technical prowess. Our
-                brilliant team of tech wizards operates from this bustling hub,
-                crafting cutting-edge solutions that drive our digital success.
-              </p>
-            </div>
-          </div>
-          <div className="branch2 bg-img-cover branch">
-            <div className="country">
-              <h3>UAE</h3>
-            </div>
-            <div className="info">
-              <p>
-                The gleaming heart of our global operations, our UAE head office
-                is the epicentre of innovation and expansion. From this bustling
-                metropolis, we orchestrate brilliant campaigns and execute
-                flawless strategies, harnessing the region's boundless
-                potential.
-              </p>
-            </div>
-          </div>
-          <div className="branch3 bg-img-cover branch">
-            <div className="country">
-              <h3>London</h3>
-            </div>
-            <div className="info">
-              <p>
-                Standing as the bridge between East and West, our London office
-                is a strategic outpost that connects our Asian operations. This
-                global city provides the perfect platform for forging
-                international partnerships and tapping into the European market.
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-
+      <CardComp branchesData={branchesData}  paddingB="80px" heading={true} />
       <div className="about-section-two-parent parent">
         <div className="about-section-two-cont cont">
           <div
@@ -327,7 +315,7 @@ const page = () => {
                 target="_blank"
                 className="name1"
               >
-               Prashant Patil
+                Prashant Patil
               </a>
               <h5 className="desgination">Director</h5>
               <p className="founder-about">
