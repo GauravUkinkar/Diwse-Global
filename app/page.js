@@ -338,7 +338,7 @@ export default function Home() {
           {caseStudies.map((item, index) => (
             <SwiperSlide className="bg-img-cover " key={index}>
               <div
-                className="image scroll"
+                className="image "
                 style={{ background: `url(${item.imgage.src})` }}
               >
                 <div className="overlay">
