@@ -1,0 +1,120 @@
+.branches {
+  width: 100%;
+  height: auto;
+
+  .branches-cont {
+    height: 100%;
+    display: grid;
+grid-template-columns: repeat(3,1fr);
+    .branch {
+      height: 100%;
+      overflow: hidden;
+      background: linear-gradient(rgba(0, 0, 0, 0.733), rgba(0, 0, 0, 0.733)),
+        url("../../public/assets/New_folder/delhi.jpg");
+
+      padding: calc(var(--unit) * 3) calc(var(--unit) * 2);
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: center;
+      gap: calc(var(--unit));
+    
+
+      &.branch2 {
+        background: linear-gradient(rgba(0, 0, 0, 0.733), rgba(0, 0, 0, 0.733)),
+          url("../../public/assets/New_folder/dubai.webp");
+
+        .country {
+         
+          .flag {
+            background-image: url("../../public/assets/New_folder/uae\ flag\ \(1\).webp");
+            background-position: left center;
+            background-size: cover;
+          }
+          p{
+            font-weight: 700;
+            font-size: 16px;
+          }
+        }
+      }
+      &.branch3 {
+        background: linear-gradient(rgba(0, 0, 0, 0.733), rgba(0, 0, 0, 0.733)),
+          url("../../public/assets/New_folder/uk.webp");
+
+        .country {
+          .flag {
+            background-image: url("../../public/assets/New_folder/uk\ flag.webp");
+            //  background-position: left center;
+            //  background-size: cover;
+          }
+          p{
+            font-weight: 700;
+            font-size: 16px;
+          }
+        }
+      }
+      .country {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: calc(var(--unit) / 2);
+        .flag {
+          height: 30px;
+          aspect-ratio: 1;
+          // background-color: red;
+          background-image: url("../../public/assets/New_folder/flag.jpg");
+          border-radius: 50%;
+        }
+        p{
+          font-weight: 700;
+          font-size: 16px;
+        }
+      }
+
+      .number {
+        font-size: 16px;
+        height: 20%;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: calc(var(--unit) / 2);
+
+        span {
+          font-size: 18px;
+          color: var(--white);
+          line-height: 120%;
+        }
+
+        .icon {
+          svg {
+            font-size: 25px;
+          }
+        }
+      }
+
+      .address {
+        font-size: 16px;
+        height: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        gap: calc(var(--unit) / 5);
+
+        span {
+          font-size: 18px;
+          color: var(--white);
+          line-height: 140%;
+          text-align: center;
+        }
+
+        .icon {
+          svg {
+            font-size: 25px;
+          }
+        }
+      }
+    }
+  }
+}

@@ -123,7 +123,9 @@ const page = () => {
               About <span className="gradient-text"> DIwise</span>
             </h3>
             <p className="about-para">
-            A Global Network of Digital Experts, From India to London, UAE, and Beyond
+              Our digital marketing empire is anchored by three strategic
+              strongholds: the glittering metropolis of Dubai, the tech-savvy
+              hub of India, and the cosmopolitan crossroads of London.
             </p>
           </div>
         </div>
@@ -143,11 +145,56 @@ const page = () => {
               data-aos="fade-up"
               data-aos-delay="300"
             ></div>
-            <div
+            {/* <div
               className="image image4 rect bg-img-cover"
               data-aos="fade-up"
               data-aos-delay="400"
-            ></div>
+            ></div> */}
+          </div>
+        </div>
+      </div>
+
+      <div className="branches-info parent">
+        <div className="branches-cont">
+          <div className="branch1 bg-img-cover branch">
+            <div className="country ">
+              <h3>India</h3>
+            </div>
+            <div className="info">
+              <p>
+                As the technological powerhouse of our network, our Indian
+                office serves as the nerve centre of our technical prowess. Our
+                brilliant team of tech wizards operates from this bustling hub,
+                crafting cutting-edge solutions that drive our digital success.
+              </p>
+            </div>
+          </div>
+          <div className="branch2 bg-img-cover branch">
+            <div className="country">
+              <h3>UAE</h3>
+            </div>
+            <div className="info">
+              <p>
+                The gleaming heart of our global operations, our UAE head office
+                is the epicentre of innovation and expansion. From this bustling
+                metropolis, we orchestrate brilliant campaigns and execute
+                flawless strategies, harnessing the region's boundless
+                potential.
+              </p>
+            </div>
+          </div>
+          <div className="branch3 bg-img-cover branch">
+            <div className="country">
+              <h3>London</h3>
+            </div>
+            <div className="info">
+              <p>
+                Standing as the bridge between East and West, our London office
+                is a strategic outpost that connects our Asian operations. This
+                global city provides the perfect platform for forging
+                international partnerships and tapping into the European market.
+              </p>
+            </div>
           </div>
         </div>
       </div>
