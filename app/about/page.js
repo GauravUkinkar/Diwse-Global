@@ -274,10 +274,10 @@ const page = () => {
           data-aos-delay="200"
         >
           <h3 data-aos-delay="400">
-            Meet Our <span className="gradient-text">Founder</span>
+            Meet Our <span className="gradient-text">Team</span>
           </h3>
 
-          <div className="founder">
+          <div className="founder ">
             <div className="image" data-aos-delay="600"></div>
 
             <div className="content" data-aos-delay="800">
@@ -303,6 +303,120 @@ const page = () => {
                 our team towards exceptional results. Her commitment to
                 understanding client needs and building long-term partnerships
                 ensures sustainable growth and success.
+              </p>
+              <div className="social-media">
+                <a
+                  href="https://www.linkedin.com/in/prajakta-marwaha-507b6410a/"
+                  target="_blank"
+                  className="icon"
+                >
+                  <span>
+                    <RiLinkedinFill />
+                  </span>
+                  Let's Connect
+                </a>
+              </div>
+            </div>
+          </div>
+          <div className="founder flex-row-reverse">
+            <div className="image" data-aos-delay="600"></div>
+
+            <div className="content" data-aos-delay="800">
+              <a
+                href="https://prajaktamarwaha.com/"
+                target="_blank"
+                className="name1"
+              >
+               Prashant Patil
+              </a>
+              <h5 className="desgination">Director</h5>
+              <p className="founder-about">
+                {/* <i>
+                  <b className="gradient-text" style={{ fontWeight: "700" }}>
+                    " Best marketing strategy ever – CARE - Gary V "
+                  </b>
+                </i>
+                <br />
+                <br /> */}
+                With a rich background in banking and Fintech, Prashant brings a
+                wealth of expertise in product development and business
+                transformation. His strategic vision guides DIwise towards
+                continued success.
+              </p>
+              <div className="social-media">
+                <a
+                  href="https://www.linkedin.com/in/prajakta-marwaha-507b6410a/"
+                  target="_blank"
+                  className="icon"
+                >
+                  <span>
+                    <RiLinkedinFill />
+                  </span>
+                  Let's Connect
+                </a>
+              </div>
+            </div>
+          </div>
+          <div className="founder">
+            <div className="image" data-aos-delay="600"></div>
+
+            <div className="content" data-aos-delay="800">
+              <a
+                href="https://prajaktamarwaha.com/"
+                target="_blank"
+                className="name1"
+              >
+                Gaurav Ukinkar
+              </a>
+              <h5 className="desgination">Director </h5>
+              <p className="founder-about">
+                {/* <i>
+                  <b className="gradient-text" style={{ fontWeight: "700" }}>
+                    " Best marketing strategy ever – CARE - Gary V "
+                  </b>
+                </i>
+                <br />
+                <br /> */}
+                Passionate and dedicated, Gaurav's calm demeanour belies his
+                sharp intellect and drive for results. His unwavering commitment
+                inspires the DIwise team to achieve excellence.
+              </p>
+              <div className="social-media">
+                <a
+                  href="https://www.linkedin.com/in/prajakta-marwaha-507b6410a/"
+                  target="_blank"
+                  className="icon"
+                >
+                  <span>
+                    <RiLinkedinFill />
+                  </span>
+                  Let's Connect
+                </a>
+              </div>
+            </div>
+          </div>
+          <div className="founder flex-row-reverse">
+            <div className="image omar-image" data-aos-delay="600"></div>
+
+            <div className="content" data-aos-delay="800">
+              <a
+                href="https://prajaktamarwaha.com/"
+                target="_blank"
+                className="name1"
+              >
+                Omar Mughal
+              </a>
+              <h5 className="desgination"> Company Secretary </h5>
+              <p className="founder-about">
+                {/* <i>
+                  <b className="gradient-text" style={{ fontWeight: "700" }}>
+                    " Best marketing strategy ever – CARE - Gary V "
+                  </b>
+                </i> */}
+                Known for his meticulous attention to detail, Omar ensures that
+                DIwise adheres to the highest governance standards. His
+                expertise is invaluable in supporting the company's global
+                growth.
               </p>
               <div className="social-media">
                 <a
