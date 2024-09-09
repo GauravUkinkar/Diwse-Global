@@ -125,6 +125,7 @@ const page = () => {
       branch_img: uaeBranch,
       flag_img: uaelag,
       countryName: "UAE",
+      flagePosition:"left center",
       branch_desc:
         "The gleaming heart of our global operations, our UAE head office is the epicentre of innovation and expansion. From this bustling metropolis, we orchestrate brilliant campaigns and execute flawless strategies, harnessing the region's boundless potential.",
     },
