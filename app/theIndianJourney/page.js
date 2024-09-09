@@ -23,8 +23,7 @@ const page = () => {
   }, []);
 
   const listItem = [
-    "Custom strategies tailored to your unique goals.",
-    "Experience with global reach across multiple markets.",
+    "Custom strategies tailored to your unique goals.",    "Experience with global reach across multiple markets.",
     "Proven success with a track record of measurable outcomes.",
     "Innovative approaches and cutting-edge digital solutions.",
     "Client focus is key, as your success is our top priority.",
@@ -60,19 +59,14 @@ const page = () => {
             <span className="gradient-text">
               <a href="https://www.healthcareconcierge.net/" target="_blank">
                 {" "}
-                Healthcare Concierge{" "}
+                Digitally Experiencing{" "}
               </a>
             </span>{" "}
-            Shakes hand to medical tourism digitally
+             the Best of India with The Indian Journey
           </h3>
           <p className="case-para" data-aos="fade-up" data-aos-delay="200">
-            DIwise played a pivotal role in transforming Healthcare Concierge's
-            services into a digital-first experience. By leveraging cutting-edge
-            technology, we streamlined their operations, enhanced patient
-            engagement, and facilitated seamless medical tourism experiences for
-            patients worldwide. Our solutions helped Healthcare Concierge
-            provide exceptional care and convenience to patients seeking medical
-            treatments abroad.
+          Understanding that travel is about the journey, not just the destination, DIwise helped The Indian Journey reach a wider audience through strategic digital marketing. As their all-around digital partner, we provided comprehensive expertise to enhance their online presence.
+
           </p>
           <div data-aos="fade-up" data-aos-delay="400">
             <Button_comp link="/contact" btn_text="Get Started" />
@@ -93,25 +87,22 @@ const page = () => {
         <div className="case-study-third-cont cont">
           <div className="top">
             <h4 className="heading" data-aos="fade-up" data-aos-delay="200">
-              Proven Results with <span className="gradient-text">DIwise</span>
+            Proven Results With <span className="gradient-text">DIwise</span>
             </h4>
           </div>
 
           <div className="middle">
             <div className="left" data-aos="fade-up" data-aos-delay="300">
               <p className="middlepara">
-                Our commitment to excellence has enabled us to deliver
-                exceptional results for Healthcare Concierge, solidifying our
-                reputation as a trusted partner in the digital healthcare
-                industry. Our dedication to excellence has solidified our
-                reputation as a trusted partner in the travel industry.
+              Through our tailored marketing services, we successfully built the brand and attracted a larger audience. We generated leads for travellers while simultaneously promoting India as a desirable destination. Our expertise has delivered exceptional results that exceed expectations.
+
               </p>
             </div>
             <div className="btnlist" data-aos="fade-up" data-aos-delay="400">
               <div className="case-btn">Digital Marketing and SEO</div>
               <div className="case-btn">Web Development</div>
-              <div className="case-btn">Lead Generation Campaigns</div>
               <div className="case-btn">Branding and Creative Services</div>
+              <div className="case-btn">Public Relations Outreach</div>
             </div>
           </div>
 
@@ -133,16 +124,13 @@ const page = () => {
               Why <span className="gradient-text">Clients Trust DIwise</span>
             </h3>
             <p className="fifth-section-para">
-              At DIwise, we believe in building strong partnerships based on
-              mutual understanding and trust. By deeply understanding our
-              clients' unique goals, stories, and perspectives, we develop
-              customised strategies that deliver exceptional results.
+            At DIwise, we believe in building strong partnerships based on mutual understanding and trust. By deeply understanding our clients' unique goals, stories, and perspectives, we develop customised strategies that deliver exceptional results.
+
             </p>
 
             <div className="list-item">
               <p>
-                Here are a few other things that might make us popular among our
-                clients:
+              Here are a few other things that might make us popular among our clients:
               </p>
               {listItem.map((item, index) => (
                 <p

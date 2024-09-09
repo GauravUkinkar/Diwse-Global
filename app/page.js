@@ -133,9 +133,9 @@ export default function Home() {
       url: "/onkar",
     },
     {
-      title: "nvm",
+      title: "Building Brand and Growing Capital with NVM Capital",
       content:
-        "DIwise partnered with Onkar World to enhance their online presence and drive global trade through effective digital marketing strategies.",
+        "DIwise powered NVM Capital's digital transformation, enabling them to deliver exceptional services to their customers and establish a strong online presence.",
       imgage: img5,
       url: "/nvm",
     },
@@ -154,9 +154,9 @@ export default function Home() {
       url: "/theTeamDental",
     },
     {
-      title: "the indian journey",
+      title: "Digitally Experiencing the Best of India with The Indian Journey ",
       content:
-        "DIwise partnered with Onkar World to enhance their online presence and drive global trade through effective digital marketing strategies.",
+        "DIwise has brought The Indian Journey to the forefront of digital experiences, offering innovative solutions that create unforgettable memories.",
       imgage: img8,
       url: "/theIndianJourney",
     },

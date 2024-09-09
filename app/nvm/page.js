@@ -60,19 +60,14 @@ const page = () => {
             <span className="gradient-text">
               <a href="https://www.healthcareconcierge.net/" target="_blank">
                 {" "}
-                Healthcare Concierge{" "}
+                Building Brand{" "}
               </a>
             </span>{" "}
-            Shakes hand to medical tourism digitally
+             and Growing Capital with NVM Capital
           </h3>
           <p className="case-para" data-aos="fade-up" data-aos-delay="200">
-            DIwise played a pivotal role in transforming Healthcare Concierge's
-            services into a digital-first experience. By leveraging cutting-edge
-            technology, we streamlined their operations, enhanced patient
-            engagement, and facilitated seamless medical tourism experiences for
-            patients worldwide. Our solutions helped Healthcare Concierge
-            provide exceptional care and convenience to patients seeking medical
-            treatments abroad.
+          As NVM Capital's trusted digital partner, DIwise provided comprehensive expertise to enhance their online visibility and reach. Our tailored marketing strategies helped them connect with a wider audience and showcase their unique offerings.
+
           </p>
           <div data-aos="fade-up" data-aos-delay="400">
             <Button_comp link="/contact" btn_text="Get Started" />
@@ -93,25 +88,23 @@ const page = () => {
         <div className="case-study-third-cont cont">
           <div className="top">
             <h4 className="heading" data-aos="fade-up" data-aos-delay="200">
-              Proven Results with <span className="gradient-text">DIwise</span>
+            Proven <span className="gradient-text">Results</span>
             </h4>
           </div>
 
           <div className="middle">
             <div className="left" data-aos="fade-up" data-aos-delay="300">
               <p className="middlepara">
-                Our commitment to excellence has enabled us to deliver
-                exceptional results for Healthcare Concierge, solidifying our
-                reputation as a trusted partner in the digital healthcare
-                industry. Our dedication to excellence has solidified our
-                reputation as a trusted partner in the travel industry.
+              Through our effective digital marketing services, we successfully built NVM Capital's brand and attracted a larger customer base. We generated valuable leads and positioned them as a leading provider in their industry.
+
               </p>
             </div>
             <div className="btnlist" data-aos="fade-up" data-aos-delay="400">
-              <div className="case-btn">Digital Marketing and SEO</div>
-              <div className="case-btn">Web Development</div>
-              <div className="case-btn">Lead Generation Campaigns</div>
+              <div className="case-btn">Digital Marketing and SEO
+              </div>
+              <div className="case-btn">Social Media Ad Campaigns </div>
               <div className="case-btn">Branding and Creative Services</div>
+              <div className="case-btn">Public Relations Outreach</div>
             </div>
           </div>
 
@@ -133,16 +126,13 @@ const page = () => {
               Why <span className="gradient-text">Clients Trust DIwise</span>
             </h3>
             <p className="fifth-section-para">
-              At DIwise, we believe in building strong partnerships based on
-              mutual understanding and trust. By deeply understanding our
-              clients' unique goals, stories, and perspectives, we develop
-              customised strategies that deliver exceptional results.
+            At DIwise, we believe in building strong partnerships based on mutual understanding and trust. By deeply understanding our clients' unique goals, stories, and perspectives, we develop customised strategies that deliver exceptional results.
             </p>
 
             <div className="list-item">
               <p>
-                Here are a few other things that might make us popular among our
-                clients:
+              Here are a few other things that might make us popular among our clients:
+
               </p>
               {listItem.map((item, index) => (
                 <p
