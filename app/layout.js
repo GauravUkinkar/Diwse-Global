@@ -5,6 +5,7 @@ import img2 from "../public/assets/bg-red.png";
 import Cursor from "@/component/cursor/Cursor";
 import New_footer from "@/component/footer/New_footer";
 import Script from 'next/script';
+import Tools from "@/component/contactsidebar/Tools";
 
 export const metadata = {
   title: "Diwise Global | Expert Brand Building & Digital Marketing Solutions",
@@ -49,12 +50,14 @@ export default function RootLayout({ children }) {
         <div className="transition t2"></div>
         <div className="transition t3"></div>
         <div className="transition t4"></div>
-
+         
         <Cursor />
         {/* <div className="left-side-image side-image" style={styling}></div>
         <div className="right-side-image side-image" style={styling1}></div> */}
         <div className="content">
+        <Tools/>
           <Header_main />
+       
           {children}
           <New_footer />
         </div>
