@@ -27,7 +27,7 @@ const Card_comp = (props) => {
               <span className="icon">
                 <GrLocation />
               </span>
-              <span>
+              <span  className='address-text'>
                 Office no. 214-216, 10 Biz Park,Near Symbiosis Law College,
                 Airport Road,Vimannagar, Pune- 411014
               </span>
@@ -35,7 +35,7 @@ const Card_comp = (props) => {
           </div>
           <div className="branch2 bg-img-cover branch"   >
             <div className="country">
-              <div className="flag "   ></div>
+              <div className="flag "></div>
               <p>UAE</p>
             </div>
 
@@ -53,7 +53,7 @@ const Card_comp = (props) => {
               <span className="icon">
                 <GrLocation />
               </span>
-              <span>
+              <span className='address-text'>
                 Office no. 1304 | Building no. LB19 | JAZFA View 18-19, Jebel
                 Ali Free Zone, PO Box 262746 Downtown Jabel Ali - Dubai - United
                 Arab Emirates
@@ -80,7 +80,7 @@ const Card_comp = (props) => {
               <span className="icon">
                 <GrLocation />
               </span>
-              <span>
+              <span className='address-text'>
                 Docklands Business Centre, Suite 12/3D 10-16 Tiller Road,
                 London, England E14 8PX
               </span>
