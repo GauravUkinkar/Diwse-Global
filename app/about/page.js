@@ -280,7 +280,7 @@ const page = () => {
               <p className="founder-about">
                 <i>
                   <b className="gradient-text" style={{ fontWeight: "700" }}>
-                    " Best marketing strategy ever – CARE - Gary V "
+                  "Best marketing strategy ever, CARE." - Gary V
                   </b>
                 </i>
                 <br />
