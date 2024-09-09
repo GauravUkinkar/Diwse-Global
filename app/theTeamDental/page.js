@@ -7,7 +7,7 @@ import { LuDot } from "react-icons/lu";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import About_card_swiper from "@/component/about/About_card_swiper";
-import hccs from "../../public/assets/img/hcc.png";
+import hccs from "../../public/assets/img/hcc.webp";
 import hcc_about from "../../public/assets/img/hcc_about.webp";
 import hcc_fb from "../../public/assets/img/hcc_fb.webp";
 import hcc_insta from "../../public/assets/img/hcc_insta.webp";
@@ -108,7 +108,7 @@ const page = () => {
               </p>
             </div>
             <div className="btnlist" data-aos="fade-up" data-aos-delay="400">
-              <div className="case-btn">Digital Marketing and SEO</div>
+              <div className="case-btn">Digital Marketing andSearch Engine Optimization (SEO)</div>
               <div className="case-btn">Web Development</div>
               <div className="case-btn">Lead Generation Campaigns</div>
               <div className="case-btn">Branding and Creative Services</div>

@@ -10,29 +10,29 @@ import "swiper/css/navigation"; // Import navigation styles
 // import required modules
 import { EffectCoverflow, Navigation } from "swiper/modules";
 import Image from "next/image";
-import img1 from "../../public/assets/img/abhay.png";
-import img2 from "../../public/assets/img/akka.png";
-import img3 from "../../public/assets/img/prajakta.png";
-import img4 from "../../public/assets/img/travel.png";
-import img5 from "../../public/assets/img/gastro.png";
+import img1 from "../../public/assets/img/abhay.webp";
+import img2 from "../../public/assets/img/akka.webp";
+import img3 from "../../public/assets/img/prajakta.webp";
+import img4 from "../../public/assets/img/travel.webp";
+import img5 from "../../public/assets/img/gastro.webp";
 // import img6 from '../../public/assets/img/Axonic.png';
-import img7 from "../../public/assets/img/apn.png";
-import img8 from "../../public/assets/img/deeva.png";
-import img9 from "../../public/assets/img/dental.png";
-import img10 from "../../public/assets/img/onkar.png";
-import img11 from "../../public/assets/img/spn.png";
-import img12 from "../../public/assets/img/Sai-digitek.png";
-import img13 from "../../public/assets/img/Tij.png";
-import img14 from "../../public/assets/img/prashant.png";
-import img15 from "../../public/assets/img/pandoza.png";
-import img16 from "../../public/assets/img/medical.png";
-import img17 from "../../public/assets/img/diwise.png";
-import img18 from "../../public/assets/img/swami.png";
-import img19 from "../../public/assets/img/nvm.png";
-import img20 from "../../public/assets/img/narmada.png";
-import img21 from "../../public/assets/img/vdmf.png";
-import img22 from "../../public/assets/img/align.png";
-import img23 from "../../public/assets/img/hcc.png";
+import img7 from "../../public/assets/img/apn.webp";
+import img8 from "../../public/assets/img/deeva.webp";
+import img9 from "../../public/assets/img/dental.webp";
+import img10 from "../../public/assets/img/onkar.webp";
+import img11 from "../../public/assets/img/spn.webp";
+import img12 from "../../public/assets/img/Sai-digitek.webp";
+import img13 from "../../public/assets/img/Tij.webp";
+import img14 from "../../public/assets/img/prashant.webp";
+import img15 from "../../public/assets/img/pandoza.webp";
+import img16 from "../../public/assets/img/medical.webp";
+import img17 from "../../public/assets/img/diwise.webp";
+import img18 from "../../public/assets/img/swami.webp";
+import img19 from "../../public/assets/img/nvm.webp";
+import img20 from "../../public/assets/img/narmada.webp";
+import img21 from "../../public/assets/img/vdmf.webp";
+import img22 from "../../public/assets/img/align.webp";
+import img23 from "../../public/assets/img/hcc.webp";
 
 const About_card_swiper = (props) => {
   return (

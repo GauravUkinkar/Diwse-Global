@@ -5,15 +5,22 @@
   background-position: center top;
   background-size: cover;
   background-repeat: no-repeat;
-
+  display: flex;
+  justify-content: center;
+  align-items: center;
   .service-hero-cont {
-    height: 100%;
-    padding: 150px 10px 100px 10px;
+    height: auto;
+    // padding: 150px 10px 100px 10px;
     display: flex;
     justify-content: center;
+    padding-right: 0px;
     align-items: center;
     gap: var(--unit);
     // padding: calc(var(--unit) * 5) 10px;
+    overflow: hidden;
+    background-color: rgba(70, 70, 70, 0.39);
+    border-radius: 12px;
+    border: 1px solid rgba(209, 213, 219, 0.3);
 
     .left {
       width: 50%;
@@ -60,22 +67,27 @@
           padding: calc(var(--unit) / 2) var(--unit);
           color: var(--white);
           border-radius: 100px !important;
-          background-color: var(--black);
+          // background-color: var(--black);
+          // background-color: var(--accent1);
+          background-image: linear-gradient(
+            to right,
+            var(--accent2),
+            var(--accent1)
+          );
         }
       }
     }
 
     .right {
-      width: fit-content;
+      width: 50%;
       height: 80%;
       background-size: cover;
       background-repeat: no-repeat;
       background-position: top center;
-      border-radius: calc(var(--unit) / 2);
+      // border-radius:0px calc(var(--unit) / 2) calc(var(--unit) / 2) 0px;
       // border: 1px solid red;
       overflow: hidden !important;
-      video 
-      {
+      video {
         height: 100%;
       }
       &.digitalmarketing {
@@ -258,7 +270,7 @@
           width: 90%;
           height: 90%;
           // background-color: yellow;
-          background-image: url("../../public/assets/digital_marketing/2nd.jpg");
+          background-image: url("../../public/assets/digital_marketing/2nd.webp");
           border-radius: var(--unit);
 
           // webdevelopment
@@ -282,7 +294,7 @@
         .front-image {
           width: 50%;
           height: 60%;
-          background: url("../../public/assets/digital_marketing/small_front.jpg");
+          background: url("../../public/assets/digital_marketing/small_front.webp");
           // background-image: url("../../public/assets/digital_marketing/small_front.jpg");
           border-radius: var(--unit);
           position: absolute;
@@ -498,7 +510,7 @@
       width: 50%;
       height: auto;
       // background-color: var(--white);
-      background-image: url("../../public/assets/digital_marketing/5th.jpg");
+      background-image: url("../../public/assets/digital_marketing/5th.webp");
       border-radius: calc(var(--unit) / 2);
 
       // .image {
@@ -785,4 +797,15 @@
   .service-detail-parent .service-detail-cont .middle .right .content .right p {
     text-align: left !important;
   }
+
+  .submit-btn{
+    padding: 10px !important;
+  }
+}
+
+
+@media only screen and (max-width: 420px){
+.submit-btn{
+  font-size: 14px;
+}
 }
