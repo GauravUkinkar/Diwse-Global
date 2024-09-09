@@ -1,75 +1,77 @@
 .tool-parent {
-    width: fit-content;
-    height: fit-content;
+  // width: 100%;
+  // height: fit-content;
+  // z-index: 999;
+  // position: fixed;
+  // right: 0;
+  // top: 50%;
+  // display: flex;
+  // flex-direction: column;
+  // gap: 5px;
+
+  .manage-icons {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 5px calc(var(--unit) / 2);
+    gap: calc(var(--unit) / 3);
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    position: relative;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    width: fit-content !important;
     z-index: 999;
     position: fixed;
     right: 0;
-    top: 50%;
-    display: flex;
-    flex-direction: column;
-    gap: 5px;
-  
-    .manage-icons {
-      display: flex;
-      align-items: center;
-      justify-content: flex-start;
-      padding: 5px calc(var(--unit) / 2);
-      gap: calc(var(--unit) / 3);
-      border-top-left-radius: 5px;
-      border-bottom-left-radius: 5px;
-      position: relative;
-      cursor: pointer;
-      transition: all 0.3s ease-in-out;
-  
-      // Initialize span as hidden
-      span {
-        width: fit-content;
-        overflow: hidden;
-        white-space: nowrap;
-        max-width: 0; // Hide span initially
-        opacity: 0;   // Hide span initially
-        transition: max-width 0.3s ease-in-out, opacity 0.3s ease-in-out;
-        font-weight: 400;
-        font-size: 16px;
-      }
-  
-      // Only expand the span of the hovered element
-      &:hover span {
-        max-width: 100px; // Expand width on hover
-        opacity: 1;       // Show text on hover
-      }
-    }
-  
-    .side-whatsapp {
-      background: #30d14e;
-  
-      .whatsapp-icon {
-        color: white;
-        font-size: var(--unit);
-      }
    
+    // Initialize span as hidden
+    span {
+      width: fit-content;
+      overflow: hidden;
+      white-space: nowrap;
+      max-width: 0; // Hide span initially
+      opacity: 0; // Hide span initially
+      transition: max-width 0.3s ease-in-out, opacity 0.3s ease-in-out;
+      font-weight: 400;
+      font-size: 16px;
     }
-  
-    .side-mail {
-      
-      background: #ff5a5a;
-      .mail-icon {
-        color: white;
-        font-size: var(--unit);
-      }
-      &:hover .mail-span {
-        // max-width: 100px; // Expand width on hover
-        opacity: 1;       // Show text on hover
-      }
-    }
-  
-    .side-phone {
-   background: #0073e6;
-  
-      .phone-icon {
-        color: white;
-        font-size: var(--unit);
-      }
+
+    // Only expand the span of the hovered element
+    &:hover span {
+      max-width: 100px; // Expand width on hover
+      opacity: 1; // Show text on hover
     }
   }
-  
+
+  .side-whatsapp {
+    background: #30d14e;
+    top: 50%;
+    .whatsapp-icon {
+      color: white;
+      font-size: var(--unit);
+    }
+  }
+
+  .side-mail {
+    background: #ff5a5a;
+    top: 54%;
+    .mail-icon {
+      color: white;
+      font-size: var(--unit);
+    }
+    &:hover .mail-span {
+      // max-width: 100px; // Expand width on hover
+      opacity: 1; // Show text on hover
+    }
+  }
+
+  .side-phone {
+    background: #0073e6;
+    top: 58%;
+    .phone-icon {
+      color: white;
+      font-size: var(--unit);
+    }
+  }
+}
