@@ -146,7 +146,7 @@ export default function Home() {
       url: "/nvm",
     },
     {
-      title: "akka",
+      title: "Lending a Helping Hand to the Akka Foundation Digitally ",
       content:
         "DIwise serves as the digital partner to the Akka Foundation, a non-profit organisation dedicated to empowering the underprivileged.",
       imgage: img6,

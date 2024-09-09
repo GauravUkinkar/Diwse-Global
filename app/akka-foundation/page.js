@@ -7,12 +7,12 @@ import { LuDot } from "react-icons/lu";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import About_card_swiper from "@/component/about/About_card_swiper";
-import hccs from "../../public/assets/img/hcc.webp";
-import hcc_about from "../../public/assets/img/hcc_about.webp";
-import hcc_fb from "../../public/assets/img/hcc_fb.webp";
-import hcc_insta from "../../public/assets/img/hcc_insta.webp";
-import hcc_link from "../../public/assets/img/hcc_link.webp";
-import hccp from "../../public/assets/img/hcc-p.webp"
+import akka1 from "../../public/assets/casestudy/akka/akka1.webp";
+import akka2 from "../../public/assets/casestudy/akka/akka2.webp";
+import akka3 from "../../public/assets/casestudy/akka/akka3.webp";
+import akka4 from "../../public/assets/casestudy/akka/akka4.webp";
+import akka5 from"../../public/assets/casestudy/akka/akka5.webp";
+import akka6 from "../../public/assets/casestudy/akka/akka6.webp";
 
 const page = () => {
   const caseStudy = useRef();
@@ -33,22 +33,22 @@ const page = () => {
 
   const hccImages = [
     {
-      image: hccs,
+      image: akka1,
     },
     {
-      image: hcc_about,
+      image: akka2,
     },
     {
-      image: hcc_fb,
+      image: akka3,
     },
     {
-      image: hcc_insta,
+      image: akka4,
     },
     {
-      image: hcc_link,
+      image: akka5,
     },
     {
-      image: hccp,
+      image: akka6,
     },
   ];
 
