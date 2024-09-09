@@ -13,7 +13,7 @@
     display: flex;
     align-items: center;
     justify-content: flex-start;
-    padding: 5px calc(var(--unit) / 2);
+    padding:10px calc(var(--unit) / 1.5);
     gap: calc(var(--unit) / 3);
     border-top-left-radius: 5px;
     border-bottom-left-radius: 5px;
@@ -24,7 +24,7 @@
     z-index: 999;
     position: fixed;
     right: 0;
-   
+ 
     // Initialize span as hidden
     span {
       width: fit-content;
@@ -39,26 +39,30 @@
 
     // Only expand the span of the hovered element
     &:hover span {
-      max-width: 100px; // Expand width on hover
+      max-width: 120px; // Expand width on hover
       opacity: 1; // Show text on hover
     }
   }
 
   .side-whatsapp {
     background: #30d14e;
-    top: 50%;
+    top: 60%;
+ 
     .whatsapp-icon {
       color: white;
-      font-size: var(--unit);
+ 
+      font-size: 24px;
     }
   }
 
   .side-mail {
     background: #ff5a5a;
-    top: 54%;
+    top: 66%;
+   
     .mail-icon {
       color: white;
-      font-size: var(--unit);
+ 
+      font-size: 24px;
     }
     &:hover .mail-span {
       // max-width: 100px; // Expand width on hover
@@ -68,10 +72,18 @@
 
   .side-phone {
     background: #0073e6;
-    top: 58%;
+    top: 72%;
+ 
     .phone-icon {
       color: white;
-      font-size: var(--unit);
+      font-size: 24px;
     }
   }
+}
+
+
+.my-tooltip 
+{
+    background: green !important;
+    z-index: 99999;
 }
