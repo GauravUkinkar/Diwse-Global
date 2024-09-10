@@ -190,11 +190,13 @@ export default function Home() {
     };
   }, []);
 
-  const branchesData = [
+  const [branchesData, setBranchesData] = useState([
     {
       branch_img: indiaBranch,
       flag_img: indiaFlag,
       countryName: "India",
+      mouseLeave: true,
+      togglePattern:true,
       branch_desc:
         "As the technological powerhouse of our network, our Indian office serves as the nerve centre of our technical prowess. Our brilliant team of tech wizards operates from this bustling hub, crafting cutting-edge solutions that drive our digital success.",
     },
@@ -202,7 +204,9 @@ export default function Home() {
       branch_img: uaeBranch,
       flag_img: uaelag,
       countryName: "UAE",
-      flagePosition:"left center",
+      flagePosition: "left center",
+      mouseLeave: true,
+      togglePattern:true,
       branch_desc:
         "The gleaming heart of our global operations, our UAE head office is the epicentre of innovation and expansion. From this bustling metropolis, we orchestrate brilliant campaigns and execute flawless strategies, harnessing the region's boundless potential.",
     },
@@ -210,10 +214,62 @@ export default function Home() {
       branch_img: ukBranch,
       flag_img: ukFlag,
       countryName: "London",
+      mouseLeave: true,
+      togglePattern:true,
       branch_desc:
         "Standing as the bridge between East and West, our London office is a strategic outpost that connects our Asian operations. This global city provides the perfect platform for forging international partnerships and tapping into the European market.",
     },
-  ];
+  ]);
+
+
+
+
+
+  const handleMouseLeave = (index) => {
+    const updatedBranches = branchesData.map((item, i) => {
+      if (i === index) {
+    
+        item.mouseLeave = true;
+        
+    
+        setTimeout(() => {
+          setBranchesData(prevBranches => 
+            prevBranches.map((item, idx) =>
+              idx === index ? { ...item, togglePattern: true } : item
+            )
+          );
+        }, 600);
+      }
+      return item;
+    });
+    
+
+    setBranchesData(updatedBranches);
+  };
+
+
+  const handleMouseEnter = (index) => {
+    const updatedBranches = branchesData.map((item, i) => {
+      if (i === index) {
+    
+        item.mouseLeave = false;
+        
+    
+        setTimeout(() => {
+          setBranchesData(prevBranches => 
+            prevBranches.map((item, idx) =>
+              idx === index ? { ...item, togglePattern: false } : item
+            )
+          );
+        }, 600);
+      }
+      return item;
+    });
+    
+    setBranchesData(updatedBranches);
+  };
+  
+
   return (
     <>
       <Head>
@@ -235,6 +291,9 @@ export default function Home() {
         Main_heading=" is anchored by three strategic strongholds"
         paddingB="80px"
         heading={true}
+        class="hoverClass"
+        onMouseEnter={handleMouseEnter} // Pass these functions as props
+        onMouseLeave={handleMouseLeave}
       />
       {/* 2 Section - Video section */}
       <div className="second-section" ref={videoBoxRef}>

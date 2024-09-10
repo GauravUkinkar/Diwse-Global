@@ -49,7 +49,7 @@ const page = () => {
       CallIcon: <IoCallSharp />,
       address_link: "https://maps.app.goo.gl/5HJr7gqHrCPyjLTKA",
       locationIcon: <GrLocation />,
-      flagePosition:"left center",
+      flagePosition: "left center",
       address_text:
         "Office no. 1304 | Building no. LB19 | JAZFA View 18-19, Jebel Ali Free Zone, PO Box 262746 Downtown Jabel Ali - Dubai - United Arab Emirates",
     },
@@ -70,7 +70,46 @@ const page = () => {
   return (
     <>
       <Contact />
-      <CardComp branchesData={branchesData} />
+      <div
+        className="branches contact-branch parent"
+ 
+      >
+      
+        <div className="branches-cont">
+          {branchesData.map((item, index) => (
+            <div
+              className="  branch bg-img-cover"
+              key={index}
+              style={{ background: `url(${item.branch_img.src})` }}
+            >
+              <div className="overlay">
+              <div className="branch_site">
+              <div className="country">
+                  <div
+                    className="flag"
+                    style={{
+                      background: `url(${item.flag_img.src})`,
+                      backgroundPosition: item.flagePosition || "center center",
+                    }}
+                  ></div>
+
+                  <p>{item.countryName}</p>
+                </div>
+              </div>
+
+                <a href={item.number_link} className="number">
+                  <span className="icon">{item.CallIcon}</span>{" "}
+                  <span>{item.number_text}</span>
+                </a>
+                <a href={item.address_link} className="address" target="_blank">
+                  <span className="icon">{item.locationIcon}</span>
+                  <span className="address-text">{item.address_text}</span>
+                </a>
+              </div>
+            </div>
+          ))}
+        </div>
+      </div>
 
       {/* <div className="contact-box-p parent">
         <div className="contact-box cont">

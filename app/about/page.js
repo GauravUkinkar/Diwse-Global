@@ -1,5 +1,5 @@
 "use client";
-import { useEffect, useRef } from "react";
+import { useEffect, useRef, useState } from "react";
 import { RiLinkedinFill } from "react-icons/ri";
 import img5 from "../../public/assets/home/about/client.webp";
 import img3 from "../../public/assets/home/about/customised.webp";
@@ -113,11 +113,13 @@ const page = () => {
     { count: 10, title: "Awards Won" },
   ];
 
-  const branchesData = [
+  const [branchesData, setBranchesData] = useState([
     {
       branch_img: indiaBranch,
       flag_img: indiaFlag,
       countryName: "India",
+      mouseLeave: true,
+      togglePattern: true,
       branch_desc:
         "As the technological powerhouse of our network, our Indian office serves as the nerve centre of our technical prowess. Our brilliant team of tech wizards operates from this bustling hub, crafting cutting-edge solutions that drive our digital success.",
     },
@@ -125,7 +127,9 @@ const page = () => {
       branch_img: uaeBranch,
       flag_img: uaelag,
       countryName: "UAE",
-      flagePosition:"left center",
+      flagePosition: "left center",
+      mouseLeave: true,
+      togglePattern: true,
       branch_desc:
         "The gleaming heart of our global operations, our UAE head office is the epicentre of innovation and expansion. From this bustling metropolis, we orchestrate brilliant campaigns and execute flawless strategies, harnessing the region's boundless potential.",
     },
@@ -133,10 +137,49 @@ const page = () => {
       branch_img: ukBranch,
       flag_img: ukFlag,
       countryName: "London",
+      mouseLeave: true,
+      togglePattern: true,
       branch_desc:
         "Standing as the bridge between East and West, our London office is a strategic outpost that connects our Asian operations. This global city provides the perfect platform for forging international partnerships and tapping into the European market.",
     },
-  ];
+  ]);
+  const handleMouseLeave = (index) => {
+    const updatedBranches = branchesData.map((item, i) => {
+      if (i === index) {
+        item.mouseLeave = true;
+
+        setTimeout(() => {
+          setBranchesData((prevBranches) =>
+            prevBranches.map((item, idx) =>
+              idx === index ? { ...item, togglePattern: true } : item
+            )
+          );
+        }, 600);
+      }
+      return item;
+    });
+
+    setBranchesData(updatedBranches);
+  };
+
+  const handleMouseEnter = (index) => {
+    const updatedBranches = branchesData.map((item, i) => {
+      if (i === index) {
+        item.mouseLeave = false;
+
+        setTimeout(() => {
+          setBranchesData((prevBranches) =>
+            prevBranches.map((item, idx) =>
+              idx === index ? { ...item, togglePattern: false } : item
+            )
+          );
+        }, 600);
+      }
+      return item;
+    });
+
+    setBranchesData(updatedBranches);
+  };
 
   return (
     <>
@@ -187,7 +230,16 @@ const page = () => {
         </div>
       </div>
 
-      <CardComp branchesData={branchesData}  paddingB="80px" heading={true} />
+      <CardComp
+        branchesData={branchesData}
+        highlight_heading="Our digital marketing empire"
+        Main_heading=" is anchored by three strategic strongholds"
+        paddingB="80px"
+        heading={true}
+        class="hoverClass"
+        onMouseEnter={handleMouseEnter} // Pass these functions as props
+        onMouseLeave={handleMouseLeave}
+      />
       <div className="about-section-two-parent parent">
         <div className="about-section-two-cont cont">
           <div
@@ -262,7 +314,7 @@ const page = () => {
           data-aos="fade-up"
           data-aos-delay="200"
         >
-          <h3 data-aos-delay="400"  className="heading">
+          <h3 data-aos-delay="400" className="heading">
             Meet Our <span className="gradient-text">Team</span>
           </h3>
 
@@ -281,7 +333,7 @@ const page = () => {
               <p className="founder-about">
                 <i>
                   <b className="gradient-text" style={{ fontWeight: "700" }}>
-                  "Best marketing strategy ever, CARE." - Gary V
+                    "Best marketing strategy ever, CARE." - Gary V
                   </b>
                 </i>
                 <br />
