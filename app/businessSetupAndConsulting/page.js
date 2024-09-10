@@ -150,7 +150,7 @@ const page = () => {
               width="100%"
               // className="video-laptop"
             >
-              <source src="/assets/servicevideos/Buissnesssetup.mp4" type="video/webm" />
+              <source src="/assets/servicevideos/Buissnesssetup.mp4" type="video/mp4" />
               Your browser does not support the video tag.
             </video>
           </div>
