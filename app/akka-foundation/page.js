@@ -57,14 +57,12 @@ const page = () => {
       <div className="case-study-page parent">
         <div className="case-study-page-cont cont">
           <h3 className="case-heading" data-aos="fade-up">
+             Lending a Helping Hand to the
             <span className="gradient-text">
               <a href="https://akkafoundation.in/" target="_blank">
-                {" "}
-                Lending a Helping
-                {" "}
-              </a>
-            </span>{" "}
-            Hand to the Akka Foundation Digitally
+                {" "} Akka
+             Foundation</a>  
+             </span>{" "} Digitally
           </h3>
           <p className="case-para" data-aos="fade-up" data-aos-delay="200">
             Recognising the importance of digital technology in advancing social causes, DIwise has leveraged its expertise to support the Akka Foundation's mission. By providing comprehensive digital solutions, we have helped amplify their reach and impact.

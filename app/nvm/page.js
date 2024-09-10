@@ -58,13 +58,14 @@ const page = () => {
       <div className="case-study-page parent">
         <div className="case-study-page-cont cont">
           <h3 className="case-heading" data-aos="fade-up">
+          Building Brand and Growing Capital with 
             <span className="gradient-text">
-              <a href="https://nvminfratech.com/" target="_blank">
+              <a href="https://nvminfratech.com/" target="_blank"> NVM Capital
                 {" "}
-                Building Brand{" "}
+               {" "}
               </a>
             </span>{" "}
-             and Growing Capital with NVM Capital
+         
           </h3>
           <p className="case-para" data-aos="fade-up" data-aos-delay="200">
           As NVM Capital's trusted digital partner, DIwise provided comprehensive expertise to enhance their online visibility and reach. Our tailored marketing strategies helped them connect with a wider audience and showcase their unique offerings.

@@ -11,7 +11,7 @@ import About_card_swiper from "@/component/about/About_card_swiper";
 import dental1 from "../../public/assets/casestudy/team/team1.webp";
 import dental2 from "../../public/assets/casestudy/team/team2.webp";
 import dental3 from "../../public/assets/casestudy/team/team3.webp";
-import dental4 from "../../public/assets/casestudy/team/team4.webp";import dental5 from "../../public/assets/casestudy/team/team5.webp";
+import dental4 from "../../public/assets/casestudy/team/team4.webp"; import dental5 from "../../public/assets/casestudy/team/team5.webp";
 import dental6 from "../../public/assets/casestudy/team/team6.webp";
 
 const page = () => {
@@ -57,17 +57,19 @@ const page = () => {
       <div className="case-study-page parent">
         <div className="case-study-page-cont cont">
           <h3 className="case-heading" data-aos="fade-up">
+            Spreading Smiles  and Laughter with
             <span className="gradient-text">
+
               <a href="https://theteamdental.in//" target="_blank">
                 {" "}
-               Spreading Smiles 
-{" "}
+                The Team Dental
+                {" "}
               </a>
             </span>{" "}
-            and Laughter with The Team Dental 
+
           </h3>
           <p className="case-para" data-aos="fade-up" data-aos-delay="200">
-          As their trusted digital partner, DIwise provided comprehensive strategies to elevate their online visibility and attract new patients. We leverage our expertise to create a positive and engaging digital experience for their audience.
+            As their trusted digital partner, DIwise provided comprehensive strategies to elevate their online visibility and attract new patients. We leverage our expertise to create a positive and engaging digital experience for their audience.
 
           </p>
           <div data-aos="fade-up" data-aos-delay="400">
@@ -96,7 +98,7 @@ const page = () => {
           <div className="middle">
             <div className="left" data-aos="fade-up" data-aos-delay="300">
               <p className="middlepara">
-              Through our targeted marketing efforts, we successfully built the brand and increased patient acquisition. Our effective campaigns generated leads and promoted The Team Dental as a preferred choice for dental care. Our dedication to delivering exceptional results has solidified our partnership.
+                Through our targeted marketing efforts, we successfully built the brand and increased patient acquisition. Our effective campaigns generated leads and promoted The Team Dental as a preferred choice for dental care. Our dedication to delivering exceptional results has solidified our partnership.
 
               </p>
             </div>
@@ -109,7 +111,7 @@ const page = () => {
               </div>
               <div className="case-btn">Public Relations Outreach
               </div>
-              <div className="case-btn">Social Media Ad Campaigns 
+              <div className="case-btn">Social Media Ad Campaigns
 
               </div>
             </div>
@@ -133,13 +135,13 @@ const page = () => {
               Why <span className="gradient-text">Clients Trust DIwise</span>
             </h3>
             <p className="fifth-section-para">
-            At DIwise, we believe in building strong partnerships based on mutual understanding and trust. By deeply understanding our clients' unique goals, stories, and perspectives, we develop customised strategies that deliver exceptional results.
+              At DIwise, we believe in building strong partnerships based on mutual understanding and trust. By deeply understanding our clients' unique goals, stories, and perspectives, we develop customised strategies that deliver exceptional results.
 
             </p>
 
             <div className="list-item">
               <p>
-              Here are a few other things that might make us popular among our clients:
+                Here are a few other things that might make us popular among our clients:
 
               </p>
               {listItem.map((item, index) => (

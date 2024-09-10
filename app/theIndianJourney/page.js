@@ -56,13 +56,15 @@ const page = () => {
       <div className="case-study-page parent">
         <div className="case-study-page-cont cont">
           <h3 className="case-heading" data-aos="fade-up">
+          Digitally Experiencing the Best of India with  
             <span className="gradient-text">
               <a href="https://www.travelandtaste.com.au/" target="_blank">
+               The Indian Journey
                 {" "}
-                Digitally Experiencing{" "}
+               {" "}
               </a>
             </span>{" "}
-             the Best of India with The Indian Journey
+             
           </h3>
           <p className="case-para" data-aos="fade-up" data-aos-delay="200">
           Understanding that travel is about the journey, not just the destination, DIwise helped The Indian Journey reach a wider audience through strategic digital marketing. As their all-around digital partner, we provided comprehensive expertise to enhance their online presence.
