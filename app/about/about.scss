@@ -79,8 +79,54 @@
   }
 }
 
-.about-section-two-parent {
+.branches-info {
+  width: 100%;
+  height: auto;
+  padding: var(--unit) 0px;
+  padding-bottom: 50px;
+  .branches-cont {
+    height: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    .branch {
+      height: 100%;
+      overflow: hidden;
+      background: linear-gradient(rgba(0, 0, 0, 0.733), rgba(0, 0, 0, 0.733)),
+        url("../../public/assets/New_folder/delhi.jpg");
 
+      padding: calc(var(--unit) * 3) calc(var(--unit) * 2);
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: center;
+      gap: calc(var(--unit));
+
+      &.branch2 {
+        background: linear-gradient(rgba(0, 0, 0, 0.733), rgba(0, 0, 0, 0.733)),
+          url("../../public/assets/New_folder/dubai.webp");
+      }
+      &.branch3 {
+        background: linear-gradient(rgba(0, 0, 0, 0.733), rgba(0, 0, 0, 0.733)),
+          url("../../public/assets/New_folder/uk.webp");
+      }
+
+      .country {
+        h3 {
+          background: linear-gradient(to right, var(--accent1), var(--accent2));
+          -webkit-background-clip: text;
+          -webkit-text-fill-color: transparent;
+          height: 30px;
+        }
+      }
+
+      .info {
+        text-align: center;
+      }
+    }
+  }
+}
+
+.about-section-two-parent {
   height: auto;
   width: 100%;
   padding: calc(var(--unit)) 0px;
@@ -93,12 +139,11 @@
     flex-direction: column;
     gap: calc(var(--unit) * 3);
 
-
     .vision-mission {
       display: flex;
       align-items: center;
       justify-content: center;
-      gap: calc(var(--unit)/2);
+      gap: calc(var(--unit) / 2);
       .left {
         width: 50%;
         display: flex;
@@ -114,11 +159,10 @@
         border-radius: calc(var(--unit) / 2);
         gap: calc(var(--unit) / 2);
 
-        p{
+        p {
           text-align: center;
           padding: 20px;
         }
-       
       }
       .right {
         width: 50%;
@@ -133,21 +177,18 @@
           backdrop-filter: blur(10px);
           border-radius: calc(var(--unit) / 2);
           padding: var(--unit);
-          gap: calc(var(--unit)/2);
+          gap: calc(var(--unit) / 2);
           height: calc(350px / 2);
           display: flex;
           align-items: center;
-          justify-content: center ;
+          justify-content: center;
           flex-direction: column;
         }
 
-        
-          p{
-            text-align: center;
-            padding: 5px 0px;
-          }
-       
-
+        p {
+          text-align: center;
+          padding: 5px 0px;
+        }
       }
     }
     @media only screen and (max-width: 930px) {
@@ -194,42 +235,37 @@
         width: 100%;
         text-align: center;
       }
-
     }
   }
 }
-@media only screen and (max-width:700px){
-.about-section-two-parent{
-  padding:100px 0px;
-  .about-section-two-cont{
-
-    .vision-mission {
-
-      .left{
-
-        h3{
-          line-height: 100% !important;
-          text-align: center;
-
+@media only screen and (max-width: 700px) {
+  .about-section-two-parent {
+    padding: 100px 0px;
+    .about-section-two-cont {
+      .vision-mission {
+        .left {
+          h3 {
+            line-height: 100% !important;
+            text-align: center;
+          }
+          p {
+            text-align: center;
+          }
         }
-        p{
-          text-align: center;
+        .right {
+          h3 {
+            text-align: center;
+          }
+          p {
+            text-align: center;
+          }
         }
       }
-      .right{
-        h3{
-          text-align: center;
-        }
-        p{
-          text-align: center;
-        }
+      .bottom {
+        padding: 0px;
       }
     }
-.bottom{
-  padding:0px;
-}
   }
-}
 }
 
 .aboutfourth-section-parent {
@@ -249,7 +285,6 @@
     grid-gap: calc(var(--unit) * 2);
 
     .left {
-
       height: 100%;
       display: flex;
       justify-content: flex-start;
@@ -288,7 +323,6 @@
         top: 0%;
         left: 0%;
 
-       
         transform: scale(0.95);
         border-radius: calc(var(--unit) / 3);
       }
@@ -362,6 +396,8 @@
       justify-content: center;
       align-items: stretch;
       gap: calc(var(--unit) * 2);
+      border-bottom: 1px solid var(--text);
+      padding: var(--unit) 0px;
 
       .image {
         width: 30%;
@@ -371,6 +407,13 @@
         background-repeat: no-repeat;
         background-position: center center;
         border-radius: var(--unit);
+
+
+
+        &.omar-image{
+          background: url("../../public/assets/img/umar_moghal.webp");
+         background-size: contain;
+        }
       }
       .content {
         width: 70%;
@@ -474,7 +517,6 @@
       .left {
         width: 100% !important;
         height: 400px !important;
-       
       }
 
       .right {
@@ -529,3 +571,51 @@
 .ntitle {
   line-height: 100% !important;
 }
+
+
+// @media only screen and (max-width: 1200px) {
+//   .branches-cont {
+//     grid-template-columns: repeat(4, 1fr) !important;
+//     grid-template-rows: repeat(2, 1fr)  ;
+//     .branch1{
+//       grid-area: 1 / 1 / 2 / 3; 
+
+//       .address-text{
+//         text-align: justify ;
+//         text-align-last: center ;
+//       }
+//     }
+//     .branch2{
+//       grid-area: 1 / 3 / 2 / 5;
+
+      
+//       .address-text{
+//         text-align: justify ;
+//         text-align-last: center ;
+//       }
+//     }
+//     .branch3{
+//       grid-area: 2 / 2 / 3 / 4;
+
+      
+//       .address-text{
+//         text-align: justify ;
+//         text-align-last: center ;
+//       }
+//     }
+
+  
+//   }
+// }
+
+
+// @media only screen and (max-width: 650px){
+//   .branches-cont{
+// display: flex !important;
+// flex-direction: column !important;
+
+// .branch{
+//   width: 100% !important;
+// }
+//   }
+// }
