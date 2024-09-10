@@ -156,7 +156,7 @@ const page = () => {
             </h3>
             <p className="about-para">
               Our digital marketing empire is anchored by three strategic
-              strongholds: the glittering metropolis of Dubai, the tech-savvy
+              strongholds - the glittering metropolis of Dubai, the tech-savvy
               hub of India, and the cosmopolitan crossroads of London.
             </p>
           </div>
@@ -280,7 +280,7 @@ const page = () => {
               <p className="founder-about">
                 <i>
                   <b className="gradient-text" style={{ fontWeight: "700" }}>
-                    " Best marketing strategy ever – CARE - Gary V "
+                  "Best marketing strategy ever, CARE." - Gary V
                   </b>
                 </i>
                 <br />
