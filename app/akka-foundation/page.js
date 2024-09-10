@@ -58,7 +58,7 @@ const page = () => {
         <div className="case-study-page-cont cont">
           <h3 className="case-heading" data-aos="fade-up">
             <span className="gradient-text">
-              <a href="https://www.healthcareconcierge.net/" target="_blank">
+              <a href="https://akkafoundation.in/" target="_blank">
                 {" "}
                 Lending a Helping
                 {" "}

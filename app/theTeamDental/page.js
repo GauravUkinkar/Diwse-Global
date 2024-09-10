@@ -7,12 +7,12 @@ import { LuDot } from "react-icons/lu";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import About_card_swiper from "@/component/about/About_card_swiper";
-import hccs from "../../public/assets/img/hcc.webp";
-import hcc_about from "../../public/assets/img/hcc_about.webp";
-import hcc_fb from "../../public/assets/img/hcc_fb.webp";
-import hcc_insta from "../../public/assets/img/hcc_insta.webp";
-import hcc_link from "../../public/assets/img/hcc_link.webp";
-import hccp from "../../public/assets/img/hcc-p.webp"
+
+import dental1 from "../../public/assets/casestudy/team/team1.webp";
+import dental2 from "../../public/assets/casestudy/team/team2.webp";
+import dental3 from "../../public/assets/casestudy/team/team3.webp";
+import dental4 from "../../public/assets/casestudy/team/team4.webp";import dental5 from "../../public/assets/casestudy/team/team5.webp";
+import dental6 from "../../public/assets/casestudy/team/team6.webp";
 
 const page = () => {
   const caseStudy = useRef();
@@ -33,22 +33,22 @@ const page = () => {
 
   const hccImages = [
     {
-      image: hccs,
+      image: dental1,
     },
     {
-      image: hcc_about,
+      image: dental2,
     },
     {
-      image: hcc_fb,
+      image: dental3,
     },
     {
-      image: hcc_insta,
+      image: dental4,
     },
     {
-      image: hcc_link,
+      image: dental5,
     },
     {
-      image: hccp,
+      image: dental6,
     },
   ];
 
@@ -58,7 +58,7 @@ const page = () => {
         <div className="case-study-page-cont cont">
           <h3 className="case-heading" data-aos="fade-up">
             <span className="gradient-text">
-              <a href="https://www.healthcareconcierge.net/" target="_blank">
+              <a href="https://theteamdental.in//" target="_blank">
                 {" "}
                Spreading Smiles 
 {" "}

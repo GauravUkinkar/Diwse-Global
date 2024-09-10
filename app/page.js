@@ -167,13 +167,13 @@ export default function Home() {
       imgage: img8,
       url: "/theIndianJourney",
     },
-    {
-      title: "pandoza",
-      content:
-        "DIwise partnered with Onkar World to enhance their online presence and drive global trade through effective digital marketing strategies.",
-      imgage: img9,
-      url: "/pandoza",
-    },
+    // {
+    //   title: "pandoza",
+    //   content:
+    //     "DIwise partnered with Onkar World to enhance their online presence and drive global trade through effective digital marketing strategies.",
+    //   imgage: img9,
+    //   url: "/pandoza",
+    // },
   ];
 
   useEffect(() => {
