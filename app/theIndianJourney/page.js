@@ -56,11 +56,12 @@ const page = () => {
       <div className="case-study-page parent">
         <div className="case-study-page-cont cont">
           <h3 className="case-heading" data-aos="fade-up">
-          Digitally Experiencing the Best of India with  
+          Digitally Experiencing the Best of India with   
             <span className="gradient-text">
               <a href="https://www.travelandtaste.com.au/" target="_blank">
+              {" "}
                The Indian Journey
-                {" "}
+            
                {" "}
               </a>
             </span>{" "}
