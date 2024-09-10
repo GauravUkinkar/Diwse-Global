@@ -56,7 +56,7 @@
           outline: none;
           color: var(--black);
 
-          padding: calc(var(--unit) / 2);
+          padding: calc(var(--unit) / 2)  var(--unit);
 
           &::placeholder {
             color: #505050 !important;
