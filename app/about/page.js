@@ -12,6 +12,14 @@ import Home_Card_Swiper from "@/component/home/home_card_swiper";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import Head from "next/head";
+import CardComp from "@/component/card_comp/CardComp";
+
+import indiaBranch from "../../public/assets/New_folder/delhi.jpg";
+import uaeBranch from "../../public/assets/New_folder/dubai.webp";
+import ukBranch from "../../public/assets/New_folder/uk.webp";
+import indiaFlag from "../../public/assets/New_folder/flag.jpg";
+import uaelag from "../../public/assets/New_folder/uae_flag.webp";
+import ukFlag from "../../public/assets/New_folder/uk_flag.webp";
 const page = () => {
   const cardData = [
     {
@@ -105,6 +113,31 @@ const page = () => {
     { count: 10, title: "Awards Won" },
   ];
 
+  const branchesData = [
+    {
+      branch_img: indiaBranch,
+      flag_img: indiaFlag,
+      countryName: "India",
+      branch_desc:
+        "As the technological powerhouse of our network, our Indian office serves as the nerve centre of our technical prowess. Our brilliant team of tech wizards operates from this bustling hub, crafting cutting-edge solutions that drive our digital success.",
+    },
+    {
+      branch_img: uaeBranch,
+      flag_img: uaelag,
+      countryName: "UAE",
+      flagePosition:"left center",
+      branch_desc:
+        "The gleaming heart of our global operations, our UAE head office is the epicentre of innovation and expansion. From this bustling metropolis, we orchestrate brilliant campaigns and execute flawless strategies, harnessing the region's boundless potential.",
+    },
+    {
+      branch_img: ukBranch,
+      flag_img: ukFlag,
+      countryName: "London",
+      branch_desc:
+        "Standing as the bridge between East and West, our London office is a strategic outpost that connects our Asian operations. This global city provides the perfect platform for forging international partnerships and tapping into the European market.",
+    },
+  ];
+
   return (
     <>
       <Head>
@@ -124,7 +157,7 @@ const page = () => {
             </h3>
             <p className="about-para">
               Our digital marketing empire is anchored by three strategic
-              strongholds: the glittering metropolis of Dubai, the tech-savvy
+              strongholds - the glittering metropolis of Dubai, the tech-savvy
               hub of India, and the cosmopolitan crossroads of London.
             </p>
           </div>
@@ -154,51 +187,7 @@ const page = () => {
         </div>
       </div>
 
-      <div className="branches-info parent">
-        <div className="branches-cont">
-          <div className="branch1 bg-img-cover branch">
-            <div className="country ">
-              <h3>India</h3>
-            </div>
-            <div className="info">
-              <p>
-                As the technological powerhouse of our network, our Indian
-                office serves as the nerve centre of our technical prowess. Our
-                brilliant team of tech wizards operates from this bustling hub,
-                crafting cutting-edge solutions that drive our digital success.
-              </p>
-            </div>
-          </div>
-          <div className="branch2 bg-img-cover branch">
-            <div className="country">
-              <h3>UAE</h3>
-            </div>
-            <div className="info">
-              <p>
-                The gleaming heart of our global operations, our UAE head office
-                is the epicentre of innovation and expansion. From this bustling
-                metropolis, we orchestrate brilliant campaigns and execute
-                flawless strategies, harnessing the region's boundless
-                potential.
-              </p>
-            </div>
-          </div>
-          <div className="branch3 bg-img-cover branch">
-            <div className="country">
-              <h3>London</h3>
-            </div>
-            <div className="info">
-              <p>
-                Standing as the bridge between East and West, our London office
-                is a strategic outpost that connects our Asian operations. This
-                global city provides the perfect platform for forging
-                international partnerships and tapping into the European market.
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-
+      <CardComp branchesData={branchesData}  paddingB="80px" heading={true} />
       <div className="about-section-two-parent parent">
         <div className="about-section-two-cont cont">
           <div
@@ -273,11 +262,11 @@ const page = () => {
           data-aos="fade-up"
           data-aos-delay="200"
         >
-          <h3 data-aos-delay="400">
-            Meet Our <span className="gradient-text">Founder</span>
+          <h3 data-aos-delay="400"  className="heading">
+            Meet Our <span className="gradient-text">Team</span>
           </h3>
 
-          <div className="founder">
+          <div className="founder ">
             <div className="image" data-aos-delay="600"></div>
 
             <div className="content" data-aos-delay="800">
@@ -288,11 +277,11 @@ const page = () => {
               >
                 Prajakta Marwaha
               </a>
-              <h5 className="desgination">Founder and Managing Director</h5>
+              <h5 className="desgination">( Founder and Managing Director )</h5>
               <p className="founder-about">
                 <i>
                   <b className="gradient-text" style={{ fontWeight: "700" }}>
-                    " Best marketing strategy ever – CARE - Gary V "
+                  "Best marketing strategy ever, CARE." - Gary V
                   </b>
                 </i>
                 <br />
@@ -303,6 +292,120 @@ const page = () => {
                 our team towards exceptional results. Her commitment to
                 understanding client needs and building long-term partnerships
                 ensures sustainable growth and success.
+              </p>
+              <div className="social-media">
+                <a
+                  href="https://www.linkedin.com/in/prajakta-marwaha-507b6410a/"
+                  target="_blank"
+                  className="icon"
+                >
+                  <span>
+                    <RiLinkedinFill />
+                  </span>
+                  Let's Connect
+                </a>
+              </div>
+            </div>
+          </div>
+          <div className="founder flex-row-reverse">
+            <div className="image prashantpatil" data-aos-delay="600"></div>
+
+            <div className="content" data-aos-delay="800">
+              <a
+                href="https://prashantpatil.co.uk/"
+                target="_blank"
+                className="name1"
+              >
+                Prashant Patil
+              </a>
+              <h5 className="desgination">( Director )</h5>
+              <p className="founder-about">
+                {/* <i>
+                  <b className="gradient-text" style={{ fontWeight: "700" }}>
+                    " Best marketing strategy ever – CARE - Gary V "
+                  </b>
+                </i>
+                <br />
+                <br /> */}
+                With a rich background in banking and Fintech, Prashant brings a
+                wealth of expertise in product development and business
+                transformation. His strategic vision guides DIwise towards
+                continued success.
+              </p>
+              <div className="social-media">
+                <a
+                  href="https://www.linkedin.com/in/prash-patil/"
+                  target="_blank"
+                  className="icon"
+                >
+                  <span>
+                    <RiLinkedinFill />
+                  </span>
+                  Let's Connect
+                </a>
+              </div>
+            </div>
+          </div>
+          <div className="founder">
+            <div className="image" data-aos-delay="600"></div>
+
+            <div className="content" data-aos-delay="800">
+              <a
+                href="https://prajaktamarwaha.com/"
+                target="_blank"
+                className="name1"
+              >
+                Gaurav Ukinkar
+              </a>
+              <h5 className="desgination">( Director ) </h5>
+              <p className="founder-about">
+                {/* <i>
+                  <b className="gradient-text" style={{ fontWeight: "700" }}>
+                    " Best marketing strategy ever – CARE - Gary V "
+                  </b>
+                </i>
+                <br />
+                <br /> */}
+                Passionate and dedicated, Gaurav's calm demeanour belies his
+                sharp intellect and drive for results. His unwavering commitment
+                inspires the DIwise team to achieve excellence.
+              </p>
+              <div className="social-media">
+                <a
+                  href="https://www.linkedin.com/in/prajakta-marwaha-507b6410a/"
+                  target="_blank"
+                  className="icon"
+                >
+                  <span>
+                    <RiLinkedinFill />
+                  </span>
+                  Let's Connect
+                </a>
+              </div>
+            </div>
+          </div>
+          <div className="founder flex-row-reverse">
+            <div className="image omar-image" data-aos-delay="600"></div>
+
+            <div className="content" data-aos-delay="800">
+              <a
+                href="https://prajaktamarwaha.com/"
+                target="_blank"
+                className="name1"
+              >
+                Omar Mughal
+              </a>
+              <h5 className="desgination">( Company Secretary )</h5>
+              <p className="founder-about">
+                {/* <i>
+                  <b className="gradient-text" style={{ fontWeight: "700" }}>
+                    " Best marketing strategy ever – CARE - Gary V "
+                  </b>
+                </i> */}
+                Known for his meticulous attention to detail, Omar ensures that
+                DIwise adheres to the highest governance standards. His
+                expertise is invaluable in supporting the company's global
+                growth.
               </p>
               <div className="social-media">
                 <a

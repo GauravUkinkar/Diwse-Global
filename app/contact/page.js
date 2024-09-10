@@ -7,13 +7,19 @@ import { FaInstagram } from "react-icons/fa";
 import { FaFacebookF } from "react-icons/fa";
 import { FaXTwitter } from "react-icons/fa6";
 import { FaLinkedinIn } from "react-icons/fa";
-import { GrLocation } from "react-icons/gr";
-import { IoCallSharp } from "react-icons/io5";
+
 import AOS from "aos";
 import "aos/dist/aos.css";
 import axios from "axios";
-import Card_comp from "@/component/card_comp/card_comp";
-
+import CardComp from "@/component/card_comp/CardComp";
+import indiaBranch from "../../public/assets/New_folder/delhi.jpg";
+import uaeBranch from "../../public/assets/New_folder/dubai.webp";
+import ukBranch from "../../public/assets/New_folder/uk.webp";
+import indiaFlag from "../../public/assets/New_folder/flag.jpg";
+import uaelag from "../../public/assets/New_folder/uae_flag.webp";
+import ukFlag from "../../public/assets/New_folder/uk_flag.webp";
+import { IoCallSharp } from "react-icons/io5";
+import { GrLocation } from "react-icons/gr";
 const page = () => {
   useEffect(() => {
     AOS.init({
@@ -21,11 +27,51 @@ const page = () => {
     });
   }, []);
 
+  const branchesData = [
+    {
+      branch_img: indiaBranch,
+      flag_img: indiaFlag,
+      countryName: "India",
+      number_link: "tel:+918482936866",
+      number_text: "+91 8482936866",
+      CallIcon: <IoCallSharp />,
+      address_link: "https://maps.app.goo.gl/nN6Vi6L55yzdAU6h9",
+      locationIcon: <GrLocation />,
+      address_text:
+        "Office no. 214-216, 10 Biz Park,Near Symbiosis Law College, Airport Road,Vimannagar, Pune- 411014",
+    },
+    {
+      branch_img: uaeBranch,
+      flag_img: uaelag,
+      countryName: "UAE",
+      number_link: "tel:+971508060418",
+      number_text: "+971508060418",
+      CallIcon: <IoCallSharp />,
+      address_link: "https://maps.app.goo.gl/5HJr7gqHrCPyjLTKA",
+      locationIcon: <GrLocation />,
+      flagePosition:"left center",
+      address_text:
+        "Office no. 1304 | Building no. LB19 | JAZFA View 18-19, Jebel Ali Free Zone, PO Box 262746 Downtown Jabel Ali - Dubai - United Arab Emirates",
+    },
+    {
+      branch_img: ukBranch,
+      flag_img: ukFlag,
+      countryName: "London",
+      number_link: "tel:+447398814161",
+      number_text: "+44 7398814161",
+      CallIcon: <IoCallSharp />,
+      address_link: "https://maps.app.goo.gl/nN6Vi6L55yzdAU6h9",
+      locationIcon: <GrLocation />,
+      address_text:
+        "Docklands Business Centre, Suite 12/3D 10-16 Tiller Road, London, England E14 8PX",
+    },
+  ];
+
   return (
     <>
       <Contact />
+      <CardComp branchesData={branchesData} />
 
-      <Card_comp/>
       {/* <div className="contact-box-p parent">
         <div className="contact-box cont">
           <div className="box box1" data-aos="fade-up" >

@@ -22,13 +22,14 @@
       .about-heading {
         color: var(--white);
         font-size: calc(var(--unit) * 2);
+       
       }
 
       .about-para {
         max-width: 80ch;
         text-align: center;
         color: var(--white);
-        font-weight: 700;
+        font-weight: 500;
         font-size: 24px;
       }
     }
@@ -79,55 +80,7 @@
   }
 }
 
-.branches-info {
-  width: 100%;
-  height: auto;
-  padding: var(--unit) 0px;
-  padding-bottom: 50px;
-  .branches-cont {
-    height: 100%;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    .branch {
-      height: 100%;
-      overflow: hidden;
-      background: linear-gradient(rgba(0, 0, 0, 0.733), rgba(0, 0, 0, 0.733)),
-        url("../../public/assets/New_folder/delhi.jpg");
 
-      padding: calc(var(--unit) * 3) calc(var(--unit) * 2);
-      display: flex;
-      flex-direction: column;
-      justify-content: space-between;
-      align-items: center;
-      gap: calc(var(--unit));
-
-      &.branch2 {
-        background: linear-gradient(rgba(0, 0, 0, 0.733), rgba(0, 0, 0, 0.733)),
-          url("../../public/assets/New_folder/dubai.webp");
-      }
-      &.branch3 {
-        background: linear-gradient(rgba(0, 0, 0, 0.733), rgba(0, 0, 0, 0.733)),
-          url("../../public/assets/New_folder/uk.webp");
-      }
-
-      .country {
-       
-      
-
-        h3{
-          background: linear-gradient(to right, var(--accent1), var(--accent2));
-          -webkit-background-clip: text;
-          -webkit-text-fill-color: transparent;
-          height: 30px;
-        }
-      }
-
-      .info {
-        text-align: center;
-      }
-    }
-  }
-}
 
 .about-section-two-parent {
   height: auto;
@@ -390,7 +343,12 @@
     flex-direction: column;
     justify-content: flex-start;
     align-items: flex-start;
-    gap: calc(var(--unit) * 2);
+    gap: calc(var(--unit) );
+
+    .heading{
+      width: 100%;
+      text-align: center;
+    }
 
     .founder {
       width: 100%;
@@ -399,15 +357,30 @@
       justify-content: center;
       align-items: stretch;
       gap: calc(var(--unit) * 2);
+      border: 1px solid var(--text);
+      padding: var(--unit) ;
+      border-radius: calc(var(--unit));
 
       .image {
-        width: 30%;
-        aspect-ratio: 1;
+       height: auto;
+      width: 30%;
         background: url("../../public/assets/img/prajaktaM.webp");
         background-size: cover;
         background-repeat: no-repeat;
         background-position: center center;
-        border-radius: var(--unit);
+        border-radius: calc(var(--unit)/2);
+
+
+
+        &.omar-image{
+          background: url("../../public/assets/img/umar_moghal.webp");
+         background-size: cover;
+         background-repeat: no-repeat;
+        }
+
+        // &.prashantpatil{
+        //   background: url("../../public/assets/img/prashant_patil.png");
+        // }
       }
       .content {
         width: 70%;
@@ -426,6 +399,7 @@
         .desgination {
           font-size: 18px;
           font-weight: 500;
+          opacity: 0.7;
         }
 
         .founder-about {
@@ -531,6 +505,7 @@
 
       .image {
         width: 100% !important;
+        aspect-ratio: 1 !important;
       }
 
       .content {
@@ -565,3 +540,51 @@
 .ntitle {
   line-height: 100% !important;
 }
+
+
+// @media only screen and (max-width: 1200px) {
+//   .branches-cont {
+//     grid-template-columns: repeat(4, 1fr) !important;
+//     grid-template-rows: repeat(2, 1fr)  ;
+//     .branch1{
+//       grid-area: 1 / 1 / 2 / 3; 
+
+//       .address-text{
+//         text-align: justify ;
+//         text-align-last: center ;
+//       }
+//     }
+//     .branch2{
+//       grid-area: 1 / 3 / 2 / 5;
+
+      
+//       .address-text{
+//         text-align: justify ;
+//         text-align-last: center ;
+//       }
+//     }
+//     .branch3{
+//       grid-area: 2 / 2 / 3 / 4;
+
+      
+//       .address-text{
+//         text-align: justify ;
+//         text-align-last: center ;
+//       }
+//     }
+
+  
+//   }
+// }
+
+
+// @media only screen and (max-width: 650px){
+//   .branches-cont{
+// display: flex !important;
+// flex-direction: column !important;
+
+// .branch{
+//   width: 100% !important;
+// }
+//   }
+// }

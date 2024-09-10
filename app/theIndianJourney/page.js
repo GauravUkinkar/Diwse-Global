@@ -7,12 +7,12 @@ import { LuDot } from "react-icons/lu";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import About_card_swiper from "@/component/about/About_card_swiper";
-import hccs from "../../public/assets/img/hcc.webp";
-import hcc_about from "../../public/assets/img/hcc_about.webp";
-import hcc_fb from "../../public/assets/img/hcc_fb.webp";
-import hcc_insta from "../../public/assets/img/hcc_insta.webp";
-import hcc_link from "../../public/assets/img/hcc_link.webp";
-import hccp from "../../public/assets/img/hcc-p.webp"
+import tij1 from "../../public/assets/casestudy/tij/tij1.webp";
+import tij2 from "../../public/assets/casestudy/tij/tij2.webp";
+import tij3 from "../../public/assets/casestudy/tij/tij3.webp";
+import tij4 from "../../public/assets/casestudy/tij/tij4.webp";
+import tij5 from "../../public/assets/casestudy/tij/tij5.webp";
+import tij6 from "../../public/assets/casestudy/tij/tij6.webp";
 
 const page = () => {
   const caseStudy = useRef();
@@ -32,22 +32,22 @@ const page = () => {
 
   const hccImages = [
     {
-      image: hccs,
+      image: tij1,
     },
     {
-      image: hcc_about,
+      image: tij2,
     },
     {
-      image: hcc_fb,
+      image: tij3,
     },
     {
-      image: hcc_insta,
+      image: tij4,
     },
     {
-      image: hcc_link,
+      image: tij5,
     },
     {
-      image: hccp,
+      image: tij6,
     },
   ];
 
@@ -57,7 +57,7 @@ const page = () => {
         <div className="case-study-page-cont cont">
           <h3 className="case-heading" data-aos="fade-up">
             <span className="gradient-text">
-              <a href="https://www.healthcareconcierge.net/" target="_blank">
+              <a href="https://www.travelandtaste.com.au/" target="_blank">
                 {" "}
                 Digitally Experiencing{" "}
               </a>
@@ -76,7 +76,7 @@ const page = () => {
 
       <div className="case-study-second parent" ref={caseStudyTrigger}>
         <div
-          className="case-study-second-cont hcc-top-img cont bg-img-cover"
+          className="case-study-second-cont tij-top-img cont bg-img-cover"
           ref={caseStudy}
           data-aos="fade-up"
           data-aos-delay="600"

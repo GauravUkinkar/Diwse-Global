@@ -7,12 +7,12 @@ import { LuDot } from "react-icons/lu";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import About_card_swiper from "@/component/about/About_card_swiper";
-import hccs from "../../public/assets/img/hcc.webp";
-import hcc_about from "../../public/assets/img/hcc_about.webp";
-import hcc_fb from "../../public/assets/img/hcc_fb.webp";
-import hcc_insta from "../../public/assets/img/hcc_insta.webp";
-import hcc_link from "../../public/assets/img/hcc_link.webp";
-import hccp from "../../public/assets/img/hcc-p.webp"
+import akka1 from "../../public/assets/casestudy/akka/akka1.webp";
+import akka2 from "../../public/assets/casestudy/akka/akka2.webp";
+import akka3 from "../../public/assets/casestudy/akka/akka3.webp";
+import akka4 from "../../public/assets/casestudy/akka/akka4.webp";
+import akka5 from"../../public/assets/casestudy/akka/akka5.webp";
+import akka6 from "../../public/assets/casestudy/akka/akka6.webp";
 
 const page = () => {
   const caseStudy = useRef();
@@ -33,22 +33,22 @@ const page = () => {
 
   const hccImages = [
     {
-      image: hccs,
+      image: akka1,
     },
     {
-      image: hcc_about,
+      image: akka2,
     },
     {
-      image: hcc_fb,
+      image: akka3,
     },
     {
-      image: hcc_insta,
+      image: akka4,
     },
     {
-      image: hcc_link,
+      image: akka5,
     },
     {
-      image: hccp,
+      image: akka6,
     },
   ];
 
@@ -58,21 +58,17 @@ const page = () => {
         <div className="case-study-page-cont cont">
           <h3 className="case-heading" data-aos="fade-up">
             <span className="gradient-text">
-              <a href="https://www.healthcareconcierge.net/" target="_blank">
+              <a href="https://akkafoundation.in/" target="_blank">
                 {" "}
-                Healthcare Concierge{" "}
+                Lending a Helping
+                {" "}
               </a>
             </span>{" "}
-            Shakes hand to medical tourism digitally
+            Hand to the Akka Foundation Digitally
           </h3>
           <p className="case-para" data-aos="fade-up" data-aos-delay="200">
-            DIwise played a pivotal role in transforming Healthcare Concierge's
-            services into a digital-first experience. By leveraging cutting-edge
-            technology, we streamlined their operations, enhanced patient
-            engagement, and facilitated seamless medical tourism experiences for
-            patients worldwide. Our solutions helped Healthcare Concierge
-            provide exceptional care and convenience to patients seeking medical
-            treatments abroad.
+            Recognising the importance of digital technology in advancing social causes, DIwise has leveraged its expertise to support the Akka Foundation's mission. By providing comprehensive digital solutions, we have helped amplify their reach and impact.
+
           </p>
           <div data-aos="fade-up" data-aos-delay="400">
             <Button_comp link="/contact" btn_text="Get Started" />
@@ -82,7 +78,7 @@ const page = () => {
 
       <div className="case-study-second parent" ref={caseStudyTrigger}>
         <div
-          className="case-study-second-cont hcc-top-img cont bg-img-cover"
+          className="case-study-second-cont akk-top-img cont bg-img-cover"
           ref={caseStudy}
           data-aos="fade-up"
           data-aos-delay="600"
@@ -93,25 +89,27 @@ const page = () => {
         <div className="case-study-third-cont cont">
           <div className="top">
             <h4 className="heading" data-aos="fade-up" data-aos-delay="200">
-              Proven Results with <span className="gradient-text">DIwise</span>
+              Proven Results  <span className="gradient-text">DIwise</span>
             </h4>
           </div>
 
           <div className="middle">
             <div className="left" data-aos="fade-up" data-aos-delay="300">
               <p className="middlepara">
-                Our commitment to excellence has enabled us to deliver
-                exceptional results for Healthcare Concierge, solidifying our
-                reputation as a trusted partner in the digital healthcare
-                industry. Our dedication to excellence has solidified our
-                reputation as a trusted partner in the travel industry.
+                Through our tailored marketing strategies, we have successfully raised awareness of the Akka Foundation's initiatives and inspired individuals to contribute to their noble cause. Our efforts have resulted in increased donations, volunteer participation, and positive social change
               </p>
             </div>
             <div className="btnlist" data-aos="fade-up" data-aos-delay="400">
-              <div className="case-btn">Digital Marketing and Search Engine Optimization (SEO)</div>
-              <div className="case-btn">Web Development</div>
-              <div className="case-btn">Lead Generation Campaigns</div>
-              <div className="case-btn">Branding and Creative Services</div>
+              <div className="case-btn">Digital Marketing and SEO
+              </div>
+              <div className="case-btn">Content Creation and Management
+              </div>
+              <div className="case-btn">SWebsite Development and Maintenance
+
+
+              </div>
+              <div className="case-btn">Online Fundraising Campaigns
+              </div>
             </div>
           </div>
 
@@ -133,16 +131,14 @@ const page = () => {
               Why <span className="gradient-text">Clients Trust DIwise</span>
             </h3>
             <p className="fifth-section-para">
-              At DIwise, we believe in building strong partnerships based on
-              mutual understanding and trust. By deeply understanding our
-              clients' unique goals, stories, and perspectives, we develop
-              customised strategies that deliver exceptional results.
+              At DIwise, we believe in building strong partnerships based on mutual understanding and trust. By deeply understanding our clients' unique goals, stories, and perspectives, we develop customised strategies that deliver exceptional results.
+
             </p>
 
             <div className="list-item">
               <p>
-                Here are a few other things that might make us popular among our
-                clients:
+                Here are a few other things that might make us popular among our clients:
+
               </p>
               {listItem.map((item, index) => (
                 <p

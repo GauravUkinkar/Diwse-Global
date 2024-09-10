@@ -83,7 +83,8 @@ const page = () => {
 
   const faqContent = [
     {
-      title: " Search Engine Optimization (SEO) or Search Engine Marketing (SEM)",
+      title:
+        " Search Engine Optimization (SEO) or Search Engine Marketing (SEM)",
       content:
         "With a presence in India, the UK, and UAE, we have the experience and expertise to help your business succeed in diverse markets.",
     },
@@ -128,17 +129,19 @@ const page = () => {
   return (
     <>
       <div className="service-hero-parent parent">
-        <div className="service-hero-cont cont">
-          <div
-            className="left"
-            data-aos="fade-up"
-            data-aos-delay="600"
-            data-aos-duration="1000"
-          >
-            <h3 className="section-headding">Digital Marketing and Search Engine Optimization (SEO)</h3>
+        <div
+          className="service-hero-cont cont"
+          data-aos="fade-up"
+          data-aos-delay="600"
+          data-aos-duration="1000"
+        >
+          <div className="left">
+            <h3 className="section-headding">
+              Digital Marketing and Search Engine Optimization (SEO)
+            </h3>
             <p className="service-p">
-              Our comprehensive digital marketing
-              strategies, including Search Engine Optimization (SEO), content marketing, social media
+              Our comprehensive digital marketing strategies, including Search
+              Engine Optimization (SEO), content marketing, social media
               management, and paid advertising, are designed to enhance your
               visibility, drive global engagement, and boost your bottom line.
             </p>
@@ -151,15 +154,13 @@ const page = () => {
                 onChange={(e) => setEmail(e.target.value)}
               />
               <button type="submit" className="submit-btn">
-              Elevate Online Presence 
+                Elevate Online Presence
               </button>
             </form>
           </div>
           <div
             className="right digitalmarketing bg-img-cover"
-            data-aos="fade-up"
-            data-aos-delay="900"
-            data-aos-duration="1000"
+        
           >
             <video
               autoPlay
@@ -169,7 +170,10 @@ const page = () => {
               width="100%"
               // className="video-laptop"
             >
-              <source src="/assets/servicevideos/DigitalMarketing.mp4" type="video/webm" />
+              <source
+                src="/assets/servicevideos/DigitalMarketing.mp4"
+                type="video/webm"
+              />
               Your browser does not support the video tag.
             </video>
             {/* <div className="right-img-box bg-img-cover"></div> */}
@@ -194,9 +198,9 @@ const page = () => {
             <p className="para">
               DIwise Global offers expert digital marketing services tailored to
               help your business stand out on a global scale. Our deep
-              understanding of Search Engine Optimization (SEO) and cutting-edge techniques ensure that your
-              brand is visible, relevant, and engaging to international
-              audiences. 
+              understanding of Search Engine Optimization (SEO) and cutting-edge
+              techniques ensure that your brand is visible, relevant, and
+              engaging to international audiences.
             </p>
           </div>
           {/* ------------------Middle---------------- */}
@@ -234,10 +238,10 @@ const page = () => {
                 <span className="gradient-text">Effective Ad</span> Campaigns
               </h5>
               <p className="bootom-section-para">
-                Implement targeted advertising campaigns across
-                various platforms to reach your ideal audience, drive
-                conversions, and increase brand awareness.
-              </p>              
+                Implement targeted advertising campaigns across various
+                platforms to reach your ideal audience, drive conversions, and
+                increase brand awareness.
+              </p>
               <Button_comp btn_text="Maximise Your Reach" link="contact" />
             </div>
 
@@ -246,10 +250,10 @@ const page = () => {
                 <span className="gradient-text">Comprehensive</span> Analysis
               </h5>
               <p className="bootom-section-para">
-                Conduct regular analysis of marketing
-                campaigns to track performance, identify areas for improvement,
-                and optimise overall digital strategy.
-              </p>              
+                Conduct regular analysis of marketing campaigns to track
+                performance, identify areas for improvement, and optimise
+                overall digital strategy.
+              </p>
               <Button_comp btn_text="Go Global Today " link="contact" />
             </div>
           </div>
@@ -267,8 +271,11 @@ const page = () => {
             data-aos-duration="1000"
           >
             <h4 className="hedding">
-              FAQs for {" "}
-              <span className="gradient-text"> Digital Marketing and Search Engine Optimization (SEO) Services</span>
+              FAQs for{" "}
+              <span className="gradient-text">
+                {" "}
+                Digital Marketing and Search Engine Optimization (SEO) Services
+              </span>
             </h4>
             {faqContent.map((item, index) => (
               <Faq
