@@ -88,6 +88,7 @@
   .swiper-wrapper {
     margin-bottom: 40px;
   }
+
   .swiper-pagination-bullet {
     // color: black !important;
     background: rgb(255, 255, 255);
@@ -122,10 +123,10 @@
     gap: 10px;
     align-items: center;
     justify-content: center;
-// 2 sept
-box-shadow: var(--shadow);
-padding: calc(var(--unit));
-border-radius: calc(var(--unit) / 2);
+    // 2 sept
+    box-shadow: var(--shadow);
+    padding: calc(var(--unit));
+    border-radius: calc(var(--unit) / 2);
 
     border: 1px solid var(--white);
 
