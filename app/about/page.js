@@ -347,11 +347,11 @@ const page = () => {
             </div>
           </div>
           <div className="founder">
-            <div className="image" data-aos-delay="600"></div>
+            <div className="image gauravsir" data-aos-delay="600"></div>
 
             <div className="content" data-aos-delay="800">
               <a
-                href="https://prajaktamarwaha.com/"
+                // href="https://prajaktamarwaha.com/"
                 target="_blank"
                 className="name1"
               >
@@ -372,7 +372,7 @@ const page = () => {
               </p>
               <div className="social-media">
                 <a
-                  href="https://www.linkedin.com/in/prajakta-marwaha-507b6410a/"
+                  // href="https://www.linkedin.com/in/prajakta-marwaha-507b6410a/"
                   target="_blank"
                   className="icon"
                 >
@@ -389,7 +389,7 @@ const page = () => {
 
             <div className="content" data-aos-delay="800">
               <a
-                href="https://prajaktamarwaha.com/"
+                // href="https://prajaktamarwaha.com/"
                 target="_blank"
                 className="name1"
               >
@@ -409,7 +409,7 @@ const page = () => {
               </p>
               <div className="social-media">
                 <a
-                  href="https://www.linkedin.com/in/prajakta-marwaha-507b6410a/"
+                  // href="https://www.linkedin.com/in/prajakta-marwaha-507b6410a/"
                   target="_blank"
                   className="icon"
                 >

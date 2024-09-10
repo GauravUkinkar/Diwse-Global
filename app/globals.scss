@@ -314,12 +314,24 @@ button:hover .button-text {
   .video-mobile {
     display: block !important;
   }
+
+
+  .swiper-pagination-bullet {
+    background: gray;
+    opacity: 1 !important;
+    width: 20px ;
+    height: 3px !important;
+    border-radius: 0px !important;
+    &.swiper-pagination-bullet-active {
+      background: var(--accent-grad) !important;
+    }
+  }
 }
 
 .swiper-pagination-bullet {
   background: gray;
   opacity: 1 !important;
-  width: 50px !important;
+  width: 50px ;
   height: 3px !important;
   border-radius: 0px !important;
   &.swiper-pagination-bullet-active {

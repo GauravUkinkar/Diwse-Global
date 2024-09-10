@@ -172,7 +172,7 @@ const page = () => {
             >
               <source
                 src="/assets/servicevideos/DigitalMarketing.mp4"
-                type="video/webm"
+                type="video/mp4"
               />
               Your browser does not support the video tag.
             </video>
