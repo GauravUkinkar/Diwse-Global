@@ -7,9 +7,11 @@ justify-content: center;
 align-items: center;
 gap: calc(var(--unit)*2);
 
+
 .heading_text{
   font-size: 40px;
   line-height: 120%;
+  padding: 0px 20px;
 }
   .branches-cont {
     height: 100%;
@@ -159,5 +161,11 @@ gap: calc(var(--unit)*2);
     .branch {
       width: 100% !important;
     }
+  }
+
+  .heading_text{
+    font-size: 24px !important;
+    text-align: center;
+    line-height: 120%;
   }
 }

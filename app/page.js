@@ -318,7 +318,7 @@ export default function Home() {
             disableOnInteraction: false,
             pauseOnMouseEnter: true,
           }}
-          pagination={swiperNavigation ? { clickable: true } : false}
+          pagination={true}
           navigation={false}
           modules={[Autoplay, Pagination]}
           breakpoints={{
