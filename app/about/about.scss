@@ -79,52 +79,7 @@
   }
 }
 
-.branches-info {
-  width: 100%;
-  height: auto;
-  padding: var(--unit) 0px;
-  padding-bottom: 50px;
-  .branches-cont {
-    height: 100%;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    .branch {
-      height: 100%;
-      overflow: hidden;
-      background: linear-gradient(rgba(0, 0, 0, 0.733), rgba(0, 0, 0, 0.733)),
-        url("../../public/assets/New_folder/delhi.jpg");
 
-      padding: calc(var(--unit) * 3) calc(var(--unit) * 2);
-      display: flex;
-      flex-direction: column;
-      justify-content: space-between;
-      align-items: center;
-      gap: calc(var(--unit));
-
-      &.branch2 {
-        background: linear-gradient(rgba(0, 0, 0, 0.733), rgba(0, 0, 0, 0.733)),
-          url("../../public/assets/New_folder/dubai.webp");
-      }
-      &.branch3 {
-        background: linear-gradient(rgba(0, 0, 0, 0.733), rgba(0, 0, 0, 0.733)),
-          url("../../public/assets/New_folder/uk.webp");
-      }
-
-      .country {
-        h3 {
-          background: linear-gradient(to right, var(--accent1), var(--accent2));
-          -webkit-background-clip: text;
-          -webkit-text-fill-color: transparent;
-          height: 30px;
-        }
-      }
-
-      .info {
-        text-align: center;
-      }
-    }
-  }
-}
 
 .about-section-two-parent {
   height: auto;
@@ -387,7 +342,7 @@
     flex-direction: column;
     justify-content: flex-start;
     align-items: flex-start;
-    gap: calc(var(--unit) * 2);
+    gap: calc(var(--unit) );
 
     .founder {
       width: 100%;
@@ -396,23 +351,25 @@
       justify-content: center;
       align-items: stretch;
       gap: calc(var(--unit) * 2);
-      border-bottom: 1px solid var(--text);
-      padding: var(--unit) 0px;
+      border: 1px solid var(--text);
+      padding: var(--unit) ;
+      border-radius: calc(var(--unit));
 
       .image {
-        width: 30%;
-        aspect-ratio: 1;
+       height: auto;
+      width: 30%;
         background: url("../../public/assets/img/prajaktaM.webp");
         background-size: cover;
         background-repeat: no-repeat;
         background-position: center center;
-        border-radius: var(--unit);
+        border-radius: calc(var(--unit)/2);
 
 
 
         &.omar-image{
           background: url("../../public/assets/img/umar_moghal.webp");
-         background-size: contain;
+         background-size: cover;
+         background-repeat: no-repeat;
         }
       }
       .content {
@@ -432,6 +389,7 @@
         .desgination {
           font-size: 18px;
           font-weight: 500;
+          opacity: 0.7;
         }
 
         .founder-about {
@@ -537,6 +495,7 @@
 
       .image {
         width: 100% !important;
+        aspect-ratio: 1 !important;
       }
 
       .content {
