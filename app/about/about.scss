@@ -378,9 +378,12 @@
          background-repeat: no-repeat;
         }
 
-        // &.prashantpatil{
-        //   background: url("../../public/assets/img/prashant_patil.png");
-        // }
+        &.prashantpatil{
+          background: url("../../public/assets/img/prashant_patil.webp");
+        }
+        &.gauravsir{
+          background: url("../../public/assets/img/gaurav_sir.webp");
+        }
       }
       .content {
         width: 70%;
