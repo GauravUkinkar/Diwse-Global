@@ -17,7 +17,7 @@ import img1 from "../public/assets/home/axonic.webp";
 import img2 from "../public/assets/home/Travel-and-Taste.webp";
 import img3 from "../public/assets/home/hcc.webp";
 import img4 from "../public/assets/home/onkar.webp";
-import img5 from "../public/assets/home/NVM.webp";
+import img5 from "../public/assets/home/NVM.jpg";
 import img6 from "../public/assets/home/Akka-Foundation.webp";
 import img7 from "../public/assets/home/The-Team-Dental.webp";
 import img8 from "../public/assets/home/The-Indian-Journey.webp";
@@ -142,14 +142,14 @@ export default function Home() {
     {
       title: "akka",
       content:
-        "DIwise partnered with Onkar World to enhance their online presence and drive global trade through effective digital marketing strategies.",
+        "DIwise serves as the digital partner to the Akka Foundation, a non-profit organisation dedicated to empowering the underprivileged.",
       imgage: img6,
       url: "/akka-foundation",
     },
     {
-      title: "team dental",
+      title: "Spreading Smiles and Laughter with The Team Dental ",
       content:
-        "DIwise partnered with Onkar World to enhance their online presence and drive global trade through effective digital marketing strategies.",
+        "DIwise helped The Team Dental bring smiles to faces by enhancing their online presence and promoting their dental services.",
       imgage: img7,
       url: "/theTeamDental",
     },
@@ -167,7 +167,7 @@ export default function Home() {
       imgage: img9,
       url: "/pandoza",
     },
-    
+
   ];
 
   useEffect(() => {
