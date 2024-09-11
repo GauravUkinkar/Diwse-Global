@@ -15,6 +15,7 @@ import img1 from "../../public/assets/bussiness-setup/CompanyFormationandRegistr
 import img2 from "../../public/assets/bussiness-setup/ComprehensiveBusinessPlanning.svg";
 
 import img3 from "../../public/assets/bussiness-setup/RegulatoryComplianceandLegalAdvisory.svg";
+import img4 from "../../public/assets/bussiness-setup/companyfinance.png";
 import topimg from "../../public/assets/bussiness-setup/business_setup_third_section.webp";
 import axios from "axios";
 import toast, { Toaster } from "react-hot-toast";
@@ -71,7 +72,7 @@ const page = () => {
       title: "Company Finances and Tax",
       content:
         "Our team of financial experts offer guidance on financial planning, budgeting, accounting, and tax optimisation to help you maximise your profitability.",
-      image: img3,
+      image: img4,
     },
 
   ];
