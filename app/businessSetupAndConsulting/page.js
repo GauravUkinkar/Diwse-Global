@@ -67,6 +67,13 @@ const page = () => {
         "Navigate the Legal Landscape. Stay compliant with local regulations, tax laws, and industry-specific requirements with our expert legal advice.",
       image: img3,
     },
+    {
+      title: "Company Finances and Tax",
+      content:
+        "Our team of financial experts offer guidance on financial planning, budgeting, accounting, and tax optimisation to help you maximise your profitability.",
+      image: img3,
+    },
+
   ];
 
   const faqContent = [
@@ -112,12 +119,11 @@ const page = () => {
   return (
     <>
       <div className="service-hero-parent parent">
-        <div className="service-hero-cont cont"    data-aos="fade-up"
+        <div className="service-hero-cont cont" data-aos="fade-up"
            data-aos-delay="600"
            data-aos-duration="1000" >
           <div className="left"
-          
-          >
+                    >
             <h3 className="section-headding">Business Formation and Advisory</h3>
             <p className="service-p">
               Our experienced consultants provide
@@ -231,7 +237,7 @@ const page = () => {
                 Our strategic planning services guide
                 you through the process of setting clear goals, conducting
                 market research, and developing effective strategies to achieve
-                your global ambitions.
+                your goals.
               </p>              
               <Button_comp btn_text="Click to Consult " link="contact" />
             </div>

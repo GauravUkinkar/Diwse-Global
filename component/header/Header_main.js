@@ -53,31 +53,31 @@ const Header_main = () => {
   const servicelists = [
     {
       path: "/businessSetupAndConsulting",
-      name: "Business Formation and Advisory",
+      name: "Business Launchpad",
       images: "assets/icons/navIcon/Dcoument.png",
       className: "image2",
     },
     {
       path: "/digitalmarketing",
-      name: "Digital Marketing and Search Engine Optimization (SEO)",
+      name: "Digital Marketing ",
       images: "assets/icons/navIcon/digital_marketing-1.png",
       className: "image1",
     },    
     {
       path: "/prandbranding",
-      name: "Branding and Creative Services",
+      name: "Branding and Design",
       images: "assets/icons/navIcon/digital_marketing.png",
       className: "image3",
     },
     {
       path: "/publicRelationOutreach",
-      name: "Public Relation and Media Outreach",
+      name: "Public Relations ",
       images: "assets/icons/navIcon/PR.png",
       className: "image4",
     },
     {
       path: "/webdevelopment",
-      name: "Website and App Development",
+      name: "Website Development",
       images: "assets/icons/navIcon/Development.png",
       className: "image5",
     },
