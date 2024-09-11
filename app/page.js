@@ -46,7 +46,7 @@ export default function Home() {
   const cardData = [
     {
       icon: "assets/icons/navIcon/digital_marketing-1.png",
-      title: "Digital Marketing and Search Engine Optimization (SEO)",
+      title: "Digital Marketing",
       description:
         "Elevate your online presence. From crafting engaging content and managing your social media, we'll drive global visibility and engagement.",
       buttonText: "Get Started",
@@ -54,7 +54,7 @@ export default function Home() {
     },
     {
       icon: "assets/icons/navIcon/Development.png",
-      title: "Web and App Development",
+      title: "Web  Development",
       description:
         "Bring your digital vision to life. We specialise in creating user-friendly, responsive designs with the latest technology to meet your needs.",
       buttonText: "Get Started",
@@ -62,7 +62,7 @@ export default function Home() {
     },
     {
       icon: "assets/icons/navIcon/digital_marketing.png",
-      title: "Branding and Creative Services",
+      title: "Branding and Design",
       description:
         "Make Your Brand Unforgettable. Our team of creatives will design your logo, develop your brand story, and produce engaging multimedia content.",
       buttonText: "Get Started",
@@ -70,7 +70,7 @@ export default function Home() {
     },
     {
       icon: "assets/icons/navIcon/Dcoument.png",
-      title: "Business Setup and Consulting",
+      title: "Business Launchpad",
       description:
         "Expand your business globally. We offer comprehensive support, from developing market entry strategies to providing operational consulting.",
       buttonText: "Get Started",
@@ -78,7 +78,7 @@ export default function Home() {
     },
     {
       icon: "assets/icons/navIcon/PR.png",
-      title: "Public Relations and Media Outreach",
+      title: "Public Relations",
       description:
         "Manage Your Reputation Globally. We help you build and maintain a positive brand reputation, ensuring effective communication.",
       buttonText: "Get Started",
