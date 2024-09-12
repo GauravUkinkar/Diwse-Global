@@ -27,7 +27,7 @@ const page = () => {
     });
   }, []);
 
-  const branchesData = [
+  const [branchesData, setBranchesData] = useState([
     {
       branch_img: indiaBranch,
       flag_img: indiaFlag,
@@ -37,6 +37,8 @@ const page = () => {
       CallIcon: <IoCallSharp />,
       address_link: "https://maps.app.goo.gl/nN6Vi6L55yzdAU6h9",
       locationIcon: <GrLocation />,
+      mouseLeave: true,
+      togglePattern: false,
       address_text:
         "Office no. 214-216, 10 Biz Park,Near Symbiosis Law College, Airport Road,Vimannagar, Pune- 411014",
     },
@@ -50,6 +52,8 @@ const page = () => {
       address_link: "https://maps.app.goo.gl/5HJr7gqHrCPyjLTKA",
       locationIcon: <GrLocation />,
       flagePosition: "left center",
+      mouseLeave: true,
+      togglePattern: true,
       address_text:
         "Office no. 1304 | Building no. LB19 | JAZFA View 18-19, Jebel Ali Free Zone, PO Box 262746 Downtown Jabel Ali - Dubai - United Arab Emirates",
     },
@@ -62,28 +66,72 @@ const page = () => {
       CallIcon: <IoCallSharp />,
       address_link: "https://maps.app.goo.gl/nN6Vi6L55yzdAU6h9",
       locationIcon: <GrLocation />,
+      mouseLeave: true,
+      togglePattern: true,
       address_text:
         "Docklands Business Centre, Suite 12/3D 10-16 Tiller Road, London, England E14 8PX",
     },
-  ];
+  ]);
+
+  const handleMouseLeave = (index) => {
+    const updatedBranches = branchesData.map((item, i) => {
+      if (i === index) {
+        item.mouseLeave = true;
+
+        setTimeout(() => {
+          setBranchesData((prevBranches) =>
+            prevBranches.map((item, idx) =>
+              idx === index ? { ...item, togglePattern: true } : item
+            )
+          );
+        }, 600);
+      }
+      return item;
+    });
+
+    setBranchesData(updatedBranches);
+  };
+
+  const handleMouseEnter = (index) => {
+    const updatedBranches = branchesData.map((item, i) => {
+      if (i === index) {
+        item.mouseLeave = false;
+
+        setTimeout(() => {
+          setBranchesData((prevBranches) =>
+            prevBranches.map((item, idx) =>
+              idx === index ? { ...item, togglePattern: false } : item
+            )
+          );
+        }, 600);
+      }
+      return item;
+    });
+
+    setBranchesData(updatedBranches);
+  };
 
   return (
     <>
       <Contact />
-      <div
-        className="branches contact-branch parent"
- 
-      >
-      
-        <div className="branches-cont">
+      <div className="branches contact-branch parent">
+        <CardComp
+          branchesData={branchesData}
+          paddingB="80px"
+          heading={true}
+          class="hoverClass"
+          onMouseEnter={handleMouseEnter} // Pass these functions as props
+          onMouseLeave={handleMouseLeave}
+        />
+        {/* <div className="contact-branches-cont">
           {branchesData.map((item, index) => (
             <div
-              className="  branch bg-img-cover"
+              className="contact-branch bg-img-cover"
               key={index}
               style={{ background: `url(${item.branch_img.src})` }}
             >
-              <div className="overlay">
-              <div className="branch_site">
+              <div className="contact-overlay">
+              <div className="contact-branch_site">
               <div className="country">
                   <div
                     className="flag"
@@ -97,7 +145,8 @@ const page = () => {
                 </div>
               </div>
 
-                <a href={item.number_link} className="number">
+              <div className="back-details">
+              <a href={item.number_link} className="number">
                   <span className="icon">{item.CallIcon}</span>{" "}
                   <span>{item.number_text}</span>
                 </a>
@@ -106,86 +155,11 @@ const page = () => {
                   <span className="address-text">{item.address_text}</span>
                 </a>
               </div>
+              </div>
             </div>
           ))}
-        </div>
+        </div> */}
       </div>
-
-      {/* <div className="contact-box-p parent">
-        <div className="contact-box cont">
-          <div className="box box1" data-aos="fade-up" >
-            <h3 className="title g">Address</h3>
-            <div className="add-box">
-              <div className="icon">
-                <GrLocation />
-              </div>
-              <p className="desc-d">
-                <a
-                  href="https://maps.app.goo.gl/nN6Vi6L55yzdAU6h9"
-                  target="_blank"
-                >
-                  Office no. 214-216, 10 Biz Park,Near Symbiosis Law College,
-                  Airport Road,Vimannagar, Pune- 411014
-                </a>
-              </p>
-            </div>
-            <div className="add-box">
-              <div className="icon">
-                <GrLocation />
-              </div>
-              <p className="desc-d">
-                <a
-                  href="https://maps.app.goo.gl/LVSP2ZzFGkCNvMbB9"
-                  target="_blank"
-                >
-                  Docklands Business Centre, Suite 12/3D 10-16 Tiller Road,
-                  London, England E14 8PX
-                </a>
-              </p>
-            </div>
-        
-          </div>
-          <div className="right" data-aos="fade-up">
-          <div className="box box2" >
-            <h3 className="title">Contact</h3>
-            <div className="add-box">
-              <div className="icon">
-                <IoCallSharp />
-              </div>
-              <p className="desc-d">
-                <a href="tel:+918482936866">+91 8482936866</a>
-              </p>
-            </div>
-            <div className="add-box">
-              <div className="icon">
-                <IoCallSharp />
-              </div>
-              <p className="desc-d">
-                <a href="tel:+447398814161">+44 7398 814161</a>
-              </p>
-            </div>
-          
-          </div>
-          <div className="box"  >
-            <h3 className="title">Social Media</h3>
-            <div className="social-i">
-              <a href="https://www.facebook.com/DIwiseLtd" target="_blank" className="social">
-                <FaFacebookF />
-              </a>
-              <a href="https://www.instagram.com/diwiseltd/" target="_blank" className="social">
-                <FaInstagram />
-              </a>
-              <a href="https://twitter.com/i/flow/login?redirect_after_login=%2FDIwiseLtd" target="_blank" className="social">
-                <FaXTwitter />
-              </a>
-              <a href="https://www.linkedin.com/company/diwiseltd" target="_blank" className="social">
-                <FaLinkedinIn />
-              </a>
-            </div>
-          </div>
-          </div>
-        </div>
-      </div> */}
     </>
   );
 };

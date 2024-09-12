@@ -1,6 +1,6 @@
 .branches {
   width: 100%;
-  height: 500px;
+  height: fit-content;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -23,12 +23,14 @@
     grid-template-columns: repeat(3, 1fr);
     gap: var(--unit);
     .branch {
-      height: 100%;
+      // height: 100%;
       overflow: hidden;
+      height: 350px;
       // background: linear-gradient(rgba(0, 0, 0, 0.733), rgba(0, 0, 0, 0.733)),
       //   url("../../public/assets/New_folder/delhi.jpg");
       transition: var(--trans);
-
+      border: 1px solid #9c9c9c;
+      border-radius: calc(var(--unit) / 2);
       .overlay {
         width: 100%;
         height: 100%;
@@ -40,50 +42,50 @@
         align-items: center;
         gap: calc(var(--unit));
 
-     .branch_site{
-      width: 100%;
-      height: 100%;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      gap: var(--unit);
-      .country {
-        width: 100%;
-        height: auto;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        gap: calc(var(--unit) / 2);
-        transition-delay: 0.6s;
-        .flag {
-          height: 30px;
-          aspect-ratio: 1;
-          border-radius: 50%;
-          background-size: cover !important;
-          background-position: center center;
-          background-repeat: no-repeat;
-        }
-        p {
-          font-weight: 700;
-          font-size: 16px;
-        }
-
-        .heading {
-         
-          height: 40px;
+        .branch_site {
+          width: 100%;
+          height: 100%;
           display: flex;
+          flex-direction: column;
           justify-content: center;
           align-items: center;
-          font-size: 50px;
-          color: var(--white);
+          gap: var(--unit);
+
+          .country {
+            width: 100%;
+            height: auto;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            gap: calc(var(--unit) / 2);
+            transition-delay: 0.6s;
+            .flag {
+              height: 100px;
+              aspect-ratio: 1;
+              border-radius: 50%;
+              background-size: cover !important;
+              background-position: center center;
+              background-repeat: no-repeat;
+            }
+            p {
+              font-weight: 700;
+              font-size: 16px;
+            }
+
+            .heading {
+              height: 40px;
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              font-size: 30px;
+              color: var(--white);
+            }
+          }
         }
-      }
-     }
         .branchdesc {
           font-weight: 500;
           text-align: center;
-      
         }
         .number {
           font-size: 16px;
@@ -135,7 +137,6 @@
     .hoverClass {
       background-color: red !important;
       .country {
-   
         height: 100%;
         width: 100%;
         display: flex;
@@ -143,16 +144,6 @@
         align-items: center;
         transition-delay: 0.6s !important;
       }
-
-      .number {
-        display: none !important;
-      }
-
-      .address {
-        display: none !important;
-      }
-
-   
 
       &:hover {
         animation: flipanimation 1s forwards ease-in-out;
@@ -171,7 +162,6 @@
         .country {
           // opacity: 0;
           // visibility: hidden;
-
         }
       }
 
@@ -236,5 +226,31 @@
     font-size: 24px !important;
     text-align: center;
     line-height: 120%;
+  }
+}
+
+.super-class {
+  width: 90%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 10px;
+  .number {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start !important;
+  }
+  .address {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start !important;
+
+    .address-text {
+      text-align: left !important;
+    }
   }
 }

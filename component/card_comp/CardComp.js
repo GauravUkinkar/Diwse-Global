@@ -5,6 +5,7 @@ import "./card_comp.scss";
 import { GrLocation } from "react-icons/gr";
 import { IoCallSharp } from "react-icons/io5";
 const CardComp = (props) => {
+  console.log("my props", props.branchesData[0].number_link);
   return (
     <>
       <div
@@ -31,10 +32,9 @@ const CardComp = (props) => {
               onMouseEnter={() => props.onMouseEnter(index)}
             >
               <div className="overlay">
-                <>
-                  {item.togglePattern ? (
-                 <div className="branch_site">
-                     <div className="country">
+                {item.togglePattern ? (
+                  <div className="branch_site">
+                    <div className="country">
                       <div
                         className="flag"
                         style={{
@@ -44,31 +44,41 @@ const CardComp = (props) => {
                         }}
                       ></div>
                       {props.heading ? (
-                        <h3 className="heading">{item.countryName}</h3>
-
+                        <h3 className="heading">{item.countryName} Office</h3>
                       ) : (
                         <p>{item.countryName}</p>
-                 
-
                       )}
                     </div>
-                    <p>
-                      Office
-                    </p>
-                 </div>
-
-                  ) : (
-                    <p className="branchdesc">{item.branch_desc}</p>
-                  )}
-                </>
-                <a href={item.number_link} className="number">
-                  <span className="icon">{item.CallIcon}</span>{" "}
-                  <span>{item.number_text}</span>
-                </a>
-                <a href={item.address_link} className="address" target="_blank">
-                  <span className="icon">{item.locationIcon}</span>
-                  <span className="address-text">{item.address_text}</span>
-                </a>
+                  </div>
+                ) : (
+                  <>
+                    {item.branch_desc ? (
+                      <p className="branchdesc">{item.branch_desc}</p>
+                    ) : (
+                      <div className="super-class">
+                     
+                            <a href={item.number_link} className="number">
+                              <span className="icon">{item.CallIcon}</span>{" "}
+                              <span>{item.number_text}</span>
+                            </a>
+                         
+                        
+                            <a
+                              href={item.address_link}
+                              className="address"
+                              target="_blank"
+                              rel="noopener noreferrer"
+                            >
+                              <span className="icon">{item.locationIcon}</span>
+                              <span className="address-text">
+                                {item.address_text}
+                              </span>
+                            </a>
+                         
+                      </div>
+                    )}
+                  </>
+                )}
               </div>
             </div>
           ))}
