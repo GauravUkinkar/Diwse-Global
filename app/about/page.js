@@ -473,6 +473,46 @@ const page = () => {
               </div>
             </div>
           </div>
+          <div className="founder flex-row-reverse">
+            <div className="image prashantpatil" data-aos-delay="600"></div>
+
+            <div className="content" data-aos-delay="800">
+              <a
+                href="https://prashantpatil.co.uk/"
+                target="_blank"
+                className="name1"
+              >
+                Prashant Patil
+              </a>
+              <h5 className="desgination">( Director )</h5>
+              <p className="founder-about">
+                {/* <i>
+                  <b className="gradient-text" style={{ fontWeight: "700" }}>
+                    " Best marketing strategy ever – CARE - Gary V "
+                  </b>
+                </i>
+                <br />
+                <br /> */}
+                With a rich background in banking and Fintech, Prashant brings a
+                wealth of expertise in product development and business
+                transformation. His strategic vision guides DIwise towards
+                continued success.
+              </p>
+              <div className="social-media">
+                <a
+                  href="https://www.linkedin.com/in/prash-patil/"
+                  target="_blank"
+                  className="icon"
+                >
+                  <span>
+                    <RiLinkedinFill />
+                  </span>
+                  Let's Connect
+                </a>
+              </div>
+            </div>
+          </div>
+
         </div>
       </div>
 
