@@ -38,7 +38,7 @@ const page = () => {
       address_link: "https://maps.app.goo.gl/nN6Vi6L55yzdAU6h9",
       locationIcon: <GrLocation />,
       mouseLeave: true,
-      togglePattern: false,
+      togglePattern: true,
       address_text:
         "Office no. 214-216, 10 Biz Park,Near Symbiosis Law College, Airport Road,Vimannagar, Pune- 411014",
     },
