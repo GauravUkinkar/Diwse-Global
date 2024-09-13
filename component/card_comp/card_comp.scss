@@ -22,6 +22,8 @@
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: var(--unit);
+    // border: 1px solid red;
+    padding: 0px 10px;
     .branch {
       // height: 100%;
       overflow: hidden;
