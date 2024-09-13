@@ -229,10 +229,7 @@ const page = () => {
                 <span className="gradient-text">Media </span> Training
               </h5>
               <p className="bootom-section-para">
-                Prepare your team for media
-                interactions with our expert training programs. We equip your
-                spokespeople with the skills to represent your brand confidently
-                and effectively in any market.
+              Prepare your team for media interactions with our expert training. We equip your spokespeople with the skills to represent your brand confidently in any market.
               </p>
              
               <Button_comp btn_text="Get Media Ready" link="contact" />

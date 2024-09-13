@@ -56,7 +56,7 @@ const page = () => {
     {
       title: "Brand Identity Development",
       content:
-        "A Cohesive Brand. Develop a strong and consistent brand identity with our tailored solutions that reflect your brand's core values and vision.",
+        "A Cohesive Brand Identity. Develop a strong and consistent brand identity with our tailored, innovative solutions that reflect your brand's core values and vision.",
       image: img2,
     },
     {
