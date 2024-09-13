@@ -285,16 +285,7 @@ export default function Home() {
       {/* 1 Section - One side text and one side 3D model */}
       {/* <Home_main /> */}
       <New_home />
-      <CardComp
-        branchesData={branchesData}
-        highlight_heading="Our digital marketing empire"
-        Main_heading=" is anchored by three strategic strongholds"
-        paddingB="80px"
-        heading={true}
-        class="hoverClass"
-        onMouseEnter={handleMouseEnter} // Pass these functions as props
-        onMouseLeave={handleMouseLeave}
-      />
+     
       {/* 2 Section - Video section */}
       <div className="second-section" ref={videoBoxRef}>
         <div className="video-box" data-aos="fade-up">
@@ -322,11 +313,24 @@ export default function Home() {
           </video>
         </div>
       </div>
-
+      
       {/* 3 Section - Logo carousel */}
       <div data-aos="fade-up">
         <Logo_Corousel />
       </div>
+
+ 
+      <CardComp
+        branchesData={branchesData}
+        highlight_heading="Our digital marketing empire"
+        Main_heading=" is anchored by three strategic strongholds"
+        paddingB="80px"
+        heading={true}
+        class="hoverClass"
+        onMouseEnter={handleMouseEnter} // Pass these functions as props
+        onMouseLeave={handleMouseLeave}
+      />
+     
 
       {/* 4 Section - Card swiper section */}
       <div className="fourth-section parent" data-aos="fade-down">
