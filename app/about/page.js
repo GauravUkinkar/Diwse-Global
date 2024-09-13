@@ -402,7 +402,7 @@ const page = () => {
             <div className="image gauravsir bg-img-cover" data-aos-delay="600"></div>
             <div className="content" data-aos-delay="800">
               <a
-                // href="https://prajaktamarwaha.com/"
+                href="https://www.linkedin.com/in/gaurav-ukinkar-730626117/"
                 target="_blank"
                 className="name1"
               >
@@ -423,7 +423,7 @@ const page = () => {
               </p>
               <div className="social-media">
                 <a
-                  // href="https://www.linkedin.com/in/prajakta-marwaha-507b6410a/"
+                  href="https://www.linkedin.com/in/gaurav-ukinkar-730626117/"
                   target="_blank"
                   className="icon"
                 >
@@ -439,7 +439,7 @@ const page = () => {
             <div className="image kartik-image bg-img-cover" data-aos-delay="600"></div>
             <div className="content" data-aos-delay="800">
               <a
-                // href="https://prajaktamarwaha.com/"
+                href="https://www.linkedin.com/in/kartik-hatte-307b4825a/"
                 target="_blank"
                 className="name1"
               >
@@ -456,7 +456,7 @@ const page = () => {
               </p>
               <div className="social-media">
                 <a
-                  // href="https://www.linkedin.com/in/prajakta-marwaha-507b6410a/"
+                  href="https://www.linkedin.com/in/kartik-hatte-307b4825a/"
                   target="_blank"
                   className="icon"
                 >
