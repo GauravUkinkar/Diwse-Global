@@ -227,7 +227,7 @@ const page = () => {
                 effective.
               </p>
           
-              <Button_comp btn_text="Elevate Digital Presence" link="contact" />
+              <Button_comp btn_text="Boost Digital Presence" link="contact" />
             </div>
 
             <div className="right">
