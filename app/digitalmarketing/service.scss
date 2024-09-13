@@ -827,5 +827,10 @@
     align-items: center !important;
     justify-content: center !important;
     flex-direction:  column !important;
+
+    input 
+    {
+    text-align: center !important;
+    }
   }
 }
