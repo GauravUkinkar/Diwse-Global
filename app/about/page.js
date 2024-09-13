@@ -399,8 +399,7 @@ const page = () => {
             </div>
           </div>
           <div className="founder">
-            <div className="image gauravsir" data-aos-delay="600"></div>
-
+            <div className="image gauravsir bg-img-cover" data-aos-delay="600"></div>
             <div className="content" data-aos-delay="800">
               <a
                 // href="https://prajaktamarwaha.com/"
@@ -437,8 +436,41 @@ const page = () => {
             </div>
           </div>
           <div className="founder flex-row-reverse">
+            <div className="image kartik-image bg-img-cover" data-aos-delay="600"></div>
+            <div className="content" data-aos-delay="800">
+              <a
+                // href="https://prajaktamarwaha.com/"
+                target="_blank"
+                className="name1"
+              >
+                Kartik Hatte
+              </a>
+              <h5 className="desgination">(  Director )</h5>
+              <p className="founder-about">
+                {/* <i>
+                  <b className="gradient-text" style={{ fontWeight: "700" }}>
+                    " Best marketing strategy ever – CARE - Gary V "
+                  </b>
+                </i> */}
+                A dedicated and results-oriented professional, he brings a unique blend of skills and experience to DIwise. His ability to foster a collaborative and innovative environment contributes to the team's continued success.
+              </p>
+              <div className="social-media">
+                <a
+                  // href="https://www.linkedin.com/in/prajakta-marwaha-507b6410a/"
+                  target="_blank"
+                  className="icon"
+                >
+                  <span>
+                    <RiLinkedinFill />
+                  </span>
+                  Let's Connect
+                </a>
+              </div>
+            </div>
+          </div>
+          {/*  */}
+          <div className="founder ">
             <div className="image omar-image" data-aos-delay="600"></div>
-
             <div className="content" data-aos-delay="800">
               <a
                 // href="https://prajaktamarwaha.com/"
@@ -473,6 +505,9 @@ const page = () => {
               </div>
             </div>
           </div>
+
+             {/*  */}
+             
         </div>
       </div>
 
