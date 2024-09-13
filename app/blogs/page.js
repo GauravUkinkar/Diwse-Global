@@ -171,9 +171,9 @@ const Blogs = () => {
                 </Link>
               ))}
           </div>
-          {visibleblog < blogData.length && (
+          { data.length > 3 && (
             <div className="load-more">
-              <button className="btn1">
+              <button className="btn1" onClick={()=>setVisibleBlogs(visibleblog + 3)}>
                 Load More Blog
               </button>
             </div>

@@ -38,6 +38,7 @@ clip-path: polygon(0 0, 100% 0%, 100% 80%, 50% 100%, 0 80%);
 
 .blog-parent {
   padding: 50px 0px;
+
   .blog-cont {
     display: flex;
     flex-direction: column;
@@ -52,8 +53,10 @@ clip-path: polygon(0 0, 100% 0%, 100% 80%, 50% 100%, 0 80%);
       flex-wrap: wrap;
       justify-content: center;
       gap: 20px;
+      
       .card {
-        width: 370px;
+      
+        width: 355px;
         display: flex;
         gap: 10px;
         flex-direction: column;
