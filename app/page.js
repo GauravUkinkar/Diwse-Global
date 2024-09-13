@@ -196,7 +196,7 @@ export default function Home() {
       flag_img: indiaFlag,
       countryName: "India",
       mouseLeave: true,
-      togglePattern:true,
+      togglePattern: true,
       branch_desc:
         "As the technological powerhouse of our network, our Indian office serves as the nerve centre of our technical prowess. Our brilliant team of tech wizards operates from this bustling hub, crafting cutting-edge solutions that drive our digital success.",
     },
@@ -206,7 +206,7 @@ export default function Home() {
       countryName: "UAE",
       flagePosition: "left center",
       mouseLeave: true,
-      togglePattern:true,
+      togglePattern: true,
       branch_desc:
         "The gleaming heart of our global operations, our UAE head office is the epicentre of innovation and expansion. From this bustling metropolis, we orchestrate brilliant campaigns and execute flawless strategies, harnessing the region's boundless potential.",
     },
@@ -215,25 +215,19 @@ export default function Home() {
       flag_img: ukFlag,
       countryName: "London",
       mouseLeave: true,
-      togglePattern:true,
+      togglePattern: true,
       branch_desc:
         "Standing as the bridge between East and West, our London office is a strategic outpost that connects our Asian operations. This global city provides the perfect platform for forging international partnerships and tapping into the European market.",
     },
   ]);
 
-
-
-
-
   const handleMouseLeave = (index) => {
     const updatedBranches = branchesData.map((item, i) => {
       if (i === index) {
-    
         item.mouseLeave = true;
-        
-    
+
         setTimeout(() => {
-          setBranchesData(prevBranches => 
+          setBranchesData((prevBranches) =>
             prevBranches.map((item, idx) =>
               idx === index ? { ...item, togglePattern: true } : item
             )
@@ -242,21 +236,17 @@ export default function Home() {
       }
       return item;
     });
-    
 
     setBranchesData(updatedBranches);
   };
 
-
   const handleMouseEnter = (index) => {
     const updatedBranches = branchesData.map((item, i) => {
       if (i === index) {
-    
         item.mouseLeave = false;
-        
-    
+
         setTimeout(() => {
-          setBranchesData(prevBranches => 
+          setBranchesData((prevBranches) =>
             prevBranches.map((item, idx) =>
               idx === index ? { ...item, togglePattern: false } : item
             )
@@ -265,10 +255,9 @@ export default function Home() {
       }
       return item;
     });
-    
+
     setBranchesData(updatedBranches);
   };
-  
 
   return (
     <>
@@ -285,7 +274,7 @@ export default function Home() {
       {/* 1 Section - One side text and one side 3D model */}
       {/* <Home_main /> */}
       <New_home />
-     
+
       {/* 2 Section - Video section */}
       <div className="second-section" ref={videoBoxRef}>
         <div className="video-box" data-aos="fade-up">
@@ -313,24 +302,23 @@ export default function Home() {
           </video>
         </div>
       </div>
-      
+
       {/* 3 Section - Logo carousel */}
       <div data-aos="fade-up">
         <Logo_Corousel />
       </div>
-
- 
-      <CardComp
-        branchesData={branchesData}
-        highlight_heading="Our digital marketing empire"
-        Main_heading=" is anchored by three strategic strongholds"
-        paddingB="80px"
-        heading={true}
-        class="hoverClass"
-        onMouseEnter={handleMouseEnter} // Pass these functions as props
-        onMouseLeave={handleMouseLeave}
-      />
-     
+      <div className="pt-[40px]">
+        <CardComp
+          branchesData={branchesData}
+          highlight_heading="Our digital marketing empire"
+          Main_heading=" is anchored by three strategic strongholds"
+          paddingB="40px"
+          heading={true}
+          class="hoverClass"
+          onMouseEnter={handleMouseEnter} // Pass these functions as props
+          onMouseLeave={handleMouseLeave}
+        />
+      </div>
 
       {/* 4 Section - Card swiper section */}
       <div className="fourth-section parent" data-aos="fade-down">
