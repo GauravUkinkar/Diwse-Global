@@ -54,7 +54,7 @@ const page = () => {
     {
       title: "Custom Website Development",
       content:
-        "Designing and building responsive, user-friendly websites tailored to meet the specific needs and goals of a business or organisation.",
+        "Designing and building responsive, user-friendly websites expertly tailored to meet the specific needs and goals of a business or organization.",
       image: img1,
     },
     {
