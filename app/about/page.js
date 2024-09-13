@@ -360,7 +360,7 @@ const page = () => {
             </div>
           </div>
           <div className="founder flex-row-reverse">
-            <div className="image prashantpatil" data-aos-delay="600"></div>
+            <div className="image prashantpatil bg-img-cover" data-aos-delay="600"></div>
 
             <div className="content" data-aos-delay="800">
               <a
