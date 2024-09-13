@@ -127,7 +127,7 @@ const page = () => {
               reputation across multiple markets, ensuring effective
               communication and crisis preparedness.
             </p>
-            <form onSubmit={submitEmail}>
+            <form onSubmit={submitEmail} className="query-form">
               <input
                 type="email"
                 placeholder="Your email address"

@@ -595,3 +595,17 @@
 // }
 //   }
 // }
+
+
+@media (max-width: 600px) 
+{
+
+  .about-heading 
+  {
+    font-size: calc(var(--unit) * 1.6) !important;
+  }
+  .about-para {
+ 
+    font-size: 19px !important;
+  }
+}

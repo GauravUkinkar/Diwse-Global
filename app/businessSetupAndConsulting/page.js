@@ -132,7 +132,7 @@ const page = () => {
               We help you navigate legal compliance, develop effective market
              strategies, hire best of talent and optimise your operations for global success.
             </p>
-            <form onSubmit={submitEmail}>
+            <form onSubmit={submitEmail} className="query-form">
               <input
                 type="email"
                 placeholder="Your email address"

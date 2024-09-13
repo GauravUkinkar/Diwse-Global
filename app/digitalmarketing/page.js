@@ -145,7 +145,7 @@ const page = () => {
               management, and paid advertising, are designed to enhance your
               visibility, drive global engagement, and boost your bottom line.
             </p>
-            <form onSubmit={submitEmail}>
+            <form onSubmit={submitEmail} className="query-form">
               <input
                 type="email"
                 placeholder="Your email address"

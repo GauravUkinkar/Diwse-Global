@@ -125,7 +125,7 @@ const page = () => {
               target audience worldwide. From logo design to content creation,
               we ensure your brand stands out in the global marketplace.
             </p>
-            <form onSubmit={submitEmail}>
+            <form onSubmit={submitEmail} className="query-form">
               <input
                 type="email"
                 placeholder="Your email address"

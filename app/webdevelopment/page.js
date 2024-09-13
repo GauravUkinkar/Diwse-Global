@@ -128,7 +128,7 @@ const page = () => {
               technology ensures your digital assets are optimised for global
               audiences.
             </p>
-            <form onSubmit={submitEmail}>
+            <form onSubmit={submitEmail} className="query-form">
               <input
                 type="email"
                 placeholder="Your email address"
