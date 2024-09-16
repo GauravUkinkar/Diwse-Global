@@ -359,11 +359,11 @@ const page = () => {
               </div>
             </div>
           </div>
-          <div className="founder flex-row-reverse">
+          {/* <div className="founder flex-row-reverse">
             <div className="image omar-image" data-aos-delay="600"></div>
             <div className="content" data-aos-delay="800">
               <a
-                // href="https://prajaktamarwaha.com/"
+                href="https://prajaktamarwaha.com/"
                 target="_blank"
                 className="name1"
               >
@@ -371,11 +371,7 @@ const page = () => {
               </a>
               <h5 className="desgination">( Partner - UAE Office )</h5>
               <p className="founder-about">
-                {/* <i>
-                  <b className="gradient-text" style={{ fontWeight: "700" }}>
-                    " Best marketing strategy ever – CARE - Gary V "
-                  </b>
-                </i> */}
+               
                 Known for his meticulous attention to detail, Omar ensures that
                 DIwise adheres to the highest governance standards. His
                 expertise is invaluable in supporting the company's global
@@ -383,7 +379,7 @@ const page = () => {
               </p>
               <div className="social-media">
                 <a
-                  // href="https://www.linkedin.com/in/prajakta-marwaha-507b6410a/"
+                  href="https://www.linkedin.com/in/prajakta-marwaha-507b6410a/"
                   target="_blank"
                   className="icon"
                 >
@@ -408,13 +404,7 @@ const page = () => {
               </a>
               <h5 className="desgination">( Director - UK Office )</h5>
               <p className="founder-about">
-                {/* <i>
-                  <b className="gradient-text" style={{ fontWeight: "700" }}>
-                    " Best marketing strategy ever – CARE - Gary V "
-                  </b>
-                </i>
-                <br />
-                <br /> */}
+               
                 With a rich background in banking and Fintech, Prashant brings a
                 wealth of expertise in product development and business
                 transformation. His strategic vision guides DIwise towards
@@ -446,13 +436,7 @@ const page = () => {
               </a>
               <h5 className="desgination">( Director - India Office ) </h5>
               <p className="founder-about">
-                {/* <i>
-                  <b className="gradient-text" style={{ fontWeight: "700" }}>
-                    " Best marketing strategy ever – CARE - Gary V "
-                  </b>
-                </i>
-                <br />
-                <br /> */}
+              
                 Passionate and dedicated, Gaurav's calm demeanour belies his
                 sharp intellect and drive for results. His unwavering commitment
                 inspires the DIwise team to achieve excellence.
@@ -483,11 +467,7 @@ const page = () => {
               </a>
               <h5 className="desgination">(  Director - India Office )</h5>
               <p className="founder-about">
-                {/* <i>
-                  <b className="gradient-text" style={{ fontWeight: "700" }}>
-                    " Best marketing strategy ever – CARE - Gary V "
-                  </b>
-                </i> */}
+              
                 A dedicated and results-oriented professional, he brings a unique blend of skills and experience to DIwise. His ability to foster a collaborative and innovative environment contributes to the team's continued success.
               </p>
               <div className="social-media">
@@ -503,7 +483,7 @@ const page = () => {
                 </a>
               </div>
             </div>
-          </div>
+          </div> */}
           {/*  */}
          
 
