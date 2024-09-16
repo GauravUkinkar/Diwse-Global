@@ -315,7 +315,7 @@ const page = () => {
           data-aos-delay="200"
         >
           <h3 data-aos-delay="400" className="heading">
-            Meet Our <span className="gradient-text">Team</span>
+            Meet Our <span className="gradient-text">Founder</span>
           </h3>
 
           <div className="founder ">
