@@ -339,7 +339,7 @@ export default function Home() {
           /> */}
           <Home_Card_Swiper
             cards={cardData}
-            showButton={true}
+      
             showImage={false}
             cardHeight="300px"
             gridTemplateColumns="repeat(3,1fr)"
