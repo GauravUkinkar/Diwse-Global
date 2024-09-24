@@ -4,6 +4,7 @@ import "../home/home_card_swiper.scss";
 import "swiper/css";
 import "swiper/css/pagination";
 import { Autoplay, Navigation, Pagination } from "swiper/modules";
+import Link from "next/link";
 
 const Home_Card_Swiper = ({
   cards,
@@ -107,9 +108,9 @@ const Home_Card_Swiper = ({
                   </div>
                   {showButton && (
                     <div className="bottom-card">
-                      <a href={card.link} className="btn1">
+                      <Link href={card.link} className="btn1">
                         {card.buttonText}
-                      </a>
+                      </Link>
                     </div>
                   )}
                 </div>

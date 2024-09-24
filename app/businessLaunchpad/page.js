@@ -39,13 +39,13 @@ const page = () => {
       srNo: 2,
       title: "Legal Compliance and Regulatory Guidance",
       content:
-        "Ensure Compliance with international regulations, tax laws, and industry standards, minimising risks and ensuring smooth operations.",
+        "Ensure compliance with international regulations, tax laws, and industry standards, minimising risks and ensuring smooth operations.",
     },
     {
       srNo: 3,
       title: "Operational Optimisation and Consultation",
       content:
-        "Streamline Your Business with our consulting services, enhance efficiency, and drive sustainable growth.",
+        "Streamline your business with our consulting services, enhance efficiency, and drive sustainable growth.",
     },
   ];
 
@@ -79,12 +79,12 @@ const page = () => {
 
   const faqContent = [
     {
-      title: " Who can benefit from your services?",
+      title: " Who can benefit from DIwise Global's services?",
       content:
         "Our services are for startups, expanding businesses, and those entering new markets.",
     },
     {
-      title: "What services do you offer? ",
+      title: "What services does DIwise Global offer? ",
       content:
         "We offer company formation, business planning, regulatory compliance, market research, financial planning, operational consulting, and global expansion strategies.",
     },
@@ -231,7 +231,7 @@ const page = () => {
 
             <div className="right">
               <h5 className="left-heding">
-                <span className="gradient-text">Strategic for</span> Global
+                <span className="gradient-text">Strategising for</span> Global
                 Success
               </h5>
               <p className="bootom-section-para">

@@ -250,8 +250,8 @@ const page = () => {
             data-aos-duration="1000"
           >
             <h4 className="hedding">
-              Why Choose Diwise Global for{" "}
-              <span className="gradient-text">Digital Marketing and Search Engine Optimization (SEO)?</span>
+           FAQs for 
+              <span className="gradient-text"> Branding and Design</span>
             </h4>
             {faqContent.map((item, index) => (
               <Faq

@@ -6,6 +6,7 @@ import Cursor from "@/component/cursor/Cursor";
 import New_footer from "@/component/footer/New_footer";
 import Script from 'next/script';
 import Tools from "@/component/contactsidebar/Tools";
+import PageToTop from "@/component/pagetotop/PageToTop";
 
 export const metadata = {
   title: "Diwise Global | Expert Brand Building & Digital Marketing Solutions",
@@ -57,7 +58,7 @@ export default function RootLayout({ children }) {
         <div className="content">
         <Tools/>
           <Header_main />
-       
+       <PageToTop />
           {children}
           <New_footer />
         </div>

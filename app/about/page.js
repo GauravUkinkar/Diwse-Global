@@ -340,7 +340,7 @@ const page = () => {
                 <br />
                 As the visionary leader of DIwise Global, Prajakta Marwaha
                 brings unparalleled expertise and a strategic mindset. Her deep
-                understanding of digital marketing and innovative approach drive
+                understanding of digital marketing and innovative approach drives
                 our team towards exceptional results. Her commitment to
                 understanding client needs and building long-term partnerships
                 ensures sustainable growth and success.
@@ -351,7 +351,7 @@ const page = () => {
                   target="_blank"
                   className="icon"
                 >
-                  <span>
+                  <span className="Linkdin-icon">
                     <RiLinkedinFill />
                   </span>
                   Let's Connect

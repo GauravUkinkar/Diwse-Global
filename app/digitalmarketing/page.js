@@ -84,7 +84,7 @@ const page = () => {
   const faqContent = [
     {
       title:
-        " Search Engine Optimization (SEO) or Search Engine Marketing (SEM)",
+        " Search Engine Optimization (SEO) and Search Engine Marketing (SEM)",
       content:
         "With a presence in India, the UK, and UAE, we have the experience and expertise to help your business succeed in diverse markets.",
     },

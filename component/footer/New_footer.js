@@ -1,4 +1,5 @@
-import React from "react";
+"use client"
+import React, { useEffect } from "react";
 import { FaArrowRight } from "react-icons/fa";
 import { GiPlainCircle } from "react-icons/gi";
 import "./new_footer.scss";
@@ -6,7 +7,17 @@ import { FaInstagram } from "react-icons/fa";
 import { FaFacebookF } from "react-icons/fa";
 import { FaXTwitter } from "react-icons/fa6";
 import { FaLinkedinIn } from "react-icons/fa";
+import { FaArrowUp } from "react-icons/fa6";
 const New_footer = () => {
+
+
+ const goToTop = () =>{
+  window.scrollTo({
+    top:0,
+    behavior:"smooth"
+  })
+ }
+
   return (
     <>
       <div className="nfooter-parent parent">
@@ -86,6 +97,12 @@ const New_footer = () => {
           </div>
         </div>
       </div>
+
+      <div className="gototop"  onClick={goToTop} >
+    <span>
+    <FaArrowUp />
+    </span>
+    </div>
     </>
   );
 };

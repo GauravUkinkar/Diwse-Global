@@ -50,7 +50,7 @@ export default function Home() {
       description:
         "Elevate your online presence. From crafting engaging content and managing your social media, we'll drive global visibility and engagement.",
       buttonText: "Get Started",
-      link: "digitalmarketing",
+      link: "/digitalmarketing",
     },
     {
       icon: "assets/icons/navIcon/Development.png",
@@ -58,15 +58,15 @@ export default function Home() {
       description:
         "Bring your digital vision to life. We specialise in creating user-friendly, responsive designs with the latest technology to meet your needs.",
       buttonText: "Get Started",
-      link: "webdevelopment",
+      link: "/webdevelopment",
     },
     {
       icon: "assets/icons/navIcon/digital_marketing.png",
       title: "Branding and Design",
       description:
-        "Make Your Brand Unforgettable. Our team of creatives will design your logo, develop your brand story, and produce engaging multimedia content.",
+        "Make your brand unforgettable. Our team of creatives will design your logo, develop your brand story, and produce engaging multimedia content.",
       buttonText: "Get Started",
-      link: "prandbranding",
+      link: "/prandbranding",
     },
     {
       icon: "assets/icons/navIcon/Dcoument.png",
@@ -74,15 +74,15 @@ export default function Home() {
       description:
         "Expand your business globally. We offer comprehensive support, from developing market entry strategies to providing operational consulting.",
       buttonText: "Get Started",
-      link: "businessSetupAndConsulting",
+      link: "/businessLaunchpad",
     },
     {
       icon: "assets/icons/navIcon/PR.png",
       title: "Public Relations",
       description:
-        "Manage Your Reputation Globally. We help you build and maintain a positive brand reputation, ensuring effective communication.",
+        "Manage your reputation globally. We help you build and maintain a positive brand reputation, ensuring effective communication.",
       buttonText: "Get Started",
-      link: "publicRelationOutreach",
+      link: "/publicRelationOutreach",
     },
   ];
   const videoBoxRef = useRef(null);
@@ -125,14 +125,14 @@ export default function Home() {
       url: "/travel",
     },
     {
-      title: "Healthcare Concierge Shakes hand to medical tourism digitally",
+      title: "Healthcare Concierge Shakes Hand to Medical Tourism Digitally",
       content:
         "DIwise played a crucial role in digitising healthcare concierge services, facilitating seamless medical tourism experiences for patients worldwide.",
       imgage: img3,
       url: "/hcc",
     },
     {
-      title: "Trading the best of the world, Onkar World’s Digital Partner",
+      title: "Trading the Best of the World, Onkar World’s Digital Partner",
       content:
         "DIwise partnered with Onkar World to enhance their online presence and drive global trade through effective digital marketing strategies.",
       imgage: img4,
