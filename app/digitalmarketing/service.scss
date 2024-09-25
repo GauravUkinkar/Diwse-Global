@@ -8,9 +8,10 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  // margin-top: 30px;
 
   .service-hero-cont {
-    height: auto;
+    height: 500px;
     // padding: 150px 10px 100px 10px;
     display: flex;
     justify-content: center;
@@ -80,7 +81,7 @@
 
     .right {
       width: 50%;
-      height: 80%;
+      height: 100%;
       background-size: cover;
       background-repeat: no-repeat;
       background-position: top center;
@@ -89,7 +90,8 @@
       overflow: hidden !important;
 
       video {
-        height: 100%;
+        width: 100%;
+       
       }
 
       &.digitalmarketing {
@@ -839,5 +841,10 @@
     margin-top: 80px;
     height: auto !important;
     padding:20px 10px ;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+   
   }
 }

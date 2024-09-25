@@ -1,7 +1,7 @@
 "use client";
 
 import React, { useEffect, useState } from "react";
-import "../digitalmarketing/service.scss";
+import "./service.scss";
 
 import { MdKeyboardArrowDown } from "react-icons/md";
 import Faq from "@/component/faq/Faq";
@@ -84,14 +84,14 @@ const page = () => {
   const faqContent = [
     {
       title:
-        " Search Engine Optimization (SEO) and Search Engine Marketing (SEM)",
+        " Search Engine Optimisation (SEO) and Search Engine Marketing (SEM)",
       content:
         "With a presence in India, the UK, and UAE, we have the experience and expertise to help your business succeed in diverse markets.",
     },
     {
       title: " Tailored Strategies",
       content:
-        "We understand that each business is unique, which is why we create customized digital marketing plans that align with your specific goals and target audience.",
+        "We understand that each business is unique, which is why we create customised digital marketing plans that align with your specific goals and target audience.",
     },
     {
       title: " Data-Driven Decisions",
@@ -137,11 +137,11 @@ const page = () => {
         >
           <div className="left">
             <h3 className="section-headding">
-              Digital Marketing and Search Engine Optimization (SEO)
+              Digital Marketing and Search Engine Optimisation (SEO)
             </h3>
             <p className="service-p">
               Our comprehensive digital marketing strategies, including Search
-              Engine Optimization (SEO), content marketing, social media
+              Engine Optimisation (SEO), content marketing, social media
               management, and paid advertising, are designed to enhance your
               visibility, drive global engagement, and boost your bottom line.
             </p>
@@ -198,7 +198,7 @@ const page = () => {
             <p className="para">
               DIwise Global offers expert digital marketing services tailored to
               help your business stand out on a global scale. Our deep
-              understanding of Search Engine Optimization (SEO) and cutting-edge
+              understanding of Search Engine Optimisation (SEO) and cutting-edge
               techniques ensure that your brand is visible, relevant, and
               engaging to international audiences.
             </p>
@@ -274,7 +274,7 @@ const page = () => {
               FAQs for{" "}
               <span className="gradient-text">
                 {" "}
-                Digital Marketing and Search Engine Optimization (SEO) Services
+                Digital Marketing and Search Engine Optimisation (SEO) Services
               </span>
             </h4>
             {faqContent.map((item, index) => (
