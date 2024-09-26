@@ -8,7 +8,7 @@ import "swiper/css/effect-coverflow";
 import "swiper/css/navigation"; // Import navigation styles
 
 // import required modules
-import { EffectCoverflow, Navigation } from "swiper/modules";
+import { Autoplay, EffectCoverflow, Navigation } from "swiper/modules";
 import Image from "next/image";
 
 const About_card_swiper = (props) => {
@@ -18,8 +18,12 @@ const About_card_swiper = (props) => {
         effect={"coverflow"}
         grabCursor={true}
         centeredSlides={true}
-        slidesPerView={"auto"}
+        // slidesPerView={"auto"}
         loop={true} // Enable looping
+        autoplay={{
+          delay: 2500,
+          disableOnInteraction: false,
+        }}
         coverflowEffect={{
           rotate: 50,
           stretch: 1,
@@ -28,9 +32,9 @@ const About_card_swiper = (props) => {
           slideShadows: true,
         }}
         navigation={true} // Enable navigation arrows
-        pagination={true}
+        // pagination={true}
         initialSlide={2}
-        modules={[EffectCoverflow, Navigation]}
+        modules={[EffectCoverflow, Navigation,Autoplay]}
         className="mySwiper"
         breakpoints={{
           320: {

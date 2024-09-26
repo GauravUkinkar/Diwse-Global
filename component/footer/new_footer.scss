@@ -416,6 +416,7 @@
   border-radius: 50%;
  cursor: pointer;
    transition: var(--trans);
+   z-index: 99999999999999;
 
 span{
   width: 30px;
