@@ -64,7 +64,7 @@ const page = () => {
                 Travel and Taste
               </a>
             </span>{" "}
-            Got the taste of Digital Adventures
+            Got the Taste of Digital Adventures
           </h3>
           <p className="case-para" data-aos="fade-up" data-aos-delay="200">
             Our collaboration with Travel and Taste was a journey filled with
@@ -109,7 +109,7 @@ const page = () => {
               </p>
             </div>
             <div className="btnlist" data-aos="fade-up" data-aos-delay="400">
-              <div className="case-btn">Digital Marketing and Search Engine Optimization (SEO)</div>
+              <div className="case-btn">Digital Marketing and Search Engine Optimisation (SEO)</div>
               <div className="case-btn">Web development</div>
               <div className="case-btn">Lead Generation Campaigns</div>
               <div className="case-btn">Branding and Creative Services</div>

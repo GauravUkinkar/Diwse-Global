@@ -87,7 +87,7 @@ const page = () => {
         <div className="case-study-third-cont cont">
           <div className="top">
             <h4 className="heading" data-aos="fade-up" data-aos-delay="200">
-              Proven Results  <span className="gradient-text">DIwise</span>
+              Proven Results with  <span className="gradient-text">DIwise</span>
             </h4>
           </div>
 
@@ -102,7 +102,7 @@ const page = () => {
               </div>
               <div className="case-btn">Content Creation and Management
               </div>
-              <div className="case-btn">SWebsite Development and Maintenance
+              <div className="case-btn">Website Development and Maintenance
 
 
               </div>

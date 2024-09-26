@@ -59,7 +59,7 @@ const page = () => {
       <div className="case-study-page parent">
         <div className="case-study-page-cont cont">
           <h3 className="case-heading" data-aos="fade-up">
-            Trading the best of the world,
+            Trading the Best of the World,
             <span className="gradient-text">
               <a href="https://onkarsugars.com/" target="_blank">
                 {" "}
@@ -110,7 +110,7 @@ const page = () => {
               </p>
             </div>
             <div className="btnlist" data-aos="fade-up" data-aos-delay="400">
-              <div className="case-btn">Digital Marketing and Search Engine Optimization (SEO)</div>
+              <div className="case-btn">Digital Marketing and Search Engine Optimisation (SEO)</div>
               <div className="case-btn">Web development</div>
               <div className="case-btn">Lead Generation Campaigns</div>
               <div className="case-btn">Branding and Creative Services</div>

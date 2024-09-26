@@ -63,7 +63,7 @@ const page = () => {
                 Healthcare Concierge{" "}
               </a>
             </span>{" "}
-            Shakes hand to medical tourism digitally
+            Shakes Hand to Medical Tourism Digitally
           </h3>
           <p className="case-para" data-aos="fade-up" data-aos-delay="200">
             DIwise played a pivotal role in transforming Healthcare Concierge's
@@ -108,7 +108,7 @@ const page = () => {
               </p>
             </div>
             <div className="btnlist" data-aos="fade-up" data-aos-delay="400">
-              <div className="case-btn">Digital Marketing and Search Engine Optimization (SEO)</div>
+              <div className="case-btn">Digital Marketing and Search Engine Optimisation (SEO)</div>
               <div className="case-btn">Web Development</div>
               <div className="case-btn">Lead Generation Campaigns</div>
               <div className="case-btn">Branding and Creative Services</div>
