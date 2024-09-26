@@ -111,7 +111,7 @@ export default function Home() {
   }, []);
   const caseStudies = [
     {
-      title: "Revolutionising healthcare delivery with AxonCare by Axonic",
+      title: "Revolutionising Healthcare Delivery with AxonCare by Axonic",
       content:
         "DIwise helped AxonCare transform healthcare delivery through innovative digital solutions, improving patient outcomes and accessibility.",
       imgage: img1,
@@ -310,8 +310,8 @@ export default function Home() {
       <div className="pt-[40px]">
         <CardComp
           branchesData={branchesData}
-          highlight_heading="Our digital marketing empire"
-          Main_heading=" is anchored by three strategic strongholds"
+          highlight_heading="Our Digital Marketing Empire"
+          Main_heading=" is Anchored by Three Strategic Strongholds"
           paddingB="40px"
           heading={true}
           class="hoverClass"

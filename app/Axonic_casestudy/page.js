@@ -57,7 +57,7 @@ const page = () => {
       <div className="case-study-page parent">
         <div className="case-study-page-cont cont">
           <h3 className="case-heading" data-aos="fade-up">
-            Revolutionising healthcare delivery with AxonCare by
+            Revolutionising Healthcare Delivery with AxonCare by
             <span className="gradient-text">
               <a href="https://axonichealth.com/" target="_blank">
                 {" "}
