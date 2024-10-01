@@ -64,7 +64,7 @@ const Header_main = () => {
       className: "image1",
     },    
     {
-      path: "/prandbranding",
+      path: "/brandinganddesign",
       name: "Branding and Design",
       images: "assets/icons/navIcon/digital_marketing.png",
       className: "image3",

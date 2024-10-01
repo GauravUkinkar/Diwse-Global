@@ -125,10 +125,11 @@
     -webkit-backdrop-filter: blur(10px);
     backdrop-filter: blur(10px);
     padding: calc(var(--unit));
-    background: rgba(0, 0, 0, 0.76);
+    background: rgba(0, 0, 0, 0.925);
     border: 1px solid rgba(255, 255, 255, 0.3);
     border-top: none;
     border-radius: 0px 0px calc(var(--unit)) calc(var(--unit));
+
 
 
     .bottom {
@@ -139,19 +140,20 @@
       height: 100%;
       width: 100%;
       -webkit-backdrop-filter: blur(10px);
-      backdrop-filter: blur(10px);
+
 
       .link {
         border-radius: calc(var(--unit) / 2);
         border: 1px solid rgba(255, 255, 255, 0.205);
+        // background: rgba(0, 0, 0, 0.76);
         display: flex;
         flex-direction: column;
         justify-content: flex-start;
         align-items: center;
         overflow: hidden;
         gap: var(--unit);
-        -webkit-backdrop-filter: blur(10px);
-        backdrop-filter: blur(10px);
+        // -webkit-backdrop-filter: blur(10px);
+        // backdrop-filter: blur(10px);
         .top {
           height: 70%;
        
