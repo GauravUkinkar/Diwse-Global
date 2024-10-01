@@ -18,6 +18,7 @@ import img5 from "../../public/assets/sevice3/pay-per.svg";
 import axios from "axios";
 import toast, { Toaster } from "react-hot-toast";
 import Button_comp from "@/component/button/Button_comp";
+import { Helmet } from "react-helmet";
 
 const page = () => {
   const [activeIndex, setActiveIndex] = useState(0);
@@ -128,6 +129,17 @@ const page = () => {
 
   return (
     <>
+      <Helmet>
+        <title>Digital Marketing and SEO Services | DIwise</title>
+        <meta
+          name="description"
+          content="Enhance your online visibility with our comprehensive digital marketing strategies, including SEO, content marketing, social media management, and paid advertising."
+        />
+        <meta
+          name="keywords"
+          content="digital marketing, search engine optimization, SEO, content marketing, social media management, paid advertising, online visibility, global engagement, DIwise"
+        />
+      </Helmet>
       <div className="service-hero-parent parent">
         <div
           className="service-hero-cont cont"
@@ -158,10 +170,7 @@ const page = () => {
               </button>
             </form>
           </div>
-          <div
-            className="right digitalmarketing bg-img-cover"
-        
-          >
+          <div className="right digitalmarketing bg-img-cover">
             <video
               autoPlay
               muted

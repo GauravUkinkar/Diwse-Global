@@ -5,6 +5,7 @@ import Blog_Details from "@/component/blog/Blog_Details";
 import axios from "axios";
 import Link from "next/link";
 import AOS from "aos";
+import { Helmet } from "react-helmet";
 
 // Sample blog data array
 const blogData = [
@@ -124,6 +125,12 @@ const Blogs = () => {
   }, []);
   return (
     <>
+    <Helmet>
+  <title>Insights and Trends | DIwise Blog</title>
+  <meta name="description" content="Discover the latest insights, trends, and expert opinions on digital transformation, innovative technology, and industry best practices on the DIwise Blog." />
+  <meta name="keywords" content="blog, digital transformation, technology trends, industry insights, expert opinions, innovation, business strategies, digital marketing, customer engagement" />
+</Helmet>
+
       <div className="blog-parent-b  parent">
         <div className="top-color  parent">
           <div className="top-color-cont cont">

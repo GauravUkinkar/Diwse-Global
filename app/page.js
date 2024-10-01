@@ -39,6 +39,7 @@ import indiaFlag from "../public/assets/New_folder/flag.jpg";
 import uaelag from "../public/assets/New_folder/uae_flag.webp";
 import ukFlag from "../public/assets/New_folder/uk_flag.webp";
 import CardComp from "@/component/card_comp/CardComp";
+import { Helmet } from "react-helmet";
 gsap.registerPlugin(ScrollTrigger);
 export default function Home() {
   const [swiperNavigation, setSwiperNavigation] = useState(false);
@@ -261,7 +262,8 @@ export default function Home() {
 
   return (
     <>
-      <Head>
+      <Helmet>
+        <title>Diwise Global</title>
         <meta
           name="keywords"
           content="Digital Marketing, Brand Building, SEO, Social Media Marketing, Online Growth, Diwise Global, Marketing Agency, Brand Identity"
@@ -270,7 +272,7 @@ export default function Home() {
           name="description"
           content="Diwise Global specializes in creating powerful brand identities and driving growth through innovative digital marketing strategies. Partner with us to elevate your brand and achieve exceptional online success."
         />
-      </Head>
+      </Helmet>
       {/* 1 Section - One side text and one side 3D model */}
       {/* <Home_main /> */}
       <New_home />

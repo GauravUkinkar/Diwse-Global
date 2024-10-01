@@ -18,6 +18,7 @@ import topimg from "../../public/assets/public-relation.jpg";
 import axios from "axios";
 import toast, { Toaster } from "react-hot-toast";
 import Button_comp from "@/component/button/Button_comp";
+import { Helmet } from "react-helmet";
 const page = () => {
   const [activeIndex, setActiveIndex] = useState(0);
 
@@ -51,19 +52,19 @@ const page = () => {
       title: "Press Release Management",
       content:
         "Amplify Your Message. Our team crafts compelling press releases, distributing them to relevant media outlets so your messages reach your audience.",
-      image: img1
+      image: img1,
     },
     {
       title: "Media Outreach",
       content:
         "Partner with Influencers. We'll identify and collaborate with influential figures, bloggers, and media professionals to amplify your brand's message.",
-      image: img2
+      image: img2,
     },
     {
       title: "Event Coordination",
       content:
         "Create Memorable Experiences. Our event planning experts organise and promote events to generate media coverage and public interest.",
-      image: img3
+      image: img3,
     },
   ];
 
@@ -105,27 +106,35 @@ const page = () => {
       );
       toast.success("Thank You for Your Inquiry in DIwise!");
       setEmail("");
-    } catch (err) { }
+    } catch (err) {}
   };
   return (
     <>
+      <Helmet>
+        <title>Public Relations and Outreach Services | DIwise</title>
+        <meta
+          name="description"
+          content="Enhance your brand's reputation with our global PR services, including media relations, press release distribution, and crisis management. We ensure effective communication and crisis preparedness across multiple markets."
+        />
+        <meta
+          name="keywords"
+          content="public relations, outreach services, media relations, press release distribution, crisis management, brand reputation, global communication, DIwise"
+        />
+      </Helmet>
       <div className="service-hero-parent parent">
-        <div className="service-hero-cont cont"   data-aos="fade-up"
-            data-aos-delay="600"
-            data-aos-duration="1000" >
-          <div
-            className="left"
-           
-          >
-            <h3 className="section-headding">
-              Public Relations and Outreach
-            </h3>
+        <div
+          className="service-hero-cont cont"
+          data-aos="fade-up"
+          data-aos-delay="600"
+          data-aos-duration="1000"
+        >
+          <div className="left">
+            <h3 className="section-headding">Public Relations and Outreach</h3>
             <p className="service-p">
-              Our global PR services include
-              media relations, press release distribution, and crisis
-              management. We help you build and maintain a positive brand
-              reputation across multiple markets, ensuring effective
-              communication and crisis preparedness.
+              Our global PR services include media relations, press release
+              distribution, and crisis management. We help you build and
+              maintain a positive brand reputation across multiple markets,
+              ensuring effective communication and crisis preparedness.
             </p>
             <form onSubmit={submitEmail} className="query-form">
               <input
@@ -136,15 +145,12 @@ const page = () => {
                 onChange={(e) => setEmail(e.target.value)}
               />
               <button type="submit" className="submit-btn">
-              Build Reputation Globally 
+                Build Reputation Globally
               </button>
             </form>
           </div>
-          <div
-            className="right relationoutreach bg-img-cover"
-       
-          >
-             <video
+          <div className="right relationoutreach bg-img-cover">
+            <video
               autoPlay
               muted
               loop
@@ -152,7 +158,10 @@ const page = () => {
               width="100%"
               // className="video-laptop"
             >
-              <source src="/assets/servicevideos/PublicRelations.mp4" type="video/mp4" />
+              <source
+                src="/assets/servicevideos/PublicRelations.mp4"
+                type="video/mp4"
+              />
               Your browser does not support the video tag.
             </video>
           </div>
@@ -163,38 +172,39 @@ const page = () => {
         <div className="service-detail-cont cont">
           {/* ------------------TOP---------------- */}
 
-          <div className="top"
+          <div
+            className="top"
             data-aos="fade-up"
             data-aos-delay="600"
             data-aos-duration="1000"
           >
             <h3 className="heading">
-              Elevate Your Brand with  <br />{" "}
-              <span className="gradient-text">DIwise Global's PR Expertise</span>
+              Elevate Your Brand with <br />{" "}
+              <span className="gradient-text">
+                DIwise Global's PR Expertise
+              </span>
             </h3>
             <p className="para">
               Enhance your brand's reputation and reach a global audience with
               our strategic PR and media outreach services. Our team of PR
-              professionals ensure your
-              message is heard loud and clear across all markets.
+              professionals ensure your message is heard loud and clear across
+              all markets.
             </p>
           </div>
           {/* ------------------Middle---------------- */}
-          <div className="middle"data-aos="fade-up"
-              data-aos-delay="200"
-              data-aos-duration="1000">
-            <div className="left"
-              
-            >
+          <div
+            className="middle"
+            data-aos="fade-up"
+            data-aos-delay="200"
+            data-aos-duration="1000"
+          >
+            <div className="left">
               <div className="back-image public_back bg-img-cover"></div>
               <div className="front-image public_front bg-img-cover"></div>
             </div>
             <div className="right">
               {serviceDetails.map((item, index) => (
-                <div
-                  className="content"
-                  key={index}
-                >
+                <div className="content" key={index}>
                   <div className="left">{item.srNo}</div>
                   <div className="right">
                     <h5>{item.title}</h5>
@@ -205,7 +215,8 @@ const page = () => {
             </div>
           </div>
           {/* ------------------BOTTOM---------------- */}
-          <div className="bottom"
+          <div
+            className="bottom"
             data-aos="fade-up"
             data-aos-delay="200"
             data-aos-duration="800"
@@ -215,12 +226,11 @@ const page = () => {
                 <span className="gradient-text">Global PR</span> Strategy
               </h5>
               <p className="bootom-section-para">
-                 Our experts develop tailored PR
-                strategies that resonate across cultures, ensuring your brand
-                maintains a positive image and effectively reaches international
-                audiences.
+                Our experts develop tailored PR strategies that resonate across
+                cultures, ensuring your brand maintains a positive image and
+                effectively reaches international audiences.
               </p>
-              
+
               <Button_comp btn_text="Elevate Globally" link="contact" />
             </div>
 
@@ -229,9 +239,11 @@ const page = () => {
                 <span className="gradient-text">Media </span> Training
               </h5>
               <p className="bootom-section-para">
-              Prepare your team for media interactions with our expert training. We equip your spokespeople with the skills to represent your brand confidently in any market.
+                Prepare your team for media interactions with our expert
+                training. We equip your spokespeople with the skills to
+                represent your brand confidently in any market.
               </p>
-             
+
               <Button_comp btn_text="Get Media Ready" link="contact" />
             </div>
           </div>
@@ -242,13 +254,13 @@ const page = () => {
 
       <div className="service-faq-parent parent">
         <div className="service-faq-cont cont">
-          <div className="left"
+          <div
+            className="left"
             data-aos="fade-up"
             data-aos-delay="600"
             data-aos-duration="1000"
           >
             <h4 className="hedding">
-
               FAQs for Public Relations and{" "}
               <span className="gradient-text">Media Outreach Services</span>
             </h4>
@@ -262,7 +274,8 @@ const page = () => {
               />
             ))}
           </div>
-          <div className="right public_search_faq bg-img-cover"
+          <div
+            className="right public_search_faq bg-img-cover"
             data-aos="fade-up"
             data-aos-delay="900"
             data-aos-duration="1000"

@@ -23,6 +23,7 @@ const page = () => {
   }, []);
   return (
     <div>
+      
       <Blog_Details data={data}/>
     </div>
   );

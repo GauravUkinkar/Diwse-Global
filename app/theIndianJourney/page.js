@@ -13,6 +13,7 @@ import tij3 from "../../public/assets/casestudy/tij/tij3.webp";
 import tij4 from "../../public/assets/casestudy/tij/tij4.webp";
 import tij5 from "../../public/assets/casestudy/tij/tij5.webp";
 import tij6 from "../../public/assets/casestudy/tij/tij6.webp";
+import { Helmet } from "react-helmet";
 
 const page = () => {
   const caseStudy = useRef();
@@ -53,6 +54,17 @@ const page = () => {
 
   return (
     <>
+    <Helmet>
+        <title>Revolutionising Digital Solutions | DIwise</title>
+        <meta
+          name="description"
+          content="Explore how DIwise drives digital transformation by leveraging innovative technology to enhance accessibility and efficiency in various industries."
+        />
+        <meta
+          name="keywords"
+          content="digital transformation, innovative technology, accessibility, efficiency, digital marketing, technology solutions, industry transformation, business innovation, customer engagement, digital strategy"
+        />
+      </Helmet>
       <div className="case-study-page parent">
         <div className="case-study-page-cont cont">
           <h3 className="case-heading" data-aos="fade-up">

@@ -20,6 +20,7 @@ import ukBranch from "../../public/assets/New_folder/uk.webp";
 import indiaFlag from "../../public/assets/New_folder/flag.jpg";
 import uaelag from "../../public/assets/New_folder/uae_flag.webp";
 import ukFlag from "../../public/assets/New_folder/uk_flag.webp";
+import { Helmet } from "react-helmet";
 const page = () => {
   const cardData = [
     {
@@ -183,7 +184,7 @@ const page = () => {
 
   return (
     <>
-      <Head>
+      <Helmet>
         <title>
           About Us | Diwise Global - Leading Digital Marketing Agency
         </title>
@@ -191,7 +192,7 @@ const page = () => {
           name="description"
           content="Learn more about Diwise Global, our mission, values, and the team behind our success. Discover how we build powerful brands and drive digital growth."
         />
-      </Head>
+      </Helmet>
       <div className="about-parent parent">
         <div className="top-color parent">
           <div className="top-color-cont cont">
@@ -340,8 +341,8 @@ const page = () => {
                 <br />
                 As the visionary leader of DIwise Global, Prajakta Marwaha
                 brings unparalleled expertise and a strategic mindset. Her deep
-                understanding of digital marketing and innovative approach drives
-                our team towards exceptional results. Her commitment to
+                understanding of digital marketing and innovative approach
+                drives our team towards exceptional results. Her commitment to
                 understanding client needs and building long-term partnerships
                 ensures sustainable growth and success.
               </p>
@@ -485,10 +486,8 @@ const page = () => {
             </div>
           </div> */}
           {/*  */}
-         
 
-             {/*  */}
-             
+          {/*  */}
         </div>
       </div>
 

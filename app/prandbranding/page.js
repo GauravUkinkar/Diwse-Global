@@ -17,6 +17,7 @@ import img3 from "../../public/assets/prbranding/MultimediaContentProduction.svg
 import axios from "axios";
 import toast, { Toaster } from "react-hot-toast";
 import Button_comp from "@/component/button/Button_comp";
+import { Helmet } from "react-helmet";
 
 const page = () => {
   const [activeIndex, setActiveIndex] = useState(0);
@@ -110,20 +111,35 @@ const page = () => {
   };
   return (
     <>
+      <Helmet>
+        <title>Branding and Creative Services | DIwise</title>
+        <meta
+          name="description"
+          content="Elevate your business with our expert branding and creative services. We develop distinctive brand identities, from logo design to content creation, ensuring you stand out in the global marketplace."
+        />
+        <meta
+          name="keywords"
+          content="branding, creative services, brand identity, logo design, content creation, global marketplace, marketing, DIwise"
+        />
+      </Helmet>
+
+      
       <div className="service-hero-parent parent">
-        <div className="service-hero-cont cont" data-aos="fade-up"
-            data-aos-delay="600"
-            data-aos-duration="1000"  >
-          <div
-            className="left"
-            
-          >
-            <h3 className="section-headding">Branding and Creative Services </h3>
+        <div
+          className="service-hero-cont cont"
+          data-aos="fade-up"
+          data-aos-delay="600"
+          data-aos-duration="1000"
+        >
+          <div className="left">
+            <h3 className="section-headding">
+              Branding and Creative Services{" "}
+            </h3>
             <p className="service-p">
-              Our expert branding team will develop a
-              strong and distinctive brand identity that resonates with your
-              target audience worldwide. From logo design to content creation,
-              we ensure your brand stands out in the global marketplace.
+              Our expert branding team will develop a strong and distinctive
+              brand identity that resonates with your target audience worldwide.
+              From logo design to content creation, we ensure your brand stands
+              out in the global marketplace.
             </p>
             <form onSubmit={submitEmail} className="query-form">
               <input
@@ -134,14 +150,11 @@ const page = () => {
                 onChange={(e) => setEmail(e.target.value)}
               />
               <button type="submit" className="submit-btn">
-              Build Your Brand
+                Build Your Brand
               </button>
             </form>
           </div>
-          <div
-            className="right prbranding bg-img-cover "
-            
-          >
+          <div className="right prbranding bg-img-cover ">
             <video
               autoPlay
               muted
@@ -175,18 +188,20 @@ const page = () => {
             </h3>
             <p className="para">
               Our expertise in branding and creative services ensures that your
-              business stands out in a crowded marketplace. From crafting compelling brand
-              identities to producing engaging multimedia content, we are
-              dedicated to helping you make a lasting impression.
+              business stands out in a crowded marketplace. From crafting
+              compelling brand identities to producing engaging multimedia
+              content, we are dedicated to helping you make a lasting
+              impression.
             </p>
           </div>
-        {/* ------------------Middle---------------- */}
-          <div className="middle"data-aos="fade-up"
-             data-aos-delay="200"
-             data-aos-duration="1000">
-            <div className="left"
-             
-            >
+          {/* ------------------Middle---------------- */}
+          <div
+            className="middle"
+            data-aos="fade-up"
+            data-aos-delay="200"
+            data-aos-duration="1000"
+          >
+            <div className="left">
               <div className="back-image prback bg-img-cover"></div>
               <div className="front-image prfront bg-img-cover"></div>
             </div>
@@ -214,11 +229,11 @@ const page = () => {
                 <span className="gradient-text">Brand</span> Positioning
               </h5>
               <p className="bootom-section-para">
-                We'll help you develop clear and compelling
-                brand messaging that effectively communicates your unique value
-                proposition to your target audience.
+                We'll help you develop clear and compelling brand messaging that
+                effectively communicates your unique value proposition to your
+                target audience.
               </p>
-             
+
               <Button_comp btn_text="Create Your Brand " link="contact" />
             </div>
 
@@ -227,12 +242,11 @@ const page = () => {
                 Creative<span className="gradient-text"> Campaigns</span>{" "}
               </h5>
               <p className="bootom-section-para">
-                Our creative team will develop
-                innovative and effective marketing campaigns tailored to your
-                specific goals with a variety of marketing materials.
-                
+                Our creative team will develop innovative and effective
+                marketing campaigns tailored to your specific goals with a
+                variety of marketing materials.
               </p>
-              
+
               <Button_comp btn_text="Grow Your Brand" link="contact" />
             </div>
           </div>
@@ -250,7 +264,7 @@ const page = () => {
             data-aos-duration="1000"
           >
             <h4 className="hedding">
-           FAQs for 
+              FAQs for
               <span className="gradient-text"> Branding and Design</span>
             </h4>
             {faqContent.map((item, index) => (

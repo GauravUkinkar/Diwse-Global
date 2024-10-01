@@ -1,3 +1,4 @@
+"use client"
 import Header_main from "@/component/header/Header_main";
 import "./globals.scss";
 import img1 from "../public/assets/bg-orange.png";
@@ -7,11 +8,8 @@ import New_footer from "@/component/footer/New_footer";
 import Script from 'next/script';
 import Tools from "@/component/contactsidebar/Tools";
 import PageToTop from "@/component/pagetotop/PageToTop";
+import { Helmet } from "react-helmet";
 
-export const metadata = {
-  title: "Diwise Global | Expert Brand Building & Digital Marketing Solutions",
-  description: "Diwise Global specializes in creating powerful brand identities and driving growth through innovative digital marketing strategies. Partner with us to elevate your brand and achieve exceptional online success.",
-};
 
 const GA_TRACKING_ID = 'G-8E86NYGDL3'; // Your Google Analytics tracking ID
 
@@ -47,6 +45,12 @@ export default function RootLayout({ children }) {
             `,
           }}
         />
+           <Helmet>
+        <meta charSet="utf-8" />
+        <title>Agro Products - Onkar World | Premium Agricultural Sourcing</title>
+        <meta name="description" content="Onkar World specializes in the procurement and distribution of high-quality agro products. We source the best agricultural commodities to meet global demand while maintaining quality and sustainability." />
+        <meta name="keywords" content="Onkar World, agro products, agricultural sourcing, global agriculture, high-quality agro products, sustainable agriculture, bulk agricultural products, farming products, agricultural trade" />
+      </Helmet>
         <div className="transition"></div>
         <div className="transition t2"></div>
         <div className="transition t3"></div>

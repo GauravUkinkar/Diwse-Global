@@ -20,6 +20,7 @@ import uaelag from "../../public/assets/New_folder/uae_flag.webp";
 import ukFlag from "../../public/assets/New_folder/uk_flag.webp";
 import { IoCallSharp } from "react-icons/io5";
 import { GrLocation } from "react-icons/gr";
+import { Helmet } from "react-helmet";
 const page = () => {
   useEffect(() => {
     AOS.init({
@@ -113,6 +114,12 @@ const page = () => {
 
   return (
     <>
+    <Helmet>
+  <title>Contact Us | DIwise</title>
+  <meta name="description" content="Get in touch with DIwise to learn more about our digital marketing solutions. We are here to answer your questions and provide support for your business needs." />
+  <meta name="keywords" content="contact us, digital marketing, customer support, business inquiries, DIwise, get in touch, service questions, client relations" />
+</Helmet>
+
       <Contact />
       <div className="branches contact-branch parent">
         <CardComp

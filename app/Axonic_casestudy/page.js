@@ -7,12 +7,13 @@ import { LuDot } from "react-icons/lu";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import About_card_swiper from "@/component/about/About_card_swiper";
-import axonic_facebook from "../../public/assets/img/facebook_axon.webp"
-import axonic_insta from "../../public/assets/img/axonic_insta.webp"
-import axonic_2 from "../../public/assets/img/axon_2.webp"
-import Axonic from "../../public/assets/img/Axonic.webp"
-import Axon from "../../public/assets/img/axon.webp"
-import axonp from "../../public/assets/img/axonic-p.webp"
+import axonic_facebook from "../../public/assets/img/facebook_axon.webp";
+import axonic_insta from "../../public/assets/img/axonic_insta.webp";
+import axonic_2 from "../../public/assets/img/axon_2.webp";
+import Axonic from "../../public/assets/img/Axonic.webp";
+import Axon from "../../public/assets/img/axon.webp";
+import axonp from "../../public/assets/img/axonic-p.webp";
+import { Helmet } from "react-helmet";
 const page = () => {
   const caseStudy = useRef();
   const caseStudyTrigger = useRef();
@@ -29,7 +30,6 @@ const page = () => {
     "Client focus is key, as your success is our top priority.",
     "Transparent and open communication at every step.",
   ];
-
 
   const axonicImage = [
     {
@@ -50,10 +50,22 @@ const page = () => {
     {
       image: axonp,
     },
-  ]
+  ];
 
   return (
     <>
+      <Helmet>
+        <title>Revolutionising Digital Solutions | DIwise</title>
+        <meta
+          name="description"
+          content="Explore how DIwise drives digital transformation by leveraging innovative technology to enhance accessibility and efficiency in various industries."
+        />
+        <meta
+          name="keywords"
+          content="digital transformation, innovative technology, accessibility, efficiency, digital marketing, technology solutions, industry transformation, business innovation, customer engagement, digital strategy"
+        />
+      </Helmet>
+
       <div className="case-study-page parent">
         <div className="case-study-page-cont cont">
           <h3 className="case-heading" data-aos="fade-up">
@@ -108,7 +120,9 @@ const page = () => {
               </p>
             </div>
             <div className="btnlist" data-aos="fade-up" data-aos-delay="400">
-              <div className="case-btn">Digital Marketing and Search Engine Optimization (SEO)</div>
+              <div className="case-btn">
+                Digital Marketing and Search Engine Optimization (SEO)
+              </div>
               <div className="case-btn">Web and App Development</div>
               <div className="case-btn">UX/UI designing</div>
               <div className="case-btn">Branding and Creative Services</div>
