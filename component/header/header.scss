@@ -121,7 +121,7 @@
   }
 
   .option {
-    height: 300px;
+    height: 300px !important;
     -webkit-backdrop-filter: blur(10px);
     backdrop-filter: blur(10px);
     padding: calc(var(--unit));
@@ -137,8 +137,8 @@
       grid-template-columns: repeat(5, 1fr);
       grid-template-rows: repeat(2, 1fr);
       gap: var(--unit);
-      height: 100%;
-      width: 100%;
+      height: 100% !important;
+      width: 100% !important;
       -webkit-backdrop-filter: blur(10px);
 
 
