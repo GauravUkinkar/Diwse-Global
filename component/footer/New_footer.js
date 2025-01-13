@@ -29,8 +29,8 @@ const New_footer = () => {
             <h2 className="title">
               Interested in working with us?
             </h2>
-            <a href="mailto:info@diwiseglobal.com" className="mail">
-              info@diwiseglobal.com
+            <a href="mailto:contact@diwiseglobal.com" className="mail">
+            contact@diwiseglobal.com
             </a>
             <div className="line"></div>
             <div className="icon-link">

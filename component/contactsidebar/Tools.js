@@ -11,7 +11,7 @@ const Tools = () => {
         <SiWhatsapp  className="whatsapp-icon" />{" "}
         <span className="whatsapp-span">Chat Now</span>
       </a>
-      <a href="mailto:info@diwiseglobal.com" className="side-mail manage-icons" target="__blank" >
+      <a href="mailto:contact@diwiseglobal.com" className="side-mail manage-icons" target="__blank" >
         <IoMailOutline className="mail-icon" />{" "}
         <span className="email-span">Enquire Now</span>
       </a>
