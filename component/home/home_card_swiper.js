@@ -24,8 +24,8 @@ const Home_Card_Swiper = ({
   cardAlign,
   pauseOnMouseEnter = true,
   cardHeight = "auto",
-  alignTitle = "left", // Default alignment for the title
-  alignDescription = "left", // Default alignment for the description
+  alignTitle = "left", 
+  alignDescription = "left", 
 }) => {
   return (
     <div className="card-parent">
