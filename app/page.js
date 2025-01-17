@@ -333,12 +333,7 @@ export default function Home() {
             Our comprehensive suite of digital services is designed to propel
             your business to new heights, internationally.
           </p>
-          {/* <Home_Card_Swiper
-            cards={cardData}
-            showButton={true}
-            showImage={false}
-            cardHeight="350px"
-          /> */}
+        
           <Home_Card_Swiper
             cards={cardData}
             showImage={false}
