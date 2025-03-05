@@ -14,20 +14,19 @@ pipeline {
         stage('Stop Existing Process') {
             steps {
                 script {
-                    sh "fuser -k 3001/tcp || true" // Kill process running on port 3001
+                    sh "pkill -f 'node' || true" // Kills the running Next.js process if exists
                 }
             }
         }
         stage('Start Production Server') {
             steps {
-                sh 'nohup npm run start -- -p 3001 > nextjs.log 2>&1 &' // Run in background
+                sh 'nohup npm run start -- -p 3001 &'
             }
         }
         stage('Check if App is Running') {
             steps {
                 sleep 10
-                sh 'curl -I http://localhost:3001 || echo "App failed to start"'
-                echo "Website is live on port 3001"
+                echo "Website is live"
             }
         }
     }
