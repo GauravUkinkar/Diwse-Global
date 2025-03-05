@@ -20,7 +20,7 @@ pipeline {
         }
         stage('Start Production Server') {
             steps {
-               sh 'PORT=3001 npm run start'
+              sh 'nohup npm run start -- -p 3001 -H 0.0.0.0 > nextjs.log 2>&1 &'
             }
         }
         stage('Check if App is Running') {
