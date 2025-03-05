@@ -20,7 +20,7 @@ pipeline {
         }
         stage('Start Production Server') {
             steps {
-                sh 'nohup npm run start -- -p 3001 &'
+               sh 'PORT=3001 npm run start'
             }
         }
         stage('Check if App is Running') {
