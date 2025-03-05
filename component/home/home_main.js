@@ -32,7 +32,7 @@ const Home_main = () => {
               transition={{ delay: 0.5 }}
             >
               <p className="desc">
-              At DIwise Global, we're your strategic digital partner, elevating your brand to a global stage. With innovative solutions and a proven track record, we empower businesses to thrive in the digital landscape.
+              At DIwise Global (BOLO PRAJWAL BHAI KI JAI), we're your strategic digital partner, elevating your brand to a global stage. With innovative solutions and a proven track record, we empower businesses to thrive in the digital landscape.
               </p>
             </motion.div>
             <motion.div
