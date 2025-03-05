@@ -3,29 +3,28 @@ pipeline {
     stages {
         stage('Install Dependencies') {
             steps {
-                // Install npm packages
+                sh 'npm install -g pm2'  // Install PM2 globally
                 sh 'npm install'
             }
         }
         stage('Build Next.js App') {
             steps {
-                // Build the Next.js app for production
                 sh 'npm run build'
             }
         }
-        stage('Start Production Server') {
+        stage('Restart Server on Port 3001') {
             steps {
-                // Start the Next.js app in production mode
-                sh 'PORT=3001 npm run start'
+                script {
+                    sh 'pm2 delete next-app || true' // Delete old process if exists
+                    sh 'pm2 start npm --name "next-app" -- run start -- -p 3001'
+                }
             }
         }
-       
         stage('Check if App is Running') {
             steps {
-                // Wait a few seconds for the server to start
                 sleep 10
-              echo "website is live"
-                            
+                sh 'pm2 list'
+                echo "Website is live on port 3001"
             }
         }
     }
