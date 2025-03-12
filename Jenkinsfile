@@ -10,7 +10,7 @@ pipeline {
         stage('Build Next.js App') {
             steps {
                 // Build the Next.js app for production
-                sh 'PORT=3001  'npm run dev'
+                sh 'PORT=3001  npm run dev'
             }
         }
        
