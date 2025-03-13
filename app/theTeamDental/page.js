@@ -15,7 +15,7 @@ import dental4 from "../../public/assets/casestudy/team/team4.webp"; import dent
 import dental6 from "../../public/assets/casestudy/team/team6.webp";
 import { Helmet } from "react-helmet";
 
-const page = () => {
+const Page = () => {
   const caseStudy = useRef();
   const caseStudyTrigger = useRef();
 
@@ -178,4 +178,4 @@ const page = () => {
   );
 };
 
-export default page;
+export default Page;

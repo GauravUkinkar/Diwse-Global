@@ -15,7 +15,7 @@ import travel_destination from "../../public/assets/img/travel_des.webp"
 import travelp from "../../public/assets/img/travel-p.webp"
 import { Helmet } from "react-helmet";
 
-const page = () => {
+const Page = () => {
   const caseStudy = useRef();
   const caseStudyTrigger = useRef();
 
@@ -180,4 +180,4 @@ const page = () => {
   );
 };
 
-export default page;
+export default Page;

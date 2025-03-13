@@ -22,7 +22,7 @@ import toast, { Toaster } from "react-hot-toast";
 import Button_comp from "@/component/button/Button_comp";
 import { Helmet } from "react-helmet";
 
-const page = () => {
+const Page = () => {
   const [activeIndex, setActiveIndex] = useState(0);
 
   const toggleFaq = (index) => {
@@ -301,4 +301,4 @@ const page = () => {
   );
 };
 
-export default page;
+export default Page;

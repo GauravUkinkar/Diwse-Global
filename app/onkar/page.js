@@ -15,7 +15,7 @@ import onkar4 from "../../public/assets/img/onka_4.webp";
 import onkar5 from "../../public/assets/img/onka_5.webp";
 import onkarp from "../../public/assets/img/onkar-p.webp"
 
-const page = () => {
+const Page = () => {
   const caseStudy = useRef();
   const caseStudyTrigger = useRef();
 
@@ -169,4 +169,4 @@ const page = () => {
   );
 };
 
-export default page;
+export default Page;

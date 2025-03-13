@@ -14,7 +14,7 @@ import hcc_insta from "../../public/assets/img/hcc_insta.webp";
 import hcc_link from "../../public/assets/img/hcc_link.webp";
 import hccp from "../../public/assets/img/hcc-p.webp"
 
-const page = () => {
+const Page = () => {
   const caseStudy = useRef();
   const caseStudyTrigger = useRef();
 
@@ -166,4 +166,4 @@ const page = () => {
   );
 };
 
-export default page;
+export default Page;

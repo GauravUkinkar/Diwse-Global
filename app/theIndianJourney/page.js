@@ -15,7 +15,7 @@ import tij5 from "../../public/assets/casestudy/tij/tij5.webp";
 import tij6 from "../../public/assets/casestudy/tij/tij6.webp";
 import { Helmet } from "react-helmet";
 
-const page = () => {
+const Page = () => {
   const caseStudy = useRef();
   const caseStudyTrigger = useRef();
 
@@ -169,4 +169,4 @@ const page = () => {
   );
 };
 
-export default page;
+export default Page;

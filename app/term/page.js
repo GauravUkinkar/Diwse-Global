@@ -1,6 +1,6 @@
 import React from "react";
 import "../privacy/privacy.scss";
-const page = () => {
+const Page = () => {
   return (
     <div className="privacy-parent parent">
       <div className="privacy-cont cont">
@@ -67,4 +67,4 @@ const page = () => {
   );
 };
 
-export default page;
+export default Page;

@@ -4,7 +4,7 @@ import axios from "axios";
 import { useParams } from "next/navigation";
 import React, { useEffect, useState } from "react";
 
-const page = () => {
+const Page = () => {
   const { id } = useParams();
   const [data, setdata] = useState([]);
 
@@ -29,4 +29,4 @@ const page = () => {
   );
 };
 
-export default page;
+export default Page;

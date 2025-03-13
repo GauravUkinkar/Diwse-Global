@@ -17,7 +17,7 @@ import { Helmet } from "react-helmet";
 
 
 
-const page = () => {
+const Page = () => {
   const CaseStudy = useRef();
   const CaseStudyTrigger = useRef();
 
@@ -184,4 +184,4 @@ const page = () => {
   );
 };
 
-export default page;
+export default Page;

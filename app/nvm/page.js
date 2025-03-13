@@ -15,7 +15,7 @@ import nvm5 from "../../public/assets/casestudy/nvm/nvm5.webp";
 import nvm6 from "../../public/assets/casestudy/nvm/nvm6.webp";
 
 
-const page = () => {
+const Page = () => {
   const caseStudy = useRef();
   const caseStudyTrigger = useRef();
 
@@ -158,4 +158,4 @@ const page = () => {
   );
 };
 
-export default page;
+export default Page;

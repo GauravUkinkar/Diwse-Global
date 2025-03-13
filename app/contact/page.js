@@ -21,7 +21,7 @@ import ukFlag from "../../public/assets/New_folder/uk_flag.webp";
 import { IoCallSharp } from "react-icons/io5";
 import { GrLocation } from "react-icons/gr";
 import { Helmet } from "react-helmet";
-const page = () => {
+const Page = () => {
   useEffect(() => {
     AOS.init({
       duration: 500,
@@ -130,45 +130,10 @@ const page = () => {
           onMouseEnter={handleMouseEnter} // Pass these functions as props
           onMouseLeave={handleMouseLeave}
         />
-        {/* <div className="contact-branches-cont">
-          {branchesData.map((item, index) => (
-            <div
-              className="contact-branch bg-img-cover"
-              key={index}
-              style={{ background: `url(${item.branch_img.src})` }}
-            >
-              <div className="contact-overlay">
-              <div className="contact-branch_site">
-              <div className="country">
-                  <div
-                    className="flag"
-                    style={{
-                      background: `url(${item.flag_img.src})`,
-                      backgroundPosition: item.flagePosition || "center center",
-                    }}
-                  ></div>
 
-                  <p>{item.countryName}</p>
-                </div>
-              </div>
-
-              <div className="back-details">
-              <a href={item.number_link} className="number">
-                  <span className="icon">{item.CallIcon}</span>{" "}
-                  <span>{item.number_text}</span>
-                </a>
-                <a href={item.address_link} className="address" target="_blank">
-                  <span className="icon">{item.locationIcon}</span>
-                  <span className="address-text">{item.address_text}</span>
-                </a>
-              </div>
-              </div>
-            </div>
-          ))}
-        </div> */}
       </div>
     </>
   );
 };
 
-export default page;
+export default Page;

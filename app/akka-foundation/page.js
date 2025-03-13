@@ -15,7 +15,7 @@ import akka5 from"../../public/assets/casestudy/akka/akka5.webp";
 import akka6 from "../../public/assets/casestudy/akka/akka6.webp";
 import { Helmet } from "react-helmet";
 
-const page = () => {
+const Page = () => {
   const caseStudy = useRef();
   const caseStudyTrigger = useRef();
 
@@ -172,4 +172,4 @@ const page = () => {
   );
 };
 
-export default page;
+export default Page;
