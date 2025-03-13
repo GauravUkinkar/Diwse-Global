@@ -36,7 +36,7 @@ const Page = () => {
         <h4>
         4. Disclaimers and Limitation of Liability</h4>
         <p>
-        4.1 Disclaimers: Our website and services are provided "as is" and "as available" without express or implied warranties. We don't think our website will be error-free, secure, or uninterrupted.
+       {` 4.1 Disclaimers: Our website and services are provided "as is" and "as available" without express or implied warranties. We don't think our website will be error-free, secure, or uninterrupted.`}
         </p>
         <p>4.2 Limitation of Liability: To the fullest extent permitted by Law, DIwise Global shall not be liable for any indirect, incidental, special, or consequential damages arising from or in connection with your use of our website or services. Our total liability for any claims under these Terms should not exceed the amount you paid for accessing our website or using our services.</p>
 
@@ -47,7 +47,7 @@ const Page = () => {
 
         <h4>6. Modifications to the Terms</h4>
         <p>
-        We may update or modify these Terms from time to time. Any changes we make will be posted on this page; your continued use of our website after any changes constitutes your acceptance of the updated Terms. We'd like to encourage you to review these Terms periodically.
+        {`We may update or modify these Terms from time to time. Any changes we make will be posted on this page; your continued use of our website after any changes constitutes your acceptance of the updated Terms. We'd like to encourage you to review these Terms periodically.`}
         </p>
 
         <h4>7. Termination</h4>

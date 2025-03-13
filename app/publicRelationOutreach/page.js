@@ -181,14 +181,14 @@ const Page = () => {
             <h3 className="heading">
               Elevate Your Brand with <br />{" "}
               <span className="gradient-text">
-                DIwise Global's PR Expertise
+               {` DIwise Global's PR Expertise`}
               </span>
             </h3>
             <p className="para">
-              Enhance your brand's reputation and reach a global audience with
+              {`Enhance your brand's reputation and reach a global audience with
               our strategic PR and media outreach services. Our team of PR
               professionals ensure your message is heard loud and clear across
-              all markets.
+              all markets.`}
             </p>
           </div>
           {/* ------------------Middle---------------- */}

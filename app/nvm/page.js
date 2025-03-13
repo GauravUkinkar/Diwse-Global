@@ -68,7 +68,7 @@ const Page = () => {
          
           </h3>
           <p className="case-para" data-aos="fade-up" data-aos-delay="200">
-          As NVM Capital's trusted digital partner, DIwise provided comprehensive expertise to enhance their online visibility and reach. Our tailored marketing strategies helped them connect with a wider audience and showcase their unique offerings.
+          {`As NVM Capital's trusted digital partner, DIwise provided comprehensive expertise to enhance their online visibility and reach. Our tailored marketing strategies helped them connect with a wider audience and showcase their unique offerings.`}
 
           </p>
           <div data-aos="fade-up" data-aos-delay="400">
@@ -97,7 +97,7 @@ const Page = () => {
           <div className="middle">
             <div className="left" data-aos="fade-up" data-aos-delay="300">
               <p className="middlepara">
-              Through our effective digital marketing services, we successfully built NVM Capital's brand and attracted a larger customer base. We generated valuable leads and positioned them as a leading provider in their industry.
+              {`Through our effective digital marketing services, we successfully built NVM Capital's brand and attracted a larger customer base. We generated valuable leads and positioned them as a leading provider in their industry.`}
 
               </p>
             </div>
@@ -128,7 +128,7 @@ const Page = () => {
               Why <span className="gradient-text">Clients Trust DIwise</span>
             </h3>
             <p className="fifth-section-para">
-            At DIwise, we believe in building strong partnerships based on mutual understanding and trust. By deeply understanding our clients' unique goals, stories, and perspectives, we develop customised strategies that deliver exceptional results.
+          {`  At DIwise, we believe in building strong partnerships based on mutual understanding and trust. By deeply understanding our clients' unique goals, stories, and perspectives, we develop customised strategies that deliver exceptional results.`}
             </p>
 
             <div className="list-item">

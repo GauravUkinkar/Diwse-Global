@@ -66,13 +66,13 @@ const Page = () => {
             Shakes hand to medical tourism digitally
           </h3>
           <p className="case-para" data-aos="fade-up" data-aos-delay="200">
-            DIwise played a pivotal role in transforming Healthcare Concierge's
+            {`DIwise played a pivotal role in transforming Healthcare Concierge's
             services into a digital-first experience. By leveraging cutting-edge
             technology, we streamlined their operations, enhanced patient
             engagement, and facilitated seamless medical tourism experiences for
             patients worldwide. Our solutions helped Healthcare Concierge
             provide exceptional care and convenience to patients seeking medical
-            treatments abroad.
+            treatments abroad.`}
           </p>
           <div data-aos="fade-up" data-aos-delay="400">
             <Button_comp link="/contact" btn_text="Get Started" />
@@ -133,10 +133,10 @@ const Page = () => {
               Why <span className="gradient-text">Clients Trust DIwise</span>
             </h3>
             <p className="fifth-section-para">
-              At DIwise, we believe in building strong partnerships based on
+             {` At DIwise, we believe in building strong partnerships based on
               mutual understanding and trust. By deeply understanding our
               clients' unique goals, stories, and perspectives, we develop
-              customised strategies that deliver exceptional results.
+              customised strategies that deliver exceptional results.`}
             </p>
 
             <div className="list-item">

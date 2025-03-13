@@ -112,12 +112,12 @@ const Page = () => {
           <div className="middle">
             <div className="left" data-aos="fade-up" data-aos-delay="300">
               <p className="middlepara">
-                Our shared passion for travel ignited our excitement to work
+               {` Our shared passion for travel ignited our excitement to work
                 with Travel and Taste. By crafting innovative strategies,
                 creating engaging content, and generating valuable leads, we've
                 helped them achieve remarkable results. Our dedication to
                 excellence has solidified our reputation as a trusted partner in
-                the travel industry.
+                the travel industry.`}
               </p>
             </div>
             <div className="btnlist" data-aos="fade-up" data-aos-delay="400">
@@ -147,10 +147,10 @@ const Page = () => {
               Why <span className="gradient-text">Clients Trust DIwise</span>
             </h3>
             <p className="fifth-section-para">
-              At DIwise, we believe in building strong partnerships based on
+             {` At DIwise, we believe in building strong partnerships based on
               mutual understanding and trust. By deeply understanding our
               clients' unique goals, stories, and perspectives, we develop
-              customised strategies that deliver exceptional results.
+              customised strategies that deliver exceptional results.`}
             </p>
 
             <div className="list-item">

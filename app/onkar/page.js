@@ -69,11 +69,11 @@ const Page = () => {
             Digital Partner
           </h3>
           <p className="case-para" data-aos="fade-up" data-aos-delay="200">
-            As Onkar World's digital partner, DIwise played a crucial role in
+            {`As Onkar World's digital partner, DIwise played a crucial role in
             establishing their online presence and driving global trade. Through
             effective digital marketing strategies, we helped them solidify
             their position as the first and only trading company worldwide and
-            generated valuable leads through targeted social media campaigns.
+            generated valuable leads through targeted social media campaigns.`}
           </p>
           <div data-aos="fade-up" data-aos-delay="400">
             <Button_comp link="/contact" btn_text="Get Started" />
@@ -101,12 +101,12 @@ const Page = () => {
           <div className="middle">
             <div className="left" data-aos="fade-up" data-aos-delay="300">
               <p className="middlepara">
-                Our commitment to excellence has enabled us to deliver
+           {`     Our commitment to excellence has enabled us to deliver
                 exceptional results for Onkar World, solidifying our reputation
                 as a trusted partner in the global trade industry. Through our
                 innovative digital marketing strategies, we've helped them
                 enhance their online presence, attract new customers, and drive
-                sustainable growth.
+                sustainable growth.`}
               </p>
             </div>
             <div className="btnlist" data-aos="fade-up" data-aos-delay="400">
@@ -136,10 +136,10 @@ const Page = () => {
               Why <span className="gradient-text">Clients Trust DIwise</span>
             </h3>
             <p className="fifth-section-para">
-              At DIwise, we believe in building strong partnerships based on
+             {` At DIwise, we believe in building strong partnerships based on
               mutual understanding and trust. By deeply understanding our
               clients' unique goals, stories, and perspectives, we develop
-              customised strategies that deliver exceptional results.
+              customised strategies that deliver exceptional results.`}
             </p>
 
             <div className="list-item">
