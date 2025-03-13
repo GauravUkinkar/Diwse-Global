@@ -248,7 +248,7 @@ const Page = () => {
           >
             <div className="left">
               <h3 classname="ntitle">
-                Our &nbsp;
+                Our <br/><br/>
                 <span className="gradient-text">Distinct Culture</span>
               </h3>
 
@@ -263,7 +263,7 @@ const Page = () => {
             <div className="right">
               <div className="top">
                 <h3>
-                  Our &nbsp;
+                  Our <br/><br/>
                   <span className="gradient-text">Mission</span>
                 </h3>
 
@@ -275,7 +275,7 @@ const Page = () => {
               </div>
               <div className="bottomm">
                 <h3>
-                  Our &nbsp;
+                  Our <br/><br/>
                   <span className="gradient-text">Vision</span>
                 </h3>
                 <p>
@@ -289,7 +289,7 @@ const Page = () => {
 
           <div className="bottom cont">
             <h3>
-              Your Global Digital Success &nbsp;
+              Your Global Digital Success <br/><br/>
               <span className="gradient-text">Starts Here…</span>
             </h3>
 
@@ -332,7 +332,7 @@ const Page = () => {
               <p className="founder-about">
                 <i>
                   <b className="gradient-text" style={{ fontWeight: "700" }}>
-                    "Best marketing strategy ever, CARE." - Gary V
+                    {`"Best marketing strategy ever, CARE." - Gary V`}
                   </b>
                 </i>
                 <br />
@@ -353,7 +353,7 @@ const Page = () => {
                   <span className="Linkdin-icon">
                     <RiLinkedinFill />
                   </span>
-                  Let's Connect
+                  {`Let's Connect`}
                 </a>
               </div>
             </div>
