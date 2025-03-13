@@ -21,7 +21,9 @@ import indiaFlag from "../../public/assets/New_folder/flag.jpg";
 import uaelag from "../../public/assets/New_folder/uae_flag.webp";
 import ukFlag from "../../public/assets/New_folder/uk_flag.webp";
 import { Helmet } from "react-helmet";
-const page = () => {
+
+
+const Page = () => {
   const cardData = [
     {
       image: img,
@@ -62,28 +64,28 @@ const page = () => {
   ];
 
   const counterRef = useRef(null);
+
   useEffect(() => {
     AOS.init();
 
-    const observer = new IntersectionObserver(
-      (entries) => {
-        entries.forEach((entry) => {
-          if (entry.isIntersecting) {
-            startCounting();
-            observer.disconnect(); // Stop observing after counting starts
-          }
-        });
-      },
-      { threshold: 0.5 }
-    );
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          startCounting();
+          observer.disconnect();
+        }
+      });
+    }, { threshold: 0.5 });
 
-    if (counterRef.current) {
-      observer.observe(counterRef.current);
+    const currentRef = counterRef.current; // Store ref in a variable
+
+    if (currentRef) {
+      observer.observe(currentRef);
     }
 
     return () => {
-      if (counterRef.current) {
-        observer.unobserve(counterRef.current);
+      if (currentRef) {
+        observer.unobserve(currentRef);
       }
     };
   }, []);
@@ -222,11 +224,7 @@ const page = () => {
               data-aos="fade-up"
               data-aos-delay="300"
             ></div>
-            {/* <div
-              className="image image4 rect bg-img-cover"
-              data-aos="fade-up"
-              data-aos-delay="400"
-            ></div> */}
+           
           </div>
         </div>
       </div>
@@ -360,171 +358,13 @@ const page = () => {
               </div>
             </div>
           </div>
-          {/* <div className="founder flex-row-reverse">
-            <div className="image omar-image" data-aos-delay="600"></div>
-            <div className="content" data-aos-delay="800">
-              <a
-                href="https://prajaktamarwaha.com/"
-                target="_blank"
-                className="name1"
-              >
-                Omar Mughal
-              </a>
-              <h5 className="desgination">( Partner - UAE Office )</h5>
-              <p className="founder-about">
-               
-                Known for his meticulous attention to detail, Omar ensures that
-                DIwise adheres to the highest governance standards. His
-                expertise is invaluable in supporting the company's global
-                growth.
-              </p>
-              <div className="social-media">
-                <a
-                  href="https://www.linkedin.com/in/prajakta-marwaha-507b6410a/"
-                  target="_blank"
-                  className="icon"
-                >
-                  <span>
-                    <RiLinkedinFill />
-                  </span>
-                  Let's Connect
-                </a>
-              </div>
-            </div>
-          </div>
-          <div className="founder ">
-            <div className="image prashantpatil bg-img-cover" data-aos-delay="600"></div>
-
-            <div className="content" data-aos-delay="800">
-              <a
-                href="https://prashantpatil.co.uk/"
-                target="_blank"
-                className="name1"
-              >
-                Prashant Patil
-              </a>
-              <h5 className="desgination">( Director - UK Office )</h5>
-              <p className="founder-about">
-               
-                With a rich background in banking and Fintech, Prashant brings a
-                wealth of expertise in product development and business
-                transformation. His strategic vision guides DIwise towards
-                continued success.
-              </p>
-              <div className="social-media">
-                <a
-                  href="https://www.linkedin.com/in/prash-patil/"
-                  target="_blank"
-                  className="icon"
-                >
-                  <span>
-                    <RiLinkedinFill />
-                  </span>
-                  Let's Connect
-                </a>
-              </div>
-            </div>
-          </div>
-          <div className="founder flex-row-reverse">
-            <div className="image gauravsir bg-img-cover" data-aos-delay="600"></div>
-            <div className="content" data-aos-delay="800">
-              <a
-                href="https://www.linkedin.com/in/gaurav-ukinkar-730626117/"
-                target="_blank"
-                className="name1"
-              >
-                Gaurav Ukinkar
-              </a>
-              <h5 className="desgination">( Director - India Office ) </h5>
-              <p className="founder-about">
-              
-                Passionate and dedicated, Gaurav's calm demeanour belies his
-                sharp intellect and drive for results. His unwavering commitment
-                inspires the DIwise team to achieve excellence.
-              </p>
-              <div className="social-media">
-                <a
-                  href="https://www.linkedin.com/in/gaurav-ukinkar-730626117/"
-                  target="_blank"
-                  className="icon"
-                >
-                  <span>
-                    <RiLinkedinFill />
-                  </span>
-                  Let's Connect
-                </a>
-              </div>
-            </div>
-          </div>
-          <div className="founder">
-            <div className="image kartik-image bg-img-cover" data-aos-delay="600"></div>
-            <div className="content" data-aos-delay="800">
-              <a
-                href="https://www.linkedin.com/in/kartik-hatte-307b4825a/"
-                target="_blank"
-                className="name1"
-              >
-                Kartik Hatte
-              </a>
-              <h5 className="desgination">(  Director - India Office )</h5>
-              <p className="founder-about">
-              
-                A dedicated and results-oriented professional, he brings a unique blend of skills and experience to DIwise. His ability to foster a collaborative and innovative environment contributes to the team's continued success.
-              </p>
-              <div className="social-media">
-                <a
-                  href="https://www.linkedin.com/in/kartik-hatte-307b4825a/"
-                  target="_blank"
-                  className="icon"
-                >
-                  <span>
-                    <RiLinkedinFill />
-                  </span>
-                  Let's Connect
-                </a>
-              </div>
-            </div>
-          </div> */}
-          {/*  */}
-
-          {/*  */}
+         
         </div>
       </div>
 
-      {/* <div className="review-parent parent">
-        <div className="review-cont cont">
-          <div className="left">
-            <div className="top">
-              <h3>
-                What Our Clients <span className="gradient-text">Say</span>
-              </h3>
-            </div>
-            <div className="middle">
-              <p>
-                "Diwise Global has been instrumental in our growth. Their
-                expertise and innovative approach have elevated our brand and
-                driven remarkable results."
-              </p>
-              <p>- Client Name</p>
-            </div>
-          </div>
-          <div className="right">
-            <div className="top">
-              <h3>
-                Success Stories <span className="gradient-text">Unveiled</span>
-              </h3>
-            </div>
-            <div className="middle">
-              <p>
-                Discover how our clients have achieved their goals and exceeded
-                expectations with our tailored digital solutions.
-              </p>
-            </div>
-          </div>
-        </div>
-      </div> */}
+     
     </>
   );
 };
 
-export default page;
+export default Page;

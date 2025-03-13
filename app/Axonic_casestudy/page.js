@@ -14,9 +14,12 @@ import Axonic from "../../public/assets/img/Axonic.webp";
 import Axon from "../../public/assets/img/axon.webp";
 import axonp from "../../public/assets/img/axonic-p.webp";
 import { Helmet } from "react-helmet";
+
+
+
 const page = () => {
-  const caseStudy = useRef();
-  const caseStudyTrigger = useRef();
+  const CaseStudy = useRef();
+  const CaseStudyTrigger = useRef();
 
   useEffect(() => {
     AOS.init();
@@ -92,10 +95,10 @@ const page = () => {
         </div>
       </div>
 
-      <div className="case-study-second parent" ref={caseStudyTrigger}>
+      <div className="case-study-second parent" ref={CaseStudyTrigger}>
         <div
           className="case-study-second-cont top-img cont bg-img-cover"
-          ref={caseStudy}
+          ref={CaseStudy}
           data-aos="fade-up"
           data-aos-delay="600"
         ></div>
