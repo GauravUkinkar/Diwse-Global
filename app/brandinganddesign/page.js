@@ -229,9 +229,9 @@ const Page = () => {
                 <span className="gradient-text">Brand</span> Positioning
               </h5>
               <p className="bootom-section-para">
-                We'll help you develop clear and compelling brand messaging that
+              {`  We'll help you develop clear and compelling brand messaging that
                 effectively communicates your unique value proposition to your
-                target audience.
+                target audience.`}
               </p>
 
               <Button_comp btn_text="Create Your Brand " link="contact" />

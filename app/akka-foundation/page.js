@@ -141,7 +141,7 @@ const Page = () => {
               Why <span className="gradient-text">Clients Trust DIwise</span>
             </h3>
             <p className="fifth-section-para">
-              At DIwise, we believe in building strong partnerships based on mutual understanding and trust. By deeply understanding our clients' unique goals, stories, and perspectives, we develop customised strategies that deliver exceptional results.
+             {` At DIwise, we believe in building strong partnerships based on mutual understanding and trust. By deeply understanding our clients' unique goals, stories, and perspectives, we develop customised strategies that deliver exceptional results.`}
 
             </p>
 
