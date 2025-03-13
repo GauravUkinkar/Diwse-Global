@@ -81,13 +81,13 @@ const Page = () => {
             </span>
           </h3>
           <p className="case-para" data-aos="fade-up" data-aos-delay="200">
-            Recognising AxonCare's groundbreaking approach to healthcare, DIwise
+           {` Recognising AxonCare's groundbreaking approach to healthcare, DIwise
             became their trusted partner in driving digital transformation. By
             leveraging innovative technology to make healthcare accessible,
             affordable, and available, AxonCare is revolutionising the industry.
             As their one-stop digital marketing solution, DIwise has been
             instrumental in enhancing patient outcomes and expanding their
-            reach.
+            reach.`}
           </p>
           <div data-aos="fade-up" data-aos-delay="400">
             <Button_comp link="/contact" btn_text="Get Started" />

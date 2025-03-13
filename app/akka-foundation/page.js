@@ -77,7 +77,7 @@ const Page = () => {
              </span>{" "} Digitally
           </h3>
           <p className="case-para" data-aos="fade-up" data-aos-delay="200">
-            Recognising the importance of digital technology in advancing social causes, DIwise has leveraged its expertise to support the Akka Foundation's mission. By providing comprehensive digital solutions, we have helped amplify their reach and impact.
+          {`  Recognising the importance of digital technology in advancing social causes, DIwise has leveraged its expertise to support the Akka Foundation's mission. By providing comprehensive digital solutions, we have helped amplify their reach and impact.`}
 
           </p>
           <div data-aos="fade-up" data-aos-delay="400">
@@ -106,7 +106,7 @@ const Page = () => {
           <div className="middle">
             <div className="left" data-aos="fade-up" data-aos-delay="300">
               <p className="middlepara">
-                Through our tailored marketing strategies, we have successfully raised awareness of the Akka Foundation's initiatives and inspired individuals to contribute to their noble cause. Our efforts have resulted in increased donations, volunteer participation, and positive social change
+               {` Through our tailored marketing strategies, we have successfully raised awareness of the Akka Foundation's initiatives and inspired individuals to contribute to their noble cause. Our efforts have resulted in increased donations, volunteer participation, and positive social change`}
               </p>
             </div>
             <div className="btnlist" data-aos="fade-up" data-aos-delay="400">
