@@ -20,7 +20,7 @@ const Page = () => {
   };
   useEffect(() => {
     fetchBlogs();
-  }, []);
+  }, [id]);
   return (
     <div>
       

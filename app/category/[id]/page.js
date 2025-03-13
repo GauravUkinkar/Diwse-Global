@@ -28,7 +28,7 @@ const Blogs = () => {
 
   useEffect(() => {
     fetchBlogs();
-  }, []);
+  }, [id]);
 
   useEffect(() => {
     AOS.init();
