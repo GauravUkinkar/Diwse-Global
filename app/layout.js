@@ -10,7 +10,7 @@ import Tools from "@/component/contactsidebar/Tools";
 import PageToTop from "@/component/pagetotop/PageToTop";
 import { Helmet } from "react-helmet";
 
-const GA_TRACKING_ID = "AW-10946340567"; // Your Google Analytics tracking ID
+const GA_TRACKING_ID = "G-0DFK4RD3VY"; // Your Google Analytics tracking ID
 
 export default function RootLayout({ children }) {
   const styling = {
@@ -23,7 +23,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body className="body">
-        <Script
+      <Script
           id="google-analytics"
           strategy="afterInteractive"
           src={`https://www.googletagmanager.com/gtag/js?id=${GA_TRACKING_ID}`}
