@@ -24,7 +24,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body className="body">
-      <Script
+        <Script
           id="google-analytics"
           strategy="afterInteractive"
           src={`https://www.googletagmanager.com/gtag/js?id=${GA_TRACKING_ID}`}
@@ -42,9 +42,8 @@ export default function RootLayout({ children }) {
           }}
         />
 
-
-           {/* Facebook Pixel */}
-           <Script
+        {/* Facebook Pixel */}
+        <Script
           id="facebook-pixel"
           strategy="afterInteractive"
           dangerouslySetInnerHTML={{
@@ -64,16 +63,18 @@ export default function RootLayout({ children }) {
         />
         <Helmet>
           <meta charSet="utf-8" />
-          <title>
-            Agro Products - Onkar World | Premium Agricultural Sourcing
-          </title>
+          <title>Diwise Global - Digital Marketing Company.</title>
           <meta
             name="description"
-            content="Onkar World specializes in the procurement and distribution of high-quality agro products. We source the best agricultural commodities to meet global demand while maintaining quality and sustainability."
+            content="Elevate your brand with expert digital marketing, social media strategies, branding, web design, and global solutions to boost your online presence."
           />
           <meta
             name="keywords"
-            content="Onkar World, agro products, agricultural sourcing, global agriculture, high-quality agro products, sustainable agriculture, bulk agricultural products, farming products, agricultural trade"
+            content="web marketing,
+digital marketing strategies,
+marketing strategies,
+media marketing,
+digital branding"
           />
         </Helmet>
         <div className="transition"></div>
