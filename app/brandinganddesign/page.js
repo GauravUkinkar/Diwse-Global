@@ -18,6 +18,7 @@ import axios from "axios";
 import toast, { Toaster } from "react-hot-toast";
 import Button_comp from "@/component/button/Button_comp";
 import { Helmet } from "react-helmet";
+import Link from "next/link";
 
 const Page = () => {
   const [activeIndex, setActiveIndex] = useState(0);
@@ -121,7 +122,7 @@ const Page = () => {
           name="keywords"
           content="branding, creative services, brand identity, logo design, content creation, global marketplace, marketing, DIwise"
         />
-        <link
+        <Link
           rel="canonical"
           href="https://diwiseglobal.com/brandinganddesign"
         />

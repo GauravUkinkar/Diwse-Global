@@ -14,6 +14,7 @@ import travel_package from "../../public/assets/img/travel_package.webp"
 import travel_destination from "../../public/assets/img/travel_des.webp"
 import travelp from "../../public/assets/img/travel-p.webp"
 import { Helmet } from "react-helmet";
+import Link from "next/link";
 
 const Page = () => {
   const caseStudy = useRef();
@@ -65,7 +66,7 @@ const Page = () => {
           name="keywords"
           content="travel digital marketing, branding, your business online, expand market, online presence, travel marketing, travel branding, digital marketing, travel industry, travel agency, travel services, online marketing, social media marketing, SEO, content marketing"
         />
-        <Link rel="canonical" href="https://www.diwise.com/travel" />
+        <Link rel="canonical" href="https://www.diwiseglobal.com/travel" />
         <meta
           property="og:title"
           content="Travel Digital Marketing and Branding | DIwise Global" 
