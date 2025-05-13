@@ -68,7 +68,7 @@ const Page = () => {
           name="keywords"
           content="digital transformation, innovative technology, accessibility, efficiency, digital marketing, technology solutions, industry transformation, business innovation, customer engagement, digital strategy, healthcare digital marketing, content and digital marketing, strong digital presence, brand value, axoncare, axonic, axonic health, healthcare delivery, digital solutions"
         />
-        <Link rel="canonical" href="https://www.diwiseglobal.com/Axonic_casestudy" />
+
       </Helmet>
 
       <div className="case-study-page parent">

@@ -122,10 +122,6 @@ const Page = () => {
           name="keywords"
           content="branding, creative services, brand identity, logo design, content creation, global marketplace, marketing, DIwise"
         />
-        <Link
-          rel="canonical"
-          href="https://diwiseglobal.com/brandinganddesign"
-        />
       </Helmet>
 
       

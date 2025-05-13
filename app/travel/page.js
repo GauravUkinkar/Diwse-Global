@@ -66,7 +66,7 @@ const Page = () => {
           name="keywords"
           content="travel digital marketing, branding, your business online, expand market, online presence, travel marketing, travel branding, digital marketing, travel industry, travel agency, travel services, online marketing, social media marketing, SEO, content marketing"
         />
-        <Link rel="canonical" href="https://www.diwiseglobal.com/travel" />
+       
         <meta
           property="og:title"
           content="Travel Digital Marketing and Branding | DIwise Global" 
