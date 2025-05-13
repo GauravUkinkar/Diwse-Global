@@ -58,14 +58,14 @@ const Page = () => {
   return (
     <>
       <Helmet>
-        <title>Revolutionising Digital Solutions | DIwise</title>
+        <title>Revolutionising Digital Solutions | DIwise Global</title>
         <meta
           name="description"
-          content="Explore how DIwise drives digital transformation by leveraging innovative technology to enhance accessibility and efficiency in various industries."
+          content=" Healthcare digital marketing transformed through content and digital innovation, delivering strong digital presence and brand value."
         />
         <meta
           name="keywords"
-          content="digital transformation, innovative technology, accessibility, efficiency, digital marketing, technology solutions, industry transformation, business innovation, customer engagement, digital strategy"
+          content="digital transformation, innovative technology, accessibility, efficiency, digital marketing, technology solutions, industry transformation, business innovation, customer engagement, digital strategy, healthcare digital marketing, content and digital marketing, strong digital presence, brand value, axoncare, axonic, axonic health, healthcare delivery, digital solutions"
         />
       </Helmet>
 

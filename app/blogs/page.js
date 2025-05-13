@@ -8,99 +8,99 @@ import AOS from "aos";
 import { Helmet } from "react-helmet";
 
 // Sample blog data array
-const blogData = [
-  {
-    id: 1,
-    title: "Lorem ipsum dolor sit amet, consectetur adipisicing elit.",
-    image:
-      "https://img.freepik.com/free-photo/close-up-cutting-plant-leaves_23-2148905280.jpg?t=st=1723205318~exp=1723208918~hmac=bee76a809d5085aed8124f68f1d0ba3234a9ec185bd7cc86dbed3e53cb524207&w=1380",
-    description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate dicta sint velit assumenda soluta aut veritatis obcaecati et? Culpa perspiciatis.",
-    category: "News",
-    date: "08/08/2024",
-    link: "#",
-  },
-  {
-    id: 2,
-    title: "Sed ut perspiciatis unde omnis iste natus error sit voluptatem.",
-    image: "path_to_image_2.jpg",
-    description:
-      "Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit.",
-    category: "Technology",
-    date: "08/07/2024",
-    link: "#",
-  },
-  {
-    id: 3,
-    title: "Sed ut perspiciatis unde omnis iste natus error sit voluptatem.",
-    image: "path_to_image_2.jpg",
-    description:
-      "Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit.",
-    category: "Technology",
-    date: "08/07/2024",
-    link: "#",
-  },
-  {
-    id: 4,
-    title: "Sed ut perspiciatis unde omnis iste natus error sit voluptatem.",
-    image: "path_to_image_2.jpg",
-    description:
-      "Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit.",
-    category: "Technology",
-    date: "08/07/2024",
-    link: "#",
-  },
-  {
-    id: 5,
-    title: "Sed ut perspiciatis unde omnis iste natus error sit voluptatem.",
-    image: "path_to_image_2.jpg",
-    description:
-      "Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit.",
-    category: "Technology",
-    date: "08/07/2024",
-    link: "#",
-  },
-  {
-    id: 6,
-    title: "Sed ut perspiciatis unde omnis iste natus error sit voluptatem.",
-    image: "path_to_image_2.jpg",
-    description:
-      "Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit.",
-    category: "Technology",
-    date: "08/07/2024",
-    link: "#",
-  },
-  {
-    id: 7,
-    title: "Sed ut perspiciatis unde omnis iste natus error sit voluptatem.",
-    image: "path_to_image_2.jpg",
-    description:
-      "Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit.",
-    category: "Technology",
-    date: "08/07/2024",
-    link: "#",
-  },
-  {
-    id: 8,
-    title: "Sed ut perspiciatis unde omnis iste natus error sit voluptatem.",
-    image: "path_to_image_2.jpg",
-    description:
-      "Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit.",
-    category: "Technology",
-    date: "08/07/2024",
-    link: "#",
-  },
-  {
-    id: 9,
-    title: "Sed ut perspiciatis unde omnis iste natus error sit voluptatem.",
-    image: "path_to_image_2.jpg",
-    description:
-      "Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit.",
-    category: "Technology",
-    date: "08/07/2024",
-    link: "#",
-  },
-];
+// const blogData = [
+//   {
+//     id: 1,
+//     title: "Lorem ipsum dolor sit amet, consectetur adipisicing elit.",
+//     image:
+//       "https://img.freepik.com/free-photo/close-up-cutting-plant-leaves_23-2148905280.jpg?t=st=1723205318~exp=1723208918~hmac=bee76a809d5085aed8124f68f1d0ba3234a9ec185bd7cc86dbed3e53cb524207&w=1380",
+//     description:
+//       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate dicta sint velit assumenda soluta aut veritatis obcaecati et? Culpa perspiciatis.",
+//     category: "News",
+//     date: "08/08/2024",
+//     link: "#",
+//   },
+//   {
+//     id: 2,
+//     title: "Sed ut perspiciatis unde omnis iste natus error sit voluptatem.",
+//     image: "path_to_image_2.jpg",
+//     description:
+//       "Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit.",
+//     category: "Technology",
+//     date: "08/07/2024",
+//     link: "#",
+//   },
+//   {
+//     id: 3,
+//     title: "Sed ut perspiciatis unde omnis iste natus error sit voluptatem.",
+//     image: "path_to_image_2.jpg",
+//     description:
+//       "Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit.",
+//     category: "Technology",
+//     date: "08/07/2024",
+//     link: "#",
+//   },
+//   {
+//     id: 4,
+//     title: "Sed ut perspiciatis unde omnis iste natus error sit voluptatem.",
+//     image: "path_to_image_2.jpg",
+//     description:
+//       "Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit.",
+//     category: "Technology",
+//     date: "08/07/2024",
+//     link: "#",
+//   },
+//   {
+//     id: 5,
+//     title: "Sed ut perspiciatis unde omnis iste natus error sit voluptatem.",
+//     image: "path_to_image_2.jpg",
+//     description:
+//       "Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit.",
+//     category: "Technology",
+//     date: "08/07/2024",
+//     link: "#",
+//   },
+//   {
+//     id: 6,
+//     title: "Sed ut perspiciatis unde omnis iste natus error sit voluptatem.",
+//     image: "path_to_image_2.jpg",
+//     description:
+//       "Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit.",
+//     category: "Technology",
+//     date: "08/07/2024",
+//     link: "#",
+//   },
+//   {
+//     id: 7,
+//     title: "Sed ut perspiciatis unde omnis iste natus error sit voluptatem.",
+//     image: "path_to_image_2.jpg",
+//     description:
+//       "Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit.",
+//     category: "Technology",
+//     date: "08/07/2024",
+//     link: "#",
+//   },
+//   {
+//     id: 8,
+//     title: "Sed ut perspiciatis unde omnis iste natus error sit voluptatem.",
+//     image: "path_to_image_2.jpg",
+//     description:
+//       "Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit.",
+//     category: "Technology",
+//     date: "08/07/2024",
+//     link: "#",
+//   },
+//   {
+//     id: 9,
+//     title: "Sed ut perspiciatis unde omnis iste natus error sit voluptatem.",
+//     image: "path_to_image_2.jpg",
+//     description:
+//       "Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit.",
+//     category: "Technology",
+//     date: "08/07/2024",
+//     link: "#",
+//   },
+// ];
 
 const Blogs = () => {
   const [visibleblog, setVisibleBlogs] = useState(3);
@@ -127,8 +127,8 @@ const Blogs = () => {
     <>
     <Helmet>
   <title>Insights and Trends | DIwise Blog</title>
-  <meta name="description" content="Discover the latest insights, trends, and expert opinions on digital transformation, innovative technology, and industry best practices on the DIwise Blog." />
-  <meta name="keywords" content="blog, digital transformation, technology trends, industry insights, expert opinions, innovation, business strategies, digital marketing, customer engagement" />
+  <meta name="description" content="Discover insights on digital marketing, branding businesses, content strategy, and social media marketing in the digital marketing world." />
+  <meta name="keywords" content="blog, digital transformation, technology trends, industry insights, expert opinions, innovation, business strategies, digital marketing, customer engagement, digital marketing, branding businesses, content strategy, social media marketing, digital marketing world" />
 </Helmet>
 
       <div className="blog-parent-b  parent">

@@ -263,14 +263,14 @@ export default function Home() {
   return (
     <>
       <Helmet>
-        <title>Diwise Global</title>
+        <title>Strategic Digital Marketing, Branding & Web Solutions for Global Online Growth</title>
         <meta
           name="keywords"
-          content="Digital Marketing, Brand Building, SEO, Social Media Marketing, Online Growth, Diwise Global, Marketing Agency, Brand Identity"
+          content="strategic digital, digital marketing, branding, online presence, global markets"
         />
         <meta
           name="description"
-          content="Diwise Global specializes in creating powerful brand identities and driving growth through innovative digital marketing strategies. Partner with us to elevate your brand and achieve exceptional online success."
+          content=" Strategic digital marketing, branding, and web solutions to enhance your online presence and drive growth across global markets."
         />
       </Helmet>
       {/* 1 Section - One side text and one side 3D model */}

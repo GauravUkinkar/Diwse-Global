@@ -70,11 +70,7 @@ export default function RootLayout({ children }) {
           />
           <meta
             name="keywords"
-            content="web marketing,
-digital marketing strategies,
-marketing strategies,
-media marketing,
-digital branding"
+            content="web marketing, digital marketing strategies, marketing strategies, media marketing, digital branding"
           />
         </Helmet>
         <div className="transition"></div>

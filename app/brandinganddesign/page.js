@@ -112,7 +112,7 @@ const Page = () => {
   return (
     <>
       <Helmet>
-        <title>Branding and Creative Services | DIwise</title>
+        <title>Branding and Creative Services | DIwise Gobal</title>
         <meta
           name="description"
           content="Elevate your business with our expert branding and creative services. We develop distinctive brand identities, from logo design to content creation, ensuring you stand out in the global marketplace."
@@ -120,6 +120,10 @@ const Page = () => {
         <meta
           name="keywords"
           content="branding, creative services, brand identity, logo design, content creation, global marketplace, marketing, DIwise"
+        />
+        <link
+          rel="canonical"
+          href="https://diwiseglobal.com/brandinganddesign"
         />
       </Helmet>
 

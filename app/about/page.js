@@ -22,7 +22,6 @@ import uaelag from "../../public/assets/New_folder/uae_flag.webp";
 import ukFlag from "../../public/assets/New_folder/uk_flag.webp";
 import { Helmet } from "react-helmet";
 
-
 const Page = () => {
   const cardData = [
     {
@@ -68,14 +67,17 @@ const Page = () => {
   useEffect(() => {
     AOS.init();
 
-    const observer = new IntersectionObserver((entries) => {
-      entries.forEach((entry) => {
-        if (entry.isIntersecting) {
-          startCounting();
-          observer.disconnect();
-        }
-      });
-    }, { threshold: 0.5 });
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            startCounting();
+            observer.disconnect();
+          }
+        });
+      },
+      { threshold: 0.5 }
+    );
 
     const currentRef = counterRef.current; // Store ref in a variable
 
@@ -192,8 +194,17 @@ const Page = () => {
         </title>
         <meta
           name="description"
-          content="Learn more about Diwise Global, our mission, values, and the team behind our success. Discover how we build powerful brands and drive digital growth."
+          content=" Your digital transformation partner offering innovative digital marketing solutions, branding strategies, and social media excellence."
         />
+        <meta
+          name="keywords"
+          content="digital transformation partner, digital marketing solutions, branding strategies, social media"
+        />
+        <meta name="author" content="Diwise Global" />
+
+        <meta property="og:url" content="https://www.diwiseglobal.com/about" />
+        <meta property="og:type" content="website" />
+        <meta property="og:site_name" content="Diwise Global" />
       </Helmet>
       <div className="about-parent parent">
         <div className="top-color parent">
@@ -224,7 +235,6 @@ const Page = () => {
               data-aos="fade-up"
               data-aos-delay="300"
             ></div>
-           
           </div>
         </div>
       </div>
@@ -248,7 +258,8 @@ const Page = () => {
           >
             <div className="left">
               <h3 classname="ntitle">
-                Our <br/><br/>
+                Our <br />
+                <br />
                 <span className="gradient-text">Distinct Culture</span>
               </h3>
 
@@ -263,7 +274,8 @@ const Page = () => {
             <div className="right">
               <div className="top">
                 <h3>
-                  Our <br/><br/>
+                  Our <br />
+                  <br />
                   <span className="gradient-text">Mission</span>
                 </h3>
 
@@ -275,7 +287,8 @@ const Page = () => {
               </div>
               <div className="bottomm">
                 <h3>
-                  Our <br/><br/>
+                  Our <br />
+                  <br />
                   <span className="gradient-text">Vision</span>
                 </h3>
                 <p>
@@ -289,7 +302,8 @@ const Page = () => {
 
           <div className="bottom cont">
             <h3>
-              Your Global Digital Success <br/><br/>
+              Your Global Digital Success <br />
+              <br />
               <span className="gradient-text">Starts Here…</span>
             </h3>
 
@@ -358,11 +372,8 @@ const Page = () => {
               </div>
             </div>
           </div>
-         
         </div>
       </div>
-
-     
     </>
   );
 };

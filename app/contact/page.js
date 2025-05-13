@@ -117,7 +117,7 @@ const Page = () => {
     <Helmet>
   <title>Contact Us | DIwise</title>
   <meta name="description" content="Get in touch with DIwise to learn more about our digital marketing solutions. We are here to answer your questions and provide support for your business needs." />
-  <meta name="keywords" content="contact us, digital marketing, customer support, business inquiries, DIwise, get in touch, service questions, client relations" />
+  <meta name="keywords" content="contact us, digital marketing, customer support, business inquiries, DIwise, get in touch, service questions, client relations, digital marketing office, UAE, manage social media presence, grow your brand" />
 </Helmet>
 
       <Contact />

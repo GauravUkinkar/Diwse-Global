@@ -56,14 +56,19 @@ const Page = () => {
   return (
     <>
     <Helmet>
-        <title>Revolutionising Digital Solutions | DIwise</title>
+        <title>Revolutionising Digital Solutions | DIwise Global</title>
         <meta
           name="description"
-          content="Explore how DIwise drives digital transformation by leveraging innovative technology to enhance accessibility and efficiency in various industries."
+          content=" Travel digital marketing and branding services that grow your business online, expand market reach, and enhance online presence."
         />
         <meta
           name="keywords"
-          content="digital transformation, innovative technology, accessibility, efficiency, digital marketing, technology solutions, industry transformation, business innovation, customer engagement, digital strategy"
+          content="travel digital marketing, branding, your business online, expand market, online presence, travel marketing, travel branding, digital marketing, travel industry, travel agency, travel services, online marketing, social media marketing, SEO, content marketing"
+        />
+        <Link rel="canonical" href="https://www.diwise.com/travel" />
+        <meta
+          property="og:title"
+          content="Travel Digital Marketing and Branding | DIwise Global" 
         />
       </Helmet>
       <div className="case-study-page parent">
