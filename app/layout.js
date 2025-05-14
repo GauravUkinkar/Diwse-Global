@@ -9,11 +9,28 @@ import Script from "next/script";
 import Tools from "@/component/contactsidebar/Tools";
 import PageToTop from "@/component/pagetotop/PageToTop";
 import { Helmet } from "react-helmet";
+import { usePathname } from "next/navigation";
+import { useEffect } from "react";
 
 const GA_TRACKING_ID = "G-0DFK4RD3VY"; // Your Google Analytics tracking ID
 const FB_PIXEL_ID = "1428017818650200";
 
 export default function RootLayout({ children }) {
+
+  const pathname = usePathname();
+
+  useEffect(() => {
+    const handleRouteChange = (url) => {
+      if (window.gtag) {
+        window.gtag("config", GA_TRACKING_ID, {
+          page_path: url,
+        });
+      }
+    };
+
+    handleRouteChange(pathname); // on initial load
+
+  }, [pathname]);
   const styling = {
     backgroundImage: `url('${img1.src}')`,
   };
