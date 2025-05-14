@@ -12,7 +12,7 @@ import { Helmet } from "react-helmet";
 import { usePathname } from "next/navigation";
 import { useEffect } from "react";
 
-const GA_TRACKING_ID = "G-0DFK4RD3VY"; // Your Google Analytics tracking ID
+const GA_TRACKING_ID = "G-0DFK4RD3VY"; 
 const FB_PIXEL_ID = "1428017818650200";
 
 export default function RootLayout({ children }) {
@@ -28,7 +28,7 @@ export default function RootLayout({ children }) {
       }
     };
 
-    handleRouteChange(pathname); // on initial load
+    handleRouteChange(pathname); 
 
   }, [pathname]);
   const styling = {
