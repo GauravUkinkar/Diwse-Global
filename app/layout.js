@@ -13,21 +13,21 @@ import { usePathname } from "next/navigation";
 import { useEffect } from "react";
 
 const GA_TRACKING_ID = "G-0DFK4RD3VY";
-const FB_PIXEL_ID = "937697050830102"; // Updated Pixel ID
+const FB_PIXEL_ID = "937697050830102";
 
 export default function RootLayout({ children }) {
   const pathname = usePathname();
 
   useEffect(() => {
-    const handleRouteChange = (url) => {
-      if (window.gtag) {
+    const timeout = setTimeout(() => {
+      if (typeof window.gtag === "function") {
         window.gtag("config", GA_TRACKING_ID, {
-          page_path: url,
+          page_path: pathname,
         });
       }
-    };
+    }, 500); // Wait to ensure gtag is available
 
-    handleRouteChange(pathname);
+    return () => clearTimeout(timeout);
   }, [pathname]);
 
   const styling = {
@@ -54,7 +54,9 @@ export default function RootLayout({ children }) {
               window.dataLayer = window.dataLayer || [];
               function gtag(){dataLayer.push(arguments);}
               gtag('js', new Date());
-              gtag('config', '${GA_TRACKING_ID}');
+              gtag('config', '${GA_TRACKING_ID}', {
+                page_path: window.location.pathname,
+              });
             `,
           }}
         />
@@ -90,6 +92,7 @@ export default function RootLayout({ children }) {
           />
         </noscript>
 
+        {/* Meta tags */}
         <Helmet>
           <meta charSet="utf-8" />
           <title>Diwise Global - Digital Marketing Company.</title>
@@ -110,7 +113,8 @@ export default function RootLayout({ children }) {
         <div className="transition t4"></div>
 
         <Cursor />
-        {/* Optional background images */}
+
+        {/* Optional side images */}
         {/* <div className="left-side-image side-image" style={styling}></div>
         <div className="right-side-image side-image" style={styling1}></div> */}
 
