@@ -12,11 +12,10 @@ import { Helmet } from "react-helmet";
 import { usePathname } from "next/navigation";
 import { useEffect } from "react";
 
-const GA_TRACKING_ID = "G-0DFK4RD3VY"; 
-const FB_PIXEL_ID = "1428017818650200";
+const GA_TRACKING_ID = "G-0DFK4RD3VY";
+const FB_PIXEL_ID = "937697050830102"; // Updated Pixel ID
 
 export default function RootLayout({ children }) {
-
   const pathname = usePathname();
 
   useEffect(() => {
@@ -28,9 +27,9 @@ export default function RootLayout({ children }) {
       }
     };
 
-    handleRouteChange(pathname); 
-
+    handleRouteChange(pathname);
   }, [pathname]);
+
   const styling = {
     backgroundImage: `url('${img1.src}')`,
   };
@@ -41,6 +40,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body className="body">
+        {/* Google Analytics */}
         <Script
           id="google-analytics"
           strategy="afterInteractive"
@@ -78,6 +78,18 @@ export default function RootLayout({ children }) {
             `,
           }}
         />
+
+        {/* Facebook Pixel noscript fallback */}
+        <noscript>
+          <img
+            height="1"
+            width="1"
+            style={{ display: "none" }}
+            src={`https://www.facebook.com/tr?id=${FB_PIXEL_ID}&ev=PageView&noscript=1`}
+            alt="Facebook Pixel"
+          />
+        </noscript>
+
         <Helmet>
           <meta charSet="utf-8" />
           <title>Diwise Global - Digital Marketing Company.</title>
@@ -90,14 +102,18 @@ export default function RootLayout({ children }) {
             content="web marketing, digital marketing strategies, marketing strategies, media marketing, digital branding"
           />
         </Helmet>
+
+        {/* Transitions */}
         <div className="transition"></div>
         <div className="transition t2"></div>
         <div className="transition t3"></div>
         <div className="transition t4"></div>
 
         <Cursor />
+        {/* Optional background images */}
         {/* <div className="left-side-image side-image" style={styling}></div>
         <div className="right-side-image side-image" style={styling1}></div> */}
+
         <div className="content">
           <Tools />
           <Header_main />
