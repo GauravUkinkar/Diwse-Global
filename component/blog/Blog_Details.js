@@ -12,9 +12,10 @@ const Blog_Details = ({ data }) => {
   const fetchData = async () => {
     try {
       const response = await axios.get(
-        "https://api.diwiseglobal.com/auth/blogs/"
+        "https://tomcat.diwise.in/DiwiseGlobalAdminPanel/blog/getallblogs"
       );
-      setUpdatedBlogs(response.data.data);
+      const mapped = response.data.map((item) => item.data);
+      setUpdatedBlogs(mapped);
     } catch (err) {
       console.log(err);
     }
@@ -40,7 +41,7 @@ const Blog_Details = ({ data }) => {
   return (
     <>
       <Helmet>
-        <title>Brief description of the  blog post | DIwise</title>
+        <title>Brief description of the blog post | DIwise</title>
         <meta
           name="description"
           content="Brief description of the  blog post, highlighting key points and insights."
@@ -56,17 +57,17 @@ const Blog_Details = ({ data }) => {
           <div className="left">
             <div
               className="img-box bg-img-cover"
-              style={{ background: `url(${data.image})` }}
+              style={{ background: `url(${data.featuredImage})` }}
             ></div>
             <div className="date-time-box">
               <div className="date-icon">
                 <SlCalender />
                 <div className="date">{data.date}</div>
               </div>
-              <div className="time-icon">
+              {/* <div className="time-icon">
                 <IoTimeOutline />
                 <div className="time">{data.time}</div>
-              </div>
+              </div> */}
             </div>
             <h4 className="blog-title">{data.title}</h4>
 
@@ -79,7 +80,7 @@ const Blog_Details = ({ data }) => {
             </div>
           </div>
           <div className="right">
-            <div className="categories">
+            {/* <div className="categories">
               <h4>
                 Blog <span>Categories</span>
               </h4>
@@ -98,18 +99,18 @@ const Blog_Details = ({ data }) => {
                   <div className="line"></div>
                 </Link>
               ))}
-            </div>
+            </div> */}
             <div className="recent-post">
               <h4>
                 Recent <span>Posts</span>
               </h4>
               {updatedBlogs &&
                 updatedBlogs.map((post, index) => (
-                  <Link href={`/blogdetail/${post.id}`} key={index}>
+                  <Link href={`/blogdetail/${post.bid}`} key={index}>
                     <a href={post.link} className="recent-post-box">
                       <div
                         className="left bg-img-cover"
-                        style={{ backgroundImage: `url(${post.image})` }}
+                        style={{ backgroundImage: `url(${post.featuredImage})` }}
                       ></div>
                       <div className="right">
                         <div className="date-time">
@@ -117,10 +118,10 @@ const Blog_Details = ({ data }) => {
                             <SlCalender />
                             <div className="date">{post.date}</div>
                           </div>
-                          <div className="time-icon">
+                          {/* <div className="time-icon">
                             <IoTimeOutline />
                             <div className="time">{post.time}</div>
-                          </div>
+                          </div> */}
                         </div>
                         <div className="title">{post.title}</div>
                       </div>

@@ -8,8 +8,9 @@ const Accordian = () => {
   useEffect(() => {
     const fetchBlogs = async () => {
       try {
-        const response = await axios.get("https://api.diwiseglobal.com/auth/blogs/");
-        setData(response.data.data);
+        const response = await axios.get("https://tomcat.diwise.in/DiwiseGlobalAdminPanel/blog/getallblogs");
+        const mapped = response.data.map((item)=>item.data)
+      setData(mapped);
       } catch (err) {
         console.log(err);
       }
@@ -17,6 +18,8 @@ const Accordian = () => {
 
     fetchBlogs();
   }, []);
+
+  console.log(data, "data")
 
   return (
     <>

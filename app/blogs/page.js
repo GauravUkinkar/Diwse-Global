@@ -109,9 +109,13 @@ const Blogs = () => {
   const fetchBlogs = async () => {
     try {
       const response = await axios.get(
-        "https://api.diwiseglobal.com/auth/blogs/"
+        "https://tomcat.diwise.in/DiwiseGlobalAdminPanel/blog/getallblogs"
       );
-      setdata(response.data.data);
+
+      console.log(response.data);
+
+      const mapped = response.data.map((item)=>item.data)
+      setdata(mapped);
     } catch (err) {
       console.log(err);
     }
@@ -119,6 +123,8 @@ const Blogs = () => {
   useEffect(() => {
     fetchBlogs();
   }, []);
+
+  console.log(data, "data")
 
   useEffect(() => {
     AOS.init();
@@ -151,7 +157,7 @@ const Blogs = () => {
             {data &&
               data.slice(0, visibleblog).map((blog,index) => (
                 <Link
-                  href={`/blogdetail/${blog.id}`}
+                  href={`/blogdetail/${blog.bid}`}
                   className="card-link"
                   key={index}
                 >
@@ -159,7 +165,7 @@ const Blogs = () => {
                     <div className="card-data">
                       <div
                         className="card-image bg-img-cover"
-                        style={{ backgroundImage: `url(${blog.image})` }}
+                        style={{ backgroundImage: `url(${blog.featuredImage})` }}
                       ></div>
                       <h4 className="card-title">{blog.title}</h4>
                       <p

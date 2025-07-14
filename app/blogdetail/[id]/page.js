@@ -13,9 +13,11 @@ const Page = () => {
 
     try {
       const response = await axios.get(
-        `https://api.diwiseglobal.com/auth/blogs/${id}/`
+        `https://tomcat.diwise.in/DiwiseGlobalAdminPanel/blog/getBybId?bId=${id}`
       );
-      setData(response.data);
+
+      console.log(response)
+      setData(response.data.data);
     } catch (err) {
       console.error("Error fetching blog data:", err);
     }
