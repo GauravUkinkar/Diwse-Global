@@ -104,7 +104,7 @@ import { Helmet } from "react-helmet";
 
 const Blogs = () => {
   const [visibleblog, setVisibleBlogs] = useState(3);
-
+const [loading, setLoading] = useState(true);
   const [data, setdata] = useState([]);
   const fetchBlogs = async () => {
     try {
@@ -112,12 +112,15 @@ const Blogs = () => {
         "https://tomcat.diwise.in/DiwiseGlobalAdminPanel/blog/getallblogs"
       );
 
-      console.log(response.data);
+      // console.log(response.data);
 
-      const mapped = response.data.map((item)=>item.data)
-      setdata(mapped);
+      const mapped = response.data.map((item)=>item.data);
+      const sorted = mapped.sort((a, b) => new Date(b.date) - new Date(a.date));
+      setdata(sorted);
     } catch (err) {
       console.log(err);
+    }finally{
+      setLoading(false);
     }
   };
   useEffect(() => {
@@ -152,7 +155,10 @@ const Blogs = () => {
         </div>
       </div>
       <div className="blog-parent parent">
-        <div className="blog-cont cont" data-aos="fade-up">
+       {loading ? (
+        <div className="loader"></div>
+       ):(
+ <div className="blog-cont cont" data-aos="fade-up">
           <div className="card-box" data-aos="fade-up" data-aos-delay="200">
             {data &&
               data.slice(0, visibleblog).map((blog,index) => (
@@ -171,7 +177,7 @@ const Blogs = () => {
                       <p
                         className="short-desc"
                         dangerouslySetInnerHTML={{
-                          __html: blog.description.slice(0, 150),
+                          __html: blog.description.slice(0, 100),
                         }}
                       >
                       </p>
@@ -184,7 +190,7 @@ const Blogs = () => {
                 </Link>
               ))}
           </div>
-          { data.length > 3 && (
+          { data.length > 3 && visibleblog < data.length && (
             <div className="load-more">
               <button className="btn1" onClick={()=>setVisibleBlogs(visibleblog + 3)}>
                 Load More Blog
@@ -192,6 +198,8 @@ const Blogs = () => {
             </div>
           )}
         </div>
+
+       )}
       </div>
     </>
   );
