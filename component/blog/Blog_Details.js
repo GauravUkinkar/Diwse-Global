@@ -59,8 +59,10 @@ const Blog_Details = ({ data }) => {
           <div className="left">
             <div
               className="img-box bg-img-cover"
-              style={{ background: `url(${data.featuredImage})` }}
-            ></div>
+
+            >
+              <img src={data.featuredImage} alt=""/>
+            </div>
             <div className="date-time-box">
               <div className="date-icon">
                 <SlCalender />
