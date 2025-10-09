@@ -61,7 +61,7 @@ const Blog_Details = ({ data }) => {
               className="img-box bg-img-cover"
 
             >
-              <img src={data.featuredImage} alt=""/>
+              <img src={data.featuredImage} alt={data?.alter_text}/>
             </div>
             <div className="date-time-box">
               <div className="date-icon">
