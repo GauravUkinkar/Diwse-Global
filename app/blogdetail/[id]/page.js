@@ -13,7 +13,7 @@ const Page = () => {
 
     try {
       const response = await axios.get(
-        `https://tomcat.diwise.in/DiwiseGlobalAdminPanel/blog/getBybId?bId=${id}`
+        `https://tomcat.diwise.in/DiwiseGlobalAdminPanel/blog/getBytitle?title=${id.split("_").join(" ")}`
       );
 
       console.log(response)

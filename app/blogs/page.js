@@ -163,7 +163,7 @@ const [loading, setLoading] = useState(true);
             {data &&
               data.slice(0, visibleblog).map((blog,index) => (
                 <Link
-                  href={`/blogdetail/${blog.bid}`}
+                   href={`/blogdetail/${blog.title.trim().split(" ").join("_")}`}
                   className="card-link"
                   key={index}
                 >
@@ -171,8 +171,10 @@ const [loading, setLoading] = useState(true);
                     <div className="card-data">
                       <div
                         className="card-image bg-img-cover"
-                        style={{ backgroundImage: `url(${blog.featuredImage})` }}
-                      ></div>
+                       
+                      >
+                        <img src={blog.featuredImage} alt={blog?.alter_text}/>
+                      </div>
                       <h4 className="card-title">{blog.title}</h4>
                       <p
                         className="short-desc"

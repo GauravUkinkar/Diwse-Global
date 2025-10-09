@@ -14,6 +14,8 @@ const Blog_Details = ({ data }) => {
       const response = await axios.get(
         "https://tomcat.diwise.in/DiwiseGlobalAdminPanel/blog/getallblogs"
       );
+
+      console.log(response.data)
       const mapped = response.data.map((item) => item.data);
       setUpdatedBlogs(mapped);
     } catch (err) {
@@ -41,14 +43,14 @@ const Blog_Details = ({ data }) => {
   return (
     <>
       <Helmet>
-        <title>Brief description of the blog post | DIwise</title>
+        <title>{data?.meta_title}</title>
         <meta
           name="description"
-          content="Brief description of the  blog post, highlighting key points and insights."
+          content={data?.meta_description}
         />
         <meta
           name="keywords"
-          content="blog,  digital transformation, technology insights, innovation, industry best practices, expert analysis, {additional relevant keywords}"
+          content={data?.meta_keyword}
         />
       </Helmet>
 
