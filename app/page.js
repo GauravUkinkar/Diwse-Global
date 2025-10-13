@@ -22,6 +22,7 @@ import img6 from "../public/assets/home/Akka-Foundation.webp";
 import img7 from "../public/assets/home/The-Team-Dental.webp";
 import img8 from "../public/assets/home/The-Indian-Journey.webp";
 import img9 from "../public/assets/home/Pandoza.webp";
+import nvmagro from "../public/assets/nvm_agro.webp"
 import "swiper/swiper-bundle.css";
 import Head from "next/head";
 import { FaSearchengin } from "react-icons/fa";
@@ -166,6 +167,14 @@ export default function Home() {
       content:
         "DIwise has brought The Indian Journey to the forefront of digital experiences, offering innovative solutions that create unforgettable memories.",
       imgage: img8,
+      url: "/theIndianJourney",
+    },
+    {
+      title:
+        "Digitally Experiencing the Best of India with The Indian Journey ",
+      content:
+        "DIwise has brought The Indian Journey to the forefront of digital experiences, offering innovative solutions that create unforgettable memories.",
+      imgage: nvmagro,
       url: "/theIndianJourney",
     },
     // {
