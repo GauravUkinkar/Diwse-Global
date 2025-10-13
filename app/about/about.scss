@@ -114,6 +114,7 @@
         padding: var(--unit);
         border-radius: calc(var(--unit) / 2);
         gap: calc(var(--unit) / 2);
+     
 
         p {
           text-align: center;
@@ -139,6 +140,7 @@
           align-items: center;
           justify-content: center;
           flex-direction: column;
+      
         }
 
         p {
@@ -541,8 +543,7 @@
       h3 {
         text-align: center;
       }
-      .founder {
-      }
+     
       .content {
         align-items: center !important;
         justify-content: center !important;
@@ -560,6 +561,7 @@
 }
 .ntitle {
   line-height: 100% !important;
+  display: flex;
 }
 
 

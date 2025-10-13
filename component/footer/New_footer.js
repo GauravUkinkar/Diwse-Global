@@ -83,7 +83,7 @@ const New_footer = () => {
       <div className="copyright-parent parent">
         <div className="copyright-cont cont">
           <div className="left">
-            <p>© 2024 | All Rights Reserved | DIwise</p>
+            <p>© 2024 | All Rights Reserved | <a href="/">DIwise</a></p>
           </div>
           <div className="right">
             <a href="/privacy">

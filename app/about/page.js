@@ -258,9 +258,8 @@ const Page = () => {
           >
             <div className="left">
               <h3 classname="ntitle">
-                Our <br />
-                <br />
-                <span className="gradient-text">Distinct Culture</span>
+                Our
+                <span className="gradient-text"> Distinct Culture</span>
               </h3>
 
               <p>
@@ -274,9 +273,8 @@ const Page = () => {
             <div className="right">
               <div className="top">
                 <h3>
-                  Our <br />
-                  <br />
-                  <span className="gradient-text">Mission</span>
+                  Our 
+                  <span className="gradient-text"> Mission</span>
                 </h3>
 
                 <p>
@@ -287,9 +285,8 @@ const Page = () => {
               </div>
               <div className="bottomm">
                 <h3>
-                  Our <br />
-                  <br />
-                  <span className="gradient-text">Vision</span>
+                  Our 
+                  <span className="gradient-text"> Vision</span>
                 </h3>
                 <p>
                   At DIwise Global, we envision a future where businesses thrive
