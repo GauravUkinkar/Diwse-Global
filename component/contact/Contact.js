@@ -15,6 +15,7 @@ const Contact = () => {
     email: "",
     contact: "",
     message: "",
+    websiteName:"Diwise Global"
   });
 
   useEffect(() => {
