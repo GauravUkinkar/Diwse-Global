@@ -106,7 +106,7 @@ const Blog_Details = ({ data, loading }) => {
                     .reverse()
                     .slice(0, 5)
                     .map((post, index) => (
-                      <Link href={`/blogdetail/${post.bid}`} key={index}>
+                      <Link href={`/blogdetail/${post.title.split(" ").join("_")}`} key={index}>
                         <a href={post.link} className="recent-post-box">
                           <div
                             className="left bg-img-cover"
