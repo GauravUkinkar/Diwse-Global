@@ -171,11 +171,11 @@ export default function Home() {
     },
     {
       title:
-        "Digitally Experiencing the Best of India with The Indian Journey ",
+        "NVM Agro: Cultivating Growth through Digital Transformation",
       content:
-        "DIwise has brought The Indian Journey to the forefront of digital experiences, offering innovative solutions that create unforgettable memories.",
+        " NVM Agro Private Limited is a Pune-based agribusiness firm established in 2018. Specializing in diverse agricultural services, the company aims to enhance its digital presence to better serve the farming community and expand its market reach.",
       imgage: nvmagro,
-      url: "/theIndianJourney",
+      url: "/nvmagro_casestudy",
     },
     // {
     //   title: "pandoza",
