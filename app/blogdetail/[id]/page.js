@@ -7,32 +7,36 @@ import React, { useEffect, useState, useCallback } from "react";
 const Page = () => {
   const { id } = useParams();
   const [data, setData] = useState(null); // Set initial state to null
+  const [loading, setLoading] = useState(false);
 
-  const fetchBlogs = useCallback(async () => {
-    if (!id) return; // Prevent fetching if id is undefined
 
-    try {
+  const fetchBlogs = async ()=>{
+      try {
+      setLoading(true);
       const response = await axios.get(
-        `https://tomcat.diwise.in/DiwiseGlobalAdminPanel/blog/getBytitle?title=${id.split("_").join(" ")}`
+        `https://tomcat.diwise.in/DiwiseGlobalAdminPanel/blog/getBytitle?title=${id
+          .split("_")
+          .join(" ")}`
       );
 
-      console.log(response)
-      setData(response.data.data);
+
+      setData(response?.data?.data);
     } catch (err) {
       console.error("Error fetching blog data:", err);
+    } finally {
+      setLoading(false);
     }
-  }, [id]); // useCallback ensures the function is re-created only when id changes
+  }
 
-  useEffect(() => {
-    fetchBlogs();
-  }, [fetchBlogs]); // ✅ Dependency is now stable
-
-  if (!id) return <p>Loading...</p>; // Show loading if id is not available yet
-  if (!data) return <p>Fetching blog...</p>; // Show fetching message
+  useEffect(()=>{
+    
+    fetchBlogs()
+  },[])
+  console.log(loading)
 
   return (
     <div>
-      <Blog_Details data={data} />
+      <Blog_Details data={data} loading ={ loading} />
     </div>
   );
 };

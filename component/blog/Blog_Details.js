@@ -7,7 +7,7 @@ import axios from "axios";
 import Link from "next/link";
 import { Helmet } from "react-helmet";
 
-const Blog_Details = ({ data }) => {
+const Blog_Details = ({ data, loading }) => {
   const [updatedBlogs, setUpdatedBlogs] = useState([]);
   const fetchData = async () => {
     try {
@@ -15,7 +15,6 @@ const Blog_Details = ({ data }) => {
         "https://tomcat.diwise.in/DiwiseGlobalAdminPanel/blog/getallblogs"
       );
 
-      console.log(response.data)
       const mapped = response.data.map((item) => item.data);
       setUpdatedBlogs(mapped);
     } catch (err) {
@@ -44,47 +43,41 @@ const Blog_Details = ({ data }) => {
     <>
       <Helmet>
         <title>{data?.meta_title}</title>
-        <meta
-          name="description"
-          content={data?.meta_description}
-        />
-        <meta
-          name="keywords"
-          content={data?.meta_keyword}
-        />
+        <meta name="description" content={data?.meta_description} />
+        <meta name="keywords" content={data?.meta_keyword} />
       </Helmet>
 
       <div className="blog-details-parent parent">
-        <div className="blog-details-cont cont">
-          <div className="left">
-            <div
-              className="img-box bg-img-cover"
-
-            >
-              <img src={data.featuredImage} alt={data?.alter_text}/>
-            </div>
-            <div className="date-time-box">
-              <div className="date-icon">
-                <SlCalender />
-                <div className="date">{data.date}</div>
+        {loading ? (
+          <div class="loader"></div>
+        ) : (
+          <div className="blog-details-cont cont">
+            <div className="left">
+              <div className="img-box bg-img-cover">
+                <img src={data?.featuredImage} alt={data?.alter_text} />
               </div>
-              {/* <div className="time-icon">
+              <div className="date-time-box">
+                <div className="date-icon">
+                  <SlCalender />
+                  <div className="date">{data?.date}</div>
+                </div>
+                {/* <div className="time-icon">
                 <IoTimeOutline />
                 <div className="time">{data.time}</div>
               </div> */}
-            </div>
-            <h4 className="blog-title">{data.title}</h4>
+              </div>
+              <h4 className="blog-title">{data?.title}</h4>
 
-            <p
-              className="blog-desc"
-              dangerouslySetInnerHTML={{ __html: data.description }}
-            ></p>
-            <div className="btn">
-              <Button_comp link="/blogs" btn_text="All Blogs" />
+              <p
+                className="blog-desc"
+                dangerouslySetInnerHTML={{ __html: data?.description }}
+              ></p>
+              <div className="btn">
+                <Button_comp link="/blogs" btn_text="All Blogs" />
+              </div>
             </div>
-          </div>
-          <div className="right">
-            {/* <div className="categories">
+            <div className="right">
+              {/* <div className="categories">
               <h4>
                 Blog <span>Categories</span>
               </h4>
@@ -104,38 +97,44 @@ const Blog_Details = ({ data }) => {
                 </Link>
               ))}
             </div> */}
-            <div className="recent-post">
-              <h4>
-                Recent <span>Posts</span>
-              </h4>
-              {updatedBlogs &&
-                updatedBlogs.map((post, index) => (
-                  <Link href={`/blogdetail/${post.bid}`} key={index}>
-                    <a href={post.link} className="recent-post-box">
-                      <div
-                        className="left bg-img-cover"
-                        style={{ backgroundImage: `url(${post.featuredImage})` }}
-                      ></div>
-                      <div className="right">
-                        <div className="date-time">
-                          <div className="date-icon">
-                            <SlCalender />
-                            <div className="date">{post.date}</div>
-                          </div>
-                          {/* <div className="time-icon">
+              <div className="recent-post">
+                <h4>
+                  Recent <span>Posts</span>
+                </h4>
+                {updatedBlogs &&
+                  updatedBlogs
+                    .reverse()
+                    .slice(0, 5)
+                    .map((post, index) => (
+                      <Link href={`/blogdetail/${post.bid}`} key={index}>
+                        <a href={post.link} className="recent-post-box">
+                          <div
+                            className="left bg-img-cover"
+                            style={{
+                              backgroundImage: `url(${post.featuredImage})`,
+                            }}
+                          ></div>
+                          <div className="right">
+                            <div className="date-time">
+                              <div className="date-icon">
+                                <SlCalender />
+                                <div className="date">{post.date}</div>
+                              </div>
+                              {/* <div className="time-icon">
                             <IoTimeOutline />
                             <div className="time">{post.time}</div>
                           </div> */}
-                        </div>
-                        <div className="title">{post.title}</div>
-                      </div>
-                    </a>
-                    <div className="line"></div>
-                  </Link>
-                ))}
+                            </div>
+                            <div className="title">{post.title}</div>
+                          </div>
+                        </a>
+                        <div className="line"></div>
+                      </Link>
+                    ))}
+              </div>
             </div>
           </div>
-        </div>
+        )}
       </div>
     </>
   );

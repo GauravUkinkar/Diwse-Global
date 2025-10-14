@@ -173,7 +173,7 @@ const [loading, setLoading] = useState(true);
                         className="card-image bg-img-cover"
                        
                       >
-                        <img src={blog.featuredImage} alt={blog?.alter_text}/>
+                        <img src={blog?.featuredImage} alt={blog?.alter_text}/>
                       </div>
                       <h4 className="card-title">{blog.title}</h4>
                       <p
@@ -185,8 +185,8 @@ const [loading, setLoading] = useState(true);
                       </p>
                     </div>
                     <div className="bottom-card">
-                      <div className="category">{blog.category}</div>
-                      <div className="date">{blog.date}</div>
+                      <div className="category">{blog?.category}</div>
+                      <div className="date">{blog?.date}</div>
                     </div>
                   </div>
                 </Link>
