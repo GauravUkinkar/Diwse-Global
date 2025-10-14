@@ -108,9 +108,10 @@ const Page = () => {
     e.preventDefault();
     try {
       const response = await axios.post(
-        "https://api.diwiseglobal.com/auth/contact/",
+        "https://tomcat.diwise.in/DiwiseGlobalAdminPanel/ServicesandEmails/addServicesandEmails",
         {
-          email,
+          service:"Business Launchpad",
+          email:email,
         }
       );
       toast.success("Thank You for Your Inquiry in DIwise!");

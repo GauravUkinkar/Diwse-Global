@@ -98,10 +98,11 @@ const Page = () => {
   const submitEmail = async (e) => {
     e.preventDefault();
     try {
-      const response = await axios.post(
-        "https://api.diwiseglobal.com/auth/contact/",
+       const response = await axios.post(
+        "https://tomcat.diwise.in/DiwiseGlobalAdminPanel/ServicesandEmails/addServicesandEmails",
         {
-          email,
+          service:"Public Relations and Outreach Services",
+          email:email,
         }
       );
       toast.success("Thank You for Your Inquiry in DIwise!");

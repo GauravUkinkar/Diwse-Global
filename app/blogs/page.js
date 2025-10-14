@@ -116,7 +116,7 @@ const [loading, setLoading] = useState(true);
 
       const mapped = response.data.map((item)=>item.data);
       const sorted = mapped.sort((a, b) => new Date(b.date) - new Date(a.date));
-      setdata(sorted);
+      setdata(sorted.reverse());
     } catch (err) {
       console.log(err);
     }finally{
@@ -127,7 +127,7 @@ const [loading, setLoading] = useState(true);
     fetchBlogs();
   }, []);
 
-  console.log(data, "data")
+
 
   useEffect(() => {
     AOS.init();

@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import "./accordian.scss";
 import axios from "axios";
+import Link from "next/link";
 
 const Accordian = () => {
   const [data, setData] = useState([]);
@@ -10,7 +11,11 @@ const Accordian = () => {
       try {
         const response = await axios.get("https://tomcat.diwise.in/DiwiseGlobalAdminPanel/blog/getallblogs");
         const mapped = response.data.map((item)=>item.data)
-      setData(mapped);
+      setData(mapped.reverse());
+
+  
+
+     
       } catch (err) {
         console.log(err);
       }
@@ -19,7 +24,9 @@ const Accordian = () => {
     fetchBlogs();
   }, []);
 
-  console.log(data, "data")
+
+
+
 
   return (
     <>
@@ -29,16 +36,16 @@ const Accordian = () => {
             Stay Digitalised with our <span className="gradeint-text">Blog Insights</span>
           </h3>
           <div className="blogs-list">
-            {data.slice(0, 3).map((blog, index) => (
+            {data?.reverse()?.slice(0, 3).map((blog, index) => (
               <div className="blogs-navigation imageHover" key={index}>
-                <a href="/blogs" className="blog-para imageHover"  data-index={index} >
+                <Link href={`/blogdetail/${blog.title.trim().split(" ").join("_")}`} className="blog-para imageHover"  data-index={index} >
                   {blog.title}
 
                   <span className="rightend">
                     <span className="date">{blog.date}</span>
-                    <span className="btnbllog">{blog.category}</span>
+                    {/* <span className="btnbllog">{blog.category}</span> */}
                   </span>
-                </a>
+                </Link>
               </div>
             ))}
           </div>
