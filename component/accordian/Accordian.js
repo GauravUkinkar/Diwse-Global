@@ -36,7 +36,7 @@ const Accordian = () => {
             Stay Digitalised with our <span className="gradeint-text">Blog Insights</span>
           </h3>
           <div className="blogs-list">
-            {data?.reverse()?.slice(0, 3).map((blog, index) => (
+            {data?.slice(0, 3).map((blog, index) => (
               <div className="blogs-navigation imageHover" key={index}>
                 <Link href={`/blogdetail/${blog.title.trim().split(" ").join("_")}`} className="blog-para imageHover"  data-index={index} >
                   {blog.title}
