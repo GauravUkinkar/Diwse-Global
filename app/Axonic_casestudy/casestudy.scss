@@ -143,6 +143,19 @@
               stroke: var(--accent1);
             }
           }
+
+          strong{
+            // width: 250px;
+            font-size: 16px;
+            padding-right: 10px;
+          }
+
+          p{
+            font-size: 14px;
+          }
+          .para{
+            font-weight: 300 !important;
+          }
         }
       }
     }
