@@ -1,18 +1,22 @@
 "use client";
+
 import Blog_Details from "@/component/blog/Blog_Details";
 import axios from "axios";
-import {useSearchParams } from "next/navigation";
-import React, { useEffect, useState, useCallback } from "react";
+import { useSearchParams } from "next/navigation";
+import React, { useEffect, useState, useCallback, Suspense } from "react";
 
-const Page = () => {
-  // const { id } = useParams();
+// 🔹 This ensures the page is NOT statically pre-rendered
+export const dynamic = "force-dynamic";
+
+const BlogDetailsContent = () => {
   const searchParams = useSearchParams();
-  const [data, setData] = useState(null); // Set initial state to null
+  const [data, setData] = useState(null);
   const [loading, setLoading] = useState(false);
 
   const title = searchParams.get("slug");
 
-  const fetchBlogs = async () => {
+  const fetchBlogs = useCallback(async () => {
+    if (!title) return;
     try {
       setLoading(true);
       const response = await axios.get(
@@ -20,24 +24,26 @@ const Page = () => {
           .split("_")
           .join(" ")}`
       );
-
       setData(response?.data?.data);
     } catch (err) {
       console.error("Error fetching blog data:", err);
     } finally {
       setLoading(false);
     }
-  };
+  }, [title]);
 
   useEffect(() => {
     fetchBlogs();
-  }, []);
-  console.log(loading);
+  }, [fetchBlogs]);
 
+  return <Blog_Details data={data} loading={loading} />;
+};
+
+const Page = () => {
   return (
-    <div>
-      <Blog_Details data={data} loading={loading} />
-    </div>
+    <Suspense fallback={<div>Loading blog details...</div>}>
+      <BlogDetailsContent />
+    </Suspense>
   );
 };
 
