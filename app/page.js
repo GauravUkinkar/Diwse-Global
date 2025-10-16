@@ -22,7 +22,7 @@ import img6 from "../public/assets/home/Akka-Foundation.webp";
 import img7 from "../public/assets/home/The-Team-Dental.webp";
 import img8 from "../public/assets/home/The-Indian-Journey.webp";
 import img9 from "../public/assets/home/Pandoza.webp";
-import nvmagro from "../public/assets/nvm_agro.webp"
+import nvmagro from "../public/assets/nvm_agro.webp";
 import "swiper/swiper-bundle.css";
 import Head from "next/head";
 import { FaSearchengin } from "react-icons/fa";
@@ -170,10 +170,9 @@ export default function Home() {
       url: "/theIndianJourney",
     },
     {
-      title:
-        "NVM Agro: Cultivating Growth through Digital Transformation",
+      title: "NVM Agro: Cultivating Growth through Digital Transformation",
       content:
-        " NVM Agro Private Limited is a Pune-based agribusiness firm established in 2018. Specializing in diverse agricultural services, the company aims to enhance its digital presence to better serve the farming community and expand its market reach.",
+        " NVM Agro Private Limited is a Dubai-based agribusiness firm established in 2018. Specializing in diverse agricultural services, the company aims to enhance its digital presence to better serve the farming community and expand its market reach.",
       imgage: nvmagro,
       url: "/nvmagro_casestudy",
     },
@@ -272,7 +271,10 @@ export default function Home() {
   return (
     <>
       <Helmet>
-        <title>Strategic Digital Marketing, Branding & Web Solutions for Global Online Growth</title>
+        <title>
+          Strategic Digital Marketing, Branding & Web Solutions for Global
+          Online Growth
+        </title>
         <meta
           name="keywords"
           content="strategic digital, digital marketing, branding, online presence, global markets"
@@ -342,7 +344,7 @@ export default function Home() {
             Our comprehensive suite of digital services is designed to propel
             your business to new heights, internationally.
           </p>
-        
+
           <Home_Card_Swiper
             cards={cardData}
             showImage={false}

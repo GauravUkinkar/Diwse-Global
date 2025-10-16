@@ -4,7 +4,7 @@ import Button_comp from "@/component/button/Button_comp";
 import React, { useRef } from "react";
 import nvm_agro from "../../public/assets/nvm_agro.webp";
 import { LuDot } from "react-icons/lu";
-import "../Axonic_casestudy/casestudy.scss"
+import "../Axonic_casestudy/casestudy.scss";
 const Page = () => {
   const CaseStudy = useRef();
   const CaseStudyTrigger = useRef();
@@ -49,7 +49,7 @@ const Page = () => {
             Cultivating Growth through Digital Transformation
           </h3>
           <p className="case-para" data-aos="fade-up" data-aos-delay="200">
-            NVM Agro Private Limited is a Pune-based agribusiness firm
+            NVM Agro Private Limited is a Dubai-based agribusiness firm
             established in 2018. Specializing in diverse agricultural services,
             the company aims to enhance its digital presence to better serve the
             farming community and expand its market reach.
@@ -109,8 +109,8 @@ const Page = () => {
           ></div>
           <div className="right" data-aos="fade-up" data-aos-delay="400">
             <h3 className="fifth-section-heading">
-              Why
-              <span className="gradient-text">Clients Trust DIwise</span>
+              Why 
+              <span className="gradient-text"> Clients Trust DIwise</span>
             </h3>
             <p className="fifth-section-para">
               {` At DIwise, we focus on creating lasting partnerships built on trust and a deep understanding of our clients’ goals and vision. By immersing ourselves in each client’s story, we craft tailored strategies that consistently deliver impactful results.
@@ -129,8 +129,8 @@ const Page = () => {
                   <span>
                     <LuDot />
                   </span>
-                 <strong>{item?.bold}</strong>
-                  <strong className="para" >{item?.para}</strong>
+                  <strong>{item?.bold}</strong>
+                  <strong className="para">{item?.para}</strong>
                 </p>
               ))}
             </div>

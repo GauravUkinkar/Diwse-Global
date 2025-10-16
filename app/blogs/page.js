@@ -163,7 +163,7 @@ const [loading, setLoading] = useState(true);
             {data &&
               data.slice(0, visibleblog).map((blog,index) => (
                 <Link
-                   href={`/blogdetail/${blog.title.trim().split(" ").join("_")}`}
+                   href={`/blogdetails?slug=${blog.title.trim().split(" ").join("_")}`}
                   className="card-link"
                   key={index}
                 >
