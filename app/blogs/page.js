@@ -7,104 +7,9 @@ import Link from "next/link";
 import AOS from "aos";
 import { Helmet } from "react-helmet";
 
-// Sample blog data array
-// const blogData = [
-//   {
-//     id: 1,
-//     title: "Lorem ipsum dolor sit amet, consectetur adipisicing elit.",
-//     image:
-//       "https://img.freepik.com/free-photo/close-up-cutting-plant-leaves_23-2148905280.jpg?t=st=1723205318~exp=1723208918~hmac=bee76a809d5085aed8124f68f1d0ba3234a9ec185bd7cc86dbed3e53cb524207&w=1380",
-//     description:
-//       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate dicta sint velit assumenda soluta aut veritatis obcaecati et? Culpa perspiciatis.",
-//     category: "News",
-//     date: "08/08/2024",
-//     link: "#",
-//   },
-//   {
-//     id: 2,
-//     title: "Sed ut perspiciatis unde omnis iste natus error sit voluptatem.",
-//     image: "path_to_image_2.jpg",
-//     description:
-//       "Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit.",
-//     category: "Technology",
-//     date: "08/07/2024",
-//     link: "#",
-//   },
-//   {
-//     id: 3,
-//     title: "Sed ut perspiciatis unde omnis iste natus error sit voluptatem.",
-//     image: "path_to_image_2.jpg",
-//     description:
-//       "Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit.",
-//     category: "Technology",
-//     date: "08/07/2024",
-//     link: "#",
-//   },
-//   {
-//     id: 4,
-//     title: "Sed ut perspiciatis unde omnis iste natus error sit voluptatem.",
-//     image: "path_to_image_2.jpg",
-//     description:
-//       "Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit.",
-//     category: "Technology",
-//     date: "08/07/2024",
-//     link: "#",
-//   },
-//   {
-//     id: 5,
-//     title: "Sed ut perspiciatis unde omnis iste natus error sit voluptatem.",
-//     image: "path_to_image_2.jpg",
-//     description:
-//       "Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit.",
-//     category: "Technology",
-//     date: "08/07/2024",
-//     link: "#",
-//   },
-//   {
-//     id: 6,
-//     title: "Sed ut perspiciatis unde omnis iste natus error sit voluptatem.",
-//     image: "path_to_image_2.jpg",
-//     description:
-//       "Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit.",
-//     category: "Technology",
-//     date: "08/07/2024",
-//     link: "#",
-//   },
-//   {
-//     id: 7,
-//     title: "Sed ut perspiciatis unde omnis iste natus error sit voluptatem.",
-//     image: "path_to_image_2.jpg",
-//     description:
-//       "Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit.",
-//     category: "Technology",
-//     date: "08/07/2024",
-//     link: "#",
-//   },
-//   {
-//     id: 8,
-//     title: "Sed ut perspiciatis unde omnis iste natus error sit voluptatem.",
-//     image: "path_to_image_2.jpg",
-//     description:
-//       "Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit.",
-//     category: "Technology",
-//     date: "08/07/2024",
-//     link: "#",
-//   },
-//   {
-//     id: 9,
-//     title: "Sed ut perspiciatis unde omnis iste natus error sit voluptatem.",
-//     image: "path_to_image_2.jpg",
-//     description:
-//       "Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit.",
-//     category: "Technology",
-//     date: "08/07/2024",
-//     link: "#",
-//   },
-// ];
-
 const Blogs = () => {
   const [visibleblog, setVisibleBlogs] = useState(3);
-const [loading, setLoading] = useState(true);
+  const [loading, setLoading] = useState(true);
   const [data, setdata] = useState([]);
   const fetchBlogs = async () => {
     try {
@@ -112,14 +17,12 @@ const [loading, setLoading] = useState(true);
         "https://tomcat.diwise.in/DiwiseGlobalAdminPanel/blog/getallblogs"
       );
 
-      // console.log(response.data);
-
-      const mapped = response.data.map((item)=>item.data);
+      const mapped = response.data.reverse().map((item) => item.data);
       const sorted = mapped.sort((a, b) => new Date(b.date) - new Date(a.date));
-      setdata(sorted.reverse());
+      setdata(sorted);
     } catch (err) {
       console.log(err);
-    }finally{
+    } finally {
       setLoading(false);
     }
   };
@@ -127,18 +30,23 @@ const [loading, setLoading] = useState(true);
     fetchBlogs();
   }, []);
 
-
-
   useEffect(() => {
     AOS.init();
   }, []);
+
   return (
     <>
-    <Helmet>
-  <title>Insights and Trends | DIwise Blog</title>
-  <meta name="description" content="Discover insights on digital marketing, branding businesses, content strategy, and social media marketing in the digital marketing world." />
-  <meta name="keywords" content="blog, digital transformation, technology trends, industry insights, expert opinions, innovation, business strategies, digital marketing, customer engagement, digital marketing, branding businesses, content strategy, social media marketing, digital marketing world" />
-</Helmet>
+      <Helmet>
+        <title>Insights and Trends | DIwise Blog</title>
+        <meta
+          name="description"
+          content="Discover insights on digital marketing, branding businesses, content strategy, and social media marketing in the digital marketing world."
+        />
+        <meta
+          name="keywords"
+          content="blog, digital transformation, technology trends, industry insights, expert opinions, innovation, business strategies, digital marketing, customer engagement, digital marketing, branding businesses, content strategy, social media marketing, digital marketing world"
+        />
+      </Helmet>
 
       <div className="blog-parent-b  parent">
         <div className="top-color  parent">
@@ -155,53 +63,57 @@ const [loading, setLoading] = useState(true);
         </div>
       </div>
       <div className="blog-parent parent">
-       {loading ? (
-        <div className="loader"></div>
-       ):(
- <div className="blog-cont cont" data-aos="fade-up">
-          <div className="card-box" data-aos="fade-up" data-aos-delay="200">
-            {data &&
-              data.slice(0, visibleblog).map((blog,index) => (
-                <Link
-                   href={`/blogdetails?slug=${blog.title.trim().split(" ").join("_")}`}
-                  className="card-link"
-                  key={index}
-                >
-                  <div className="card">
-                    <div className="card-data">
-                      <div
-                        className="card-image bg-img-cover"
-                       
-                      >
-                        <img src={blog?.featuredImage} alt={blog?.alter_text}/>
+        {loading ? (
+          <div className="loader"></div>
+        ) : (
+          <div className="blog-cont cont" data-aos="fade-up">
+            <div className="card-box" data-aos="fade-up" data-aos-delay="200">
+              {data &&
+                data.slice(0, visibleblog).map((blog, index) => (
+                  <Link
+                    href={`/blogdetails?slug=${blog.title
+                      .trim()
+                      .split(" ")
+                      .join("_")}`}
+                    className="card-link"
+                    key={index}
+                  >
+                    <div className="card">
+                      <div className="card-data">
+                        <div className="card-image bg-img-cover">
+                          <img
+                            src={blog?.featuredImage}
+                            alt={blog?.alter_text}
+                          />
+                        </div>
+                        <h4 className="card-title">{blog.title}</h4>
+                        <p
+                          className="short-desc"
+                          dangerouslySetInnerHTML={{
+                            __html: blog.description.slice(0, 100),
+                          }}
+                        ></p>
                       </div>
-                      <h4 className="card-title">{blog.title}</h4>
-                      <p
-                        className="short-desc"
-                        dangerouslySetInnerHTML={{
-                          __html: blog.description.slice(0, 100),
-                        }}
-                      >
-                      </p>
+                      <div className="bottom-card">
+                        <div className="category">{blog?.category}</div>
+                        <div className="date">{blog?.date}</div>
+                      </div>
                     </div>
-                    <div className="bottom-card">
-                      <div className="category">{blog?.category}</div>
-                      <div className="date">{blog?.date}</div>
-                    </div>
-                  </div>
-                </Link>
-              ))}
-          </div>
-          { data.length > 3 && visibleblog < data.length && (
-            <div className="load-more">
-              <button className="btn1" onClick={()=>setVisibleBlogs(visibleblog + 3)}>
-                Load More Blog
-              </button>
+                  </Link>
+                ))}
             </div>
-          )}
-        </div>
-
-       )}
+            {data.length > 3 && visibleblog < data.length && (
+              <div className="load-more">
+                <button
+                  className="btn1"
+                  onClick={() => setVisibleBlogs(visibleblog + 3)}
+                >
+                  Load More Blog
+                </button>
+              </div>
+            )}
+          </div>
+        )}
       </div>
     </>
   );

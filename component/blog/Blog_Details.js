@@ -2,7 +2,6 @@ import React, { useEffect, useState } from "react";
 import "./blog_details.scss";
 import Button_comp from "../button/Button_comp";
 import { SlCalender } from "react-icons/sl";
-import { IoTimeOutline } from "react-icons/io5";
 import axios from "axios";
 import Link from "next/link";
 import { Helmet } from "react-helmet";
@@ -14,8 +13,8 @@ const Blog_Details = ({ data, loading }) => {
       const response = await axios.get(
         "https://tomcat.diwise.in/DiwiseGlobalAdminPanel/blog/getallblogs"
       );
-
       const mapped = response.data.map((item) => item.data);
+
       setUpdatedBlogs(mapped);
     } catch (err) {
       console.log(err);
@@ -106,7 +105,12 @@ const Blog_Details = ({ data, loading }) => {
                     .reverse()
                     .slice(0, 5)
                     .map((post, index) => (
-                      <Link href={`/blogdetails?slug=${post.title.split(" ").join("_")}`} key={index}>
+                      <Link
+                        href={`/blogdetails?slug=${post.title
+                          .split(" ")
+                          .join("_")}`}
+                        key={index}
+                      >
                         <a href={post.link} className="recent-post-box">
                           <div
                             className="left bg-img-cover"
