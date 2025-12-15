@@ -11,7 +11,7 @@ const Blog_Details = ({ data, loading }) => {
   const fetchData = async () => {
     try {
       const response = await axios.get(
-        "https://tomcat.diwise.in/DiwiseGlobalAdminPanel/blog/getallblogs"
+        `${process.env.NEXT_PUBLIC_API_URL}blog/getallblogs`
       );
       const mapped = response.data.map((item) => item.data);
 
