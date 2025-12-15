@@ -135,7 +135,7 @@
           width: 100%;
           justify-content: flex-start;
           align-items: center;
-          gap: calc(var(--unit/2));
+          gap: calc(var(--unit) / 2);
 
           span {
             svg {
