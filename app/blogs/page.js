@@ -14,8 +14,10 @@ const Blogs = () => {
   const fetchBlogs = async () => {
     try {
       const response = await axios.get(
-        "https://tomcat.diwise.in/DiwiseGlobalAdminPanel/blog/getallblogs"
+        `${process.env.NEXT_PUBLIC_API_URL}blog/getallblogs`
       );
+
+      console.log(response)
 
       const mapped = response.data.reverse().map((item) => item.data);
       const sorted = mapped.sort((a, b) => new Date(b.date) - new Date(a.date));

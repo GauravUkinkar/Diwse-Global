@@ -26,7 +26,7 @@ const Contact = () => {
     e.preventDefault();
     try {
       const response = await axios.post(
-        "https://tomcat.diwise.in/DiwiseGlobalAdminPanel/contact/addcontact",
+        `${process.env.NEXT_PUBLIC_API_URL}contact/addcontact`,
         formdata
       );
       toast.success("Thank You for Your Inquiry in DIwise!");

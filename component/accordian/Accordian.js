@@ -9,7 +9,7 @@ const Accordian = () => {
   useEffect(() => {
     const fetchBlogs = async () => {
       try {
-        const response = await axios.get("https://tomcat.diwise.in/DiwiseGlobalAdminPanel/blog/getallblogs");
+        const response = await axios.get(`${process.env.NEXT_PUBLIC_API_URL}blog/getallblogs`);
         const mapped = response.data.map((item)=>item.data)
       setData(mapped.reverse());
 

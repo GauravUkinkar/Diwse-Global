@@ -20,7 +20,7 @@ const BlogDetailsContent = () => {
     try {
       setLoading(true);
       const response = await axios.get(
-        `https://tomcat.diwise.in/DiwiseGlobalAdminPanel/blog/getBytitle?title=${title
+        `${process.env.NEXT_PUBLIC_API_URL}blog/getBytitle?title=${title
           .split("_")
           .join(" ")}`
       );
