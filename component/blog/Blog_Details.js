@@ -7,6 +7,16 @@ import Link from "next/link";
 import { Helmet } from "react-helmet";
 
 const Blog_Details = ({ data, loading }) => {
+
+
+const createSlug = (title) =>
+  title
+    .toLowerCase()
+    .replace(/[^a-z0-9\s-]/g, "") // remove symbols like & ? etc
+    .trim()
+    .replace(/\s+/g, "-"); // space → dash
+
+
   const [updatedBlogs, setUpdatedBlogs] = useState([]);
   const fetchData = async () => {
     try {
@@ -106,9 +116,10 @@ const Blog_Details = ({ data, loading }) => {
                     .slice(0, 5)
                     .map((post, index) => (
                       <Link
-                        href={`/blogdetails?slug=${post.title
-                          .split(" ")
-                          .join("_")}`}
+                        href={`/blogdetails?slug=${encodeURIComponent(
+  post.title.split(" ").join("_")
+)}`}
+
                         key={index}
                       >
                         <a href={post.link} className="recent-post-box">
