@@ -9,14 +9,6 @@ import { Helmet } from "react-helmet";
 const Blog_Details = ({ data, loading }) => {
 
 
-const createSlug = (title) =>
-  title
-    .toLowerCase()
-    .replace(/[^a-z0-9\s-]/g, "") // remove symbols like & ? etc
-    .trim()
-    .replace(/\s+/g, "-"); // space → dash
-
-
   const [updatedBlogs, setUpdatedBlogs] = useState([]);
   const fetchData = async () => {
     try {
